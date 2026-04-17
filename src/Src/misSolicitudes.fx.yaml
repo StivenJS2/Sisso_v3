@@ -161,6 +161,246 @@
                 Y: =130
                 ZIndex: =12
 
+            SimList_Bg1 As rectangle:
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =72
+                Width: =1326
+                X: =20
+                Y: =170
+                ZIndex: =13
+
+            SimList_RectPill1 As rectangle:
+                Fill: =ColorFade(RGBA(245, 158, 11, 1), 85%)
+                Height: =32
+                RadiusBottomLeft: =16
+                RadiusBottomRight: =16
+                RadiusTopLeft: =16
+                RadiusTopRight: =16
+                Width: =110
+                X: =60
+                Y: =190
+                ZIndex: =14
+
+            SimList_LblEstado1 As label:
+                Align: =Align.Center
+                Color: =RGBA(245, 158, 11, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Size: =10
+                Text: ="Pendiente"
+                Width: =110
+                X: =60
+                Y: =190
+                ZIndex: =15
+
+            SimList_LblCat1 As label:
+                Color: =RGBA(51, 65, 85, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =72
+                Size: =11
+                Text: ="Incidente"
+                VerticalAlign: =VerticalAlign.Middle
+                Width: =150
+                X: =200
+                Y: =170
+                ZIndex: =16
+
+            SimList_BtnAvatar1 As button:
+                BorderThickness: =0
+                Color: =RGBA(245, 158, 11, 1)
+                DisabledColor: =RGBA(245, 158, 11, 1)
+                DisabledFill: =ColorFade(RGBA(245, 158, 11, 1), 85%)
+                DisplayMode: =DisplayMode.Disabled
+                FontWeight: =FontWeight.Bold
+                Height: =40
+                PaddingLeft: =0
+                PaddingRight: =0
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Size: =14
+                Text: ="I"
+                Width: =40
+                X: =360
+                Y: =186
+                ZIndex: =17
+
+            SimList_LblAsunto1 As label:
+                Color: =RGBA(15, 23, 42, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =24
+                Size: =12
+                Text: ="Falla de conectividad a la red institucional"
+                Width: =460
+                X: =415
+                Y: =186
+                ZIndex: =18
+
+            SimList_LblId1 As label:
+                Color: =RGBA(100, 116, 139, 1)
+                Height: =20
+                Size: =10
+                Text: ="INC-2026-001"
+                Width: =460
+                X: =415
+                Y: =208
+                ZIndex: =19
+
+            SimList_LblFecha1 As label:
+                Color: =RGBA(51, 65, 85, 1)
+                Height: =72
+                Size: =11
+                Text: ="15 abr 2026"
+                VerticalAlign: =VerticalAlign.Middle
+                Width: =150
+                X: =840
+                Y: =170
+                ZIndex: =20
+
+            SimList_BtnVer1 As button:
+                Color: =RGBA(26, 58, 110, 1)
+                Fill: =RGBA(241, 245, 249, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =36
+                RadiusBottomLeft: =18
+                RadiusBottomRight: =18
+                RadiusTopLeft: =18
+                RadiusTopRight: =18
+                Text: ="Detalles"
+                Width: =120
+                X: =1080
+                Y: =188
+                ZIndex: =21
+
+            SimList_Line1 As rectangle:
+                Fill: =RGBA(226, 232, 240, 1)
+                Height: =1
+                Width: =1326
+                X: =20
+                Y: =241
+                ZIndex: =22
+
+            SimList_Bg2 As rectangle:
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =72
+                Width: =1326
+                X: =20
+                Y: =242
+                ZIndex: =23
+
+            SimList_RectPill2 As rectangle:
+                Fill: =ColorFade(RGBA(14, 165, 233, 1), 85%)
+                Height: =32
+                RadiusBottomLeft: =16
+                RadiusBottomRight: =16
+                RadiusTopLeft: =16
+                RadiusTopRight: =16
+                Width: =110
+                X: =60
+                Y: =262
+                ZIndex: =24
+
+            SimList_LblEstado2 As label:
+                Align: =Align.Center
+                Color: =RGBA(14, 165, 233, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                Size: =10
+                Text: ="En Progreso"
+                Width: =110
+                X: =60
+                Y: =262
+                ZIndex: =25
+
+            SimList_LblCat2 As label:
+                Color: =RGBA(51, 65, 85, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =72
+                Size: =11
+                Text: ="Requerimiento"
+                VerticalAlign: =VerticalAlign.Middle
+                Width: =150
+                X: =200
+                Y: =242
+                ZIndex: =26
+
+            SimList_BtnAvatar2 As button:
+                BorderThickness: =0
+                Color: =RGBA(14, 165, 233, 1)
+                DisabledColor: =RGBA(14, 165, 233, 1)
+                DisabledFill: =ColorFade(RGBA(14, 165, 233, 1), 85%)
+                DisplayMode: =DisplayMode.Disabled
+                FontWeight: =FontWeight.Bold
+                Height: =40
+                PaddingLeft: =0
+                PaddingRight: =0
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Size: =14
+                Text: ="R"
+                Width: =40
+                X: =360
+                Y: =258
+                ZIndex: =27
+
+            SimList_LblAsunto2 As label:
+                Color: =RGBA(15, 23, 42, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =24
+                Size: =12
+                Text: ="Instalación de software (AutoCAD)"
+                Width: =460
+                X: =415
+                Y: =258
+                ZIndex: =28
+
+            SimList_LblId2 As label:
+                Color: =RGBA(100, 116, 139, 1)
+                Height: =20
+                Size: =10
+                Text: ="REQ-2026-002"
+                Width: =460
+                X: =415
+                Y: =280
+                ZIndex: =29
+
+            SimList_LblFecha2 As label:
+                Color: =RGBA(51, 65, 85, 1)
+                Height: =72
+                Size: =11
+                Text: ="16 abr 2026"
+                VerticalAlign: =VerticalAlign.Middle
+                Width: =150
+                X: =840
+                Y: =242
+                ZIndex: =30
+
+            SimList_BtnVer2 As button:
+                Color: =RGBA(26, 58, 110, 1)
+                Fill: =RGBA(241, 245, 249, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =36
+                RadiusBottomLeft: =18
+                RadiusBottomRight: =18
+                RadiusTopLeft: =18
+                RadiusTopRight: =18
+                Text: ="Detalles"
+                Width: =120
+                X: =1080
+                Y: =260
+                ZIndex: =31
+
+            SimList_Line2 As rectangle:
+                Fill: =RGBA(226, 232, 240, 1)
+                Height: =1
+                Width: =1326
+                X: =20
+                Y: =313
+                ZIndex: =32
+
     Rectangle1_2 As rectangle:
         Fill: =RGBA(26, 58, 110, 1)
         Height: =36

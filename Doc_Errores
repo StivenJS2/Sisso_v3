@@ -1,0 +1,17 @@
+# Registro de Errores y Soluciones
+
+## Error PA3001: Internal error (Referencia a objeto no establecida como instancia de un objeto)
+* **Fecha:** 17/04/2026
+* **Comando origen:** `pac canvas pack`
+* **Módulo:** `GalleryTemplateTransform`
+
+### Contexto
+Ocurrió al intentar compilar (`empaquetar`) el archivo `.msapp` después de haber insertado completamente desde código (YAML) un componente de tipo `Gallery` (Galería Vertical) y un `Circle` que no existían originalmente en la aplicación.
+
+### Causa
+La herramienta legacy de Power Platform CLI (`pac canvas pack / unpack`) es estrictamente dependiente de una carpeta interna de la app llamada `pkgs/`, la cual almacena esquemas binarios del estudio de edición. Si añadimos un control "totalmente nuevo" desde el código puro (`.fx.yaml`), la CLI intenta buscar sus dependencias de diseño en sus directorios y, al no hallarlas, lanza una excepción de Referencia Nula (PA3001) y advertencias de validación de Widgets (PA2002).
+
+### Solución Implementada
+1. No forzar la creación arquitectónica profunda de componentes estructurales nativos (como Galerías o Formularios) desde YAML puro en apps que no los poseen.
+2. **Método seguro y alternativo (Mock-up UI):**  Para simular la apariencia de los datos e inyectarlos solo visualmente (y no crashear la CLI), se deben maquetar temporalmente a través de objetos base ya registrados por la app (como Textos y Rectángulos).
+3. **Método definitivo (Studio-First):** Crearlos primero de forma manual en el *PowerApps Studio*, guardar y luego intervenir por código/YAML el diseño y estilos en local.
