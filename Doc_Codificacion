@@ -1,0 +1,306 @@
+# Metodología de Codificación — Proyecto AntiGravity (PowerApps)
+
+## 1. Arquitectura de Archivos
+
+La app vive desempaquetada en la carpeta `src/` con la siguiente estructura relevante:
+
+```
+src/
+├── Src/                        ← Pantallas (.fx.yaml una por pantalla)
+│   ├── misSolicitudes.fx.yaml
+│   ├── introduccion.fx.yaml
+│   └── ...
+├── ControlTemplates.json       ← Registro de tipos de controles nativos
+├── pkgs/                       ← Binarios internos del Studio (NO EDITAR directamente)
+│   ├── PcfControlTemplates/    ← Definiciones de controles PCF (ej. Desplegable_0.0.45.json)
+│   └── *.xml                   ← Esquemas de controles nativos por versión
+└── Entropy/                    ← Estado interno de posiciones (NO EDITAR)
+```
+
+Para compilar: `pac canvas pack --msapp "Sisso_v3.msapp" --sources "./src"`
+Para desempaquetar: `pac canvas unpack --msapp "Sisso_v3.msapp" --sources "./src"`
+
+---
+
+## 2. Estructura de un Archivo `.fx.yaml`
+
+Cada pantalla es un árbol jerárquico de controles en YAML. La jerarquía es:
+
+```yaml
+Screens:
+  NombrePantalla As screen:
+      Fill: =RGBA(...)
+      ZIndex: =1
+
+      ContenedorOControl As tipoControl:
+          Propiedad1: =Valor
+          Propiedad2: ="Texto literal"
+          ZIndex: =2
+
+          ControlHijo As tipoControl:
+              ...
+              ZIndex: =3
+```
+
+**Reglas críticas de indentación:**
+- Cada nivel de hijo = 4 espacios adicionales de indentación.
+- Los controles hermanos comparten el mismo nivel de indentación.
+- Las propiedades van SIEMPRE antes que los hijos del control.
+- El `ZIndex` define el orden de capas (mayor = más al frente).
+
+---
+
+## 3. Tipos de Controles Disponibles
+
+Solo se pueden usar controles que ya existan en `pkgs/` (ya sean nativos o PCF). Los más comunes en este proyecto:
+
+### Controles Nativos
+| Control YAML          | Descripción                                              |
+|-----------------------|----------------------------------------------------------|
+| `rectangle`           | Rectángulo / separador / fondo                           |
+| `label`               | Etiqueta de texto                                        |
+| `text`                | Campo de texto de entrada                                |
+| `button`              | Botón (también usado como avatar circular con Radius=20) |
+| `dropdown`            | Selector desplegable clásico (simple, sin búsqueda)      |
+| `combobox`            | Selector con búsqueda y multi-select                     |
+| `datepicker`          | Selector de fecha                                        |
+| `icon`                | Ícono vectorial                                          |
+| `image`               | Imagen                                                   |
+
+### Controles PCF (Custom)
+| Control YAML                  | Nombre Studio    | Versión  | Descripción                        |
+|-------------------------------|------------------|----------|------------------------------------|
+| `Desplegable.pcfdataset`      | Desplegable      | 0.0.45   | Dropdown moderno estilo Fluent UI  |
+
+> ⚠️ **Regla de Oro:** NO usar controles que no existan en `pkgs/`. Hacerlo causa el error PA3001. Ver `Doc_Errores`.
+> Para agregar un control nuevo: **crearlo primero en PowerApps Studio → Guardar → Descargar → Desempaquetar → leer el YAML generado → luego editar.**
+
+---
+
+## 4. Sintaxis de Propiedades
+
+### Valor fórmula (empieza con `=`):
+```yaml
+Fill: =RGBA(26, 58, 110, 1)
+Height: =44
+Visible: =Not(IsBlank(CmbCategoria.Selected.Value))
+```
+
+### Texto literal (comillas dentro de la fórmula):
+```yaml
+Text: ="Filtrar"
+HintText: ="Buscar por id..."
+```
+
+### Multilínea (para fórmulas largas):
+```yaml
+Items: |-
+    =Table(
+        {Value: "Opción 1"},
+        {Value: "Opción 2"}
+    )
+```
+
+### Referencia entre controles:
+```yaml
+# Desde cualquier control puedes referenciar propiedades de otro:
+Color: =CmbCategoria.Selected.Value
+Visible: =Not(IsBlank(TxtIdCaso.Text))
+```
+
+---
+
+## 5. Paleta de Colores del Proyecto
+
+| Nombre                | RGBA                          | Uso                          |
+|-----------------------|-------------------------------|------------------------------|
+| Azul PUJ              | `RGBA(26, 58, 110, 1)`        | Botones primarios, bordes    |
+| Fondo filtro          | `RGBA(248, 250, 252, 1)`      | Paneles de filtros           |
+| Borde sutil           | `RGBA(226, 232, 240, 1)`      | Bordes de inputs             |
+| Texto principal       | `RGBA(15, 23, 42, 1)`         | Títulos, texto relevante     |
+| Texto secundario      | `RGBA(51, 65, 85, 1)`         | Categoría, fechas            |
+| Texto muted           | `RGBA(100, 116, 139, 1)`      | IDs, subtítulos              |
+| Texto encabezado      | `RGBA(148, 163, 184, 1)`      | Headers de columna           |
+| Amarillo (Pendiente)  | `RGBA(245, 158, 11, 1)`       | Estado chip                  |
+| Azul claro (Progreso) | `RGBA(14, 165, 233, 1)`       | Estado chip                  |
+| Verde (Resuelto)      | `RGBA(34, 197, 94, 1)`        | Estado chip                  |
+
+---
+
+## 6. Patrones de Diseño Recurrentes
+
+### Input de texto estándar:
+```yaml
+NombreControl As text:
+    BorderColor: =RGBA(226, 232, 240, 1)
+    BorderThickness: =1
+    Height: =44
+    HintText: ="Placeholder..."
+    RadiusBottomLeft: =8
+    RadiusBottomRight: =8
+    RadiusTopLeft: =8
+    RadiusTopRight: =8
+    Width: =140
+    X: =30
+    Y: =40
+    ZIndex: =N
+```
+
+### Botón primario (relleno azul):
+```yaml
+NombreBtn As button:
+    BorderColor: =RGBA(26, 58, 110, 1)
+    Fill: =RGBA(26, 58, 110, 1)
+    FontWeight: =FontWeight.Bold
+    Height: =44
+    RadiusBottomLeft: =8
+    RadiusBottomRight: =8
+    RadiusTopLeft: =8
+    RadiusTopRight: =8
+    Text: ="Acción"
+    Width: =110
+    X: =N
+    Y: =40
+    ZIndex: =N
+```
+
+### Botón secundario (borde azul, fondo blanco):
+```yaml
+NombreBtn As button:
+    BorderColor: =RGBA(26, 58, 110, 1)
+    BorderThickness: =1
+    Color: =RGBA(26, 58, 110, 1)
+    Fill: =RGBA(255, 255, 255, 1)
+    FontWeight: =FontWeight.Bold
+    Height: =44
+    RadiusBottomLeft: =8
+    RadiusBottomRight: =8
+    RadiusTopLeft: =8
+    RadiusTopRight: =8
+    Text: ="Acción"
+    Width: =110
+    X: =N
+    Y: =40
+    ZIndex: =N
+```
+
+### Combobox con tabla estructurada:
+```yaml
+CmbNombre As combobox:
+    BorderColor: =RGBA(226, 232, 240, 1)
+    BorderThickness: =1
+    DisplayFields: =["Value"]
+    Height: =44
+    InputTextPlaceholder: ="Selecciona..."
+    IsSearchable: =false
+    Items: |-
+        =Table(
+            {Value: "Opción 1"},
+            {Value: "Opción 2"}
+        )
+    SearchFields: =["Value"]
+    SelectMultiple: =false
+    Width: =160
+    X: =N
+    Y: =40
+    ZIndex: =N
+```
+
+### Desplegable PCF moderno (Fluent UI):
+```yaml
+DdNombre As Desplegable.pcfdataset:
+    DisplayMode: =DisplayMode.Edit
+    Height: =44
+    Items: =["Opción 1", "Opción 2", "Opción 3"]
+    Width: =160
+    X: =N
+    Y: =40
+    ZIndex: =N
+```
+
+> **Nota:** El control PCF `Desplegable.pcfdataset` expone `.Selected.Value` igual que el dropdown clásico. Usar `NombreControl.Selected.Value` para referencias en fórmulas.
+
+### Desplegable PCF dependiente (condicional con auto-selección):
+```yaml
+DdPadre As Desplegable.pcfdataset:
+    DisplayMode: =DisplayMode.Edit
+    Height: =44
+    Items: =["Categoría", "Opción A", "Opción B"]
+    Width: =160
+    X: =N
+    Y: =40
+    ZIndex: =N
+
+DdHijo As Desplegable.pcfdataset:
+    Default: =If(DdPadre.Selected.Value = "Opción B", "Sub único", "Subcategoría")
+    DisplayMode: =DisplayMode.Edit
+    Height: =44
+    Items: |-
+        =Switch(
+            DdPadre.Selected.Value,
+            "Opción A", ["Sub A1", "Sub A2"],
+            "Opción B", ["Sub único"],
+            ["Subcategoría"]
+        )
+    Visible: =DdPadre.Selected.Value in ["Opción A", "Opción B"]
+    Width: =230
+    X: =N
+    Y: =40
+    ZIndex: =N
+```
+
+### Separador de línea entre filas:
+```yaml
+SeparadorNombre As rectangle:
+    Fill: =RGBA(226, 232, 240, 1)
+    Height: =1
+    Width: =1326
+    X: =20
+    Y: =N
+    ZIndex: =N
+```
+
+### Avatar circular simulado con botón:
+```yaml
+BtnAvatar As button:
+    BorderThickness: =0
+    Color: =RGBA(26, 58, 110, 1)
+    DisabledColor: =RGBA(26, 58, 110, 1)
+    DisabledFill: =ColorFade(RGBA(26, 58, 110, 1), 85%)
+    DisplayMode: =DisplayMode.Disabled
+    FontWeight: =FontWeight.Bold
+    Height: =40
+    PaddingLeft: =0
+    PaddingRight: =0
+    RadiusBottomLeft: =20
+    RadiusBottomRight: =20
+    RadiusTopLeft: =20
+    RadiusTopRight: =20
+    Size: =14
+    Text: ="A"
+    Width: =40
+    X: =N
+    Y: =N
+    ZIndex: =N
+```
+
+---
+
+## 7. Espaciado y Layout
+
+- **Ancho total de pantalla:** 1366px — Los controles activos suelen empezar en X=20 o X=30.
+- **Altura del panel de filtros:** 84px (margen superior 20px, inputs en Y=40).
+- **Altura estándar de fila de resultados:** 72px.
+- **Separadores:** Siempre en Y = (Y_inicio_fila + 71), Height=1.
+- **Botones de acción en fila:** Generalmente en la derecha, X > 1060.
+
+---
+
+## 8. Flujo de Trabajo General
+
+1. **Desempaquetar** la app: `pac canvas unpack --msapp "Sisso_v3.msapp" --sources "./src"`
+2. **Editar** el `.fx.yaml` de la pantalla correspondiente en VS Code.
+3. **Empaquetar**: `pac canvas pack --msapp "Sisso_v3.msapp" --sources "./src"`
+4. **Subir** al Power Apps Studio: Archivo → Abrir → Examinar → seleccionar `Sisso_v3.msapp`.
+5. **Cerrar** todas las pestañas del Studio antes de subir para evitar bloqueo de sesión (error "Solo lectura").
+6. **Guardar** dentro del Studio con `Ctrl+S`.
