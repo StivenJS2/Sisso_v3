@@ -31,50 +31,64 @@
                 Y: =20
                 ZIndex: =1
 
-            TxtBuscar As text:
+            TxtIdCaso As text:
                 BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
                 Height: =44
-                HintText: ="Buscar por id o asunto..."
+                HintText: ="ID Caso"
                 RadiusBottomLeft: =8
                 RadiusBottomRight: =8
                 RadiusTopLeft: =8
                 RadiusTopRight: =8
-                Width: =280
+                Width: =140
                 X: =40
                 Y: =40
                 ZIndex: =2
+
+            TxtNumCaso As text:
+                BorderColor: =RGBA(226, 232, 240, 1)
+                BorderThickness: =1
+                Height: =44
+                HintText: ="N° Caso"
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =140
+                X: =200
+                Y: =40
+                ZIndex: =3
 
             CmbCategoria As combobox:
                 BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
                 Height: =44
                 InputTextPlaceholder: ="Categoría"
-                Items: =["Incidente", "Requerimiento", "Mejora", "Consulta"]
-                Width: =180
-                X: =340
+                Items: =["Cuentas & Listas", "Usuarios Externos", "Permisos", "Nube Javeriana", "Conceptos", "Usuario VPN", "NAS Javeriana"]
+                Width: =200
+                X: =360
                 Y: =40
-                ZIndex: =3
+                ZIndex: =4
 
             DtDesde As datepicker:
                 BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
                 Height: =44
                 InputTextPlaceholder: ="Desde"
-                Width: =160
-                X: =540
+                Width: =150
+                X: =580
                 Y: =40
-                ZIndex: =4
+                ZIndex: =5
 
             DtHasta As datepicker:
                 BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
                 Height: =44
                 InputTextPlaceholder: ="Hasta"
-                Width: =160
-                X: =720
+                Width: =150
+                X: =750
                 Y: =40
-                ZIndex: =5
+                ZIndex: =6
 
             BtnFiltrar As button:
                 BorderColor: =RGBA(26, 58, 110, 1)
@@ -87,9 +101,9 @@
                 RadiusTopRight: =8
                 Text: ="Filtrar"
                 Width: =120
-                X: =900
+                X: =920
                 Y: =40
-                ZIndex: =6
+                ZIndex: =7
 
             BtnFiltrar_1 As button:
                 BorderColor: =RGBA(26, 58, 110, 1)
@@ -104,9 +118,9 @@
                 RadiusTopRight: =8
                 Text: ="Limpiar"
                 Width: =120
-                X: =1040
+                X: =1060
                 Y: =40
-                ZIndex: =7
+                ZIndex: =8
 
             LblHeadEstado As label:
                 Color: =RGBA(148, 163, 184, 1)
@@ -199,8 +213,6 @@
                 Height: =72
                 Size: =11
                 Text: ="Incidente"
-                VerticalAlign: =VerticalAlign.Middle
-                Width: =150
                 X: =200
                 Y: =170
                 ZIndex: =16
@@ -212,7 +224,6 @@
                 DisabledFill: =ColorFade(RGBA(245, 158, 11, 1), 85%)
                 DisplayMode: =DisplayMode.Disabled
                 FontWeight: =FontWeight.Bold
-                Height: =40
                 PaddingLeft: =0
                 PaddingRight: =0
                 RadiusBottomLeft: =20
@@ -252,8 +263,6 @@
                 Height: =72
                 Size: =11
                 Text: ="15 abr 2026"
-                VerticalAlign: =VerticalAlign.Middle
-                Width: =150
                 X: =840
                 Y: =170
                 ZIndex: =20
@@ -319,8 +328,6 @@
                 Height: =72
                 Size: =11
                 Text: ="Requerimiento"
-                VerticalAlign: =VerticalAlign.Middle
-                Width: =150
                 X: =200
                 Y: =242
                 ZIndex: =26
@@ -332,7 +339,6 @@
                 DisabledFill: =ColorFade(RGBA(14, 165, 233, 1), 85%)
                 DisplayMode: =DisplayMode.Disabled
                 FontWeight: =FontWeight.Bold
-                Height: =40
                 PaddingLeft: =0
                 PaddingRight: =0
                 RadiusBottomLeft: =20
@@ -372,8 +378,6 @@
                 Height: =72
                 Size: =11
                 Text: ="16 abr 2026"
-                VerticalAlign: =VerticalAlign.Middle
-                Width: =150
                 X: =840
                 Y: =242
                 ZIndex: =30
