@@ -1,0 +1,28 @@
+{
+  "7aeadb5e-48ea-43e0-a8b5-0a539f638adb": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1769/1.0.1769.4361/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://livejaverianaedu.sharepoint.com/sites/Ingenieradesoftware": {
+        "dataSources": {
+          "Actividad Introducción": {
+            "tableName": "3d05ce3b-0b72-4a95-9191-62cf4137923a"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Actividad Introducción"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7aeadb5e-48ea-43e0-a8b5-0a539f638adb"
+  }
+}

@@ -1,0 +1,1297 @@
+"introduccion As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar3 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Canvas3 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar3.Y + RectQuickActionBar3.Height
+        ZIndex: =2
+
+        DataCard6 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            RectHero_1 As rectangle:
+                Fill: =RGBA(26, 58, 110, 1)
+                Height: =340
+                Width: =1366
+                ZIndex: =1
+
+            RectHeroAccent1_1 As rectangle:
+                Fill: =RGBA(200, 184, 122, 0.08)
+                Height: =200
+                Width: =200
+                ZIndex: =2
+
+            RectHeroAccent2_1 As rectangle:
+                Fill: =RGBA(200, 184, 122, 0.06)
+                Height: =150
+                X: =1216
+                ZIndex: =3
+
+            RectBadge_1 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.4)
+                BorderThickness: =1
+                Fill: =RGBA(200, 184, 122, 0.18)
+                Height: =28
+                Width: =280
+                X: =543
+                Y: =20
+                ZIndex: =4
+
+            LblBadge_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(232, 216, 154, 1)
+                Height: =28
+                Size: =9
+                Text: ="● CENTRO DE SERVICIOS ESTUDIANTILES"
+                Width: =280
+                X: =543
+                Y: =20
+                ZIndex: =5
+
+            Label1_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =22
+                Text: ="Solicitudes de servicios de DTI"
+                Width: =800
+                X: =283
+                Y: =60
+                ZIndex: =6
+
+            Label2_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(180, 210, 245, 0.85)
+                Height: =44
+                Size: =11
+                Text: ="3 de los servicio más solicitados en nuestra area. Encuentralos aquí!!!"
+                Width: =620
+                X: =373
+                Y: =98
+                ZIndex: =7
+
+            RectDivLeft_1 As rectangle:
+                Fill: =RGBA(200, 184, 122, 0.4)
+                Height: =1
+                Width: =80
+                X: =591
+                Y: =150
+                ZIndex: =8
+
+            RectDivDiamond_1 As rectangle:
+                Fill: =RGBA(200, 184, 122, 1)
+                Height: =8
+                Width: =8
+                X: =680
+                Y: =147
+                ZIndex: =9
+
+            RectDivRight_1 As rectangle:
+                Fill: =RGBA(200, 184, 122, 0.4)
+                Height: =1
+                Width: =80
+                X: =697
+                Y: =150
+                ZIndex: =10
+
+            RectCardInq_1 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =160
+                Width: =200
+                X: =255
+                Y: =157
+                ZIndex: =11
+
+            RectCardInqTop_1 As rectangle:
+                Fill: =RGBA(91, 163, 224, 1)
+                Height: =3
+                Width: =200
+                X: =255
+                Y: =157
+                ZIndex: =12
+
+            IconInq_1 As icon:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =32
+                Icon: =Icon.Camera
+                Width: =32
+                X: =267
+                Y: =170
+                ZIndex: =13
+
+            LblCardInqTitle_1 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                Text: ="Auto - Zoom"
+                Width: =160
+                X: =305
+                Y: =172
+                ZIndex: =14
+
+            LblCardInqDesc_1 As label:
+                Color: =RGBA(180, 210, 245, 0.75)
+                Height: =48
+                Size: =10
+                Text: ="Organiza tus reuniones a tu manera con el autoservicio de Zoom"
+                Width: =176
+                X: =267
+                Y: =217
+                ZIndex: =15
+
+            RectCardRec_1 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =160
+                Width: =237
+                X: =558
+                Y: =158
+                ZIndex: =16
+
+            RectCardRecTop_1 As rectangle:
+                Fill: =RGBA(78, 196, 148, 1)
+                Height: =3
+                Width: =237
+                X: =558
+                Y: =158
+                ZIndex: =17
+
+            IconRec_1 As icon:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =32
+                Icon: =Icon.Laptop
+                Width: =32
+                X: =570
+                Y: =172
+                ZIndex: =18
+
+            LblCardRecTitle_1 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                Text: ="Software/Hadware"
+                Width: =187
+                X: =608
+                Y: =173
+                ZIndex: =19
+
+            LblCardRecDesc_1 As label:
+                Color: =RGBA(180, 210, 245, 0.75)
+                Height: =63
+                Size: =10
+                Text: ="Solicitud para compra o renovación de servicios de software y equipos de hardware. "
+                Width: =207
+                X: =570
+                Y: =207
+                ZIndex: =20
+
+            RectCardQue_1 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =160
+                Width: =210
+                X: =895
+                Y: =158
+                ZIndex: =21
+
+            RectCardQueTop_1 As rectangle:
+                Fill: =RGBA(224, 122, 95, 1)
+                Height: =3
+                Width: =210
+                X: =895
+                Y: =158
+                ZIndex: =22
+
+            IconQue_1 As icon:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =32
+                Icon: =Icon.Warning
+                Width: =32
+                X: =907
+                Y: =172
+                ZIndex: =23
+
+            LblCardQueTitle_1 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                Text: ="Nube - Javeriana"
+                Width: =160
+                X: =945
+                Y: =173
+                ZIndex: =24
+
+            LblCardQueDesc_1 As label:
+                Color: =RGBA(180, 210, 245, 0.75)
+                Height: =53
+                Size: =10
+                Text: ="acceso de manera remota o virtual a recursos de infraestructura de computación robusta tipo LaaS"
+                Width: =176
+                X: =912
+                Y: =217
+                ZIndex: =25
+
+            Button1_1 As button:
+                Color: =RGBA(26, 58, 110, 1)
+                Fill: =RGBA(200, 184, 122, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =31
+                OnSelect: =NewForm(Form4)
+                Text: ="SOLICITUDES  →"
+                Width: =224
+                X: =561
+                Y: =363
+                ZIndex: =26
+
+            RectStepsContainer_1 As rectangle:
+                BorderColor: =RGBA(226, 221, 212, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =138
+                Width: =1246
+                X: =60
+                Y: =425
+                ZIndex: =27
+
+            RectStepDiv1_1 As rectangle:
+                Fill: =RGBA(226, 221, 212, 1)
+                Height: =60
+                Width: =1
+                X: =396
+                Y: =453
+                ZIndex: =28
+
+            RectStepDiv2_1 As rectangle:
+                Fill: =RGBA(226, 221, 212, 1)
+                Height: =60
+                Width: =1
+                X: =706
+                Y: =453
+                ZIndex: =29
+
+            RectStepDiv3_1 As rectangle:
+                Fill: =RGBA(226, 221, 212, 1)
+                Height: =60
+                Width: =1
+                X: =1016
+                Y: =453
+                ZIndex: =30
+
+            Image1_2 As image:
+                Height: =93
+                Image: ='agregarPerfil(1)'
+                Width: =83
+                X: =725
+                Y: =447
+                ZIndex: =31
+
+            LblCardInqDesc_2 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =95
+                Text: |-
+                    ="Concepto técnico
+                    "
+                Width: =176
+                X: =200
+                Y: =447
+                ZIndex: =32
+
+            Image1_1 As image:
+                Height: =93
+                Image: ='outlook(1)'
+                Width: =88
+                X: =426
+                Y: =447
+                ZIndex: =33
+
+            Image1_3 As image:
+                Height: =111
+                Image: ='software (1)'
+                Width: =108
+                X: =1023
+                Y: =439
+                ZIndex: =34
+
+            Image1_4 As image:
+                Height: =101
+                Image: ='software(2)'
+                Width: =120
+                X: =80
+                Y: =439
+                ZIndex: =35
+
+            LblCardInqDesc_3 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =95
+                Text: |-
+                    ="Cuentas y listas
+                    (correos y usuarios)"
+                Width: =191
+                X: =515
+                Y: =447
+                ZIndex: =78
+
+            LblCardInqDesc_4 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =95
+                Text: ="Usuarios externos"
+                Width: =176
+                X: =827
+                Y: =447
+                ZIndex: =79
+
+            LblCardInqDesc_5 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =95
+                Text: ="Instalación de Software"
+                Width: =176
+                X: =1131
+                Y: =447
+                ZIndex: =80
+
+        DataCard7 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =130
+            Width: =1366
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            RectStepsContainer_3 As rectangle:
+                BorderColor: =RGBA(226, 221, 212, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =125
+                Width: =1246
+                X: =58
+                ZIndex: =1
+
+            Image1_8 As image:
+                Height: =109
+                Image: ='zoom(1)'
+                Width: =134
+                X: =1036
+                Y: =14
+                ZIndex: =2
+
+            Image1_5 As image:
+                Height: =160
+                Image: ='llaveUser(1)'
+                Width: =187
+                X: =37
+                ZIndex: =3
+
+            Image1_6 As image:
+                Height: =109
+                Image: ='ServiNube(1)'
+                Width: =134
+                X: =415
+                Y: =14
+                ZIndex: =4
+
+            LblCardInqDesc_6 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =95
+                Text: ="Permisos"
+                Width: =214
+                X: =171
+                Y: =21
+                ZIndex: =5
+
+            RectStepDiv1_2 As rectangle:
+                Fill: =RGBA(226, 221, 212, 1)
+                Height: =60
+                Width: =1
+                X: =399
+                Y: =26
+                ZIndex: =6
+
+            RectStepDiv2_2 As rectangle:
+                Fill: =RGBA(226, 221, 212, 1)
+                Height: =60
+                Width: =1
+                X: =709
+                Y: =26
+                ZIndex: =7
+
+            RectStepDiv3_2 As rectangle:
+                Fill: =RGBA(226, 221, 212, 1)
+                Height: =60
+                Width: =1
+                X: =1019
+                Y: =26
+                ZIndex: =8
+
+            Image1_7 As image:
+                Height: =90
+                Image: ='vpn(1)'
+                Width: =124
+                X: =710
+                Y: =26
+                ZIndex: =9
+
+            LblCardInqDesc_8 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =95
+                Text: ="Usuario VPN"
+                Width: =161
+                X: =844
+                Y: =21
+                ZIndex: =10
+
+            LblCardInqDesc_9 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =95
+                Text: ="Autoservicio Zoom"
+                Width: =163
+                X: =1141
+                Y: =21
+                ZIndex: =11
+
+            LblCardInqDesc_7 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =95
+                Text: |-
+                    ="Servidor Nube Javeriana
+                    "
+                Width: =176
+                X: =521
+                Y: =21
+                ZIndex: =12
+
+            RectDivDiamond_2 As rectangle:
+                Fill: =RGBA(200, 184, 122, 1)
+                Height: =12
+                Width: =12
+                X: =672
+                Y: =133
+                ZIndex: =13
+
+            RectNavBorder_3 As rectangle:
+                Fill: =RGBA(200, 184, 122, 1)
+                Height: =3
+                Width: =625
+                X: =697
+                Y: =139
+                ZIndex: =14
+
+            RectNavBorder_4 As rectangle:
+                Fill: =RGBA(200, 184, 122, 1)
+                Height: =3
+                Width: =625
+                X: =30
+                Y: =139
+                ZIndex: =15
+
+        DataCard1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1014
+            Width: =1366
+            X: =0
+            Y: =2
+            ZIndex: =3
+
+            Button1 As button:
+                Fill: =RGBA(26, 58, 110, 0.9)
+                Height: =165
+                Text: |-
+                    ="
+                    "
+                Width: =754
+                X: =41
+                Y: =18
+                ZIndex: =1
+
+            RectCardInq_2 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =147
+                Width: =200
+                X: =55
+                Y: =26
+                ZIndex: =2
+
+            RectCardInqTop_2 As rectangle:
+                Fill: =RGBA(127, 178, 57, 1)
+                Height: =3
+                Width: =200
+                X: =55
+                Y: =26
+                ZIndex: =3
+
+            LblCardInqTitle_2 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Text: ="Auto - Zoom"
+                Width: =131
+                X: =89
+                Y: =40
+                ZIndex: =4
+
+            Button1_2 As button:
+                Fill: =RGBA(26, 58, 110, 0.9)
+                Height: =166
+                Text: |-
+                    ="
+                    "
+                Width: =488
+                X: =828
+                Y: =17
+                ZIndex: =5
+
+            RectCardInq_3 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =148
+                Width: =200
+                X: =847
+                Y: =25
+                ZIndex: =6
+
+            RectCardInqTop_3 As rectangle:
+                Fill: =RGBA(127, 178, 57, 1)
+                Height: =3
+                Width: =200
+                X: =847
+                Y: =25
+                ZIndex: =7
+
+            Image1_9 As image:
+                Height: =109
+                Image: ='Gemini_Zoom(1)'
+                Width: =134
+                X: =80
+                Y: =68
+                ZIndex: =8
+
+            LblCardInqTitle_5 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =45
+                Size: =14
+                Text: |-
+                    ="Solicitud Software y Hardware
+                    "
+                Width: =258
+                X: =1065
+                Y: =29
+                ZIndex: =9
+
+            LblCardInqDesc_13 As label:
+                Align: =Align.Justify
+                Color: =RGBA(180, 210, 245, 1)
+                Font: =Font.Georgia
+                Height: =74
+                Size: =12
+                Text: |-
+                    ="Solicitud para compra o renovación de servicios de software y equipos de hardware. 
+                    "
+                Width: =240
+                X: =1065
+                Y: =75
+                ZIndex: =10
+
+            LblCardInqTitle_3 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =50
+                Text: |-
+                    ="Conceptos Técnicos DTI
+                    "
+                Width: =172
+                X: =861
+                Y: =29
+                ZIndex: =11
+
+            LblCardInqTitle_4 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: |-
+                    ="Agenda y gestiona tus reuniones
+                    "
+                Width: =355
+                X: =270
+                Y: =18
+                ZIndex: =12
+
+            LblCardInqDesc_12 As label:
+                Align: =Align.Justify
+                Color: =RGBA(180, 210, 245, 1)
+                Font: =Font.Georgia
+                Height: =121
+                Size: =12
+                Text: |-
+                    ="Crea, edita, elimina y gestiona tus reuniones de forma rápida y sencilla.
+                    Este autoservicio es un espacio compartido. Otros usuarios también festionar sus propias reuniones. Teniendo eso en cuenta, respeta siempre las franjas horarias asignadas a cada persona."
+                Width: =496
+                X: =270
+                Y: =52
+                ZIndex: =13
+
+            Image1_10 As image:
+                Height: =109
+                Image: ='Gemini_portatil(1)'
+                Width: =134
+                X: =880
+                Y: =70
+                ZIndex: =14
+
+            Button1_3 As button:
+                Fill: =RGBA(26, 58, 110, 0.9)
+                Height: =184
+                Text: |-
+                    ="
+                    "
+                Width: =1122
+                X: =135
+                Y: =210
+                ZIndex: =15
+
+            RectCardInq_4 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =163
+                Width: =296
+                X: =157
+                Y: =218
+                ZIndex: =16
+
+            RectCardInqTop_4 As rectangle:
+                Fill: =RGBA(127, 178, 57, 1)
+                Height: =3
+                Width: =296
+                X: =157
+                Y: =218
+                ZIndex: =17
+
+            LblCardInqTitle_6 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =26
+                Size: =15
+                Text: |-
+                    ="Instalación de Software
+                    "
+                Width: =261
+                X: =174
+                Y: =226
+                ZIndex: =18
+
+            Image1_11 As image:
+                Height: =162
+                Image: ='pc(1)'
+                Width: =229
+                X: =190
+                Y: =218
+                ZIndex: =19
+
+            LblCardInqTitle_7 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =41
+                Size: =16
+                Text: ="Solicitud para instalación de Software en equipos de computo"
+                Width: =701
+                X: =466
+                Y: =210
+                ZIndex: =20
+
+            LblCardInqDesc_14 As label:
+                Align: =Align.Justify
+                Color: =RGBA(180, 210, 245, 1)
+                Font: =Font.Georgia
+                Height: =121
+                Size: =14
+                Text: ="Puedes realizar solicitudes para la instalación de software en equipos de cómputo, salas y salones de clase. Recibirás una notificación dando el resumen o proceso para los software solicitados, donde internamente, si corresponde, se validará la disponibilidad de acuerdos de licenciamiento o restricciones de seguridad y si es viable la instalación se informará a la DTI para que puedas a agendar la instalación."
+                Width: =753
+                X: =466
+                Y: =251
+                ZIndex: =21
+
+            Button1_4 As button:
+                Fill: =RGBA(26, 58, 110, 0.9)
+                Height: =184
+                Text: |-
+                    ="
+                    "
+                Width: =545
+                X: =136
+                Y: =416
+                ZIndex: =22
+
+            RectCardInq_5 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =164
+                Width: =217
+                X: =155
+                Y: =424
+                ZIndex: =23
+
+            RectCardInqTop_5 As rectangle:
+                Fill: =RGBA(127, 178, 57, 1)
+                Height: =3
+                Width: =218
+                X: =155
+                Y: =424
+                ZIndex: =24
+
+            LblCardInqTitle_8 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =46
+                Size: =14
+                Text: |-
+                    ="Creación de Cuentas y Listas 
+                    "
+                Width: =290
+                X: =388
+                Y: =428
+                ZIndex: =25
+
+            LblCardInqDesc_15 As label:
+                Align: =Align.Justify
+                Color: =RGBA(180, 210, 245, 1)
+                Font: =Font.Georgia
+                Height: =82
+                Size: =12
+                Text: ="Permite solicitar la creación de buzones de correo de uso compartido o genérico, calendarios y listas de correo institucionales."
+                Width: =269
+                X: =388
+                Y: =474
+                ZIndex: =26
+
+            LblCardInqTitle_9 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =55
+                Size: =15
+                Text: |-
+                    ="Correo y usuarios
+                    "
+                Width: =203
+                X: =169
+                Y: =428
+                ZIndex: =27
+
+            Image1_12 As image:
+                Height: =138
+                Image: ='outlook(3)'
+                Width: =177
+                X: =182
+                Y: =460
+                ZIndex: =28
+
+            Button1_5 As button:
+                Fill: =RGBA(26, 58, 110, 0.9)
+                Height: =184
+                Text: |-
+                    ="
+                    "
+                Width: =545
+                X: =707
+                Y: =416
+                ZIndex: =29
+
+            RectCardInq_6 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =164
+                Width: =227
+                X: =726
+                Y: =424
+                ZIndex: =30
+
+            RectCardInqTop_6 As rectangle:
+                Fill: =RGBA(127, 178, 57, 1)
+                Height: =3
+                Width: =227
+                X: =726
+                Y: =424
+                ZIndex: =31
+
+            LblCardInqTitle_10 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =49
+                Size: =14
+                Text: ="Creación o renovación de Usuarios Externos"
+                Width: =293
+                X: =964
+                Y: =429
+                ZIndex: =32
+
+            LblCardInqDesc_16 As label:
+                Align: =Align.Justify
+                Color: =RGBA(180, 210, 245, 1)
+                Font: =Font.Georgia
+                Height: =82
+                Size: =12
+                Text: ="Permite la creación o renovación de cuentas institucionales para personal externo."
+                Width: =273
+                X: =964
+                Y: =474
+                ZIndex: =33
+
+            LblCardInqTitle_11 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =55
+                Size: =15
+                Text: |-
+                    ="Correo y usuarios
+                    "
+                Width: =195
+                X: =740
+                Y: =428
+                ZIndex: =34
+
+            Image1_13 As image:
+                Height: =108
+                Image: ='agregarPerfil(3)'
+                Width: =139
+                X: =773
+                Y: =475
+                ZIndex: =35
+
+            Button1_6 As button:
+                Fill: =RGBA(26, 58, 110, 0.9)
+                Height: =184
+                Text: |-
+                    ="
+                    "
+                Width: =1122
+                X: =135
+                Y: =621
+                ZIndex: =36
+
+            RectCardInq_7 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =163
+                Width: =296
+                X: =157
+                Y: =629
+                ZIndex: =37
+
+            RectCardInqTop_7 As rectangle:
+                Fill: =RGBA(127, 178, 57, 1)
+                Height: =3
+                Width: =296
+                X: =157
+                Y: =629
+                ZIndex: =38
+
+            Image1_14 As image:
+                Height: =162
+                Image: =NubeNe
+                Width: =229
+                X: =190
+                Y: =629
+                ZIndex: =39
+
+            LblCardInqTitle_12 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =25
+                Size: =15
+                Text: ="Nube Javeriana"
+                Width: =172
+                X: =219
+                Y: =637
+                ZIndex: =40
+
+            LblCardInqTitle_13 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =41
+                Size: =16
+                Text: |-
+                    ="Solicitud de cuota en nube Javeriana
+                    "
+                Width: =701
+                X: =466
+                Y: =621
+                ZIndex: =41
+
+            LblCardInqDesc_17 As label:
+                Align: =Align.Justify
+                Color: =RGBA(180, 210, 245, 1)
+                Font: =Font.Georgia
+                Height: =142
+                Size: =14
+                Text: |-
+                    ="Este servicio ofrece a los profesores el acceso de manera remota o virtual a recursos de infraestructura de computación robusta tipo LaaS para el desarrollo de actividades académicas y de investigación.
+                    Estas capacidades de cómputo están orientadas al desarrollo de actividades específicas y especializadas de clase, la realización de laboratorios y para soportar la ejecución de proyectos de investigación."
+                Width: =771
+                X: =466
+                Y: =658
+                ZIndex: =42
+
+            Button1_7 As button:
+                Fill: =RGBA(26, 58, 110, 0.9)
+                Height: =165
+                Text: |-
+                    ="
+                    "
+                Width: =754
+                X: =41
+                Y: =834
+                ZIndex: =43
+
+            RectCardInq_8 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =147
+                Width: =200
+                X: =55
+                Y: =842
+                ZIndex: =44
+
+            RectCardInqTop_8 As rectangle:
+                Fill: =RGBA(127, 178, 57, 1)
+                Height: =3
+                Width: =200
+                X: =55
+                Y: =842
+                ZIndex: =45
+
+            Button1_8 As button:
+                Fill: =RGBA(26, 58, 110, 0.9)
+                Height: =166
+                Text: |-
+                    ="
+                    "
+                Width: =488
+                X: =828
+                Y: =833
+                ZIndex: =46
+
+            RectCardInq_9 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 0.25)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 0.09)
+                Height: =148
+                Width: =200
+                X: =847
+                Y: =841
+                ZIndex: =47
+
+            RectCardInqTop_9 As rectangle:
+                Fill: =RGBA(127, 178, 57, 1)
+                Height: =3
+                Width: =200
+                X: =847
+                Y: =841
+                ZIndex: =48
+
+            LblCardInqTitle_14 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: |-
+                    ="Permisos
+                    "
+                Width: =125
+                X: =95
+                Y: =856
+                ZIndex: =49
+
+            Image1_15 As image:
+                Height: =158
+                Image: ='llaveUser(1)_1'
+                Width: =194
+                X: =50
+                Y: =856
+                ZIndex: =50
+
+            LblCardInqTitle_15 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =45
+                Size: =14
+                Text: ="Solicitud acceso VPN para empleados"
+                Width: =258
+                X: =1065
+                Y: =845
+                ZIndex: =51
+
+            LblCardInqTitle_16 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =50
+                Text: ="Usuario VPN"
+                Width: =172
+                X: =861
+                Y: =845
+                ZIndex: =52
+
+            LblCardInqTitle_17 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =50
+                Size: =14
+                Text: ="Permisos para el Sistema de Información Universitario (PeopleSoft)"
+                Width: =456
+                X: =270
+                Y: =834
+                ZIndex: =53
+
+            LblCardInqDesc_19 As label:
+                Align: =Align.Justify
+                Color: =RGBA(180, 210, 245, 1)
+                Font: =Font.Georgia
+                Height: =121
+                Size: =12
+                Text: ="Se puede solicitar permisos del módulo de compras de bienes y servicios (PO), Control de Compromisos y Presupuesto (KK), Módulo de Recursos Humanos (RH), Admisiones y Registro Académico, Finanzas Estudiantiles, Cuentas por pagar y Gastos de viaje."
+                Width: =496
+                X: =270
+                Y: =878
+                ZIndex: =54
+
+            Image1_16 As image:
+                Height: =117
+                Image: ='vpn (5)'
+                Width: =153
+                X: =870
+                Y: =880
+                ZIndex: =55
+
+            LblCardInqDesc_18 As label:
+                Align: =Align.Justify
+                Color: =RGBA(180, 210, 245, 1)
+                Font: =Font.Georgia
+                Height: =108
+                Size: =12
+                Text: ="La VPN universitaria permite acceder de forma remota y segura a los recursos y servicios exclusivos de la red interna de la institución a través de internet."
+                Width: =240
+                X: =1065
+                Y: =891
+                ZIndex: =56
+
+        DataCard2 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =58
+            Width: =1366
+            X: =0
+            Y: =3
+            ZIndex: =4
+
+            RectFooter_1 As rectangle:
+                Fill: =RGBA(26, 58, 110, 1)
+                Height: =36
+                Width: =1366
+                Y: =64
+                ZIndex: =81
+
+            RectFooterBorder_1 As rectangle:
+                Fill: =RGBA(200, 184, 122, 1)
+                Height: =3
+                Width: =1366
+                Y: =61
+                ZIndex: =82
+
+            LblFooter_1 As label:
+                Color: =RGBA(200, 184, 122, 0.7)
+                Height: =21
+                Size: =9
+                Text: |-
+                    ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                Width: =853
+                Y: =71
+                ZIndex: =83
+
+            LblFooterRight_1 As label:
+                Align: =Align.Right
+                Color: =RGBA(200, 184, 122, 0.7)
+                Height: =36
+                Size: =9
+                Text: ="Soporte técnico · Política de privacidad"
+                Width: =280
+                X: =1058
+                Y: =64
+                ZIndex: =84
+
+    Rectangle1_1 As rectangle:
+        Fill: =RGBA(26, 58, 110, 1)
+        Height: =36
+        Width: =1366
+        ZIndex: =3
+
+    LblTopLeft_1 As label:
+        Color: =RGBA(200, 184, 122, 1)
+        Height: =36
+        Size: =9
+        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE INFORMACIÓN ACADÉMICA"
+        Width: =600
+        X: =28
+        ZIndex: =4
+
+    LblTopRight_1 As label:
+        Align: =Align.Right
+        Color: =RGBA(200, 184, 122, 0.7)
+        Height: =36
+        Size: =9
+        Text: ="Bogotá D.C., Colombia · 2026"
+        Width: =300
+        X: =1038
+        ZIndex: =5
+
+    RectNavbar_1 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =64
+        Width: =1366
+        Y: =36
+        ZIndex: =6
+
+    RectNavBorder_1 As rectangle:
+        Fill: =RGBA(200, 184, 122, 1)
+        Height: =3
+        Width: =1366
+        Y: =97
+        ZIndex: =7
+
+    RectLogo_1 As rectangle:
+        Fill: =RGBA(26, 58, 110, 1)
+        Height: =44
+        Width: =44
+        X: =28
+        Y: =46
+        ZIndex: =8
+
+    LblLogoText_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(200, 184, 122, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =44
+        Text: ="PUJ"
+        Width: =44
+        X: =28
+        Y: =46
+        ZIndex: =9
+
+    LblBrandTitle_1 As label:
+        Color: =RGBA(26, 58, 110, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =24
+        Size: =12
+        Text: ="Pontificia Universidad Javeriana"
+        Width: =320
+        X: =82
+        Y: =46
+        ZIndex: =10
+
+    LblBrandSub_1 As label:
+        Color: =RGBA(154, 171, 191, 1)
+        Height: =20
+        Size: =9
+        Text: ="Solicitud de servicio de DTI"
+        Width: =200
+        X: =82
+        Y: =68
+        ZIndex: =11
+
+    RectNavActive_1 As rectangle:
+        Fill: =RGBA(200, 184, 122, 1)
+        Height: =2
+        Width: =90
+        X: =820
+        Y: =95
+        ZIndex: =13
+
+    LblNavBienestar_1 As label:
+        Color: =RGBA(100, 120, 150, 1)
+        Height: =36
+        Size: =10
+        Text: ="Salir"
+        Width: =51
+        X: =1050
+        Y: =46
+        ZIndex: =15
+
+    Button2_2 As button:
+        Color: =RGBA(100, 120, 150, 1)
+        DisabledColor: =RGBA(100, 120, 150, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =28
+        HoverColor: =RGBA(0, 18, 107, 1)
+        HoverFill: =
+        OnSelect: =Navigate(misSolicitudes)
+        PressedFill: =
+        Size: =10
+        Text: ="Mis solicitudes"
+        Width: =125
+        X: =910
+        Y: =50
+        ZIndex: =17
+
+    LblNavBienestar_3 As label:
+        Color: =RGBA(26, 58, 110, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =36
+        Size: =10
+        Text: ="Servicios"
+        Width: =71
+        X: =829
+        Y: =46
+        ZIndex: =18
+

@@ -1,0 +1,389 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  misSolicitudes:
+    Properties:
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+    Children:
+      - Canvas1:
+          Control: FluidGrid@2.3.0
+          Properties:
+            BorderThickness: =0
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            Y: =100
+          Children:
+            - DataCard4:
+                Control: DataCard@1.0.2
+                Variant: BlankCard
+                Properties:
+                  Width: =1366
+                  X: =0
+                  Y: =0
+                Children:
+                  - RectFilterBg:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(245, 245, 247, 1)
+                        Height: =120
+                        Width: =1326
+                        X: =20
+                        Y: =20
+                  - RectFilterHeader:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(26, 58, 110, 1)
+                        Height: =40
+                        Width: =1326
+                        X: =20
+                        Y: =20
+                  - LblFilterTitle:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Text: ="  Filtros de Búsqueda"
+                        Width: =1326
+                        X: =20
+                        Y: =20
+                  - CmbCategoria:
+                      Control: Classic/ComboBox@2.4.0
+                      Properties:
+                        BorderColor: =RGBA(26, 58, 110, 1)
+                        BorderThickness: =1
+                        ChevronBackground: =RGBA(56, 96, 178, 1)
+                        ChevronFill: =RGBA(255, 255, 255, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        DisplayMode: =%DisplayMode.RESERVED%.Edit
+                        Font: =Font.'Open Sans'
+                        Height: =36
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        InputTextPlaceholder: ="Seleccione una categoria"
+                        Items: =["Incidente", "Requerimiento", "Mejora", "Consulta"]
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(0, 18, 107, 1)
+                        SelectionColor: =RGBA(255, 255, 255, 1)
+                        SelectionFill: =RGBA(56, 96, 178, 1)
+                        Width: =280
+                        X: =40
+                        Y: =80
+                  - TxtIdCaso:
+                      Control: Classic/TextInput@2.3.2
+                      Properties:
+                        BorderColor: =RGBA(26, 58, 110, 1)
+                        BorderThickness: =1
+                        DisplayMode: =%DisplayMode.RESERVED%.Edit
+                        Font: =Font.'Open Sans'
+                        Format: =%TextFormat.RESERVED%.Text
+                        Height: =36
+                        HintText: ="Id caso"
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        Mode: =%TextMode.RESERVED%.SingleLine
+                        VirtualKeyboardMode: =%VirtualKeyboardMode.RESERVED%.Auto
+                        Width: =120
+                        X: =340
+                        Y: =80
+                  - TxtNumCaso:
+                      Control: Classic/TextInput@2.3.2
+                      Properties:
+                        BorderColor: =RGBA(26, 58, 110, 1)
+                        BorderThickness: =1
+                        DisplayMode: =%DisplayMode.RESERVED%.Edit
+                        Font: =Font.'Open Sans'
+                        Format: =%TextFormat.RESERVED%.Text
+                        Height: =36
+                        HintText: ="N° Caso"
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        Mode: =%TextMode.RESERVED%.SingleLine
+                        VirtualKeyboardMode: =%VirtualKeyboardMode.RESERVED%.Auto
+                        Width: =140
+                        X: =480
+                        Y: =80
+                  - LblDesde:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(26, 58, 110, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =36
+                        Text: ="Desde:"
+                        Width: =60
+                        X: =640
+                        Y: =80
+                  - DtDesde:
+                      Control: Classic/DatePicker@2.6.0
+                      Properties:
+                        BorderColor: =RGBA(26, 58, 110, 1)
+                        BorderThickness: =1
+                        DateTimeZone: =%DateTimeZone.RESERVED%.Local
+                        DisplayMode: =%DisplayMode.RESERVED%.Edit
+                        Font: =Font.'Open Sans'
+                        Format: =%DateTimeFormat.RESERVED%.ShortDate
+                        Height: =36
+                        IconBackground: =RGBA(56, 96, 178, 1)
+                        IconFill: =RGBA(255, 255, 255, 1)
+                        StartOfWeek: =%StartOfWeek.RESERVED%.Sunday
+                        Width: =160
+                        X: =700
+                        Y: =80
+                  - LblHasta:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(26, 58, 110, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =36
+                        Text: ="Hasta:"
+                        Width: =60
+                        X: =880
+                        Y: =80
+                  - DtHasta:
+                      Control: Classic/DatePicker@2.6.0
+                      Properties:
+                        BorderColor: =RGBA(26, 58, 110, 1)
+                        BorderThickness: =1
+                        DateTimeZone: =%DateTimeZone.RESERVED%.Local
+                        DisplayMode: =%DisplayMode.RESERVED%.Edit
+                        Font: =Font.'Open Sans'
+                        Format: =%DateTimeFormat.RESERVED%.ShortDate
+                        Height: =36
+                        IconBackground: =RGBA(56, 96, 178, 1)
+                        IconFill: =RGBA(255, 255, 255, 1)
+                        StartOfWeek: =%StartOfWeek.RESERVED%.Sunday
+                        Width: =160
+                        X: =940
+                        Y: =80
+                  - BtnFiltrar:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        Color: =RGBA(26, 58, 110, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(200, 184, 122, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =36
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =Self.Color
+                        Text: ="Filtrar"
+                        Width: =100
+                        X: =1120
+                        Y: =80
+                  - LblNumRegistros:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(26, 58, 110, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =36
+                        Text: |-
+                          ="Numero de Registros: 0"
+                        Width: =200
+                        X: =40
+                        Y: =145
+            - DataCardFooter:
+                Control: DataCard@1.0.2
+                Variant: BlankCard
+                Properties:
+                  Fill: =RGBA(26, 58, 110, 1)
+                  Height: =50
+                  Width: =1366
+                  X: =0
+                  Y: =0
+                Children:
+                  - LblFooter_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(200, 184, 122, 0.7)
+                        Font: =Font.'Open Sans'
+                        Height: =21
+                        Size: =9
+                        Text: |-
+                          ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                        Width: =853
+                        X: =20
+                        Y: =20
+                  - LblFooterRight_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Right
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(200, 184, 122, 0.7)
+                        Font: =Font.'Open Sans'
+                        Height: =36
+                        Size: =9
+                        Text: ="Soporte técnico · Política de privacidad"
+                        Width: =280
+                        X: =1058
+                        Y: =12
+      - Rectangle1_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(26, 58, 110, 1)
+            Height: =36
+            Width: =1366
+      - LblTopLeft_2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(200, 184, 122, 1)
+            Font: =Font.'Open Sans'
+            Height: =36
+            Size: =9
+            Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE INFORMACIÓN ACADÉMICA"
+            Width: =600
+            X: =28
+      - LblTopRight_2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(200, 184, 122, 0.7)
+            Font: =Font.'Open Sans'
+            Height: =36
+            Size: =9
+            Text: ="Bogotá D.C., Colombia · 2026"
+            Width: =300
+            X: =1038
+      - RectNavbar_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =64
+            Width: =1366
+            Y: =36
+      - RectNavBorder_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(200, 184, 122, 1)
+            Height: =3
+            Width: =1366
+            Y: =97
+      - RectLogo_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(26, 58, 110, 1)
+            Height: =44
+            Width: =44
+            X: =28
+            Y: =46
+      - LblLogoText_2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(200, 184, 122, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =44
+            Text: ="PUJ"
+            Width: =44
+            X: =28
+            Y: =46
+      - LblBrandTitle_2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(26, 58, 110, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Size: =12
+            Text: ="Pontificia Universidad Javeriana"
+            Width: =320
+            X: =82
+            Y: =46
+      - LblBrandSub_2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(154, 171, 191, 1)
+            Font: =Font.'Open Sans'
+            Height: =20
+            Size: =9
+            Text: ="Solicitud de servicio de DTI"
+            Width: =200
+            X: =82
+            Y: =68
+      - RectNavActive_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(200, 184, 122, 1)
+            Height: =2
+            Width: =110
+            X: =930
+            Y: =95
+      - LblNavAcademico_2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(26, 58, 110, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =10
+            Text: ="Mis Solicitudes"
+            Width: =110
+            X: =930
+            Y: =46
+      - LblNavBienestar_2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(100, 120, 150, 1)
+            Font: =Font.'Open Sans'
+            Height: =36
+            Size: =10
+            Text: ="Salir"
+            Width: =51
+            X: =1050
+            Y: =46
+      - Button2_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            AutoDisableOnSelect: =false
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(100, 120, 150, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(100, 120, 150, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =28
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 18, 107, 1)
+            HoverFill: =
+            OnSelect: =Navigate(introduccion)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Size: =10
+            Text: ="Servicios"
+            Width: =125
+            X: =802
+            Y: =50
