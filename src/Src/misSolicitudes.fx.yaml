@@ -13,163 +13,153 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =200
+            Height: =669
             Width: =1366
             X: =0
             Y: =0
             ZIndex: =1
 
             RectFilterBg As rectangle:
-                Fill: =RGBA(245, 245, 247, 1)
-                Height: =120
+                Fill: =RGBA(248, 250, 252, 1)
+                Height: =84
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
                 Width: =1326
                 X: =20
                 Y: =20
                 ZIndex: =1
 
-            RectFilterHeader As rectangle:
-                Fill: =RGBA(26, 58, 110, 1)
-                Height: =40
-                Width: =1326
-                X: =20
-                Y: =20
+            TxtBuscar As text:
+                BorderColor: =RGBA(226, 232, 240, 1)
+                BorderThickness: =1
+                Height: =44
+                HintText: ="Buscar por id o asunto..."
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =280
+                X: =40
+                Y: =40
                 ZIndex: =2
-
-            LblFilterTitle As label:
-                Color: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="  Filtros de Búsqueda"
-                Width: =1326
-                X: =20
-                Y: =20
-                ZIndex: =3
 
             CmbCategoria As combobox:
-                BorderColor: =RGBA(26, 58, 110, 1)
+                BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
-                Height: =36
-                InputTextPlaceholder: ="Seleccione una categoria"
+                Height: =44
+                InputTextPlaceholder: ="Categoría"
                 Items: =["Incidente", "Requerimiento", "Mejora", "Consulta"]
-                Width: =280
-                X: =40
-                Y: =80
-                ZIndex: =4
-
-            TxtIdCaso As text:
-                BorderColor: =RGBA(26, 58, 110, 1)
-                BorderThickness: =1
-                Height: =36
-                HintText: ="Id caso"
-                Width: =120
+                Width: =180
                 X: =340
-                Y: =80
-                ZIndex: =5
-
-            TxtNumCaso As text:
-                BorderColor: =RGBA(26, 58, 110, 1)
-                BorderThickness: =1
-                Height: =36
-                HintText: ="N° Caso"
-                Width: =140
-                X: =480
-                Y: =80
-                ZIndex: =6
-
-            LblDesde As label:
-                Color: =RGBA(26, 58, 110, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =36
-                Text: |-
-                    ="Desde:"
-                Width: =60
-                X: =640
-                Y: =80
-                ZIndex: =7
+                Y: =40
+                ZIndex: =3
 
             DtDesde As datepicker:
-                BorderColor: =RGBA(26, 58, 110, 1)
+                BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
-                Height: =36
+                Height: =44
+                InputTextPlaceholder: ="Desde"
                 Width: =160
-                X: =700
-                Y: =80
-                ZIndex: =8
-
-            LblHasta As label:
-                Color: =RGBA(26, 58, 110, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =36
-                Text: |-
-                    ="Hasta:"
-                Width: =60
-                X: =880
-                Y: =80
-                ZIndex: =9
+                X: =540
+                Y: =40
+                ZIndex: =4
 
             DtHasta As datepicker:
-                BorderColor: =RGBA(26, 58, 110, 1)
+                BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
-                Height: =36
+                Height: =44
+                InputTextPlaceholder: ="Hasta"
                 Width: =160
-                X: =940
-                Y: =80
-                ZIndex: =10
+                X: =720
+                Y: =40
+                ZIndex: =5
 
             BtnFiltrar As button:
-                Color: =RGBA(26, 58, 110, 1)
-                Fill: =RGBA(200, 184, 122, 1)
+                BorderColor: =RGBA(26, 58, 110, 1)
+                Fill: =RGBA(26, 58, 110, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =36
+                Height: =44
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
                 Text: ="Filtrar"
-                Width: =100
-                X: =1120
-                Y: =80
+                Width: =120
+                X: =900
+                Y: =40
+                ZIndex: =6
+
+            BtnFiltrar_1 As button:
+                BorderColor: =RGBA(26, 58, 110, 1)
+                BorderThickness: =1
+                Color: =RGBA(26, 58, 110, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =44
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Text: ="Limpiar"
+                Width: =120
+                X: =1040
+                Y: =40
+                ZIndex: =7
+
+            LblHeadEstado As label:
+                Color: =RGBA(148, 163, 184, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =10
+                Text: ="ESTADO"
+                X: =60
+                Y: =130
+                ZIndex: =8
+
+            LblHeadCategoria As label:
+                Color: =RGBA(148, 163, 184, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =10
+                Text: ="CATEGORÍA"
+                X: =200
+                Y: =130
+                ZIndex: =9
+
+            LblHeadInfo As label:
+                Color: =RGBA(148, 163, 184, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =10
+                Text: ="INFORMACIÓN DEL CASO"
+                Width: =460
+                X: =360
+                Y: =130
+                ZIndex: =10
+
+            LblHeadFecha As label:
+                Color: =RGBA(148, 163, 184, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =10
+                Text: ="FECHA REGISTRO"
+                X: =840
+                Y: =130
                 ZIndex: =11
 
-            LblNumRegistros As label:
-                Color: =RGBA(26, 58, 110, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =36
-                Text: |-
-                    ="Numero de Registros: 0"
-                Width: =200
-                X: =40
-                Y: =145
+            LblHeadAccion As label:
+                Align: =Align.Center
+                Color: =RGBA(148, 163, 184, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =10
+                Text: ="ACCIÓN"
+                Width: =140
+                X: =1080
+                Y: =130
                 ZIndex: =12
-
-        DataCardFooter As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(26, 58, 110, 1)
-            Height: =50
-            Width: =1366
-            X: =0
-            Y: =0
-            ZIndex: =2
-
-            LblFooter_2 As label:
-                Color: =RGBA(200, 184, 122, 0.7)
-                Height: =21
-                Size: =9
-                Text: |-
-                    ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
-                Width: =853
-                X: =20
-                Y: =20
-                ZIndex: =1
-
-            LblFooterRight_2 As label:
-                Align: =Align.Right
-                Color: =RGBA(200, 184, 122, 0.7)
-                Height: =36
-                Size: =9
-                Text: ="Soporte técnico · Política de privacidad"
-                Width: =280
-                X: =1058
-                Y: =12
-                ZIndex: =2
 
     Rectangle1_2 As rectangle:
         Fill: =RGBA(26, 58, 110, 1)
