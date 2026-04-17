@@ -36,8 +36,8 @@
                 RadiusBottomRight: =8
                 RadiusTopLeft: =8
                 RadiusTopRight: =8
-                Width: =140
-                X: =40
+                Width: =100
+                X: =30
                 Y: =40
                 ZIndex: =2
 
@@ -50,10 +50,24 @@
                 RadiusBottomRight: =8
                 RadiusTopLeft: =8
                 RadiusTopRight: =8
-                Width: =140
-                X: =200
+                Width: =100
+                X: =140
                 Y: =40
                 ZIndex: =3
+
+            TxtUsuarios As text:
+                BorderColor: =RGBA(226, 232, 240, 1)
+                BorderThickness: =1
+                Height: =44
+                HintText: ="Usuarios"
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =130
+                X: =250
+                Y: =40
+                ZIndex: =4
 
             CmbCategoria As combobox:
                 BorderColor: =RGBA(226, 232, 240, 1)
@@ -61,6 +75,7 @@
                 DisplayFields: =["Value"]
                 Height: =44
                 InputTextPlaceholder: ="Categoría"
+                IsSearchable: =false
                 Items: |-
                     =Table(
                         {Value: "Cuentas & Listas"},
@@ -73,30 +88,58 @@
                     )
                 SearchFields: =["Value"]
                 SearchItems: =Search(["Cuentas & Listas","Usuarios Externos","Permisos","Nube Javeriana","Conceptos","Usuario VPN","NAS Javeriana"],CmbCategoria.SearchText,Value)
-                Width: =200
-                X: =360
+                SelectMultiple: =false
+                Width: =160
+                X: =390
                 Y: =40
-                ZIndex: =4
+                ZIndex: =5
+
+            CmbSubcategoria As combobox:
+                BorderColor: =RGBA(226, 232, 240, 1)
+                BorderThickness: =1
+                DefaultSelectedItems: =If(CmbCategoria.Selected.Value = "Usuarios Externos", ["Creacion o renovacion de usuarios externos"], Blank())
+                DisplayFields: =["Value"]
+                Height: =44
+                InputTextPlaceholder: ="Subcategoría"
+                IsSearchable: =false
+                Items: |-
+                    =Switch(
+                        CmbCategoria.Selected.Value,
+                        "Cuentas & Listas", ["Buzón de correo", "Calendario institucional", "Lista de correo institucional dinámica", "Lista de correo institucional estática"],
+                        "Usuarios Externos", ["Creacion o renovacion de usuarios externos"],
+                        "Permisos", ["Admisiones", "Catálogo y Programación de Clases", "Cuentas por Pagar", "Finanzas Estudiantiles", "Gastos de viaje", "Módulo de Recursos Humanos", "Operaciones Internas y Control de compromisos", "Registro Académico", "Sistema Gestión de Grados", "Solicitud de compras de bienes y servicios"],
+                        "Nube Javeriana", ["Large", "Medium", "Small", "Tiny"],
+                        "Conceptos", ["Concepto de compra o renovación de hardware", "Concepto de compra o renovación de software"],
+                        Blank()
+                    )
+                SearchFields: =["Value"]
+                SearchItems: =Search(CmbSubcategoria.Items, CmbSubcategoria.SearchText, Value)
+                SelectMultiple: =false
+                Visible: =Not(IsBlank(CmbCategoria.Selected.Value)) And (CmbCategoria.Selected.Value in ["Cuentas & Listas", "Usuarios Externos", "Permisos", "Nube Javeriana", "Conceptos"])
+                Width: =230
+                X: =560
+                Y: =40
+                ZIndex: =6
 
             DtDesde As datepicker:
                 BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
                 Height: =44
                 InputTextPlaceholder: ="Desde"
-                Width: =150
-                X: =580
+                Width: =120
+                X: =800
                 Y: =40
-                ZIndex: =5
+                ZIndex: =7
 
             DtHasta As datepicker:
                 BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
                 Height: =44
                 InputTextPlaceholder: ="Hasta"
-                Width: =150
-                X: =750
+                Width: =120
+                X: =930
                 Y: =40
-                ZIndex: =6
+                ZIndex: =8
 
             BtnFiltrar As button:
                 BorderColor: =RGBA(26, 58, 110, 1)
@@ -108,10 +151,10 @@
                 RadiusTopLeft: =8
                 RadiusTopRight: =8
                 Text: ="Filtrar"
-                Width: =120
-                X: =920
+                Width: =110
+                X: =1060
                 Y: =40
-                ZIndex: =7
+                ZIndex: =9
 
             BtnFiltrar_1 As button:
                 BorderColor: =RGBA(26, 58, 110, 1)
@@ -125,10 +168,10 @@
                 RadiusTopLeft: =8
                 RadiusTopRight: =8
                 Text: ="Limpiar"
-                Width: =120
-                X: =1060
+                Width: =110
+                X: =1180
                 Y: =40
-                ZIndex: =8
+                ZIndex: =10
 
             LblHeadEstado As label:
                 Color: =RGBA(148, 163, 184, 1)
