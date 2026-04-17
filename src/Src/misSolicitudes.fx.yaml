@@ -22,10 +22,6 @@
             RectFilterBg As rectangle:
                 Fill: =RGBA(248, 250, 252, 1)
                 Height: =84
-                RadiusBottomLeft: =8
-                RadiusBottomRight: =8
-                RadiusTopLeft: =8
-                RadiusTopRight: =8
                 Width: =1326
                 X: =20
                 Y: =20
@@ -62,9 +58,21 @@
             CmbCategoria As combobox:
                 BorderColor: =RGBA(226, 232, 240, 1)
                 BorderThickness: =1
+                DisplayFields: =["Value"]
                 Height: =44
                 InputTextPlaceholder: ="Categoría"
-                Items: =["Cuentas & Listas", "Usuarios Externos", "Permisos", "Nube Javeriana", "Conceptos", "Usuario VPN", "NAS Javeriana"]
+                Items: |-
+                    =Table(
+                        {Value: "Cuentas & Listas"},
+                        {Value: "Usuarios Externos"},
+                        {Value: "Permisos"},
+                        {Value: "Nube Javeriana"},
+                        {Value: "Conceptos"},
+                        {Value: "Usuario VPN"},
+                        {Value: "NAS Javeriana"}
+                    )
+                SearchFields: =["Value"]
+                SearchItems: =Search(["Cuentas & Listas","Usuarios Externos","Permisos","Nube Javeriana","Conceptos","Usuario VPN","NAS Javeriana"],CmbCategoria.SearchText,Value)
                 Width: =200
                 X: =360
                 Y: =40
@@ -186,10 +194,6 @@
             SimList_RectPill1 As rectangle:
                 Fill: =ColorFade(RGBA(245, 158, 11, 1), 85%)
                 Height: =32
-                RadiusBottomLeft: =16
-                RadiusBottomRight: =16
-                RadiusTopLeft: =16
-                RadiusTopRight: =16
                 Width: =110
                 X: =60
                 Y: =190
@@ -301,10 +305,6 @@
             SimList_RectPill2 As rectangle:
                 Fill: =ColorFade(RGBA(14, 165, 233, 1), 85%)
                 Height: =32
-                RadiusBottomLeft: =16
-                RadiusBottomRight: =16
-                RadiusTopLeft: =16
-                RadiusTopRight: =16
                 Width: =110
                 X: =60
                 Y: =262
