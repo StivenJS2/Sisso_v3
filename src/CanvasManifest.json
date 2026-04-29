@@ -100,7 +100,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 1,
+    "BindingErrorCount": 0,
     "ConnectionString": "",
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
@@ -114,7 +114,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "d736596b-2dbc-454d-a309-00d604f7b87b",
-    "Id": "7e0e4a77-de65-4949-b5b6-97f19934ef53",
+    "Id": "30d022a6-36ad-41c3-85c3-bd7cd536ddd6",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
     "Name": "U2lzc29fdjM.msapp",
@@ -135,6 +135,7 @@
   },
   "ScreenOrder": [
     "introduccion",
-    "misSolicitudes"
+    "misSolicitudes",
+    "Cuentas_Listas"
   ]
 }

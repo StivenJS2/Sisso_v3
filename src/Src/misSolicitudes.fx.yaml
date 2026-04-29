@@ -79,7 +79,6 @@
                 ZIndex: =5
 
             DdSubcategoria As Desplegable.pcfdataset:
-                Default: =If(DdCategoria.Selected.Value = "Usuarios Externos", "Creacion o renovacion de usuarios externos", "Subcategoría")
                 DisplayMode: =DisplayMode.Edit
                 Height: =44
                 Items: |-

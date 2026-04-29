@@ -10,3 +10,6 @@ EditorState:
   ScreensOrder:
     - introduccion
     - misSolicitudes
+    - Cuentas_Listas
+  ComponentDefinitionsOrder:
+    - AutoWidthLabelGenerator

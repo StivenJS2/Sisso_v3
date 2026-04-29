@@ -1,0 +1,27 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "AutoWidthLabelGenerator",
+    "TemplateGuid": "a9f108679e4846879c3cd6c9a7b8b028"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "639130870061869764",
+  "Name": "a9f108679e4846879c3cd6c9a7b8b028",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "475e5f59a57b4dc78e18058a07ebab4e",
+  "Version": "637355130033549583"
+}

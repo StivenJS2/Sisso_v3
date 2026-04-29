@@ -1,0 +1,831 @@
+"Cuentas_Listas As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar1_CL As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =123
+        Width: =Parent.Width
+        Y: =2
+        ZIndex: =1
+
+    Rectangle1_1_CL As rectangle:
+        Fill: =RGBA(26, 58, 110, 1)
+        Height: =36
+        Width: =1366
+        Y: =89
+        ZIndex: =2
+
+    LblTopLeft_1_CL As label:
+        Color: =RGBA(200, 184, 122, 1)
+        Height: =36
+        Size: =9
+        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
+        Width: =600
+        X: =13
+        Y: =89
+        ZIndex: =3
+
+    Canvas2_CL As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1_CL.Y + RectQuickActionBar1_CL.Height
+        ZIndex: =4
+
+        AccordionCard_CL As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =If(locShowMoreServices, 360, 80)
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            AccHeaderBg_CL As rectangle:
+                Fill: =RGBA(230, 230, 230, 1)
+                Height: =50
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Width: =Parent.Width - 136
+                X: =68
+                Y: =15
+                ZIndex: =1
+
+            AccTitle_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =50
+                Size: =14
+                Text: ="Más Servicios..."
+                Width: =Parent.Width - 136
+                X: =68
+                Y: =15
+                ZIndex: =2
+
+            AccIcon_CL As icon.ChevronRight:
+                Color: =RGBA(0, 58, 112, 1)
+                Height: =50
+                Icon: =If(locShowMoreServices, Icon.ChevronDown, Icon.ChevronRight)
+                Width: =50
+                X: =Parent.Width - 120
+                Y: =15
+                ZIndex: =3
+
+            AccBtn_CL As button:
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                HoverFill: =RGBA(0, 0, 0, 0.1)
+                OnSelect: =Set(locShowMoreServices, !locShowMoreServices)
+                PressedFill: =RGBA(0, 0, 0, 0.2)
+                Text: =""
+                Width: =Parent.Width - 136
+                X: =68
+                Y: =15
+                ZIndex: =4
+
+            SmallCard1_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =68
+                Y: =85
+                ZIndex: =5
+
+            SmallCard1_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =158
+                Y: =95
+                ZIndex: =6
+
+            SmallCard1_Icon_CL As image:
+                Height: =66
+                Image: ='software(2)'
+                Visible: =locShowMoreServices
+                Width: =66
+                X: =145
+                Y: =88
+                ZIndex: =7
+
+            SmallCard1_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Concepto técnico"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =78
+                Y: =155
+                ZIndex: =8
+
+            SmallCard1_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =175
+                Y: =180
+                ZIndex: =9
+
+            SmallCard1_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =68
+                Y: =85
+                ZIndex: =10
+
+            SmallCard2_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =318
+                Y: =85
+                ZIndex: =11
+
+            SmallCard2_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =408
+                Y: =95
+                ZIndex: =12
+
+            SmallCard2_Icon_CL As image:
+                Height: =30
+                Image: ='outlook(1)'
+                Visible: =locShowMoreServices
+                Width: =30
+                X: =418
+                Y: =105
+                ZIndex: =13
+
+            SmallCard2_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Cuentas y listas" & Char(10)
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =328
+                Y: =155
+                ZIndex: =14
+
+            SmallCard2_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =425
+                Y: =180
+                ZIndex: =15
+
+            SmallCard2_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =318
+                Y: =85
+                ZIndex: =16
+
+            SmallCard3_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =568
+                Y: =85
+                ZIndex: =17
+
+            SmallCard3_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =658
+                Y: =95
+                ZIndex: =18
+
+            SmallCard3_Icon_CL As image:
+                Height: =30
+                Image: ='agregarPerfil(1)'
+                Visible: =locShowMoreServices
+                Width: =30
+                X: =668
+                Y: =105
+                ZIndex: =19
+
+            SmallCard3_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Usuarios externos"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =578
+                Y: =155
+                ZIndex: =20
+
+            SmallCard3_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =675
+                Y: =180
+                ZIndex: =21
+
+            SmallCard3_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =568
+                Y: =85
+                ZIndex: =22
+
+            SmallCard4_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =818
+                Y: =85
+                ZIndex: =23
+
+            SmallCard4_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =908
+                Y: =95
+                ZIndex: =24
+
+            SmallCard4_Icon_CL As image:
+                Height: =30
+                Image: ='software (1)'
+                Visible: =locShowMoreServices
+                Width: =30
+                X: =918
+                Y: =105
+                ZIndex: =25
+
+            SmallCard4_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Instalación de Software"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =828
+                Y: =155
+                ZIndex: =26
+
+            SmallCard4_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =925
+                Y: =180
+                ZIndex: =27
+
+            SmallCard4_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =818
+                Y: =85
+                ZIndex: =28
+
+            SmallCard5_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =1068
+                Y: =85
+                ZIndex: =29
+
+            SmallCard5_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =1158
+                Y: =95
+                ZIndex: =30
+
+            SmallCard5_Icon_CL As image:
+                Height: =72
+                Image: ='llaveUser(1)'
+                Visible: =locShowMoreServices
+                Width: =72
+                X: =1147
+                Y: =91
+                ZIndex: =31
+
+            SmallCard5_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Permisos"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =1078
+                Y: =155
+                ZIndex: =32
+
+            SmallCard5_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =1175
+                Y: =180
+                ZIndex: =33
+
+            SmallCard5_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =1068
+                Y: =85
+                ZIndex: =34
+
+            SmallCard6_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =68
+                Y: =225
+                ZIndex: =35
+
+            SmallCard6_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =158
+                Y: =235
+                ZIndex: =36
+
+            SmallCard6_Icon_CL As image:
+                Height: =50
+                Image: ='ServiNube(1)'
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =158
+                Y: =235
+                ZIndex: =37
+
+            SmallCard6_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Servidor Nube Javeriana"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =78
+                Y: =295
+                ZIndex: =38
+
+            SmallCard6_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =175
+                Y: =320
+                ZIndex: =39
+
+            SmallCard6_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =68
+                Y: =225
+                ZIndex: =40
+
+            SmallCard7_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =318
+                Y: =225
+                ZIndex: =41
+
+            SmallCard7_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =408
+                Y: =235
+                ZIndex: =42
+
+            SmallCard7_Icon_CL As image:
+                Height: =30
+                Image: ='vpn(1)'
+                Visible: =locShowMoreServices
+                Width: =30
+                X: =418
+                Y: =245
+                ZIndex: =43
+
+            SmallCard7_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Usuario VPN"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =328
+                Y: =295
+                ZIndex: =44
+
+            SmallCard7_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =425
+                Y: =320
+                ZIndex: =45
+
+            SmallCard7_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =318
+                Y: =225
+                ZIndex: =46
+
+            SmallCard8_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =568
+                Y: =225
+                ZIndex: =47
+
+            SmallCard8_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =658
+                Y: =235
+                ZIndex: =48
+
+            SmallCard8_Icon_CL As image:
+                Height: =30
+                Image: ='zoom(1)'
+                Visible: =locShowMoreServices
+                Width: =30
+                X: =668
+                Y: =245
+                ZIndex: =49
+
+            SmallCard8_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Autoservicio Zoom"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =578
+                Y: =295
+                ZIndex: =50
+
+            SmallCard8_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =675
+                Y: =320
+                ZIndex: =51
+
+            SmallCard8_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =568
+                Y: =225
+                ZIndex: =52
+
+            SmallCard9_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =818
+                Y: =225
+                ZIndex: =53
+
+            SmallCard9_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =908
+                Y: =235
+                ZIndex: =54
+
+            SmallCard9_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="SaaS"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =828
+                Y: =295
+                ZIndex: =55
+
+            SmallCard9_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =925
+                Y: =320
+                ZIndex: =56
+
+            SmallCard9_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =818
+                Y: =225
+                ZIndex: =57
+
+            SmallCard10_Bg_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =1068
+                Y: =225
+                ZIndex: =58
+
+            SmallCard10_IconBg_CL As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =50
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =50
+                X: =1158
+                Y: =235
+                ZIndex: =59
+
+            SmallCard10_Title_CL As label:
+                Align: =Align.Center
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =11
+                Text: ="Soporte técnico"
+                Visible: =locShowMoreServices
+                Width: =210
+                X: =1078
+                Y: =295
+                ZIndex: =60
+
+            SmallCard10_Arrow_CL As icon.ArrowRight:
+                Color: =RGBA(255, 213, 0, 1)
+                Height: =15
+                Icon: =Icon.ArrowRight
+                Visible: =locShowMoreServices
+                Width: =15
+                X: =1175
+                Y: =320
+                ZIndex: =61
+
+            SmallCard10_Bg_1_CL As button:
+                BorderColor: =Color.LightGray
+                BorderThickness: =1
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =120
+                Text: =""
+                Visible: =locShowMoreServices
+                Width: =230
+                X: =1068
+                Y: =225
+                ZIndex: =62
+
+        NoticiasCard_CL As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =260
+            Width: =Parent.Width
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            NoticiasTitle_CL As label:
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Noticias"
+                Width: =1230
+                X: =68
+                Y: =10
+                ZIndex: =1
+
+            NoticiasLine_CL As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =2
+                Width: =1230
+                X: =68
+                Y: =45
+                ZIndex: =2
+
+            NewsCard1_CL As image:
+                Height: =200
+                Image: ='FOndo!'
+                ImagePosition: =ImagePosition.Fill
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =396
+                X: =68
+                Y: =60
+                ZIndex: =3
+
+            NewsCard2_CL As image:
+                Height: =200
+                Image: ='FOndo!'
+                ImagePosition: =ImagePosition.Fill
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =396
+                X: =484
+                Y: =60
+                ZIndex: =4
+
+            NewsCard3_CL As image:
+                Height: =200
+                Image: ='FOndo!'
+                ImagePosition: =ImagePosition.Fill
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =396
+                X: =900
+                Y: =60
+                ZIndex: =5
+
