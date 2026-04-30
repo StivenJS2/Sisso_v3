@@ -51,7 +51,7 @@ Screens:
                 Control: DataCard@1.0.2
                 Properties:
                   Fill: =RGBA(255, 255, 255, 1)
-                  Height: =729
+                  Height: =If(locShowMoreIntro, BtnVerMas_Intro.Y + BtnVerMas_Intro.Height + 40, 710)
                   Width: =Parent.Width
                   X: =0
                   Y: =0
@@ -172,7 +172,7 @@ Screens:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =RGBA(180, 210, 245, 0.75)
                         Font: =Font.'Open Sans'
-                        Height: =106
+                        Height: =143
                         Text: ="acceso de manera remota o virtual a recursos de infraestructura de computación robusta tipo LaaS"
                         Width: =175
                         X: =658
@@ -286,27 +286,6 @@ Screens:
                         Width: =110
                         X: =343
                         Y: =150
-                  - SmallCards_ContainerBg:
-                      Control: Classic/Button@2.2.0
-                      Properties:
-                        BorderColor: =RGBA(230, 230, 230, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisplayMode: =DisplayMode.View
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =324
-                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
-                        PressedBorderColor: =Self.Fill
-                        PressedColor: =Self.Fill
-                        PressedFill: =Self.Color
-                        Text: =""
-                        Width: =1280
-                        X: =49
-                        Y: =459
                   - SmallCards_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -315,12 +294,12 @@ Screens:
                         Color: =RGBA(0, 58, 112, 1)
                         Font: =Font.'Open Sans'
                         FontWeight: =FontWeight.Bold
-                        Height: =30
+                        Height: =28
                         Size: =14
                         Text: ="TODOS LOS SERVICIOS"
-                        Width: =1280
-                        X: =43
-                        Y: =424
+                        Width: =1323
+                        X: =21
+                        Y: =374
                   - SmallCards_TitleLine:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -329,7 +308,7 @@ Screens:
                         Height: =3
                         Width: =60
                         X: =653
-                        Y: =459
+                        Y: =428
                   - SmallCard1_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -350,7 +329,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =65
-                        Y: =479
+                        Y: =448
                   - SmallCard1_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -370,7 +349,7 @@ Screens:
                         Text: =""
                         Width: =50
                         X: =155
-                        Y: =489
+                        Y: =458
                   - SmallCard1_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -379,7 +358,7 @@ Screens:
                         Image: ='software(2)'
                         Width: =66
                         X: =142
-                        Y: =482
+                        Y: =451
                   - SmallCard1_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -393,7 +372,7 @@ Screens:
                         Text: ="Concepto técnico"
                         Width: =210
                         X: =75
-                        Y: =549
+                        Y: =518
                   - SmallCard1_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -403,7 +382,7 @@ Screens:
                         Icon: =Icon.ArrowRight
                         Width: =15
                         X: =172
-                        Y: =574
+                        Y: =543
                   - SmallCard2_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -424,7 +403,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =317
-                        Y: =479
+                        Y: =448
                   - SmallCard2_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -444,7 +423,7 @@ Screens:
                         Text: =""
                         Width: =50
                         X: =407
-                        Y: =489
+                        Y: =458
                   - SmallCard2_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -453,7 +432,7 @@ Screens:
                         Image: ='outlook(1)'
                         Width: =30
                         X: =417
-                        Y: =499
+                        Y: =468
                   - SmallCard2_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -467,7 +446,7 @@ Screens:
                         Text: ="Cuentas y listas" & Char(10)
                         Width: =210
                         X: =327
-                        Y: =549
+                        Y: =518
                   - SmallCard2_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -477,11 +456,11 @@ Screens:
                         Icon: =Icon.ArrowRight
                         Width: =15
                         X: =424
-                        Y: =574
+                        Y: =543
                   - SmallCard3_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: |+
+                        BorderColor: |
                           =Color.LightGray
                         BorderThickness: =1
                         Color: =RGBA(255, 255, 255, 1)
@@ -499,7 +478,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =569
-                        Y: =479
+                        Y: =448
                   - SmallCard3_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -519,7 +498,7 @@ Screens:
                         Text: =""
                         Width: =50
                         X: =659
-                        Y: =489
+                        Y: =458
                   - SmallCard3_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -528,7 +507,7 @@ Screens:
                         Image: ='agregarPerfil(1)'
                         Width: =30
                         X: =669
-                        Y: =499
+                        Y: =468
                   - SmallCard3_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -542,7 +521,7 @@ Screens:
                         Text: ="Usuarios externos"
                         Width: =210
                         X: =579
-                        Y: =549
+                        Y: =518
                   - SmallCard3_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -552,11 +531,11 @@ Screens:
                         Icon: =Icon.ArrowRight
                         Width: =15
                         X: =676
-                        Y: =574
+                        Y: =543
                   - SmallCard4_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: |+
+                        BorderColor: |
                           =Color.LightGray
                         BorderThickness: =1
                         Color: =RGBA(255, 255, 255, 1)
@@ -574,7 +553,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =821
-                        Y: =479
+                        Y: =448
                   - SmallCard4_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -594,7 +573,7 @@ Screens:
                         Text: =""
                         Width: =50
                         X: =911
-                        Y: =489
+                        Y: =458
                   - SmallCard4_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -603,7 +582,7 @@ Screens:
                         Image: ='software (1)'
                         Width: =30
                         X: =921
-                        Y: =499
+                        Y: =468
                   - SmallCard4_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -617,7 +596,7 @@ Screens:
                         Text: ="Instalación de Software"
                         Width: =210
                         X: =831
-                        Y: =549
+                        Y: =518
                   - SmallCard4_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -627,7 +606,7 @@ Screens:
                         Icon: =Icon.ArrowRight
                         Width: =15
                         X: =928
-                        Y: =574
+                        Y: =543
                   - SmallCard5_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -648,7 +627,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =1073
-                        Y: =479
+                        Y: =448
                   - SmallCard5_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -668,7 +647,7 @@ Screens:
                         Text: =""
                         Width: =50
                         X: =1163
-                        Y: =489
+                        Y: =458
                   - SmallCard5_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -677,7 +656,7 @@ Screens:
                         Image: ='llaveUser(1)'
                         Width: =72
                         X: =1152
-                        Y: =485
+                        Y: =454
                   - SmallCard5_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -691,7 +670,7 @@ Screens:
                         Text: ="Permisos"
                         Width: =210
                         X: =1083
-                        Y: =549
+                        Y: =518
                   - SmallCard5_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -701,11 +680,11 @@ Screens:
                         Icon: =Icon.ArrowRight
                         Width: =15
                         X: =1180
-                        Y: =574
+                        Y: =543
                   - SmallCard6_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: |+
+                        BorderColor: |
                           =Color.LightGray
                         BorderThickness: =1
                         Color: =RGBA(255, 255, 255, 1)
@@ -721,9 +700,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =65
-                        Y: =619
+                        Y: =577
                   - SmallCard6_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -741,18 +721,20 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =Self.Color
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =50
                         X: =155
-                        Y: =629
+                        Y: =587
                   - SmallCard6_Icon:
                       Control: Image@2.2.3
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Height: =50
                         Image: ='ServiNube(1)'
+                        Visible: =locShowMoreIntro
                         Width: =50
                         X: =155
-                        Y: =629
+                        Y: =587
                   - SmallCard6_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -764,9 +746,10 @@ Screens:
                         Height: =30
                         Size: =11
                         Text: ="Servidor Nube Javeriana"
+                        Visible: =locShowMoreIntro
                         Width: =210
                         X: =75
-                        Y: =689
+                        Y: =647
                   - SmallCard6_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -774,6 +757,7 @@ Screens:
                         Color: =RGBA(255, 213, 0, 1)
                         Height: =15
                         Icon: =Icon.ArrowRight
+                        Visible: =locShowMoreIntro
                         Width: =15
                         X: =172
                         Y: =714
@@ -795,9 +779,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =317
-                        Y: =619
+                        Y: =577
                   - SmallCard7_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -815,18 +800,20 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =Self.Color
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =50
                         X: =407
-                        Y: =629
+                        Y: =587
                   - SmallCard7_Icon:
                       Control: Image@2.2.3
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Height: =30
                         Image: ='vpn(1)'
+                        Visible: =locShowMoreIntro
                         Width: =30
                         X: =417
-                        Y: =639
+                        Y: =597
                   - SmallCard7_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -838,9 +825,10 @@ Screens:
                         Height: =30
                         Size: =11
                         Text: ="Usuario VPN"
+                        Visible: =locShowMoreIntro
                         Width: =210
                         X: =327
-                        Y: =689
+                        Y: =647
                   - SmallCard7_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -848,6 +836,7 @@ Screens:
                         Color: =RGBA(255, 213, 0, 1)
                         Height: =15
                         Icon: =Icon.ArrowRight
+                        Visible: =locShowMoreIntro
                         Width: =15
                         X: =424
                         Y: =714
@@ -869,9 +858,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =569
-                        Y: =619
+                        Y: =577
                   - SmallCard8_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -889,18 +879,20 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =Self.Color
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =50
                         X: =659
-                        Y: =629
+                        Y: =587
                   - SmallCard8_Icon:
                       Control: Image@2.2.3
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Height: =30
                         Image: ='zoom(1)'
+                        Visible: =locShowMoreIntro
                         Width: =30
                         X: =669
-                        Y: =639
+                        Y: =597
                   - SmallCard8_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -912,9 +904,10 @@ Screens:
                         Height: =30
                         Size: =11
                         Text: ="Autoservicio Zoom"
+                        Visible: =locShowMoreIntro
                         Width: =210
                         X: =579
-                        Y: =689
+                        Y: =647
                   - SmallCard8_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -922,6 +915,7 @@ Screens:
                         Color: =RGBA(255, 213, 0, 1)
                         Height: =15
                         Icon: =Icon.ArrowRight
+                        Visible: =locShowMoreIntro
                         Width: =15
                         X: =676
                         Y: =714
@@ -943,9 +937,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =821
-                        Y: =619
+                        Y: =577
                   - SmallCard9_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -963,18 +958,20 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =Self.Color
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =50
                         X: =911
-                        Y: =629
+                        Y: =587
                   - SmallCard9_Icon:
                       Control: Image@2.2.3
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Height: =30
                         Image: =
+                        Visible: =locShowMoreIntro
                         Width: =30
                         X: =921
-                        Y: =639
+                        Y: =597
                   - SmallCard9_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -986,9 +983,10 @@ Screens:
                         Height: =30
                         Size: =11
                         Text: ="SaaS"
+                        Visible: =locShowMoreIntro
                         Width: =210
                         X: =831
-                        Y: =689
+                        Y: =647
                   - SmallCard9_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -996,6 +994,7 @@ Screens:
                         Color: =RGBA(255, 213, 0, 1)
                         Height: =15
                         Icon: =Icon.ArrowRight
+                        Visible: =locShowMoreIntro
                         Width: =15
                         X: =928
                         Y: =714
@@ -1017,9 +1016,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =1073
-                        Y: =619
+                        Y: =577
                   - SmallCard10_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1037,18 +1037,20 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =Self.Color
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =50
                         X: =1163
-                        Y: =629
+                        Y: =587
                   - SmallCard10_Icon:
                       Control: Image@2.2.3
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Height: =30
                         Image: =
+                        Visible: =locShowMoreIntro
                         Width: =30
                         X: =1173
-                        Y: =639
+                        Y: =597
                   - SmallCard10_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -1060,9 +1062,10 @@ Screens:
                         Height: =30
                         Size: =11
                         Text: ="Soporte técnico"
+                        Visible: =locShowMoreIntro
                         Width: =210
                         X: =1083
-                        Y: =689
+                        Y: =647
                   - SmallCard10_Arrow:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -1070,6 +1073,7 @@ Screens:
                         Color: =RGBA(255, 213, 0, 1)
                         Height: =15
                         Icon: =Icon.ArrowRight
+                        Visible: =locShowMoreIntro
                         Width: =15
                         X: =1180
                         Y: =714
@@ -1093,7 +1097,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =1072
-                        Y: =479
+                        Y: =448
                   - SmallCard4_Bg_1:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1115,7 +1119,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =820
-                        Y: =479
+                        Y: =448
                   - SmallCard4_Bg_2:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1137,7 +1141,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =570
-                        Y: =479
+                        Y: =448
                   - SmallCard4_Bg_3:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1159,7 +1163,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =317
-                        Y: =479
+                        Y: =448
                   - SmallCard4_Bg_4:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1181,7 +1185,7 @@ Screens:
                         Text: =""
                         Width: =230
                         X: =64
-                        Y: =479
+                        Y: =448
                   - SmallCard6_Bg_1:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1201,9 +1205,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =65
-                        Y: =619
+                        Y: =577
                   - SmallCard7_Bg_1:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1222,9 +1227,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =317
-                        Y: =619
+                        Y: =577
                   - SmallCard8_Bg_1:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1243,9 +1249,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =569
-                        Y: =619
+                        Y: =577
                   - SmallCard8_Bg_2:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1264,9 +1271,10 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =820
-                        Y: =619
+                        Y: =577
                   - SmallCard8_Bg_3:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1285,16 +1293,41 @@ Screens:
                         PressedColor: =Self.Fill
                         PressedFill: =
                         Text: =""
+                        Visible: =locShowMoreIntro
                         Width: =230
                         X: =1073
-                        Y: =619
-            - DataCard1:
+                        Y: =577
+                  - BtnVerMas_Intro:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(0, 58, 112, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =50
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(255, 191, 0, 1)
+                        OnSelect: =Set(locShowMoreIntro, !locShowMoreIntro)
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =RGBA(0, 0, 0, 1)
+                        PressedFill: =Self.Color
+                        RadiusBottomLeft: =25
+                        RadiusBottomRight: =25
+                        RadiusTopLeft: =25
+                        RadiusTopRight: =25
+                        Text: =If(locShowMoreIntro, "Ver menos", "Ver más")
+                        Width: =200
+                        X: =584
+                        Y: =If(locShowMoreIntro, 750, 597)
+            - DataCard7:
                 Control: DataCard@1.0.2
-                Variant: BlankCard
                 Properties:
                   Fill: =RGBA(0, 0, 0, 0.02)
-                  Height: =1313
-                  Width: =1366
+                  Height: =1394
+                  Width: =Parent.Width
                   X: =0
                   Y: =1
                 Children:
@@ -1321,7 +1354,7 @@ Screens:
                         Text: =""
                         Width: =590
                         X: =78
-                        Y: =43
+                        Y: =133
                   - Card1_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1344,7 +1377,7 @@ Screens:
                         Text: =""
                         Width: =120
                         X: =118
-                        Y: =93
+                        Y: =183
                   - Card1_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -1353,7 +1386,7 @@ Screens:
                         Image: =Agenda
                         Width: =120
                         X: =118
-                        Y: =93
+                        Y: =183
                   - Card1_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -1366,7 +1399,7 @@ Screens:
                         Text: ="Agenda y gestiona tus reuniones"
                         Width: =373
                         X: =278
-                        Y: =63
+                        Y: =153
                   - Card1_Desc:
                       Control: Label@2.5.1
                       Properties:
@@ -1381,30 +1414,7 @@ Screens:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =390
                         X: =278
-                        Y: =103
-                  - Card1_LinkText:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(0, 58, 112, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =30
-                        Size: =14
-                        Text: ="Ir al servicio"
-                        Width: =130
-                        X: =278
-                        Y: =203
-                  - Card1_LinkIcon:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 213, 0, 1)
-                        Height: =20
-                        Icon: =Icon.ArrowRight
-                        Width: =20
-                        X: =408
-                        Y: =209
+                        Y: =193
                   - Card2_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1428,7 +1438,7 @@ Screens:
                         Text: =""
                         Width: =590
                         X: =698
-                        Y: =43
+                        Y: =133
                   - Card2_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1451,7 +1461,7 @@ Screens:
                         Text: =""
                         Width: =120
                         X: =738
-                        Y: =93
+                        Y: =183
                   - Card2_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -1460,7 +1470,7 @@ Screens:
                         Image: =Software
                         Width: =123
                         X: =740
-                        Y: =93
+                        Y: =183
                   - Card2_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -1473,7 +1483,7 @@ Screens:
                         Text: ="Solicitud Software y Hardware"
                         Width: =350
                         X: =898
-                        Y: =63
+                        Y: =173
                   - Card2_Desc:
                       Control: Label@2.5.1
                       Properties:
@@ -1485,31 +1495,8 @@ Screens:
                         Text: ="Solicitud para compra o renovación de servicios de software y equipos de hardware."
                         VerticalAlign: =VerticalAlign.Top
                         Width: =350
-                        X: =898
-                        Y: =103
-                  - Card2_LinkText:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(0, 58, 112, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =30
-                        Size: =14
-                        Text: ="Ir al servicio"
-                        Width: =130
-                        X: =898
-                        Y: =203
-                  - Card2_LinkIcon:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 213, 0, 1)
-                        Height: =20
-                        Icon: =Icon.ArrowRight
-                        Width: =20
-                        X: =1028
-                        Y: =209
+                        X: =893
+                        Y: =238
                   - Card3_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1533,7 +1520,7 @@ Screens:
                         Text: =""
                         Width: =1210
                         X: =78
-                        Y: =293
+                        Y: =383
                   - Card3_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1555,8 +1542,8 @@ Screens:
                         RadiusTopRight: =20
                         Text: =""
                         Width: =120
-                        X: =118
-                        Y: =333
+                        X: =93
+                        Y: =423
                   - Card3_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -1564,8 +1551,8 @@ Screens:
                         Height: =120
                         Image: =Hardware
                         Width: =140
-                        X: =113
-                        Y: =333
+                        X: =88
+                        Y: =423
                   - Card3_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -1578,7 +1565,7 @@ Screens:
                         Text: ="Solicitud para instalación de Software en equipos de cómputo"
                         Width: =900
                         X: =278
-                        Y: =313
+                        Y: =403
                   - Card3_Desc:
                       Control: Label@2.5.1
                       Properties:
@@ -1590,8 +1577,8 @@ Screens:
                         Text: ="Puedes realizar solicitudes para la instalación de software en equipos de cómputo, salas y salones de clase. Recibirás una notificación dando el resumen o proceso para los software solicitado, donde internamente, si corresponde, se validará la disponibilidad de acuerdos de licenciamiento o restricciones de seguridad y si es viable la instalación se informará a la DTI para que puedas agendar la instalación."
                         VerticalAlign: =VerticalAlign.Top
                         Width: =900
-                        X: =278
-                        Y: =353
+                        X: =253
+                        Y: =443
                   - Card4_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1615,7 +1602,7 @@ Screens:
                         Text: =""
                         Width: =590
                         X: =78
-                        Y: =523
+                        Y: =620
                   - Card4_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1638,8 +1625,8 @@ Screens:
                         RadiusTopRight: =20
                         Text: =""
                         Width: =120
-                        X: =118
-                        Y: =573
+                        X: =125
+                        Y: =681
                   - Card4_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -1647,8 +1634,8 @@ Screens:
                         Height: =115
                         Image: =Correo
                         Width: =125
-                        X: =121
-                        Y: =573
+                        X: =128
+                        Y: =681
                   - Card4_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -1660,8 +1647,8 @@ Screens:
                         Size: =16
                         Text: ="Correo y usuarios"
                         Width: =350
-                        X: =278
-                        Y: =543
+                        X: =285
+                        Y: =651
                   - Card4_Desc:
                       Control: Label@2.5.1
                       Properties:
@@ -1673,31 +1660,8 @@ Screens:
                         Text: ="Permite solicitar la creación de buzones de correo de uso compartido o genérico, calendarios y listas de correo institucionales."
                         VerticalAlign: =VerticalAlign.Top
                         Width: =350
-                        X: =278
-                        Y: =583
-                  - Card4_LinkText:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(0, 58, 112, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =30
-                        Size: =14
-                        Text: ="Ir al servicio"
-                        Width: =130
-                        X: =278
-                        Y: =683
-                  - Card4_LinkIcon:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 213, 0, 1)
-                        Height: =20
-                        Icon: =Icon.ArrowRight
-                        Width: =20
-                        X: =408
-                        Y: =690
+                        X: =283
+                        Y: =721
                   - Card5_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1721,7 +1685,7 @@ Screens:
                         Text: =""
                         Width: =590
                         X: =698
-                        Y: =523
+                        Y: =620
                   - Card5_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1744,8 +1708,8 @@ Screens:
                         RadiusTopRight: =20
                         Text: =""
                         Width: =120
-                        X: =738
-                        Y: =573
+                        X: =745
+                        Y: =668
                   - Card5_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -1753,8 +1717,8 @@ Screens:
                         Height: =110
                         Image: =Usuarios
                         Width: =123
-                        X: =738
-                        Y: =583
+                        X: =745
+                        Y: =678
                   - Card5_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -1767,44 +1731,53 @@ Screens:
                         Text: ="Creación o renovación de Usuarios Externos"
                         VerticalAlign: =VerticalAlign.Top
                         Width: =350
-                        X: =898
-                        Y: =543
-                  - Card5_Desc:
-                      Control: Label@2.5.1
+                        X: =905
+                        Y: =638
+                  - SmallCards_TitleLine_1:
+                      Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(70, 70, 70, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =70
-                        Size: =12
-                        Text: ="Permite la creación o renovación de cuentas institucionales para personal externo."
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =350
-                        X: =898
-                        Y: =621
-                  - Card5_LinkText:
-                      Control: Label@2.5.1
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =3
+                        Width: =60
+                        X: =283
+                        Y: =187
+                  - SmallCards_TitleLine_2:
+                      Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(0, 58, 112, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =30
-                        Size: =14
-                        Text: ="Ir al servicio"
-                        Width: =130
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =3
+                        Width: =60
                         X: =898
-                        Y: =683
-                  - Card5_LinkIcon:
-                      Control: Classic/Icon@2.5.0
+                        Y: =209
+                  - SmallCards_TitleLine_3:
+                      Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 213, 0, 1)
-                        Height: =20
-                        Icon: =Icon.ArrowRight
-                        Width: =20
-                        X: =1028
-                        Y: =688
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =3
+                        Width: =60
+                        X: =258
+                        Y: =435
+                  - SmallCards_TitleLine_4:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =3
+                        Width: =60
+                        X: =290
+                        Y: =681
+                  - SmallCards_TitleLine_5:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =3
+                        Width: =60
+                        X: =908
+                        Y: =701
                   - Card6_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1828,7 +1801,7 @@ Screens:
                         Text: =""
                         Width: =1210
                         X: =78
-                        Y: =773
+                        Y: =872
                   - Card6_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1852,7 +1825,7 @@ Screens:
                         Text: =""
                         Width: =120
                         X: =118
-                        Y: =813
+                        Y: =912
                   - Card6_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -1861,7 +1834,7 @@ Screens:
                         Image: =Nube
                         Width: =117
                         X: =121
-                        Y: =813
+                        Y: =912
                   - Card6_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -1874,7 +1847,7 @@ Screens:
                         Text: ="Solicitud de cuota en nube Javeriana"
                         Width: =900
                         X: =278
-                        Y: =793
+                        Y: =892
                   - Card6_Desc:
                       Control: Label@2.5.1
                       Properties:
@@ -1887,7 +1860,7 @@ Screens:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =900
                         X: =278
-                        Y: =833
+                        Y: =932
                   - Card7_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1909,9 +1882,9 @@ Screens:
                         RadiusTopLeft: =20
                         RadiusTopRight: =20
                         Text: =""
-                        Width: =590
+                        Width: =595
                         X: =78
-                        Y: =1003
+                        Y: =1103
                   - Card7_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1935,7 +1908,7 @@ Screens:
                         Text: =""
                         Width: =120
                         X: =118
-                        Y: =1063
+                        Y: =1163
                   - Card7_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -1944,7 +1917,7 @@ Screens:
                         Image: =Permisos
                         Width: =120
                         X: =118
-                        Y: =1063
+                        Y: =1163
                   - Card7_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -1958,7 +1931,7 @@ Screens:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =333
                         X: =278
-                        Y: =1023
+                        Y: =1123
                   - Card7_Desc:
                       Control: Label@2.5.1
                       Properties:
@@ -1971,30 +1944,7 @@ Screens:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =378
                         X: =273
-                        Y: =1096
-                  - Card7_LinkText:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(0, 58, 112, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =25
-                        Size: =14
-                        Text: ="Ir al servicio"
-                        Width: =130
-                        X: =278
-                        Y: =1203
-                  - Card7_LinkIcon:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 213, 0, 1)
-                        Height: =20
-                        Icon: =Icon.ArrowRight
-                        Width: =20
-                        X: =408
-                        Y: =1206
+                        Y: =1196
                   - Card8_Bg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -2016,9 +1966,9 @@ Screens:
                         RadiusTopLeft: =20
                         RadiusTopRight: =20
                         Text: =""
-                        Width: =590
-                        X: =698
-                        Y: =1003
+                        Width: =585
+                        X: =703
+                        Y: =1103
                   - Card8_IconBg:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -2042,7 +1992,7 @@ Screens:
                         Text: =""
                         Width: =120
                         X: =738
-                        Y: =1063
+                        Y: =1163
                   - Card8_Icon:
                       Control: Image@2.2.3
                       Properties:
@@ -2051,7 +2001,7 @@ Screens:
                         Image: =VPN
                         Width: =118
                         X: =740
-                        Y: =1063
+                        Y: =1163
                   - Card8_Title:
                       Control: Label@2.5.1
                       Properties:
@@ -2064,7 +2014,7 @@ Screens:
                         Text: ="Solicitud acceso VPN para empleados"
                         Width: =390
                         X: =898
-                        Y: =1023
+                        Y: =1123
                   - Card8_Desc:
                       Control: Label@2.5.1
                       Properties:
@@ -2077,30 +2027,143 @@ Screens:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =350
                         X: =898
-                        Y: =1088
-                  - Card8_LinkText:
+                        Y: =1188
+                  - SmallCards_TitleLine_6:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =3
+                        Width: =60
+                        X: =283
+                        Y: =925
+                  - SmallCards_TitleLine_7:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =3
+                        Width: =60
+                        X: =283
+                        Y: =1183
+                  - SmallCards_TitleLine_8:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =3
+                        Width: =60
+                        X: =903
+                        Y: =1175
+                  - Card4_Desc_1:
                       Control: Label@2.5.1
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(0, 58, 112, 1)
+                        Color: =RGBA(70, 70, 70, 1)
                         Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =25
-                        Size: =14
-                        Text: ="Ir al servicio"
-                        Width: =130
+                        Height: =90
+                        Size: =12
+                        Text: ="Permite la creación o renovación de cuentas institucionales para personal externo."
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =350
                         X: =898
-                        Y: =1203
-                  - Card8_LinkIcon:
-                      Control: Classic/Icon@2.5.0
+                        Y: =721
+                  - Card1_Bg_1:
+                      Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 213, 0, 1)
-                        Height: =20
-                        Icon: =Icon.ArrowRight
-                        Width: =20
-                        X: =1028
-                        Y: =1206
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =220
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Text: =""
+                        Width: =590
+                        X: =78
+                        Y: =133
+                  - Card1_Bg_3:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =200
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Text: =""
+                        Width: =1210
+                        X: =78
+                        Y: =383
+                  - Card1_Bg_4:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =220
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Text: =""
+                        Width: =590
+                        X: =78
+                        Y: =620
+                  - Card1_Bg_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =220
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Text: =""
+                        Width: =590
+                        X: =698
+                        Y: =133
                   - RectFooter_1:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -2108,7 +2171,7 @@ Screens:
                         Fill: =RGBA(26, 58, 110, 1)
                         Height: =36
                         Width: =1366
-                        Y: =1277
+                        Y: =1377
                   - RectFooterBorder_1:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -2116,7 +2179,7 @@ Screens:
                         Fill: =RGBA(200, 184, 122, 1)
                         Height: =3
                         Width: =1366
-                        Y: =1274
+                        Y: =1374
                   - LblFooter_1:
                       Control: Label@2.5.1
                       Properties:
@@ -2128,7 +2191,7 @@ Screens:
                         Text: |-
                           ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
                         Width: =853
-                        Y: =1284
+                        Y: =1384
                   - LblFooterRight_1:
                       Control: Label@2.5.1
                       Properties:
@@ -2141,79 +2204,103 @@ Screens:
                         Text: ="Soporte técnico · Política de privacidad"
                         Width: =280
                         X: =1058
-                        Y: =1277
-                  - SmallCards_TitleLine_1:
-                      Control: Rectangle@2.3.0
+                        Y: =1377
+                  - Card1_Bg_5:
+                      Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 213, 0, 1)
-                        Height: =3
-                        Width: =60
-                        X: =283
-                        Y: =97
-                  - SmallCards_TitleLine_2:
-                      Control: Rectangle@2.3.0
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =220
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Text: =""
+                        Width: =590
+                        X: =698
+                        Y: =620
+                  - Card1_Bg_6:
+                      Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 213, 0, 1)
-                        Height: =3
-                        Width: =60
-                        X: =903
-                        Y: =97
-                  - SmallCards_TitleLine_3:
-                      Control: Rectangle@2.3.0
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =200
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Text: =""
+                        Width: =1210
+                        X: =78
+                        Y: =872
+                  - Card1_Bg_7:
+                      Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 213, 0, 1)
-                        Height: =3
-                        Width: =60
-                        X: =283
-                        Y: =345
-                  - SmallCards_TitleLine_4:
-                      Control: Rectangle@2.3.0
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =243
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Text: =""
+                        Width: =585
+                        X: =703
+                        Y: =1103
+                  - Card1_Bg_8:
+                      Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 213, 0, 1)
-                        Height: =3
-                        Width: =60
-                        X: =283
-                        Y: =573
-                  - SmallCards_TitleLine_5:
-                      Control: Rectangle@2.3.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 213, 0, 1)
-                        Height: =3
-                        Width: =60
-                        X: =898
-                        Y: =606
-                  - SmallCards_TitleLine_6:
-                      Control: Rectangle@2.3.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 213, 0, 1)
-                        Height: =3
-                        Width: =60
-                        X: =283
-                        Y: =826
-                  - SmallCards_TitleLine_7:
-                      Control: Rectangle@2.3.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 213, 0, 1)
-                        Height: =3
-                        Width: =60
-                        X: =283
-                        Y: =1083
-                  - SmallCards_TitleLine_8:
-                      Control: Rectangle@2.3.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 213, 0, 1)
-                        Height: =3
-                        Width: =60
-                        X: =903
-                        Y: =1075
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =240
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Text: =""
+                        Width: =595
+                        X: =78
+                        Y: =1103
       - RectNavActive_1:
           Control: Rectangle@2.3.0
           Properties:

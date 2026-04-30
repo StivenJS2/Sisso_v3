@@ -46,10 +46,6 @@
             AccHeaderBg_CL As rectangle:
                 Fill: =RGBA(230, 230, 230, 1)
                 Height: =50
-                RadiusBottomLeft: =5
-                RadiusBottomRight: =5
-                RadiusTopLeft: =5
-                RadiusTopRight: =5
                 Width: =Parent.Width - 136
                 X: =68
                 Y: =15

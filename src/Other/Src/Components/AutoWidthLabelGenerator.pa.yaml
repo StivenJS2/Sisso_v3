@@ -67,7 +67,7 @@ ComponentDefinitions:
                   Text: ="Auto Width Label Generator"
                   Width: =361
                   X: =(Parent.Width - lblTitle_AWLG.Width) / 2
-                  Y: |+
+                  Y: |
                     =0
             - imgAuthor_AWLG:
                 Control: Image@2.2.3
@@ -110,7 +110,7 @@ ComponentDefinitions:
                   Height: =56
                   HoverBorderColor: =ColorFade(imgLinkedIn_AWLG.BorderColor, 20%)
                   HoverFill: =ColorFade(imgLinkedIn_AWLG.Fill, 20%)
-                  Image: |+
+                  Image: |
                     ="data:image/svg+xml," & 
                      EncodeUrl(
                         "<svg xmlns='http://www.w3.org/2000/svg' height='200' width='200' version='1.0'>
@@ -163,7 +163,7 @@ ComponentDefinitions:
                   Height: =56
                   HoverBorderColor: =ColorFade(imgTwitter_AWLG.BorderColor, 20%)
                   HoverFill: =ColorFade(imgTwitter_AWLG.Fill, 20%)
-                  Image: |+
+                  Image: |
                     ="data:image/svg+xml," & 
                      EncodeUrl(
                         "<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'>
@@ -184,7 +184,7 @@ ComponentDefinitions:
           Properties:
             DropShadow: =DropShadow.None
             Fill: =RGBA(241, 244, 249, 1)
-            Height: |+
+            Height: |
               =190
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
@@ -1171,7 +1171,7 @@ ComponentDefinitions:
                   PressedFill: =cirGeneratorStep1_AWLG.Fill
                   Width: =cirGeneratorStep1_AWLG.Height
                   X: =40
-                  Y: |+
+                  Y: |
                     =40
             - lblGeneratorStep1_AWLG:
                 Control: Label@2.5.1
