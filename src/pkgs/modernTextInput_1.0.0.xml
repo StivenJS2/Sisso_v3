@@ -25,7 +25,7 @@
       <appMagic:excludeFromReachability />
     </property>
     <!-- Input Behavior Properties -->
-    <property name="Placeholder" localizedName="##ModernTextInput_Placeholder##" datatype="String" defaultValue="##ModernTextInput_Placeholder_Default##">
+    <property name="Placeholder" localizedName="##ModernTextInput_Placeholder##" datatype="String" defaultValue="&quot;##ModernTextInput_Placeholder_Default##&quot;" isExpr="true">
       <title>Placeholder</title>
       <appMagic:category>data</appMagic:category>
       <appMagic:displayName>##ModernTextInput_Placeholder_DisplayName##</appMagic:displayName>
