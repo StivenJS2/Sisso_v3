@@ -28,6 +28,15 @@ Screens:
                   X: =0
                   Y: =0
                 Children:
+                  - RectFooter_5:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(26, 58, 110, 1)
+                        Height: =68
+                        Width: =1360
+                        X: =5
+                        Y: =598
                   - RectFilterBg:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -147,6 +156,18 @@ Screens:
                         Width: =120
                         X: =800
                         Y: =40
+                  - LblHeadEstado:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(148, 163, 184, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =30
+                        Size: =10
+                        Text: ="ESTADO"
+                        X: =60
+                        Y: =130
                   - DtHasta:
                       Control: Classic/DatePicker@2.6.0
                       Properties:
@@ -164,7 +185,7 @@ Screens:
                         Width: =120
                         X: =930
                         Y: =40
-                  - LblHeadEstado:
+                  - LblHeadCategoria:
                       Control: Label@2.5.1
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -173,8 +194,8 @@ Screens:
                         FontWeight: =FontWeight.Semibold
                         Height: =30
                         Size: =10
-                        Text: ="ESTADO"
-                        X: =60
+                        Text: ="CATEGORÍA"
+                        X: =200
                         Y: =130
                   - BtnFiltrar:
                       Control: Classic/Button@2.2.0
@@ -200,7 +221,7 @@ Screens:
                         Width: =110
                         X: =1060
                         Y: =40
-                  - LblHeadCategoria:
+                  - LblHeadInfo:
                       Control: Label@2.5.1
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -209,8 +230,9 @@ Screens:
                         FontWeight: =FontWeight.Semibold
                         Height: =30
                         Size: =10
-                        Text: ="CATEGORÍA"
-                        X: =200
+                        Text: ="INFORMACIÓN DEL CASO"
+                        Width: =460
+                        X: =360
                         Y: =130
                   - BtnFiltrar_1:
                       Control: Classic/Button@2.2.0
@@ -237,19 +259,6 @@ Screens:
                         Width: =110
                         X: =1180
                         Y: =40
-                  - LblHeadInfo:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(148, 163, 184, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =30
-                        Size: =10
-                        Text: ="INFORMACIÓN DEL CASO"
-                        Width: =460
-                        X: =360
-                        Y: =130
                   - LblHeadFecha:
                       Control: Label@2.5.1
                       Properties:
@@ -562,6 +571,40 @@ Screens:
                         Width: =1326
                         X: =20
                         Y: =313
+                  - LblFooter_5:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(200, 184, 122, 0.7)
+                        Font: =Font.'Open Sans'
+                        Height: =41
+                        Size: =9
+                        Text: |-
+                          ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+                          Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                        Width: =853
+                        X: =5
+                        Y: =613
+                  - RectFooterBorder_5:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(200, 184, 122, 1)
+                        BorderThickness: =1
+                        Fill: =RGBA(200, 184, 122, 1)
+                        Height: =0
+                        Width: =1360
+                        X: =5
+                        Y: =598
+                  - Image4_4:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Height: =66
+                        Image: ='image-removebg-preview'
+                        ImagePosition: =ImagePosition.Fill
+                        Width: =289
+                        X: =1070
+                        Y: =603
       - Rectangle1_2:
           Control: Rectangle@2.3.0
           Properties:
@@ -712,3 +755,12 @@ Screens:
             Width: =125
             X: =802
             Y: =50
+      - RectFooterBorder_6:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(200, 184, 122, 1)
+            BorderThickness: =1
+            Fill: =RGBA(200, 184, 122, 1)
+            Height: =2
+            Width: =1355
+            Y: =697

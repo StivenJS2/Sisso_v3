@@ -1,0 +1,785 @@
+CuentasListas As screen:
+    Fill: =RGBA(0, 0, 0, 0.02)
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Width: =1366
+        ZIndex: =1
+
+    RectNavBorder_3 As rectangle:
+        Fill: =RGBA(248, 205, 0, 1)
+        Height: =2
+        Width: =1366
+        Y: =123
+        ZIndex: =2
+
+    RectQuickActionBar3_1 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =34
+        Width: =Parent.Width
+        Y: =89
+        ZIndex: =3
+
+    Rectangle1_3 As rectangle:
+        Fill: =RGBA(26, 58, 110, 1)
+        Height: =36
+        Width: =1366
+        Y: =89
+        ZIndex: =4
+
+    LblTopLeft_3 As label:
+        Color: =RGBA(200, 184, 122, 1)
+        Height: =36
+        Size: =9
+        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
+        Width: =600
+        X: =13
+        Y: =89
+        ZIndex: =5
+
+    LblNavBienestar_3 As label:
+        Color: =RGBA(100, 120, 150, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        Size: =14
+        Text: ="Salir"
+        Width: =56
+        X: =1206
+        Y: =31
+        ZIndex: =7
+
+    Image1_1 As image:
+        Height: =78
+        Image: =Javeriana
+        Width: =230
+        Y: =6
+        ZIndex: =8
+
+    LblNavBienestar_6 As label:
+        Color: =RGBA(100, 120, 150, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        Size: =14
+        Text: ="Mis Solicitudes"
+        Width: =157
+        X: =1016
+        Y: =31
+        ZIndex: =9
+
+    LblNavBienestar_7 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        OnSelect: =Navigate(introduccion)
+        Size: =14
+        Text: ="Servicios"
+        Width: =97
+        X: =886
+        Y: =31
+        ZIndex: =10
+
+    Icon1_1 As icon:
+        Height: =36
+        Icon: =Icon.Leave
+        Width: =25
+        X: =1262
+        Y: =28
+        ZIndex: =11
+
+    Rectangle1_4 As rectangle:
+        Fill: =RGBA(15, 84, 140, 0.52)
+        Height: =50
+        Width: =2
+        X: =230
+        Y: =25
+        ZIndex: =12
+
+    Image2_4 As image:
+        Height: =60
+        Image: =User().Image
+        RadiusBottomLeft: =Self.Width / 2
+        RadiusBottomRight: =Self.Width / 2
+        RadiusTopLeft: =Self.Width / 2
+        RadiusTopRight: =Self.Width / 2
+        Width: =60
+        X: =246
+        Y: =15
+        ZIndex: =13
+
+    Text1_1 As modernText:
+        BorderStyle: =""
+        Font: =""
+        FontWeight: =FontWeight.Bold
+        Height: =62
+        Size: =16
+        Text: =User().FullName
+        Width: =164
+        X: =320
+        Y: =19
+        ZIndex: =14
+
+    CL_LblTitle As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =24
+        Text: ="Cuentas y listas"
+        Width: =400
+        X: =85
+        Y: =134
+        ZIndex: =15
+
+    CL_RectTitleLine As rectangle:
+        Fill: =RGBA(255, 213, 0, 1)
+        Height: =4
+        Width: =60
+        X: =94
+        Y: =179
+        ZIndex: =16
+
+    CL_LblIntro As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =27
+        Size: =12
+        Text: ="Permite solicitar la creación de buzones de correo de uso compartido o genérico, calendarios y listas de correo institucionales."
+        Width: =1200
+        X: =87
+        Y: =183
+        ZIndex: =17
+
+    CL_LblNote As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =22
+        Size: =12
+        Text: |-
+            ="Si desea crear una cuenta a un usuario que no tiene con vinculación directa con la Universidad dirijase al módulo: Solicitud creación usuarios externos."
+        Width: =1200
+        X: =139
+        Y: =210
+        ZIndex: =18
+
+    CL_Card1_Bg As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =220
+        HoverFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =590
+        X: =88
+        Y: =244
+        ZIndex: =19
+
+    CL_Card1_IconBg As button:
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(245, 246, 248, 1)
+        Height: =120
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =120
+        X: =118
+        Y: =294
+        ZIndex: =20
+
+    CL_Card1_Icon As image:
+        Height: =80
+        Image: =Correo
+        Width: =80
+        X: =138
+        Y: =314
+        ZIndex: =21
+
+    CL_Card1_Title As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =16
+        Text: ="Buzón de correo"
+        Width: =373
+        X: =268
+        Y: =264
+        ZIndex: =22
+
+    CL_Card1_Desc As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =110
+        Size: =12
+        Text: ="Los buzones de correo funcionan como una cuenta de correo adicional a la que tiene cada funcionario de la Universidad, normalmente estos buzones tienen un nombre genérico, pueden ser de uso compartido."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =390
+        X: =268
+        Y: =304
+        ZIndex: =23
+
+    CL_Card1_LinkText As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =41
+        Size: =14
+        Text: ="Solicitar servicio"
+        Width: =161
+        X: =268
+        Y: =408
+        ZIndex: =24
+
+    CL_Card1_LinkIcon As icon:
+        Color: =RGBA(255, 213, 0, 1)
+        Height: =20
+        Icon: =Icon.ArrowRight
+        Width: =20
+        X: =429
+        Y: =419
+        ZIndex: =25
+
+    CL_Card2_Bg As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =220
+        HoverFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =590
+        X: =708
+        Y: =244
+        ZIndex: =26
+
+    CL_Card2_IconBg As button:
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(245, 246, 248, 1)
+        Height: =120
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =120
+        X: =738
+        Y: =294
+        ZIndex: =27
+
+    CL_Card2_Icon As image:
+        Height: =80
+        Image: =Agenda
+        Width: =80
+        X: =758
+        Y: =314
+        ZIndex: =28
+
+    CL_Card2_Title As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =16
+        Text: ="Calendario institucional"
+        Width: =373
+        X: =888
+        Y: =264
+        ZIndex: =29
+
+    CL_Card2_Desc As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =90
+        Size: =12
+        Text: ="Se solicita para creación de calendarios institucionales para la reserva de salas, un ejemplo de calendarios de salas es saladti@javeriana.edu.co."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =390
+        X: =888
+        Y: =304
+        ZIndex: =30
+
+    CL_Card2_LinkText As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =14
+        Text: ="Solicitar servicio"
+        Width: =161
+        X: =888
+        Y: =404
+        ZIndex: =31
+
+    CL_Card3_Bg As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =202
+        HoverFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =590
+        X: =89
+        Y: =474
+        ZIndex: =33
+
+    CL_Card3_IconBg As button:
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(245, 246, 248, 1)
+        Height: =120
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =120
+        X: =119
+        Y: =524
+        ZIndex: =34
+
+    CL_Card3_Icon As image:
+        Height: =80
+        Image: =Usuarios
+        Width: =80
+        X: =139
+        Y: =544
+        ZIndex: =35
+
+    CL_Card3_Title As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =16
+        Text: ="Lista de correo institucional dinámica"
+        Width: =400
+        X: =269
+        Y: =494
+        ZIndex: =36
+
+    CL_Card3_Desc As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =90
+        Size: =12
+        Text: ="Permite la creación de listas de correo que automáticamente se actualizan de acuerdo con los criterios definidos (por ejemplo, miembros de un área específica)."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =400
+        X: =269
+        Y: =554
+        ZIndex: =37
+
+    CL_Card4_Bg As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =202
+        HoverFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =590
+        X: =709
+        Y: =474
+        ZIndex: =40
+
+    CL_Card4_IconBg As button:
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(245, 246, 248, 1)
+        Height: =120
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =120
+        X: =739
+        Y: =524
+        ZIndex: =41
+
+    CL_Card4_Icon As image:
+        Height: =80
+        Image: =Permisos
+        Width: =80
+        X: =759
+        Y: =544
+        ZIndex: =42
+
+    CL_Card4_Title As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =16
+        Text: ="Lista de correo institucional estática"
+        Width: =400
+        X: =889
+        Y: =494
+        ZIndex: =43
+
+    CL_Card4_Desc As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =90
+        Size: =12
+        Text: ="Permite la creación de listas de correo con miembros definidos manualmente, los cuales permanecen hasta que se realicen cambios explícitos."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =390
+        X: =889
+        Y: =534
+        ZIndex: =44
+
+    CL_LblNote_1 As label:
+        Color: =RGBA(70, 70, 70, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =20
+        Size: =12
+        Text: |-
+            ="Nota: "
+        Width: =60
+        X: =88
+        Y: =211
+        ZIndex: =50
+
+    CL_Card1_LinkIcon_1 As icon:
+        Color: =RGBA(255, 213, 0, 1)
+        Height: =20
+        Icon: =Icon.ArrowRight
+        Width: =20
+        X: =1050
+        Y: =414
+        ZIndex: =51
+
+    CL_Card1_LinkText_1 As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =41
+        Size: =14
+        Text: ="Solicitar servicio"
+        Width: =161
+        X: =269
+        Y: =635
+        ZIndex: =52
+
+    CL_Card1_LinkIcon_2 As icon:
+        Color: =RGBA(255, 213, 0, 1)
+        Height: =20
+        Icon: =Icon.ArrowRight
+        Width: =20
+        X: =430
+        Y: =646
+        ZIndex: =53
+
+    CL_Card1_LinkText_2 As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =41
+        Size: =14
+        Text: ="Solicitar servicio"
+        Width: =161
+        X: =889
+        Y: =635
+        ZIndex: =54
+
+    CL_Card1_LinkIcon_3 As icon:
+        Color: =RGBA(255, 213, 0, 1)
+        Height: =20
+        Icon: =Icon.ArrowRight
+        Width: =20
+        X: =1050
+        Y: =646
+        ZIndex: =55
+
+    CL_Card1_Bg_1 As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =220
+        HoverFill: =
+        OnSelect: =Navigate(BuzonCorreo)
+        PressedFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =590
+        X: =88
+        Y: =244
+        ZIndex: =56
+
+    CL_Card1_Bg_2 As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =220
+        HoverFill: =
+        PressedFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =590
+        X: =708
+        Y: =244
+        ZIndex: =57
+
+    CL_Card1_Bg_3 As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =204
+        HoverFill: =
+        PressedFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =590
+        X: =89
+        Y: =474
+        ZIndex: =58
+
+    CL_Card1_Bg_4 As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =204
+        HoverFill: =
+        PressedFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =590
+        X: =709
+        Y: =474
+        ZIndex: =59
+
+    ButtonCanvas2 As Botón:
+        Align: =Align.Center
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =32
+        OnSelect: =Navigate(introduccion)
+        Text: =
+        Width: =96
+        X: =885
+        Y: =29
+        ZIndex: =60
+
+    ButtonCanvas2_1 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =Align.Center
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =32
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Navigate(misSolicitudes)
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =163
+        X: =1010
+        Y: =27
+        ZIndex: =61
+
+    ButtonCanvas2_2 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =Align.Center
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =32
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: |-
+            =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =96
+        X: =1182
+        Y: =32
+        ZIndex: =62
+
+    ButtonCanvas1_2 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =34
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: |-
+            =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =103
+        X: =1196
+        Y: =30
+        ZIndex: =63
+
+    ButtonCanvas1_3 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =31
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Navigate(misSolicitudes)
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =146
+        X: =1016
+        Y: =30
+        ZIndex: =64
+
+    ButtonCanvas1_4 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =34
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Navigate(introduccion)
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =103
+        X: =877
+        Y: =30
+        ZIndex: =65
+
+    RectFooter_2 As rectangle:
+        Fill: =RGBA(26, 58, 110, 1)
+        Height: =68
+        Width: =1325
+        X: =40
+        Y: =700
+        ZIndex: =66
+
+    LblFooter_2 As label:
+        Color: =RGBA(200, 184, 122, 0.7)
+        Height: =41
+        Size: =9
+        Text: |-
+            ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+            Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+        Width: =853
+        X: =42
+        Y: =713
+        ZIndex: =67
+
+    RectFooterBorder_2 As rectangle:
+        BorderColor: =RGBA(200, 184, 122, 1)
+        BorderThickness: =1
+        Fill: =RGBA(200, 184, 122, 1)
+        Height: =2
+        Width: =1325
+        X: =40
+        Y: =700
+        ZIndex: =68
+
+    Image4_1 As image:
+        Height: =66
+        Image: ='image-removebg-preview'
+        ImagePosition: =ImagePosition.Fill
+        Width: =289
+        X: =1070
+        Y: =705
+        ZIndex: =69
+

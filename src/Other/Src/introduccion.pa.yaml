@@ -16,9 +16,9 @@ Screens:
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =123
+            Height: =34
             Width: =Parent.Width
-            Y: =2
+            Y: =89
       - Rectangle1_1:
           Control: Rectangle@2.3.0
           Properties:
@@ -43,7 +43,7 @@ Screens:
           Control: FluidGrid@2.3.0
           Properties:
             BorderThickness: =0
-            Height: =Parent.Height - Self.Y
+            Height: =645
             Width: =Parent.Width
             Y: =RectQuickActionBar3.Y + RectQuickActionBar3.Height
           Children:
@@ -121,8 +121,8 @@ Screens:
                         Height: =115
                         Text: ="Organiza tus reuniones a tu manera con el autoservicio de Zoom"
                         Width: =116
-                        X: =345
-                        Y: =151
+                        X: =343
+                        Y: =169
                   - RectCardQue_2:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -175,8 +175,8 @@ Screens:
                         Height: =143
                         Text: ="acceso de manera remota o virtual a recursos de infraestructura de computación robusta tipo LaaS"
                         Width: =175
-                        X: =658
-                        Y: =155
+                        X: =661
+                        Y: =141
                   - LblCardInqTitle_18:
                       Control: Label@2.5.1
                       Properties:
@@ -1157,6 +1157,7 @@ Screens:
                         HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =
+                        OnSelect: =Navigate(CuentasListas)
                         PressedBorderColor: =Self.Fill
                         PressedColor: =Self.Fill
                         PressedFill: =
@@ -1322,11 +1323,18 @@ Screens:
                         Width: =200
                         X: =584
                         Y: =If(locShowMoreIntro, 750, 597)
+                  - Rectangle3:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =41
+                        X: =801
             - DataCard7:
                 Control: DataCard@1.0.2
                 Properties:
                   Fill: =RGBA(0, 0, 0, 0.02)
-                  Height: =1394
+                  Height: =1434
                   Width: =Parent.Width
                   X: =0
                   Y: =1
@@ -2129,6 +2137,7 @@ Screens:
                         HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =
+                        OnSelect: =Navigate(CuentasListas)
                         PressedBorderColor: =Self.Fill
                         PressedColor: =Self.Fill
                         PressedFill: =
@@ -2164,47 +2173,6 @@ Screens:
                         Width: =590
                         X: =698
                         Y: =133
-                  - RectFooter_1:
-                      Control: Rectangle@2.3.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(26, 58, 110, 1)
-                        Height: =36
-                        Width: =1366
-                        Y: =1377
-                  - RectFooterBorder_1:
-                      Control: Rectangle@2.3.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(200, 184, 122, 1)
-                        Height: =3
-                        Width: =1366
-                        Y: =1374
-                  - LblFooter_1:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(200, 184, 122, 0.7)
-                        Font: =Font.'Open Sans'
-                        Height: =21
-                        Size: =9
-                        Text: |-
-                          ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
-                        Width: =853
-                        Y: =1384
-                  - LblFooterRight_1:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Right
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(200, 184, 122, 0.7)
-                        Font: =Font.'Open Sans'
-                        Height: =36
-                        Size: =9
-                        Text: ="Soporte técnico · Política de privacidad"
-                        Width: =280
-                        X: =1058
-                        Y: =1377
                   - Card1_Bg_5:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -2301,6 +2269,75 @@ Screens:
                         Width: =595
                         X: =78
                         Y: =1103
+                  - Label1_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 213, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Size: =25
+                        Text: ="DTI"
+                        Width: =122
+                        X: =832
+                        Y: =20
+                  - Label1_3:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(9, 33, 98, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Size: =25
+                        Text: ="Solicitudes de servicios de "
+                        Width: =446
+                        X: =412
+                        Y: =20
+                  - RectFooter_3:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(26, 58, 110, 1)
+                        Height: =68
+                        Width: =1325
+                        X: =38
+                        Y: =1375
+                  - LblFooter_3:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(200, 184, 122, 0.7)
+                        Font: =Font.'Open Sans'
+                        Height: =41
+                        Size: =9
+                        Text: |-
+                          ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+                          Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                        Width: =853
+                        X: =45
+                        Y: =1393
+                  - RectFooterBorder_3:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(200, 184, 122, 1)
+                        BorderThickness: =1
+                        Fill: =RGBA(200, 184, 122, 1)
+                        Height: =2
+                        Width: =1325
+                        X: =38
+                        Y: =1375
+                  - Image4_2:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Height: =68
+                        Image: ='image-removebg-preview'
+                        ImagePosition: =ImagePosition.Fill
+                        Width: =289
+                        X: =1068
+                        Y: =1380
       - RectNavActive_1:
           Control: Rectangle@2.3.0
           Properties:
@@ -2322,7 +2359,7 @@ Screens:
             Text: ="Salir"
             Width: =56
             X: =1206
-            Y: =33
+            Y: =31
       - Image1:
           Control: Image@2.2.3
           Properties:
@@ -2365,7 +2402,7 @@ Screens:
             Icon: =Icon.Leave
             Width: =25
             X: =1262
-            Y: =31
+            Y: =28
       - Rectangle1:
           Control: Rectangle@2.3.0
           Properties:
@@ -2406,3 +2443,22 @@ Screens:
             Height: =2
             Width: =1366
             Y: =123
+      - ButtonCanvas1:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            OnSelect: =Navigate(misSolicitudes)
+            Text: =
+            Width: =157
+            X: =1016
+            Y: =27
+      - ButtonCanvas1_1:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =34
+            OnSelect: =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+            Text: =
+            Width: =103
+            X: =1196
+            Y: =30

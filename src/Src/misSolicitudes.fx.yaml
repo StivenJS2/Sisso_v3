@@ -19,13 +19,21 @@
             Y: =0
             ZIndex: =1
 
+            RectFooter_5 As rectangle:
+                Fill: =RGBA(26, 58, 110, 1)
+                Height: =68
+                Width: =1360
+                X: =5
+                Y: =598
+                ZIndex: =1
+
             RectFilterBg As rectangle:
                 Fill: =RGBA(248, 250, 252, 1)
                 Height: =84
                 Width: =1326
                 X: =20
                 Y: =20
-                ZIndex: =1
+                ZIndex: =2
 
             TxtIdCaso As text:
                 BorderColor: =RGBA(226, 232, 240, 1)
@@ -39,7 +47,7 @@
                 Width: =100
                 X: =30
                 Y: =40
-                ZIndex: =2
+                ZIndex: =3
 
             TxtNumCaso As text:
                 BorderColor: =RGBA(226, 232, 240, 1)
@@ -53,7 +61,7 @@
                 Width: =100
                 X: =140
                 Y: =40
-                ZIndex: =3
+                ZIndex: =4
 
             TxtUsuarios As text:
                 BorderColor: =RGBA(226, 232, 240, 1)
@@ -67,7 +75,7 @@
                 Width: =130
                 X: =250
                 Y: =40
-                ZIndex: =4
+                ZIndex: =5
 
             DdCategoria As Desplegable.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
@@ -76,7 +84,7 @@
                 Width: =160
                 X: =390
                 Y: =40
-                ZIndex: =5
+                ZIndex: =6
 
             DdSubcategoria As Desplegable.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
@@ -95,7 +103,7 @@
                 Width: =230
                 X: =560
                 Y: =40
-                ZIndex: =6
+                ZIndex: =7
 
             DtDesde As datepicker:
                 BorderColor: =RGBA(226, 232, 240, 1)
@@ -104,16 +112,6 @@
                 InputTextPlaceholder: ="Desde"
                 Width: =120
                 X: =800
-                Y: =40
-                ZIndex: =7
-
-            DtHasta As datepicker:
-                BorderColor: =RGBA(226, 232, 240, 1)
-                BorderThickness: =1
-                Height: =44
-                InputTextPlaceholder: ="Hasta"
-                Width: =120
-                X: =930
                 Y: =40
                 ZIndex: =8
 
@@ -125,7 +123,27 @@
                 Text: ="ESTADO"
                 X: =60
                 Y: =130
-                ZIndex: =8
+                ZIndex: =9
+
+            DtHasta As datepicker:
+                BorderColor: =RGBA(226, 232, 240, 1)
+                BorderThickness: =1
+                Height: =44
+                InputTextPlaceholder: ="Hasta"
+                Width: =120
+                X: =930
+                Y: =40
+                ZIndex: =10
+
+            LblHeadCategoria As label:
+                Color: =RGBA(148, 163, 184, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =30
+                Size: =10
+                Text: ="CATEGORÍA"
+                X: =200
+                Y: =130
+                ZIndex: =11
 
             BtnFiltrar As button:
                 BorderColor: =RGBA(26, 58, 110, 1)
@@ -140,17 +158,18 @@
                 Width: =110
                 X: =1060
                 Y: =40
-                ZIndex: =9
+                ZIndex: =12
 
-            LblHeadCategoria As label:
+            LblHeadInfo As label:
                 Color: =RGBA(148, 163, 184, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =30
                 Size: =10
-                Text: ="CATEGORÍA"
-                X: =200
+                Text: ="INFORMACIÓN DEL CASO"
+                Width: =460
+                X: =360
                 Y: =130
-                ZIndex: =9
+                ZIndex: =13
 
             BtnFiltrar_1 As button:
                 BorderColor: =RGBA(26, 58, 110, 1)
@@ -167,18 +186,7 @@
                 Width: =110
                 X: =1180
                 Y: =40
-                ZIndex: =10
-
-            LblHeadInfo As label:
-                Color: =RGBA(148, 163, 184, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =30
-                Size: =10
-                Text: ="INFORMACIÓN DEL CASO"
-                Width: =460
-                X: =360
-                Y: =130
-                ZIndex: =10
+                ZIndex: =14
 
             LblHeadFecha As label:
                 Color: =RGBA(148, 163, 184, 1)
@@ -188,7 +196,7 @@
                 Text: ="FECHA REGISTRO"
                 X: =840
                 Y: =130
-                ZIndex: =11
+                ZIndex: =15
 
             LblHeadAccion As label:
                 Align: =Align.Center
@@ -200,7 +208,7 @@
                 Width: =140
                 X: =1080
                 Y: =130
-                ZIndex: =12
+                ZIndex: =16
 
             SimList_Bg1 As rectangle:
                 Fill: =RGBA(0, 0, 0, 0)
@@ -208,7 +216,7 @@
                 Width: =1326
                 X: =20
                 Y: =170
-                ZIndex: =13
+                ZIndex: =17
 
             SimList_RectPill1 As rectangle:
                 Fill: =ColorFade(RGBA(245, 158, 11, 1), 85%)
@@ -216,7 +224,7 @@
                 Width: =110
                 X: =60
                 Y: =190
-                ZIndex: =14
+                ZIndex: =18
 
             SimList_LblEstado1 As label:
                 Align: =Align.Center
@@ -228,7 +236,7 @@
                 Width: =110
                 X: =60
                 Y: =190
-                ZIndex: =15
+                ZIndex: =19
 
             SimList_LblCat1 As label:
                 Color: =RGBA(51, 65, 85, 1)
@@ -238,7 +246,7 @@
                 Text: ="Incidente"
                 X: =200
                 Y: =170
-                ZIndex: =16
+                ZIndex: =20
 
             SimList_BtnAvatar1 As button:
                 BorderThickness: =0
@@ -258,7 +266,7 @@
                 Width: =40
                 X: =360
                 Y: =186
-                ZIndex: =17
+                ZIndex: =21
 
             SimList_LblAsunto1 As label:
                 Color: =RGBA(15, 23, 42, 1)
@@ -269,7 +277,7 @@
                 Width: =460
                 X: =415
                 Y: =186
-                ZIndex: =18
+                ZIndex: =22
 
             SimList_LblId1 As label:
                 Color: =RGBA(100, 116, 139, 1)
@@ -279,7 +287,7 @@
                 Width: =460
                 X: =415
                 Y: =208
-                ZIndex: =19
+                ZIndex: =23
 
             SimList_LblFecha1 As label:
                 Color: =RGBA(51, 65, 85, 1)
@@ -288,7 +296,7 @@
                 Text: ="15 abr 2026"
                 X: =840
                 Y: =170
-                ZIndex: =20
+                ZIndex: =24
 
             SimList_BtnVer1 As button:
                 Color: =RGBA(26, 58, 110, 1)
@@ -303,7 +311,7 @@
                 Width: =120
                 X: =1080
                 Y: =188
-                ZIndex: =21
+                ZIndex: =25
 
             SimList_Line1 As rectangle:
                 Fill: =RGBA(226, 232, 240, 1)
@@ -311,7 +319,7 @@
                 Width: =1326
                 X: =20
                 Y: =241
-                ZIndex: =22
+                ZIndex: =26
 
             SimList_Bg2 As rectangle:
                 Fill: =RGBA(0, 0, 0, 0)
@@ -319,7 +327,7 @@
                 Width: =1326
                 X: =20
                 Y: =242
-                ZIndex: =23
+                ZIndex: =27
 
             SimList_RectPill2 As rectangle:
                 Fill: =ColorFade(RGBA(14, 165, 233, 1), 85%)
@@ -327,7 +335,7 @@
                 Width: =110
                 X: =60
                 Y: =262
-                ZIndex: =24
+                ZIndex: =28
 
             SimList_LblEstado2 As label:
                 Align: =Align.Center
@@ -339,7 +347,7 @@
                 Width: =110
                 X: =60
                 Y: =262
-                ZIndex: =25
+                ZIndex: =29
 
             SimList_LblCat2 As label:
                 Color: =RGBA(51, 65, 85, 1)
@@ -349,7 +357,7 @@
                 Text: ="Requerimiento"
                 X: =200
                 Y: =242
-                ZIndex: =26
+                ZIndex: =30
 
             SimList_BtnAvatar2 As button:
                 BorderThickness: =0
@@ -369,7 +377,7 @@
                 Width: =40
                 X: =360
                 Y: =258
-                ZIndex: =27
+                ZIndex: =31
 
             SimList_LblAsunto2 As label:
                 Color: =RGBA(15, 23, 42, 1)
@@ -380,7 +388,7 @@
                 Width: =460
                 X: =415
                 Y: =258
-                ZIndex: =28
+                ZIndex: =32
 
             SimList_LblId2 As label:
                 Color: =RGBA(100, 116, 139, 1)
@@ -390,7 +398,7 @@
                 Width: =460
                 X: =415
                 Y: =280
-                ZIndex: =29
+                ZIndex: =33
 
             SimList_LblFecha2 As label:
                 Color: =RGBA(51, 65, 85, 1)
@@ -399,7 +407,7 @@
                 Text: ="16 abr 2026"
                 X: =840
                 Y: =242
-                ZIndex: =30
+                ZIndex: =34
 
             SimList_BtnVer2 As button:
                 Color: =RGBA(26, 58, 110, 1)
@@ -414,7 +422,7 @@
                 Width: =120
                 X: =1080
                 Y: =260
-                ZIndex: =31
+                ZIndex: =35
 
             SimList_Line2 As rectangle:
                 Fill: =RGBA(226, 232, 240, 1)
@@ -422,7 +430,38 @@
                 Width: =1326
                 X: =20
                 Y: =313
-                ZIndex: =32
+                ZIndex: =36
+
+            LblFooter_5 As label:
+                Color: =RGBA(200, 184, 122, 0.7)
+                Height: =41
+                Size: =9
+                Text: |-
+                    ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+                    Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                Width: =853
+                X: =5
+                Y: =613
+                ZIndex: =37
+
+            RectFooterBorder_5 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 1)
+                BorderThickness: =1
+                Fill: =RGBA(200, 184, 122, 1)
+                Height: =0
+                Width: =1360
+                X: =5
+                Y: =598
+                ZIndex: =38
+
+            Image4_4 As image:
+                Height: =66
+                Image: ='image-removebg-preview'
+                ImagePosition: =ImagePosition.Fill
+                Width: =289
+                X: =1070
+                Y: =603
+                ZIndex: =39
 
     Rectangle1_2 As rectangle:
         Fill: =RGBA(26, 58, 110, 1)
@@ -548,4 +587,13 @@
         X: =802
         Y: =50
         ZIndex: =16
+
+    RectFooterBorder_6 As rectangle:
+        BorderColor: =RGBA(200, 184, 122, 1)
+        BorderThickness: =1
+        Fill: =RGBA(200, 184, 122, 1)
+        Height: =2
+        Width: =1355
+        Y: =697
+        ZIndex: =17
 

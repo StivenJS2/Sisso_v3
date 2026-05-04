@@ -2,9 +2,9 @@
 
     RectQuickActionBar3 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =123
+        Height: =34
         Width: =Parent.Width
-        Y: =2
+        Y: =89
         ZIndex: =1
 
     Rectangle1_1 As rectangle:
@@ -26,7 +26,7 @@
 
     Canvas3 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =Parent.Height - Self.Y
+        Height: =645
         Width: =Parent.Width
         Y: =RectQuickActionBar3.Y + RectQuickActionBar3.Height
         ZIndex: =5
@@ -97,8 +97,8 @@
                 Height: =115
                 Text: ="Organiza tus reuniones a tu manera con el autoservicio de Zoom"
                 Width: =116
-                X: =345
-                Y: =151
+                X: =343
+                Y: =169
                 ZIndex: =10
 
             RectCardQue_2 As rectangle:
@@ -146,8 +146,8 @@
                 Height: =143
                 Text: ="acceso de manera remota o virtual a recursos de infraestructura de computación robusta tipo LaaS"
                 Width: =175
-                X: =658
-                Y: =155
+                X: =661
+                Y: =141
                 ZIndex: =15
 
             LblCardInqTitle_18 As label:
@@ -879,6 +879,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 HoverFill: =
+                OnSelect: =Navigate(CuentasListas)
                 PressedFill: =
                 Text: =""
                 Width: =230
@@ -997,13 +998,19 @@
                 Y: =If(locShowMoreIntro, 750, 597)
                 ZIndex: =200
 
+            Rectangle3 As rectangle:
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =41
+                X: =801
+                ZIndex: =201
+
         DataCard7 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0.02)
-            Height: =1394
+            Height: =1434
             Width: =Parent.Width
             X: =0
             Y: =1
@@ -1023,7 +1030,7 @@
                 Width: =590
                 X: =78
                 Y: =133
-                ZIndex: =1
+                ZIndex: =5
 
             Card1_IconBg As button:
                 Fill: =RGBA(245, 246, 248, 1)
@@ -1037,7 +1044,7 @@
                 Width: =120
                 X: =118
                 Y: =183
-                ZIndex: =2
+                ZIndex: =6
 
             Card1_Icon As image:
                 Height: =120
@@ -1045,7 +1052,7 @@
                 Width: =120
                 X: =118
                 Y: =183
-                ZIndex: =3
+                ZIndex: =7
 
             Card1_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1056,7 +1063,7 @@
                 Width: =373
                 X: =278
                 Y: =153
-                ZIndex: =4
+                ZIndex: =8
 
             Card1_Desc As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1069,7 +1076,7 @@
                 Width: =390
                 X: =278
                 Y: =193
-                ZIndex: =5
+                ZIndex: =9
 
             Card2_Bg As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1085,7 +1092,7 @@
                 Width: =590
                 X: =698
                 Y: =133
-                ZIndex: =6
+                ZIndex: =10
 
             Card2_IconBg As button:
                 Fill: =RGBA(245, 246, 248, 1)
@@ -1099,7 +1106,7 @@
                 Width: =120
                 X: =738
                 Y: =183
-                ZIndex: =7
+                ZIndex: =11
 
             Card2_Icon As image:
                 Height: =116
@@ -1107,7 +1114,7 @@
                 Width: =123
                 X: =740
                 Y: =183
-                ZIndex: =8
+                ZIndex: =12
 
             Card2_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1118,7 +1125,7 @@
                 Width: =350
                 X: =898
                 Y: =173
-                ZIndex: =9
+                ZIndex: =13
 
             Card2_Desc As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1129,7 +1136,7 @@
                 Width: =350
                 X: =893
                 Y: =238
-                ZIndex: =10
+                ZIndex: =14
 
             Card3_Bg As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1145,7 +1152,7 @@
                 Width: =1210
                 X: =78
                 Y: =383
-                ZIndex: =13
+                ZIndex: =15
 
             Card3_IconBg As button:
                 Fill: =RGBA(245, 246, 248, 1)
@@ -1158,7 +1165,7 @@
                 Width: =120
                 X: =93
                 Y: =423
-                ZIndex: =14
+                ZIndex: =16
 
             Card3_Icon As image:
                 Height: =120
@@ -1166,7 +1173,7 @@
                 Width: =140
                 X: =88
                 Y: =423
-                ZIndex: =15
+                ZIndex: =17
 
             Card3_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1177,7 +1184,7 @@
                 Width: =900
                 X: =278
                 Y: =403
-                ZIndex: =16
+                ZIndex: =18
 
             Card3_Desc As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1188,7 +1195,7 @@
                 Width: =900
                 X: =253
                 Y: =443
-                ZIndex: =17
+                ZIndex: =19
 
             Card4_Bg As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1204,7 +1211,7 @@
                 Width: =590
                 X: =78
                 Y: =620
-                ZIndex: =18
+                ZIndex: =20
 
             Card4_IconBg As button:
                 DisplayMode: =DisplayMode.View
@@ -1218,7 +1225,7 @@
                 Width: =120
                 X: =125
                 Y: =681
-                ZIndex: =19
+                ZIndex: =21
 
             Card4_Icon As image:
                 Height: =115
@@ -1226,7 +1233,7 @@
                 Width: =125
                 X: =128
                 Y: =681
-                ZIndex: =20
+                ZIndex: =22
 
             Card4_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1237,7 +1244,7 @@
                 Width: =350
                 X: =285
                 Y: =651
-                ZIndex: =21
+                ZIndex: =23
 
             Card4_Desc As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1248,7 +1255,7 @@
                 Width: =350
                 X: =283
                 Y: =721
-                ZIndex: =22
+                ZIndex: =24
 
             Card5_Bg As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1264,7 +1271,7 @@
                 Width: =590
                 X: =698
                 Y: =620
-                ZIndex: =23
+                ZIndex: =25
 
             Card5_IconBg As button:
                 DisplayMode: =DisplayMode.View
@@ -1278,7 +1285,7 @@
                 Width: =120
                 X: =745
                 Y: =668
-                ZIndex: =24
+                ZIndex: =26
 
             Card5_Icon As image:
                 Height: =110
@@ -1286,7 +1293,7 @@
                 Width: =123
                 X: =745
                 Y: =678
-                ZIndex: =25
+                ZIndex: =27
 
             Card5_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1298,7 +1305,7 @@
                 Width: =350
                 X: =905
                 Y: =638
-                ZIndex: =26
+                ZIndex: =28
 
             SmallCards_TitleLine_1 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1306,7 +1313,7 @@
                 Width: =60
                 X: =283
                 Y: =187
-                ZIndex: =27
+                ZIndex: =29
 
             SmallCards_TitleLine_2 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1314,7 +1321,7 @@
                 Width: =60
                 X: =898
                 Y: =209
-                ZIndex: =28
+                ZIndex: =30
 
             SmallCards_TitleLine_3 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1322,7 +1329,7 @@
                 Width: =60
                 X: =258
                 Y: =435
-                ZIndex: =29
+                ZIndex: =31
 
             SmallCards_TitleLine_4 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1330,7 +1337,7 @@
                 Width: =60
                 X: =290
                 Y: =681
-                ZIndex: =30
+                ZIndex: =32
 
             SmallCards_TitleLine_5 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1338,7 +1345,7 @@
                 Width: =60
                 X: =908
                 Y: =701
-                ZIndex: =31
+                ZIndex: =33
 
             Card6_Bg As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1354,7 +1361,7 @@
                 Width: =1210
                 X: =78
                 Y: =872
-                ZIndex: =32
+                ZIndex: =34
 
             Card6_IconBg As button:
                 DisplayMode: =DisplayMode.View
@@ -1368,7 +1375,7 @@
                 Width: =120
                 X: =118
                 Y: =912
-                ZIndex: =33
+                ZIndex: =35
 
             Card6_Icon As image:
                 Height: =120
@@ -1376,7 +1383,7 @@
                 Width: =117
                 X: =121
                 Y: =912
-                ZIndex: =34
+                ZIndex: =36
 
             Card6_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1387,7 +1394,7 @@
                 Width: =900
                 X: =278
                 Y: =892
-                ZIndex: =35
+                ZIndex: =37
 
             Card6_Desc As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1398,7 +1405,7 @@
                 Width: =900
                 X: =278
                 Y: =932
-                ZIndex: =36
+                ZIndex: =38
 
             Card7_Bg As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1414,7 +1421,7 @@
                 Width: =595
                 X: =78
                 Y: =1103
-                ZIndex: =37
+                ZIndex: =39
 
             Card7_IconBg As button:
                 DisplayMode: =DisplayMode.View
@@ -1428,7 +1435,7 @@
                 Width: =120
                 X: =118
                 Y: =1163
-                ZIndex: =38
+                ZIndex: =40
 
             Card7_Icon As image:
                 Height: =115
@@ -1436,7 +1443,7 @@
                 Width: =120
                 X: =118
                 Y: =1163
-                ZIndex: =39
+                ZIndex: =41
 
             Card7_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1448,7 +1455,7 @@
                 Width: =333
                 X: =278
                 Y: =1123
-                ZIndex: =40
+                ZIndex: =42
 
             Card7_Desc As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1459,7 +1466,7 @@
                 Width: =378
                 X: =273
                 Y: =1196
-                ZIndex: =41
+                ZIndex: =43
 
             Card8_Bg As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1475,7 +1482,7 @@
                 Width: =585
                 X: =703
                 Y: =1103
-                ZIndex: =42
+                ZIndex: =44
 
             Card8_IconBg As button:
                 DisplayMode: =DisplayMode.View
@@ -1489,7 +1496,7 @@
                 Width: =120
                 X: =738
                 Y: =1163
-                ZIndex: =43
+                ZIndex: =45
 
             Card8_Icon As image:
                 Height: =115
@@ -1497,7 +1504,7 @@
                 Width: =118
                 X: =740
                 Y: =1163
-                ZIndex: =44
+                ZIndex: =46
 
             Card8_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1508,7 +1515,7 @@
                 Width: =390
                 X: =898
                 Y: =1123
-                ZIndex: =45
+                ZIndex: =47
 
             Card8_Desc As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1519,7 +1526,7 @@
                 Width: =350
                 X: =898
                 Y: =1188
-                ZIndex: =46
+                ZIndex: =48
 
             SmallCards_TitleLine_6 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1527,7 +1534,7 @@
                 Width: =60
                 X: =283
                 Y: =925
-                ZIndex: =47
+                ZIndex: =49
 
             SmallCards_TitleLine_7 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1535,7 +1542,7 @@
                 Width: =60
                 X: =283
                 Y: =1183
-                ZIndex: =48
+                ZIndex: =50
 
             SmallCards_TitleLine_8 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1543,7 +1550,7 @@
                 Width: =60
                 X: =903
                 Y: =1175
-                ZIndex: =49
+                ZIndex: =51
 
             Card4_Desc_1 As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1554,7 +1561,7 @@
                 Width: =350
                 X: =898
                 Y: =721
-                ZIndex: =50
+                ZIndex: =52
 
             Card1_Bg_1 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1571,7 +1578,7 @@
                 Width: =590
                 X: =78
                 Y: =133
-                ZIndex: =51
+                ZIndex: =53
 
             Card1_Bg_3 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1588,7 +1595,7 @@
                 Width: =1210
                 X: =78
                 Y: =383
-                ZIndex: =52
+                ZIndex: =54
 
             Card1_Bg_4 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1596,6 +1603,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =220
                 HoverFill: =
+                OnSelect: =Navigate(CuentasListas)
                 PressedFill: =
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
@@ -1605,7 +1613,7 @@
                 Width: =590
                 X: =78
                 Y: =620
-                ZIndex: =53
+                ZIndex: =55
 
             Card1_Bg_2 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1622,42 +1630,7 @@
                 Width: =590
                 X: =698
                 Y: =133
-                ZIndex: =54
-
-            RectFooter_1 As rectangle:
-                Fill: =RGBA(26, 58, 110, 1)
-                Height: =36
-                Width: =1366
-                Y: =1377
-                ZIndex: =55
-
-            RectFooterBorder_1 As rectangle:
-                Fill: =RGBA(200, 184, 122, 1)
-                Height: =3
-                Width: =1366
-                Y: =1374
                 ZIndex: =56
-
-            LblFooter_1 As label:
-                Color: =RGBA(200, 184, 122, 0.7)
-                Height: =21
-                Size: =9
-                Text: |-
-                    ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
-                Width: =853
-                Y: =1384
-                ZIndex: =57
-
-            LblFooterRight_1 As label:
-                Align: =Align.Right
-                Color: =RGBA(200, 184, 122, 0.7)
-                Height: =36
-                Size: =9
-                Text: ="Soporte técnico · Política de privacidad"
-                Width: =280
-                X: =1058
-                Y: =1377
-                ZIndex: =58
 
             Card1_Bg_5 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1674,7 +1647,7 @@
                 Width: =590
                 X: =698
                 Y: =620
-                ZIndex: =201
+                ZIndex: =57
 
             Card1_Bg_6 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1691,7 +1664,7 @@
                 Width: =1210
                 X: =78
                 Y: =872
-                ZIndex: =202
+                ZIndex: =58
 
             Card1_Bg_7 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1708,7 +1681,7 @@
                 Width: =585
                 X: =703
                 Y: =1103
-                ZIndex: =203
+                ZIndex: =59
 
             Card1_Bg_8 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1725,7 +1698,68 @@
                 Width: =595
                 X: =78
                 Y: =1103
+                ZIndex: =60
+
+            Label1_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 213, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =25
+                Text: ="DTI"
+                Width: =122
+                X: =832
+                Y: =20
+                ZIndex: =61
+
+            Label1_3 As label:
+                Align: =Align.Center
+                Color: =RGBA(9, 33, 98, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =25
+                Text: ="Solicitudes de servicios de "
+                Width: =446
+                X: =412
+                Y: =20
+                ZIndex: =62
+
+            RectFooter_3 As rectangle:
+                Fill: =RGBA(26, 58, 110, 1)
+                Height: =68
+                Width: =1325
+                X: =38
+                Y: =1375
+                ZIndex: =202
+
+            LblFooter_3 As label:
+                Color: =RGBA(200, 184, 122, 0.7)
+                Height: =41
+                Size: =9
+                Text: |-
+                    ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+                    Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                Width: =853
+                X: =45
+                Y: =1393
+                ZIndex: =203
+
+            RectFooterBorder_3 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 1)
+                BorderThickness: =1
+                Fill: =RGBA(200, 184, 122, 1)
+                Height: =2
+                Width: =1325
+                X: =38
+                Y: =1375
                 ZIndex: =204
+
+            Image4_2 As image:
+                Height: =68
+                Image: ='image-removebg-preview'
+                ImagePosition: =ImagePosition.Fill
+                Width: =289
+                X: =1068
+                Y: =1380
+                ZIndex: =205
 
     RectNavActive_1 As rectangle:
         Fill: =RGBA(248, 205, 0, 1)
@@ -1743,7 +1777,7 @@
         Text: ="Salir"
         Width: =56
         X: =1206
-        Y: =33
+        Y: =31
         ZIndex: =7
 
     Image1 As image:
@@ -1779,7 +1813,7 @@
         Icon: =Icon.Leave
         Width: =25
         X: =1262
-        Y: =31
+        Y: =28
         ZIndex: =11
 
     Rectangle1 As rectangle:
@@ -1818,4 +1852,52 @@
         Width: =1366
         Y: =123
         ZIndex: =15
+
+    ButtonCanvas1 As Botón:
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =32
+        OnSelect: =Navigate(misSolicitudes)
+        Text: =
+        Width: =157
+        X: =1016
+        Y: =27
+        ZIndex: =16
+
+    ButtonCanvas1_1 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =34
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: |-
+            =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =103
+        X: =1196
+        Y: =30
+        ZIndex: =17
 

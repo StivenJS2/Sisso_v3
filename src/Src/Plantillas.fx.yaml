@@ -1,0 +1,160 @@
+Plantillas As screen:
+    Fill: =RGBA(245, 247, 250, 1)
+    OnVisible: |-
+        =ClearCollect(colImagenes;
+            {id: 1; img: SampleImage};
+            {id: 2; img: SampleImage};
+            {id: 3; img: SampleImage}
+        );
+        Set(varIndice; 1)
+
+    CarruselContainer As groupContainer.manualLayoutContainer:
+        X: =40
+        Y: =40
+        Width: =840
+        Height: =520
+        ZIndex: =1
+
+        TarjetaFondo As rectangle:
+            X: =0
+            Y: =0
+            Width: =840
+            Height: =520
+            Fill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =16
+            RadiusBottomRight: =16
+            RadiusTopLeft: =16
+            RadiusTopRight: =16
+            BorderColor: =RGBA(220, 225, 235, 1)
+            BorderThickness: =1
+            ZIndex: =1
+
+        ImgActual As image:
+            Image: =Index(colImagenes; varIndice).img
+            Width: =840
+            Height: =460
+            X: =0
+            Y: =0
+            ImagePosition: =ImagePosition.Fill
+            RadiusTopLeft: =16
+            RadiusTopRight: =16
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            ZIndex: =2
+
+        GradientOverlayLeft As rectangle:
+            X: =0
+            Y: =0
+            Width: =120
+            Height: =460
+            Fill: =RGBA(0, 0, 0, 0.15)
+            RadiusTopLeft: =16
+            RadiusTopRight: =0
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            ZIndex: =3
+
+        GradientOverlayRight As rectangle:
+            X: =720
+            Y: =0
+            Width: =120
+            Height: =460
+            Fill: =RGBA(0, 0, 0, 0.15)
+            RadiusTopLeft: =0
+            RadiusTopRight: =16
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            ZIndex: =3
+
+        BtnAnterior As button:
+            Text: ="◀"
+            OnSelect: =Set(varIndice; If(varIndice = 1; CountRows(colImagenes); varIndice - 1))
+            X: =16
+            Y: =205
+            Width: =48
+            Height: =48
+            RadiusBottomLeft: =24
+            RadiusBottomRight: =24
+            RadiusTopLeft: =24
+            RadiusTopRight: =24
+            Fill: =RGBA(255, 255, 255, 0.85)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(30, 30, 30, 1)
+            Size: =18
+            BorderThickness: =0
+            ZIndex: =4
+
+        BtnSiguiente As button:
+            Text: ="▶"
+            OnSelect: =Set(varIndice; If(varIndice = CountRows(colImagenes); 1; varIndice + 1))
+            X: =776
+            Y: =205
+            Width: =48
+            Height: =48
+            RadiusBottomLeft: =24
+            RadiusBottomRight: =24
+            RadiusTopLeft: =24
+            RadiusTopRight: =24
+            Fill: =RGBA(255, 255, 255, 0.85)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(30, 30, 30, 1)
+            Size: =18
+            BorderThickness: =0
+            ZIndex: =4
+
+        TimerCarrusel As timer:
+            Duration: =4000
+            Repeat: =true
+            AutoStart: =true
+            OnTimerEnd: =Set(varIndice; If(varIndice = CountRows(colImagenes); 1; varIndice + 1))
+            Visible: =false
+            X: =0
+            Y: =0
+            Width: =10
+            Height: =10
+            ZIndex: =5
+
+        BarraIndicadores As rectangle:
+            X: =0
+            Y: =462
+            Width: =840
+            Height: =58
+            Fill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =16
+            RadiusBottomRight: =16
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            ZIndex: =2
+
+        GalIndicadores As gallery.galleryHorizontal:
+            Items: =colImagenes
+            X: =360
+            Y: =474
+            Width: =120
+            Height: =24
+            TemplateSize: =32
+            ShowScrollbar: =false
+            ZIndex: =6
+
+            CirculoIndicador As circle:
+                Fill: |-
+                    =If(
+                        ThisItem.id = varIndice;
+                        RGBA(50, 100, 220, 1);
+                        RGBA(200, 210, 230, 1)
+                    )
+                Width: =14
+                Height: =14
+                X: =8
+                Y: =5
+                ZIndex: =1
+
+        LblContador As label:
+            Text: =Text(varIndice) & " / " & Text(CountRows(colImagenes))
+            X: =710
+            Y: =474
+            Width: =60
+            Height: =24
+            Color: =RGBA(130, 140, 165, 1)
+            Size: =11
+            ZIndex: =6
