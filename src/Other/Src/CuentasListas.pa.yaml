@@ -42,18 +42,6 @@ Screens:
             Height: =36
             Width: =1366
             Y: =89
-      - LblTopLeft_3:
-          Control: Label@2.5.1
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =RGBA(200, 184, 122, 1)
-            Font: =Font.'Open Sans'
-            Height: =36
-            Size: =9
-            Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
-            Width: =600
-            X: =13
-            Y: =89
       - LblNavBienestar_3:
           Control: Label@2.5.1
           Properties:
@@ -793,8 +781,7 @@ Screens:
             BorderColor: =RGBA(0, 18, 107, 1)
             Fill: =RGBA(26, 58, 110, 1)
             Height: =68
-            Width: =1325
-            X: =40
+            Width: =1366
             Y: =700
       - LblFooter_2:
           Control: Label@2.5.1
@@ -808,7 +795,7 @@ Screens:
               ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
               Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
             Width: =853
-            X: =42
+            X: =5
             Y: =713
       - RectFooterBorder_2:
           Control: Rectangle@2.3.0
@@ -817,8 +804,7 @@ Screens:
             BorderThickness: =1
             Fill: =RGBA(200, 184, 122, 1)
             Height: =2
-            Width: =1325
-            X: =40
+            Width: =1365
             Y: =700
       - Image4_1:
           Control: Image@2.2.3
@@ -830,3 +816,45 @@ Screens:
             Width: =289
             X: =1070
             Y: =705
+      - RectNavBorder_5:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(248, 205, 0, 1)
+            Height: =2
+            Width: =1366
+            Y: =123
+      - LblTopLeft_3:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =36
+            Size: =9
+            Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
+            Width: =408
+            X: =955
+            Y: =88
+      - Icon3_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =27
+            Icon: =Icon.Home
+            OnSelect: =Navigate(introduccion)
+            Width: =30
+            X: =54
+            Y: =92
+      - Icon4_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =29
+            Icon: =Icon.BackArrow
+            OnSelect: =Back()
+            Width: =44
+            X: =10
+            Y: =91

@@ -12,6 +12,5 @@ EditorState:
     - CuentasListas
     - BuzonCorreo
     - misSolicitudes
-    - Plantillas
   ComponentDefinitionsOrder:
     - AutoWidthLabelGenerator

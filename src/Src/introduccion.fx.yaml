@@ -16,18 +16,18 @@
         ZIndex: =2
 
     LblTopLeft_1 As label:
-        Color: =RGBA(200, 184, 122, 1)
+        Color: =RGBA(255, 255, 255, 1)
         Height: =36
         Size: =9
         Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
-        Width: =600
-        X: =13
+        Width: =408
+        X: =950
         Y: =89
         ZIndex: =3
 
     TimerIntro As timer:
         AutoStart: =true
-        Duration: =2900
+        Duration: =6000
         Height: =10
         OnTimerEnd: =Set(varIndiceIntro, If(varIndiceIntro = 3, 1, varIndiceIntro + 1))
         Repeat: =true
@@ -48,106 +48,96 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =If(locShowMoreIntro, BtnVerMas_Intro.Y + BtnVerMas_Intro.Height + 40, 710)
+            Height: =If(locShowMoreIntro, 715, 595)
             Width: =Parent.Width
             X: =0
             Y: =0
             ZIndex: =1
 
             Image3 As image:
-                Height: =357
-                Image: ='FOndo!'
+                Height: =296
+                Image: =plantilla
                 ImagePosition: =ImagePosition.Fill
                 Width: =1366
                 ZIndex: =2
 
-            ImgSlide2A As image:
-                Height: =285
-                Visible: =varIndiceIntro = 2
-                Width: =440
-                X: =11
-                Y: =42
-                ZIndex: =4
-
-            ImgSlide3A As image:
-                Height: =285
-                Visible: =varIndiceIntro = 3
-                Width: =440
-                X: =11
-                Y: =42
+            ImgSlide1B As image:
+                Height: =237
+                Image: =Public_Software
+                ImagePosition: =ImagePosition.Stretch
+                Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
+                Visible: =varIndiceIntro = 1
+                Width: =398
+                X: =483
+                Y: =41
                 ZIndex: =4
 
             ImgSlide2B As image:
-                Height: =285
+                Height: =237
+                Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
                 Visible: =varIndiceIntro = 2
-                Width: =440
-                X: =463
-                Y: =42
+                Width: =398
+                X: =483
+                Y: =41
                 ZIndex: =4
 
             ImgSlide3B As image:
-                Height: =285
+                Height: =230
+                ImagePosition: =ImagePosition.Fill
+                Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
                 Visible: =varIndiceIntro = 3
-                Width: =440
-                X: =463
-                Y: =42
+                Width: =1164
+                X: =95
+                Y: =48
                 ZIndex: =4
 
-            ImgSlide2C As image:
-                Height: =285
+            ImgSlide2A As image:
+                Height: =215
+                Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
                 Visible: =varIndiceIntro = 2
-                Width: =440
-                X: =915
-                Y: =42
-                ZIndex: =4
-
-            ImgSlide3C As image:
-                Height: =285
-                Visible: =varIndiceIntro = 3
-                Width: =440
-                X: =915
-                Y: =42
-                ZIndex: =4
-
-            ImgSlide1B As image:
-                Height: =243
-                Image: =Public_Software
-                ImagePosition: =ImagePosition.Stretch
-                Visible: =varIndiceIntro = 1
-                Width: =398
-                X: =480
+                Width: =375
+                X: =75
                 Y: =63
                 ZIndex: =4
 
             ImgSlide1A As image:
-                Height: =230
+                Height: =215
                 Image: =Public_Zoom
                 ImagePosition: =ImagePosition.Stretch
+                Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
                 Visible: =varIndiceIntro = 1
-                Width: =390
-                X: =62
-                Y: =76
+                Width: =375
+                X: =75
+                Y: =63
+                ZIndex: =4
+
+            ImgSlide2C As image:
+                Height: =215
+                Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
+                Visible: =varIndiceIntro = 2
+                Width: =375
+                X: =903
+                Y: =63
                 ZIndex: =4
 
             ImgSlide1C As image:
-                Height: =230
+                Height: =215
                 Image: =Public_Nube
                 ImagePosition: =ImagePosition.Stretch
+                Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
                 Visible: =varIndiceIntro = 1
-                Width: =390
-                X: =904
-                Y: =76
+                Width: =375
+                X: =905
+                Y: =63
                 ZIndex: =4
 
-            TituloCarrusel As label:
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =35
+            TituloCarrusel As htmlViewer:
+                Height: =48
+                HtmlText: |-
+                    ="<div style='text-align: center; opacity: " & Substitute(Text(If(TimerIntro.Value < 600, TimerIntro.Value/600, 1)), ",", ".") & "; color: white; font-weight: bold; font-size: 21.5px; line-height: 35px; font-family: ""Segoe UI"", sans-serif;'>" & If(varIndiceIntro = 1, "<span style='color: rgb(255, 213, 0);'>Servicios</span> más utilizados", varIndiceIntro = 2, "<span style='color: rgb(255, 213, 0);'>Nuevos</span> servicios", "<span style='color: rgb(255, 213, 0);'>Not</span>icias") & "</div>"
                 Size: =16
-                Text: ="Servicios más solicitados  •  " & Text(varIndiceIntro) & " / 3"
-                Width: =1366
-                Y: =6
+                Width: =1283
+                X: =42
                 ZIndex: =6
 
             BtnAnteriorIntro As button:
@@ -156,7 +146,7 @@
                 Fill: =RGBA(255, 255, 255, 0.85)
                 Height: =48
                 HoverFill: =RGBA(255, 255, 255, 1)
-                OnSelect: =Set(varIndiceIntro, If(varIndiceIntro = 1, 3, varIndiceIntro - 1))
+                OnSelect: =Set(varIndiceIntro, If(varIndiceIntro = 1, 3, varIndiceIntro - 1)); Reset(TimerIntro)
                 RadiusBottomLeft: =24
                 RadiusBottomRight: =24
                 RadiusTopLeft: =24
@@ -164,8 +154,8 @@
                 Size: =18
                 Text: ="◀"
                 Width: =48
-                X: =5
-                Y: =158
+                X: =11
+                Y: =123
                 ZIndex: =7
 
             BtnSiguienteIntro As button:
@@ -174,7 +164,7 @@
                 Fill: =RGBA(255, 255, 255, 0.85)
                 Height: =48
                 HoverFill: =RGBA(255, 255, 255, 1)
-                OnSelect: =Set(varIndiceIntro, If(varIndiceIntro = 3, 1, varIndiceIntro + 1))
+                OnSelect: =Set(varIndiceIntro, If(varIndiceIntro = 3, 1, varIndiceIntro + 1)); Reset(TimerIntro)
                 RadiusBottomLeft: =24
                 RadiusBottomRight: =24
                 RadiusTopLeft: =24
@@ -183,7 +173,7 @@
                 Text: ="▶"
                 Width: =48
                 X: =1302
-                Y: =158
+                Y: =123
                 ZIndex: =8
 
             SmallCards_Title As label:
@@ -192,18 +182,18 @@
                 FontWeight: =FontWeight.Bold
                 Height: =28
                 Size: =14
-                Text: ="TODOS LOS SERVICIOS"
+                Text: ="INDÍCE DE SERVICIOS"
                 Width: =1323
                 X: =21
-                Y: =374
+                Y: =309
                 ZIndex: =33
 
             SmallCards_TitleLine As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
                 Height: =3
                 Width: =60
-                X: =653
-                Y: =428
+                X: =652
+                Y: =350
                 ZIndex: =34
 
             SmallCard1_Bg As button:
@@ -216,8 +206,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =65
-                Y: =448
+                X: =64
+                Y: =370
                 ZIndex: =35
 
             SmallCard1_IconBg As button:
@@ -226,16 +216,16 @@
                 Height: =50
                 Text: =""
                 Width: =50
-                X: =155
-                Y: =458
+                X: =154
+                Y: =380
                 ZIndex: =36
 
             SmallCard1_Icon As image:
                 Height: =66
                 Image: ='software(2)'
                 Width: =66
-                X: =142
-                Y: =451
+                X: =141
+                Y: =373
                 ZIndex: =37
 
             SmallCard1_Title As label:
@@ -246,8 +236,8 @@
                 Size: =11
                 Text: ="Concepto técnico"
                 Width: =210
-                X: =75
-                Y: =518
+                X: =74
+                Y: =440
                 ZIndex: =38
 
             SmallCard1_Arrow As icon.ArrowRight:
@@ -255,8 +245,8 @@
                 Height: =15
                 Icon: =Icon.ArrowRight
                 Width: =15
-                X: =172
-                Y: =543
+                X: =171
+                Y: =465
                 ZIndex: =39
 
             SmallCard2_Bg As button:
@@ -269,8 +259,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =317
-                Y: =448
+                X: =316
+                Y: =370
                 ZIndex: =40
 
             SmallCard2_IconBg As button:
@@ -279,16 +269,16 @@
                 Height: =50
                 Text: =""
                 Width: =50
-                X: =407
-                Y: =458
+                X: =406
+                Y: =380
                 ZIndex: =41
 
             SmallCard2_Icon As image:
                 Height: =30
                 Image: ='outlook(1)'
                 Width: =30
-                X: =417
-                Y: =468
+                X: =416
+                Y: =390
                 ZIndex: =42
 
             SmallCard2_Title As label:
@@ -299,8 +289,8 @@
                 Size: =11
                 Text: ="Cuentas y listas" & Char(10)
                 Width: =210
-                X: =327
-                Y: =518
+                X: =326
+                Y: =440
                 ZIndex: =43
 
             SmallCard2_Arrow As icon.ArrowRight:
@@ -308,8 +298,8 @@
                 Height: =15
                 Icon: =Icon.ArrowRight
                 Width: =15
-                X: =424
-                Y: =543
+                X: =423
+                Y: =465
                 ZIndex: =44
 
             SmallCard3_Bg As button:
@@ -323,8 +313,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =569
-                Y: =448
+                X: =568
+                Y: =370
                 ZIndex: =45
 
             SmallCard3_IconBg As button:
@@ -333,16 +323,16 @@
                 Height: =50
                 Text: =""
                 Width: =50
-                X: =659
-                Y: =458
+                X: =658
+                Y: =380
                 ZIndex: =46
 
             SmallCard3_Icon As image:
                 Height: =30
                 Image: ='agregarPerfil(1)'
                 Width: =30
-                X: =669
-                Y: =468
+                X: =668
+                Y: =390
                 ZIndex: =47
 
             SmallCard3_Title As label:
@@ -353,8 +343,8 @@
                 Size: =11
                 Text: ="Usuarios externos"
                 Width: =210
-                X: =579
-                Y: =518
+                X: =578
+                Y: =440
                 ZIndex: =48
 
             SmallCard3_Arrow As icon.ArrowRight:
@@ -362,8 +352,8 @@
                 Height: =15
                 Icon: =Icon.ArrowRight
                 Width: =15
-                X: =676
-                Y: =543
+                X: =675
+                Y: =465
                 ZIndex: =49
 
             SmallCard4_Bg As button:
@@ -377,8 +367,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =821
-                Y: =448
+                X: =820
+                Y: =370
                 ZIndex: =50
 
             SmallCard4_IconBg As button:
@@ -387,16 +377,16 @@
                 Height: =50
                 Text: =""
                 Width: =50
-                X: =911
-                Y: =458
+                X: =910
+                Y: =380
                 ZIndex: =51
 
             SmallCard4_Icon As image:
                 Height: =30
                 Image: ='software (1)'
                 Width: =30
-                X: =921
-                Y: =468
+                X: =920
+                Y: =390
                 ZIndex: =52
 
             SmallCard4_Title As label:
@@ -407,8 +397,8 @@
                 Size: =11
                 Text: ="Instalación de Software"
                 Width: =210
-                X: =831
-                Y: =518
+                X: =830
+                Y: =440
                 ZIndex: =53
 
             SmallCard4_Arrow As icon.ArrowRight:
@@ -416,8 +406,8 @@
                 Height: =15
                 Icon: =Icon.ArrowRight
                 Width: =15
-                X: =928
-                Y: =543
+                X: =927
+                Y: =465
                 ZIndex: =54
 
             SmallCard5_Bg As button:
@@ -430,8 +420,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =1073
-                Y: =448
+                X: =1072
+                Y: =370
                 ZIndex: =55
 
             SmallCard5_IconBg As button:
@@ -440,16 +430,16 @@
                 Height: =50
                 Text: =""
                 Width: =50
-                X: =1163
-                Y: =458
+                X: =1162
+                Y: =380
                 ZIndex: =56
 
             SmallCard5_Icon As image:
                 Height: =72
                 Image: ='llaveUser(1)'
                 Width: =72
-                X: =1152
-                Y: =454
+                X: =1151
+                Y: =376
                 ZIndex: =57
 
             SmallCard5_Title As label:
@@ -460,8 +450,8 @@
                 Size: =11
                 Text: ="Permisos"
                 Width: =210
-                X: =1083
-                Y: =518
+                X: =1082
+                Y: =440
                 ZIndex: =58
 
             SmallCard5_Arrow As icon.ArrowRight:
@@ -469,8 +459,8 @@
                 Height: =15
                 Icon: =Icon.ArrowRight
                 Width: =15
-                X: =1180
-                Y: =543
+                X: =1179
+                Y: =465
                 ZIndex: =59
 
             SmallCard6_Bg As button:
@@ -485,8 +475,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =65
-                Y: =577
+                X: =64
+                Y: =499
                 ZIndex: =60
 
             SmallCard6_IconBg As button:
@@ -496,8 +486,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =50
-                X: =155
-                Y: =587
+                X: =154
+                Y: =509
                 ZIndex: =61
 
             SmallCard6_Icon As image:
@@ -505,8 +495,8 @@
                 Image: ='ServiNube(1)'
                 Visible: =locShowMoreIntro
                 Width: =50
-                X: =155
-                Y: =587
+                X: =154
+                Y: =509
                 ZIndex: =62
 
             SmallCard6_Title As label:
@@ -518,8 +508,8 @@
                 Text: ="Servidor Nube Javeriana"
                 Visible: =locShowMoreIntro
                 Width: =210
-                X: =75
-                Y: =647
+                X: =74
+                Y: =569
                 ZIndex: =63
 
             SmallCard6_Arrow As icon.ArrowRight:
@@ -528,8 +518,8 @@
                 Icon: =Icon.ArrowRight
                 Visible: =locShowMoreIntro
                 Width: =15
-                X: =172
-                Y: =714
+                X: =171
+                Y: =636
                 ZIndex: =64
 
             SmallCard7_Bg As button:
@@ -543,8 +533,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =317
-                Y: =577
+                X: =316
+                Y: =499
                 ZIndex: =65
 
             SmallCard7_IconBg As button:
@@ -554,8 +544,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =50
-                X: =407
-                Y: =587
+                X: =406
+                Y: =509
                 ZIndex: =66
 
             SmallCard7_Icon As image:
@@ -563,8 +553,8 @@
                 Image: ='vpn(1)'
                 Visible: =locShowMoreIntro
                 Width: =30
-                X: =417
-                Y: =597
+                X: =416
+                Y: =519
                 ZIndex: =67
 
             SmallCard7_Title As label:
@@ -576,8 +566,8 @@
                 Text: ="Usuario VPN"
                 Visible: =locShowMoreIntro
                 Width: =210
-                X: =327
-                Y: =647
+                X: =326
+                Y: =569
                 ZIndex: =68
 
             SmallCard7_Arrow As icon.ArrowRight:
@@ -586,8 +576,8 @@
                 Icon: =Icon.ArrowRight
                 Visible: =locShowMoreIntro
                 Width: =15
-                X: =424
-                Y: =714
+                X: =423
+                Y: =636
                 ZIndex: =69
 
             SmallCard8_Bg As button:
@@ -601,8 +591,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =569
-                Y: =577
+                X: =568
+                Y: =499
                 ZIndex: =70
 
             SmallCard8_IconBg As button:
@@ -612,8 +602,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =50
-                X: =659
-                Y: =587
+                X: =658
+                Y: =509
                 ZIndex: =71
 
             SmallCard8_Icon As image:
@@ -621,8 +611,8 @@
                 Image: ='zoom(1)'
                 Visible: =locShowMoreIntro
                 Width: =30
-                X: =669
-                Y: =597
+                X: =668
+                Y: =519
                 ZIndex: =72
 
             SmallCard8_Title As label:
@@ -634,8 +624,8 @@
                 Text: ="Autoservicio Zoom"
                 Visible: =locShowMoreIntro
                 Width: =210
-                X: =579
-                Y: =647
+                X: =578
+                Y: =569
                 ZIndex: =73
 
             SmallCard8_Arrow As icon.ArrowRight:
@@ -644,8 +634,8 @@
                 Icon: =Icon.ArrowRight
                 Visible: =locShowMoreIntro
                 Width: =15
-                X: =676
-                Y: =714
+                X: =675
+                Y: =636
                 ZIndex: =74
 
             SmallCard9_Bg As button:
@@ -659,8 +649,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =821
-                Y: =577
+                X: =820
+                Y: =499
                 ZIndex: =75
 
             SmallCard9_IconBg As button:
@@ -670,8 +660,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =50
-                X: =911
-                Y: =587
+                X: =910
+                Y: =509
                 ZIndex: =76
 
             SmallCard9_Icon As image:
@@ -679,8 +669,8 @@
                 Image: =
                 Visible: =locShowMoreIntro
                 Width: =30
-                X: =921
-                Y: =597
+                X: =920
+                Y: =519
                 ZIndex: =77
 
             SmallCard9_Title As label:
@@ -692,8 +682,8 @@
                 Text: ="SaaS"
                 Visible: =locShowMoreIntro
                 Width: =210
-                X: =831
-                Y: =647
+                X: =830
+                Y: =569
                 ZIndex: =78
 
             SmallCard9_Arrow As icon.ArrowRight:
@@ -702,8 +692,8 @@
                 Icon: =Icon.ArrowRight
                 Visible: =locShowMoreIntro
                 Width: =15
-                X: =928
-                Y: =714
+                X: =927
+                Y: =636
                 ZIndex: =79
 
             SmallCard10_Bg As button:
@@ -717,8 +707,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =1073
-                Y: =577
+                X: =1072
+                Y: =499
                 ZIndex: =80
 
             SmallCard10_IconBg As button:
@@ -728,8 +718,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =50
-                X: =1163
-                Y: =587
+                X: =1162
+                Y: =509
                 ZIndex: =81
 
             SmallCard10_Icon As image:
@@ -737,8 +727,8 @@
                 Image: =
                 Visible: =locShowMoreIntro
                 Width: =30
-                X: =1173
-                Y: =597
+                X: =1172
+                Y: =519
                 ZIndex: =82
 
             SmallCard10_Title As label:
@@ -750,8 +740,8 @@
                 Text: ="Soporte técnico"
                 Visible: =locShowMoreIntro
                 Width: =210
-                X: =1083
-                Y: =647
+                X: =1082
+                Y: =569
                 ZIndex: =83
 
             SmallCard10_Arrow As icon.ArrowRight:
@@ -760,8 +750,8 @@
                 Icon: =Icon.ArrowRight
                 Visible: =locShowMoreIntro
                 Width: =15
-                X: =1180
-                Y: =714
+                X: =1179
+                Y: =636
                 ZIndex: =84
 
             SmallCard5_Bg_1 As button:
@@ -774,8 +764,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =1072
-                Y: =448
+                X: =1071
+                Y: =370
                 ZIndex: =85
 
             SmallCard4_Bg_1 As button:
@@ -789,8 +779,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =820
-                Y: =448
+                X: =819
+                Y: =370
                 ZIndex: =86
 
             SmallCard4_Bg_2 As button:
@@ -804,8 +794,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =570
-                Y: =448
+                X: =569
+                Y: =370
                 ZIndex: =87
 
             SmallCard4_Bg_3 As button:
@@ -820,8 +810,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =317
-                Y: =448
+                X: =316
+                Y: =370
                 ZIndex: =88
 
             SmallCard4_Bg_4 As button:
@@ -835,8 +825,8 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =64
-                Y: =448
+                X: =63
+                Y: =370
                 ZIndex: =89
 
             SmallCard6_Bg_1 As button:
@@ -851,8 +841,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =65
-                Y: =577
+                X: =64
+                Y: =499
                 ZIndex: =90
 
             SmallCard7_Bg_1 As button:
@@ -866,8 +856,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =317
-                Y: =577
+                X: =316
+                Y: =499
                 ZIndex: =91
 
             SmallCard8_Bg_1 As button:
@@ -881,8 +871,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =569
-                Y: =577
+                X: =568
+                Y: =499
                 ZIndex: =92
 
             SmallCard8_Bg_2 As button:
@@ -896,8 +886,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =820
-                Y: =577
+                X: =819
+                Y: =499
                 ZIndex: =93
 
             SmallCard8_Bg_3 As button:
@@ -911,8 +901,8 @@
                 Text: =""
                 Visible: =locShowMoreIntro
                 Width: =230
-                X: =1073
-                Y: =577
+                X: =1072
+                Y: =499
                 ZIndex: =94
 
             BtnVerMas_Intro As button:
@@ -931,15 +921,9 @@
                 RadiusTopRight: =25
                 Text: =If(locShowMoreIntro, "Ver menos", "Ver más")
                 Width: =200
-                X: =584
-                Y: =If(locShowMoreIntro, 750, 597)
+                X: =576
+                Y: =If(locShowMoreIntro, 640, 512)
                 ZIndex: =200
-
-            Rectangle3 As rectangle:
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =41
-                X: =801
-                ZIndex: =201
 
         DataCard7 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -952,458 +936,6 @@
             X: =0
             Y: =1
             ZIndex: =2
-
-            Card1_Bg As button:
-                BorderColor: =RGBA(220, 220, 220, 1)
-                BorderThickness: =1
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =220
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =590
-                X: =78
-                Y: =133
-                ZIndex: =5
-
-            Card1_IconBg As button:
-                Fill: =RGBA(245, 246, 248, 1)
-                Height: =120
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =120
-                X: =118
-                Y: =183
-                ZIndex: =6
-
-            Card1_Icon As image:
-                Height: =120
-                Image: =Agenda
-                Width: =120
-                X: =118
-                Y: =183
-                ZIndex: =7
-
-            Card1_Title As label:
-                Color: =RGBA(0, 58, 112, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =30
-                Size: =16
-                Text: ="Agenda y gestiona tus reuniones"
-                Width: =373
-                X: =278
-                Y: =153
-                ZIndex: =8
-
-            Card1_Desc As label:
-                Color: =RGBA(70, 70, 70, 1)
-                Height: =110
-                Size: =12
-                Text: |-
-                    ="Crea, edita, elimina y gestiona tus reuniones de forma rápida y sencilla. 
-                    Este autoservicio es un espacio compartido. Otros usuarios también gestionan sus propias reuniones."
-                VerticalAlign: =VerticalAlign.Top
-                Width: =390
-                X: =278
-                Y: =193
-                ZIndex: =9
-
-            Card2_Bg As button:
-                BorderColor: =RGBA(220, 220, 220, 1)
-                BorderThickness: =1
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =220
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =590
-                X: =698
-                Y: =133
-                ZIndex: =10
-
-            Card2_IconBg As button:
-                Fill: =RGBA(245, 246, 248, 1)
-                Height: =120
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =120
-                X: =738
-                Y: =183
-                ZIndex: =11
-
-            Card2_Icon As image:
-                Height: =116
-                Image: =Software
-                Width: =123
-                X: =740
-                Y: =183
-                ZIndex: =12
-
-            Card2_Title As label:
-                Color: =RGBA(0, 58, 112, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =30
-                Size: =16
-                Text: ="Solicitud Software y Hardware"
-                Width: =350
-                X: =898
-                Y: =173
-                ZIndex: =13
-
-            Card2_Desc As label:
-                Color: =RGBA(70, 70, 70, 1)
-                Height: =90
-                Size: =12
-                Text: ="Solicitud para compra o renovación de servicios de software y equipos de hardware."
-                VerticalAlign: =VerticalAlign.Top
-                Width: =350
-                X: =893
-                Y: =238
-                ZIndex: =14
-
-            Card3_Bg As button:
-                BorderColor: =RGBA(220, 220, 220, 1)
-                BorderThickness: =1
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =200
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =1210
-                X: =78
-                Y: =383
-                ZIndex: =15
-
-            Card3_IconBg As button:
-                Fill: =RGBA(245, 246, 248, 1)
-                Height: =120
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =120
-                X: =93
-                Y: =423
-                ZIndex: =16
-
-            Card3_Icon As image:
-                Height: =120
-                Image: =Hardware
-                Width: =140
-                X: =88
-                Y: =423
-                ZIndex: =17
-
-            Card3_Title As label:
-                Color: =RGBA(0, 58, 112, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =30
-                Size: =16
-                Text: ="Solicitud para instalación de Software en equipos de cómputo"
-                Width: =900
-                X: =278
-                Y: =403
-                ZIndex: =18
-
-            Card3_Desc As label:
-                Color: =RGBA(70, 70, 70, 1)
-                Height: =130
-                Size: =12
-                Text: ="Puedes realizar solicitudes para la instalación de software en equipos de cómputo, salas y salones de clase. Recibirás una notificación dando el resumen o proceso para los software solicitado, donde internamente, si corresponde, se validará la disponibilidad de acuerdos de licenciamiento o restricciones de seguridad y si es viable la instalación se informará a la DTI para que puedas agendar la instalación."
-                VerticalAlign: =VerticalAlign.Top
-                Width: =900
-                X: =253
-                Y: =443
-                ZIndex: =19
-
-            Card4_Bg As button:
-                BorderColor: =RGBA(220, 220, 220, 1)
-                BorderThickness: =1
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =220
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =590
-                X: =78
-                Y: =620
-                ZIndex: =20
-
-            Card4_IconBg As button:
-                DisplayMode: =DisplayMode.View
-                Fill: =RGBA(245, 246, 248, 1)
-                Height: =120
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =120
-                X: =125
-                Y: =681
-                ZIndex: =21
-
-            Card4_Icon As image:
-                Height: =115
-                Image: =Correo
-                Width: =125
-                X: =128
-                Y: =681
-                ZIndex: =22
-
-            Card4_Title As label:
-                Color: =RGBA(0, 58, 112, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =30
-                Size: =16
-                Text: ="Correo y usuarios"
-                Width: =350
-                X: =285
-                Y: =651
-                ZIndex: =23
-
-            Card4_Desc As label:
-                Color: =RGBA(70, 70, 70, 1)
-                Height: =90
-                Size: =12
-                Text: ="Permite solicitar la creación de buzones de correo de uso compartido o genérico, calendarios y listas de correo institucionales."
-                VerticalAlign: =VerticalAlign.Top
-                Width: =350
-                X: =283
-                Y: =721
-                ZIndex: =24
-
-            Card5_Bg As button:
-                BorderColor: =RGBA(220, 220, 220, 1)
-                BorderThickness: =1
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =220
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =590
-                X: =698
-                Y: =620
-                ZIndex: =25
-
-            Card5_IconBg As button:
-                DisplayMode: =DisplayMode.View
-                Fill: =RGBA(245, 246, 248, 1)
-                Height: =120
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =120
-                X: =745
-                Y: =668
-                ZIndex: =26
-
-            Card5_Icon As image:
-                Height: =110
-                Image: =Usuarios
-                Width: =123
-                X: =745
-                Y: =678
-                ZIndex: =27
-
-            Card5_Title As label:
-                Color: =RGBA(0, 58, 112, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =60
-                Size: =16
-                Text: ="Creación o renovación de Usuarios Externos"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =350
-                X: =905
-                Y: =638
-                ZIndex: =28
-
-            SmallCards_TitleLine_1 As rectangle:
-                Fill: =RGBA(255, 213, 0, 1)
-                Height: =3
-                Width: =60
-                X: =283
-                Y: =187
-                ZIndex: =29
-
-            SmallCards_TitleLine_2 As rectangle:
-                Fill: =RGBA(255, 213, 0, 1)
-                Height: =3
-                Width: =60
-                X: =898
-                Y: =209
-                ZIndex: =30
-
-            SmallCards_TitleLine_3 As rectangle:
-                Fill: =RGBA(255, 213, 0, 1)
-                Height: =3
-                Width: =60
-                X: =258
-                Y: =435
-                ZIndex: =31
-
-            SmallCards_TitleLine_4 As rectangle:
-                Fill: =RGBA(255, 213, 0, 1)
-                Height: =3
-                Width: =60
-                X: =290
-                Y: =681
-                ZIndex: =32
-
-            SmallCards_TitleLine_5 As rectangle:
-                Fill: =RGBA(255, 213, 0, 1)
-                Height: =3
-                Width: =60
-                X: =908
-                Y: =701
-                ZIndex: =33
-
-            Card6_Bg As button:
-                BorderColor: =RGBA(220, 220, 220, 1)
-                BorderThickness: =1
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =200
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =1210
-                X: =78
-                Y: =872
-                ZIndex: =34
-
-            Card6_IconBg As button:
-                DisplayMode: =DisplayMode.View
-                Fill: =RGBA(245, 246, 248, 1)
-                Height: =120
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =120
-                X: =118
-                Y: =912
-                ZIndex: =35
-
-            Card6_Icon As image:
-                Height: =120
-                Image: =Nube
-                Width: =117
-                X: =121
-                Y: =912
-                ZIndex: =36
-
-            Card6_Title As label:
-                Color: =RGBA(0, 58, 112, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =30
-                Size: =16
-                Text: ="Solicitud de cuota en nube Javeriana"
-                Width: =900
-                X: =278
-                Y: =892
-                ZIndex: =37
-
-            Card6_Desc As label:
-                Color: =RGBA(70, 70, 70, 1)
-                Height: =110
-                Size: =12
-                Text: ="Este servicio ofrece a los profesores el acceso de manera remota o virtual a recursos de infraestructura de computación robusta tipo LaaS para el desarrollo de actividades académicas y de investigación." & Char(10) & Char(10) & "Estas capacidades de cómputo están orientadas al desarrollo de actividades específicas y especializadas de clase, la realización de laboratorios y para soportar la ejecución de proyectos de investigación."
-                VerticalAlign: =VerticalAlign.Top
-                Width: =900
-                X: =278
-                Y: =932
-                ZIndex: =38
-
-            Card7_Bg As button:
-                BorderColor: =RGBA(220, 220, 220, 1)
-                BorderThickness: =1
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =240
-                HoverFill: =
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =595
-                X: =78
-                Y: =1103
-                ZIndex: =39
-
-            Card7_IconBg As button:
-                DisplayMode: =DisplayMode.View
-                Fill: =RGBA(245, 246, 248, 1)
-                Height: =120
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Text: =""
-                Width: =120
-                X: =118
-                Y: =1163
-                ZIndex: =40
-
-            Card7_Icon As image:
-                Height: =115
-                Image: =Permisos
-                Width: =120
-                X: =118
-                Y: =1163
-                ZIndex: =41
-
-            Card7_Title As label:
-                Color: =RGBA(0, 58, 112, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =65
-                Size: =16
-                Text: ="Permisos - Sistema de Información Universitario"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =333
-                X: =278
-                Y: =1123
-                ZIndex: =42
-
-            Card7_Desc As label:
-                Color: =RGBA(70, 70, 70, 1)
-                Height: =110
-                Size: =12
-                Text: ="Se puede solicitar permisos del módulo de compras de bienes y servicios, Control de Compromisos y Presupuesto, Módulo de Recursos Humanos, Admisiones y Registro Académico, Finanzas Estudiantiles."
-                VerticalAlign: =VerticalAlign.Top
-                Width: =378
-                X: =273
-                Y: =1196
-                ZIndex: =43
 
             Card8_Bg As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1419,7 +951,459 @@
                 Width: =585
                 X: =703
                 Y: =1103
-                ZIndex: =44
+                ZIndex: =1
+
+            Card1_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =220
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =78
+                Y: =133
+                ZIndex: =2
+
+            Card1_IconBg As button:
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =118
+                Y: =183
+                ZIndex: =3
+
+            Card1_Icon As image:
+                Height: =120
+                Image: =Agenda
+                Width: =120
+                X: =118
+                Y: =183
+                ZIndex: =4
+
+            Card1_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Agenda y gestiona tus reuniones"
+                Width: =373
+                X: =278
+                Y: =153
+                ZIndex: =5
+
+            Card1_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =110
+                Size: =12
+                Text: |-
+                    ="Crea, edita, elimina y gestiona tus reuniones de forma rápida y sencilla. 
+                    Este autoservicio es un espacio compartido. Otros usuarios también gestionan sus propias reuniones."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =390
+                X: =278
+                Y: =193
+                ZIndex: =6
+
+            Card2_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =220
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =698
+                Y: =133
+                ZIndex: =7
+
+            Card2_IconBg As button:
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =738
+                Y: =183
+                ZIndex: =8
+
+            Card2_Icon As image:
+                Height: =116
+                Image: =Software
+                Width: =123
+                X: =740
+                Y: =183
+                ZIndex: =9
+
+            Card2_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Solicitud Software y Hardware"
+                Width: =350
+                X: =898
+                Y: =153
+                ZIndex: =10
+
+            Card2_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =90
+                Size: =12
+                Text: ="Solicitud para compra o renovación de servicios de software y equipos de hardware."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =898
+                Y: =203
+                ZIndex: =11
+
+            Card3_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =200
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =1210
+                X: =78
+                Y: =383
+                ZIndex: =12
+
+            Card3_IconBg As button:
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =93
+                Y: =423
+                ZIndex: =13
+
+            Card3_Icon As image:
+                Height: =120
+                Image: =Hardware
+                Width: =140
+                X: =88
+                Y: =423
+                ZIndex: =14
+
+            Card3_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Solicitud para instalación de Software en equipos de cómputo"
+                Width: =900
+                X: =253
+                Y: =405
+                ZIndex: =15
+
+            Card3_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =130
+                Size: =12
+                Text: ="Puedes realizar solicitudes para la instalación de software en equipos de cómputo, salas y salones de clase. Recibirás una notificación dando el resumen o proceso para los software solicitado, donde internamente, si corresponde, se validará la disponibilidad de acuerdos de licenciamiento o restricciones de seguridad y si es viable la instalación se informará a la DTI para que puedas agendar la instalación."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =900
+                X: =253
+                Y: =443
+                ZIndex: =16
+
+            Card4_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =220
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =78
+                Y: =620
+                ZIndex: =17
+
+            Card4_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =125
+                Y: =681
+                ZIndex: =18
+
+            Card4_Icon As image:
+                Height: =115
+                Image: =Correo
+                Width: =125
+                X: =128
+                Y: =681
+                ZIndex: =19
+
+            Card4_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Correo y usuarios"
+                Width: =350
+                X: =285
+                Y: =665
+                ZIndex: =20
+
+            Card4_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =90
+                Size: =12
+                Text: ="Permite solicitar la creación de buzones de correo de uso compartido o genérico, calendarios y listas de correo institucionales."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =283
+                Y: =721
+                ZIndex: =21
+
+            Card5_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =220
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =698
+                Y: =620
+                ZIndex: =22
+
+            Card5_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =745
+                Y: =668
+                ZIndex: =23
+
+            Card5_Icon As image:
+                Height: =110
+                Image: =Usuarios
+                Width: =123
+                X: =745
+                Y: =678
+                ZIndex: =24
+
+            Card5_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =60
+                Size: =16
+                Text: ="Creación o renovación de Usuarios Externos"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =905
+                Y: =638
+                ZIndex: =25
+
+            SmallCards_TitleLine_1 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =283
+                Y: =187
+                ZIndex: =26
+
+            SmallCards_TitleLine_2 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =903
+                Y: =187
+                ZIndex: =27
+
+            SmallCards_TitleLine_3 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =258
+                Y: =435
+                ZIndex: =28
+
+            SmallCards_TitleLine_4 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =290
+                Y: =701
+                ZIndex: =29
+
+            SmallCards_TitleLine_5 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =908
+                Y: =701
+                ZIndex: =30
+
+            Card6_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =200
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =1210
+                X: =78
+                Y: =872
+                ZIndex: =31
+
+            Card6_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =118
+                Y: =912
+                ZIndex: =32
+
+            Card6_Icon As image:
+                Height: =120
+                Image: =Nube
+                Width: =117
+                X: =121
+                Y: =912
+                ZIndex: =33
+
+            Card6_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Solicitud de cuota en nube Javeriana"
+                Width: =900
+                X: =278
+                Y: =892
+                ZIndex: =34
+
+            Card6_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =110
+                Size: =12
+                Text: ="Este servicio ofrece a los profesores el acceso de manera remota o virtual a recursos de infraestructura de computación robusta tipo LaaS para el desarrollo de actividades académicas y de investigación." & Char(10) & Char(10) & "Estas capacidades de cómputo están orientadas al desarrollo de actividades específicas y especializadas de clase, la realización de laboratorios y para soportar la ejecución de proyectos de investigación."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =900
+                X: =278
+                Y: =932
+                ZIndex: =35
+
+            Card7_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =240
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =595
+                X: =78
+                Y: =1103
+                ZIndex: =36
+
+            Card7_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =118
+                Y: =1163
+                ZIndex: =37
+
+            Card7_Icon As image:
+                Height: =115
+                Image: =Permisos
+                Width: =120
+                X: =118
+                Y: =1163
+                ZIndex: =38
+
+            Card7_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =72
+                Size: =16
+                Text: ="Permisos - Sistema de Información Universitario"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =333
+                X: =269
+                Y: =1116
+                ZIndex: =39
+
+            Card7_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =110
+                Size: =12
+                Text: ="Se puede solicitar permisos del módulo de compras de bienes y servicios, Control de Compromisos y Presupuesto, Módulo de Recursos Humanos, Admisiones y Registro Académico, Finanzas Estudiantiles."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =378
+                X: =271
+                Y: =1195
+                ZIndex: =40
 
             Card8_IconBg As button:
                 DisplayMode: =DisplayMode.View
@@ -1433,7 +1417,7 @@
                 Width: =120
                 X: =738
                 Y: =1163
-                ZIndex: =45
+                ZIndex: =41
 
             Card8_Icon As image:
                 Height: =115
@@ -1441,7 +1425,7 @@
                 Width: =118
                 X: =740
                 Y: =1163
-                ZIndex: =46
+                ZIndex: =42
 
             Card8_Title As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1452,7 +1436,7 @@
                 Width: =390
                 X: =898
                 Y: =1123
-                ZIndex: =47
+                ZIndex: =43
 
             Card8_Desc As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1463,7 +1447,7 @@
                 Width: =350
                 X: =898
                 Y: =1188
-                ZIndex: =48
+                ZIndex: =44
 
             SmallCards_TitleLine_6 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1471,15 +1455,15 @@
                 Width: =60
                 X: =283
                 Y: =925
-                ZIndex: =49
+                ZIndex: =45
 
             SmallCards_TitleLine_7 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
                 Height: =3
                 Width: =60
-                X: =283
-                Y: =1183
-                ZIndex: =50
+                X: =273
+                Y: =1175
+                ZIndex: =46
 
             SmallCards_TitleLine_8 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -1487,7 +1471,7 @@
                 Width: =60
                 X: =903
                 Y: =1175
-                ZIndex: =51
+                ZIndex: =47
 
             Card4_Desc_1 As label:
                 Color: =RGBA(70, 70, 70, 1)
@@ -1498,7 +1482,7 @@
                 Width: =350
                 X: =898
                 Y: =721
-                ZIndex: =52
+                ZIndex: =48
 
             Card1_Bg_1 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1515,7 +1499,7 @@
                 Width: =590
                 X: =78
                 Y: =133
-                ZIndex: =53
+                ZIndex: =49
 
             Card1_Bg_3 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1532,7 +1516,7 @@
                 Width: =1210
                 X: =78
                 Y: =383
-                ZIndex: =54
+                ZIndex: =50
 
             Card1_Bg_4 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1550,7 +1534,7 @@
                 Width: =590
                 X: =78
                 Y: =620
-                ZIndex: =55
+                ZIndex: =51
 
             Card1_Bg_2 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1567,7 +1551,7 @@
                 Width: =590
                 X: =698
                 Y: =133
-                ZIndex: =56
+                ZIndex: =52
 
             Card1_Bg_5 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1584,7 +1568,7 @@
                 Width: =590
                 X: =698
                 Y: =620
-                ZIndex: =57
+                ZIndex: =53
 
             Card1_Bg_6 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1601,7 +1585,7 @@
                 Width: =1210
                 X: =78
                 Y: =872
-                ZIndex: =58
+                ZIndex: =54
 
             Card1_Bg_7 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1618,7 +1602,7 @@
                 Width: =585
                 X: =703
                 Y: =1103
-                ZIndex: =59
+                ZIndex: =55
 
             Card1_Bg_8 As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -1635,7 +1619,7 @@
                 Width: =595
                 X: =78
                 Y: =1103
-                ZIndex: =60
+                ZIndex: =56
 
             Label1_2 As label:
                 Align: =Align.Center
@@ -1646,7 +1630,7 @@
                 Width: =122
                 X: =832
                 Y: =20
-                ZIndex: =61
+                ZIndex: =57
 
             Label1_3 As label:
                 Align: =Align.Center
@@ -1657,7 +1641,7 @@
                 Width: =446
                 X: =412
                 Y: =20
-                ZIndex: =62
+                ZIndex: =58
 
             RectFooter_3 As rectangle:
                 Fill: =RGBA(26, 58, 110, 1)
@@ -1665,7 +1649,7 @@
                 Width: =1325
                 X: =38
                 Y: =1375
-                ZIndex: =202
+                ZIndex: =59
 
             LblFooter_3 As label:
                 Color: =RGBA(200, 184, 122, 0.7)
@@ -1677,7 +1661,7 @@
                 Width: =853
                 X: =45
                 Y: =1393
-                ZIndex: =203
+                ZIndex: =60
 
             RectFooterBorder_3 As rectangle:
                 BorderColor: =RGBA(200, 184, 122, 1)
@@ -1687,7 +1671,7 @@
                 Width: =1325
                 X: =38
                 Y: =1375
-                ZIndex: =204
+                ZIndex: =61
 
             Image4_2 As image:
                 Height: =68
@@ -1696,7 +1680,7 @@
                 Width: =289
                 X: =1068
                 Y: =1380
-                ZIndex: =205
+                ZIndex: =62
 
     RectNavActive_1 As rectangle:
         Fill: =RGBA(248, 205, 0, 1)
@@ -1837,4 +1821,24 @@
         X: =1196
         Y: =30
         ZIndex: =17
+
+    Icon3 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =27
+        Icon: =Icon.Home
+        OnSelect: =Navigate(introduccion)
+        Width: =30
+        X: =54
+        Y: =92
+        ZIndex: =19
+
+    Icon4 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =29
+        Icon: =Icon.BackArrow
+        OnSelect: =
+        Width: =44
+        X: =10
+        Y: =91
+        ZIndex: =20
 

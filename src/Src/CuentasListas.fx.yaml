@@ -27,16 +27,6 @@ CuentasListas As screen:
         Y: =89
         ZIndex: =4
 
-    LblTopLeft_3 As label:
-        Color: =RGBA(200, 184, 122, 1)
-        Height: =36
-        Size: =9
-        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
-        Width: =600
-        X: =13
-        Y: =89
-        ZIndex: =5
-
     LblNavBienestar_3 As label:
         Color: =RGBA(100, 120, 150, 1)
         FontWeight: =FontWeight.Bold
@@ -747,8 +737,7 @@ CuentasListas As screen:
     RectFooter_2 As rectangle:
         Fill: =RGBA(26, 58, 110, 1)
         Height: =68
-        Width: =1325
-        X: =40
+        Width: =1366
         Y: =700
         ZIndex: =66
 
@@ -760,7 +749,7 @@ CuentasListas As screen:
             ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
             Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
         Width: =853
-        X: =42
+        X: =5
         Y: =713
         ZIndex: =67
 
@@ -769,8 +758,7 @@ CuentasListas As screen:
         BorderThickness: =1
         Fill: =RGBA(200, 184, 122, 1)
         Height: =2
-        Width: =1325
-        X: =40
+        Width: =1365
         Y: =700
         ZIndex: =68
 
@@ -782,4 +770,41 @@ CuentasListas As screen:
         X: =1070
         Y: =705
         ZIndex: =69
+
+    RectNavBorder_5 As rectangle:
+        Fill: =RGBA(248, 205, 0, 1)
+        Height: =2
+        Width: =1366
+        Y: =123
+        ZIndex: =70
+
+    LblTopLeft_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Size: =9
+        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
+        Width: =408
+        X: =955
+        Y: =88
+        ZIndex: =71
+
+    Icon3_1 As icon:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =27
+        Icon: =Icon.Home
+        OnSelect: =Navigate(introduccion)
+        Width: =30
+        X: =54
+        Y: =92
+        ZIndex: =72
+
+    Icon4_1 As icon:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =29
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =44
+        X: =10
+        Y: =91
+        ZIndex: =73
 

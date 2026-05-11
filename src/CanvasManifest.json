@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "nuevas ventanas Sisso_v3",
+    "AppDescription": "rediseño en formulario",
     "AppPreviewFlagsMap": {
       "adaptivepaging": false,
       "aibuilderserviceenrollment": false,
@@ -100,7 +100,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 31,
+    "BindingErrorCount": 0,
     "ConnectionString": "",
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
@@ -114,12 +114,12 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "d736596b-2dbc-454d-a309-00d604f7b87b",
-    "Id": "d6a8e2db-aa47-4eee-9894-a064f3e15e12",
+    "Id": "37006a18-6a6b-4013-ab9f-0f0f3cccb6e3",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
     "Name": "U2lzc29fdjM.msapp",
     "OriginatingVersion": "1.349",
-    "ParserErrorCount": 6,
+    "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -137,7 +137,6 @@
     "introduccion",
     "CuentasListas",
     "BuzonCorreo",
-    "misSolicitudes",
-    "Plantillas"
+    "misSolicitudes"
   ]
 }
