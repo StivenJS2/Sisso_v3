@@ -731,7 +731,7 @@ Screens:
           Properties:
             Align: =Align.Center
             Appearance: ='ButtonCanvas.Appearance'.Transparent
-            OnSelect: =Navigate(misSolicitudes)
+            OnSelect: =
             Text: =
             Width: =163
             X: =1010
@@ -760,7 +760,7 @@ Screens:
           Properties:
             Appearance: ='ButtonCanvas.Appearance'.Transparent
             Height: =31
-            OnSelect: =Navigate(misSolicitudes)
+            OnSelect: =
             Text: =
             Width: =146
             X: =1016

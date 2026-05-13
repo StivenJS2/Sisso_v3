@@ -1,0 +1,688 @@
+"Screen2 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =
+        ZIndex: =3
+
+        DataCard2 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1620
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Card1_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =220
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =78
+                Y: =57
+                ZIndex: =2
+
+            Card1_IconBg As button:
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =118
+                Y: =107
+                ZIndex: =3
+
+            Card1_Icon As image:
+                Height: =120
+                Image: =Agenda
+                Width: =120
+                X: =118
+                Y: =107
+                ZIndex: =4
+
+            Card1_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Agenda y gestiona tus reuniones"
+                Width: =373
+                X: =278
+                Y: =77
+                ZIndex: =5
+
+            Card1_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =110
+                Size: =12
+                Text: |-
+                    ="Crea, edita, elimina y gestiona tus reuniones de forma rápida y sencilla. 
+                    Este autoservicio es un espacio compartido. Otros usuarios también gestionan sus propias reuniones."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =390
+                X: =278
+                Y: =117
+                ZIndex: =6
+
+            Card2_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =220
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =698
+                Y: =57
+                ZIndex: =7
+
+            Card2_IconBg As button:
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =738
+                Y: =107
+                ZIndex: =8
+
+            Card2_Icon As image:
+                Height: =116
+                Image: =Software
+                Width: =123
+                X: =740
+                Y: =107
+                ZIndex: =9
+
+            Card2_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Solicitud Software y Hardware"
+                Width: =350
+                X: =898
+                Y: =77
+                ZIndex: =10
+
+            Card2_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =90
+                Size: =12
+                Text: ="Solicitud para compra o renovación de servicios de software y equipos de hardware."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =898
+                Y: =127
+                ZIndex: =11
+
+            Card3_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =200
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =1210
+                X: =78
+                Y: =307
+                ZIndex: =12
+
+            Card3_IconBg As button:
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =93
+                Y: =347
+                ZIndex: =13
+
+            Card3_Icon As image:
+                Height: =120
+                Image: =Hardware
+                Width: =140
+                X: =88
+                Y: =347
+                ZIndex: =14
+
+            Card3_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Solicitud para instalación de Software en equipos de cómputo"
+                Width: =900
+                X: =253
+                Y: =329
+                ZIndex: =15
+
+            Card3_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =130
+                Size: =12
+                Text: ="Puedes realizar solicitudes para la instalación de software en equipos de cómputo, salas y salones de clase. Recibirás una notificación dando el resumen o proceso para los software solicitado, donde internamente, si corresponde, se validará la disponibilidad de acuerdos de licenciamiento o restricciones de seguridad y si es viable la instalación se informará a la DTI para que puedas agendar la instalación."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =900
+                X: =253
+                Y: =367
+                ZIndex: =16
+
+            Card4_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =220
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =78
+                Y: =544
+                ZIndex: =17
+
+            Card4_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =125
+                Y: =605
+                ZIndex: =18
+
+            Card4_Icon As image:
+                Height: =115
+                Image: =Correo
+                Width: =125
+                X: =128
+                Y: =605
+                ZIndex: =19
+
+            Card4_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Correo y usuarios"
+                Width: =350
+                X: =285
+                Y: =589
+                ZIndex: =20
+
+            Card4_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =90
+                Size: =12
+                Text: ="Permite solicitar la creación de buzones de correo de uso compartido o genérico, calendarios y listas de correo institucionales."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =283
+                Y: =645
+                ZIndex: =21
+
+            Card5_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =220
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =698
+                Y: =544
+                ZIndex: =22
+
+            Card5_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =745
+                Y: =592
+                ZIndex: =23
+
+            Card5_Icon As image:
+                Height: =110
+                Image: =Usuarios
+                Width: =123
+                X: =745
+                Y: =602
+                ZIndex: =24
+
+            Card5_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =60
+                Size: =16
+                Text: ="Creación o renovación de Usuarios Externos"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =905
+                Y: =562
+                ZIndex: =25
+
+            SmallCards_TitleLine_1 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =283
+                Y: =111
+                ZIndex: =26
+
+            SmallCards_TitleLine_2 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =903
+                Y: =111
+                ZIndex: =27
+
+            SmallCards_TitleLine_3 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =258
+                Y: =359
+                ZIndex: =28
+
+            SmallCards_TitleLine_4 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =290
+                Y: =625
+                ZIndex: =29
+
+            SmallCards_TitleLine_5 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =908
+                Y: =625
+                ZIndex: =30
+
+            Card4_Desc_1 As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =90
+                Size: =12
+                Text: ="Permite la creación o renovación de cuentas institucionales para personal externo."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =898
+                Y: =645
+                ZIndex: =31
+
+            Card1_Bg_1 As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =220
+                HoverFill: =
+                PressedFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =78
+                Y: =57
+                ZIndex: =32
+
+            Card1_Bg_3 As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =200
+                HoverFill: =
+                PressedFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =1210
+                X: =78
+                Y: =307
+                ZIndex: =33
+
+            Card1_Bg_4 As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =220
+                HoverFill: =
+                OnSelect: =Navigate(CuentasListas)
+                PressedFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =78
+                Y: =544
+                ZIndex: =34
+
+            Card1_Bg_5 As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =220
+                HoverFill: =
+                PressedFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =590
+                X: =698
+                Y: =544
+                ZIndex: =36
+
+            Card8_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =240
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =585
+                X: =703
+                Y: =1018
+                ZIndex: =37
+
+            Card6_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =200
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =1210
+                X: =78
+                Y: =787
+                ZIndex: =38
+
+            Card6_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =118
+                Y: =827
+                ZIndex: =39
+
+            Card6_Icon As image:
+                Height: =120
+                Image: =Nube
+                Width: =117
+                X: =121
+                Y: =827
+                ZIndex: =40
+
+            Card6_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                Size: =16
+                Text: ="Solicitud de cuota en nube Javeriana"
+                Width: =900
+                X: =278
+                Y: =807
+                ZIndex: =41
+
+            Card6_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =110
+                Size: =12
+                Text: ="Este servicio ofrece a los profesores el acceso de manera remota o virtual a recursos de infraestructura de computación robusta tipo LaaS para el desarrollo de actividades académicas y de investigación." & Char(10) & Char(10) & "Estas capacidades de cómputo están orientadas al desarrollo de actividades específicas y especializadas de clase, la realización de laboratorios y para soportar la ejecución de proyectos de investigación."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =900
+                X: =278
+                Y: =847
+                ZIndex: =42
+
+            Card7_Bg As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =240
+                HoverFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =595
+                X: =78
+                Y: =1018
+                ZIndex: =43
+
+            Card7_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =118
+                Y: =1078
+                ZIndex: =44
+
+            Card7_Icon As image:
+                Height: =115
+                Image: =Permisos
+                Width: =120
+                X: =118
+                Y: =1078
+                ZIndex: =45
+
+            Card7_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =72
+                Size: =16
+                Text: ="Permisos - Sistema de Información Universitario"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =333
+                X: =269
+                Y: =1031
+                ZIndex: =46
+
+            Card7_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =110
+                Size: =12
+                Text: ="Se puede solicitar permisos del módulo de compras de bienes y servicios, Control de Compromisos y Presupuesto, Módulo de Recursos Humanos, Admisiones y Registro Académico, Finanzas Estudiantiles."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =378
+                X: =271
+                Y: =1110
+                ZIndex: =47
+
+            Card8_IconBg As button:
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(245, 246, 248, 1)
+                Height: =120
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =120
+                X: =738
+                Y: =1078
+                ZIndex: =48
+
+            Card8_Icon As image:
+                Height: =115
+                Image: =VPN
+                Width: =118
+                X: =740
+                Y: =1078
+                ZIndex: =49
+
+            Card8_Title As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =50
+                Size: =16
+                Text: ="Solicitud acceso VPN para empleados"
+                Width: =390
+                X: =898
+                Y: =1038
+                ZIndex: =50
+
+            Card8_Desc As label:
+                Color: =RGBA(70, 70, 70, 1)
+                Height: =90
+                Size: =12
+                Text: ="La VPN universitaria permite acceder de forma remota y segura a los recursos y servicios exclusivos de la red interna de la institución a través de internet."
+                VerticalAlign: =VerticalAlign.Top
+                Width: =350
+                X: =898
+                Y: =1103
+                ZIndex: =51
+
+            SmallCards_TitleLine_6 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =283
+                Y: =840
+                ZIndex: =52
+
+            SmallCards_TitleLine_7 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =273
+                Y: =1090
+                ZIndex: =53
+
+            SmallCards_TitleLine_8 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =3
+                Width: =60
+                X: =903
+                Y: =1090
+                ZIndex: =54
+
+            Card1_Bg_6 As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =200
+                HoverFill: =
+                PressedFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =1210
+                X: =78
+                Y: =787
+                ZIndex: =55
+
+            Card1_Bg_7 As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =243
+                HoverFill: =
+                PressedFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =585
+                X: =703
+                Y: =1018
+                ZIndex: =56
+
+            Card1_Bg_8 As button:
+                BorderColor: =RGBA(220, 220, 220, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =240
+                HoverFill: =
+                PressedFill: =
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: =""
+                Width: =595
+                X: =78
+                Y: =1018
+                ZIndex: =57
+

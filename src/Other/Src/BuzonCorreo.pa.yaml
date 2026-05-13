@@ -51,7 +51,7 @@ Screens:
                       Properties:
                         Align: =Align.Center
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
-                        OnSelect: =Navigate(misSolicitudes)
+                        OnSelect: =
                         Text: =
                         Width: =163
                         X: =1010
@@ -80,7 +80,7 @@ Screens:
                       Properties:
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         Height: =31
-                        OnSelect: =Navigate(misSolicitudes)
+                        OnSelect: =
                         Text: =
                         Width: =146
                         X: =1016
@@ -820,7 +820,7 @@ Screens:
                         Visible: =locShowModalFacultad
                         Width: =440
                         X: =695
-                        Y: =168
+                        Y: =159
                   - BC_ModalSubtitle_Facultad:
                       Control: Label@2.5.1
                       Properties:
@@ -832,8 +832,8 @@ Screens:
                         Text: ="Escoja la facultad o dependencia a la que pertenece"
                         Visible: =locShowModalFacultad
                         Width: =440
-                        X: =692
-                        Y: =214
+                        X: =697
+                        Y: =201
                   - BC_ModalOpt1_Facultad:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -860,7 +860,7 @@ Screens:
                         Visible: =locShowModalFacultad
                         Width: =460
                         X: =698
-                        Y: =252
+                        Y: =240
                   - BC_ModalOpt2_Facultad:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -887,7 +887,7 @@ Screens:
                         Visible: =locShowModalFacultad
                         Width: =460
                         X: =698
-                        Y: =325
+                        Y: =311
                   - BC_ModalClose_Facultad:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1241,15 +1241,6 @@ Screens:
                         Width: =200
                         X: =583
                         Y: =1548
-      - TextInput2_2:
-          Control: ModernTextInput@1.0.0
-          Properties:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =50
-            Width: =400
-            X: =101
-            Y: =1130
       - ButtonCanvas1_8:
           Control: Button@0.0.45
           Properties:
@@ -1265,11 +1256,20 @@ Screens:
           Properties:
             Appearance: ='ButtonCanvas.Appearance'.Transparent
             Height: =31
-            OnSelect: =Navigate(misSolicitudes)
+            OnSelect: =
             Text: =
             Width: =146
             X: =1017
             Y: =30
+      - TextInput2_2:
+          Control: ModernTextInput@1.0.0
+          Properties:
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =400
+            X: =101
+            Y: =1130
       - ButtonCanvas1_10:
           Control: Button@0.0.45
           Properties:

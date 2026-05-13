@@ -5,7 +5,7 @@
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
         Y: =
-        ZIndex: =2
+        ZIndex: =1
 
         DataCard1 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -82,7 +82,7 @@
                 IconRotation: =0
                 IconStyle: ="Outline"
                 Layout: ="Icon before"
-                OnSelect: =Navigate(misSolicitudes)
+                OnSelect: =
                 TabIndex: =0
                 Text: =
                 Tooltip: =""
@@ -183,7 +183,7 @@
                 IconRotation: =0
                 IconStyle: ="Outline"
                 Layout: ="Icon before"
-                OnSelect: =Navigate(misSolicitudes)
+                OnSelect: =
                 TabIndex: =0
                 Text: =
                 Tooltip: =""
@@ -860,7 +860,7 @@
                 Visible: =locShowModalFacultad
                 Width: =440
                 X: =695
-                Y: =168
+                Y: =159
                 ZIndex: =56
 
             BC_ModalSubtitle_Facultad As label:
@@ -870,8 +870,8 @@
                 Text: ="Escoja la facultad o dependencia a la que pertenece"
                 Visible: =locShowModalFacultad
                 Width: =440
-                X: =692
-                Y: =214
+                X: =697
+                Y: =201
                 ZIndex: =57
 
             BC_ModalOpt1_Facultad As button:
@@ -893,7 +893,7 @@
                 Visible: =locShowModalFacultad
                 Width: =460
                 X: =698
-                Y: =252
+                Y: =240
                 ZIndex: =58
 
             BC_ModalOpt2_Facultad As button:
@@ -915,7 +915,7 @@
                 Visible: =locShowModalFacultad
                 Width: =460
                 X: =698
-                Y: =325
+                Y: =311
                 ZIndex: =59
 
             BC_ModalClose_Facultad As button:
@@ -1227,21 +1227,6 @@
                 Y: =1548
                 ZIndex: =126
 
-    TextInput2_2 As modernTextInput:
-        Appearance: =Appearance.FilledDarker
-        BorderStyle: =""
-        Color: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =""
-        Height: =50
-        Placeholder: ="Enter text"
-        TriggerOutput: =TriggerOutput.Keypress
-        ValidationState: =ValidationState.None
-        Width: =400
-        X: =101
-        Y: =1130
-        ZIndex: =3
-
     ButtonCanvas1_8 As Botón:
         AcceptsFocus: =true
         AccessibleLabel: =""
@@ -1273,7 +1258,7 @@
         Width: =103
         X: =877
         Y: =30
-        ZIndex: =4
+        ZIndex: =2
 
     ButtonCanvas1_9 As Botón:
         AcceptsFocus: =true
@@ -1297,7 +1282,7 @@
         IconRotation: =0
         IconStyle: ="Outline"
         Layout: ="Icon before"
-        OnSelect: =Navigate(misSolicitudes)
+        OnSelect: =
         TabIndex: =0
         Text: =
         Tooltip: =""
@@ -1306,7 +1291,22 @@
         Width: =146
         X: =1017
         Y: =30
-        ZIndex: =5
+        ZIndex: =3
+
+    TextInput2_2 As modernTextInput:
+        Appearance: =Appearance.FilledDarker
+        BorderStyle: =""
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =""
+        Height: =50
+        Placeholder: ="Enter text"
+        TriggerOutput: =TriggerOutput.Keypress
+        ValidationState: =ValidationState.None
+        Width: =400
+        X: =101
+        Y: =1130
+        ZIndex: =4
 
     ButtonCanvas1_10 As Botón:
         AcceptsFocus: =true
@@ -1340,5 +1340,5 @@
         Width: =103
         X: =1194
         Y: =30
-        ZIndex: =6
+        ZIndex: =5
 

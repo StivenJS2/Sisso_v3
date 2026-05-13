@@ -11,6 +11,6 @@ EditorState:
     - introduccion
     - CuentasListas
     - BuzonCorreo
-    - misSolicitudes
+    - Screen2
   ComponentDefinitionsOrder:
     - AutoWidthLabelGenerator

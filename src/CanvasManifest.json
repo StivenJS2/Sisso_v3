@@ -114,7 +114,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "d736596b-2dbc-454d-a309-00d604f7b87b",
-    "Id": "37006a18-6a6b-4013-ab9f-0f0f3cccb6e3",
+    "Id": "edfd61e4-90bf-48e9-8767-a58999cdff1a",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
     "Name": "U2lzc29fdjM.msapp",
@@ -137,6 +137,6 @@
     "introduccion",
     "CuentasListas",
     "BuzonCorreo",
-    "misSolicitudes"
+    "Screen2"
   ]
 }

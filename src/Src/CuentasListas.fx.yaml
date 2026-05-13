@@ -589,7 +589,7 @@ CuentasListas As screen:
         IconRotation: =0
         IconStyle: ="Outline"
         Layout: ="Icon before"
-        OnSelect: =Navigate(misSolicitudes)
+        OnSelect: =
         TabIndex: =0
         Text: =
         Tooltip: =""
@@ -690,7 +690,7 @@ CuentasListas As screen:
         IconRotation: =0
         IconStyle: ="Outline"
         Layout: ="Icon before"
-        OnSelect: =Navigate(misSolicitudes)
+        OnSelect: =
         TabIndex: =0
         Text: =
         Tooltip: =""
