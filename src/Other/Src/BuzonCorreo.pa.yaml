@@ -23,7 +23,7 @@ Screens:
                 Control: DataCard@1.0.2
                 Properties:
                   Fill: =RGBA(255, 255, 255, 1)
-                  Height: =1714
+                  Height: =1270
                   Width: =Parent.Width
                   X: =0
                   Y: =0
@@ -33,10 +33,10 @@ Screens:
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Fill: =RGBA(0, 0, 0, 0.02)
-                        Height: =1512
+                        Height: =1110
                         Width: =1300
-                        X: =33
-                        Y: =147
+                        X: =27
+                        Y: =81
                   - ButtonCanvas2_3:
                       Control: Button@0.0.45
                       Properties:
@@ -253,10 +253,10 @@ Screens:
                         BorderColor: =RGBA(214, 221, 224, 1)
                         BorderThickness: =2
                         Fill: =RGBA(240, 246, 255, 1)
-                        Height: =206
+                        Height: =175
                         Width: =590
                         X: =73
-                        Y: =260
+                        Y: =255
                   - BC_IconCard_Aprobador:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -266,7 +266,7 @@ Screens:
                         Icon: =Icon.People
                         Width: =35
                         X: =93
-                        Y: =275
+                        Y: =268
                   - BC_LblField_Aprobador:
                       Control: Label@2.5.1
                       Properties:
@@ -279,20 +279,20 @@ Screens:
                         Text: ="Aprobador  *"
                         Width: =300
                         X: =138
-                        Y: =277
+                        Y: =270
                   - BC_LblDesc_Aprobador:
                       Control: Label@2.5.1
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =RGBA(90, 90, 90, 1)
                         Font: =Font.'Open Sans'
-                        Height: =70
+                        Height: =60
                         Size: =11
                         Text: ="Seleccione como autorizador a Jefe de Oficina, Director de su Unidad, Decano o Vicerrector, al cual le llegará una notificación para que realice la aprobación de su solicitud."
                         VerticalAlign: =VerticalAlign.Top
                         Width: =540
                         X: =93
-                        Y: =310
+                        Y: =312
                   - BC_BtnSelect_Aprobador:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -302,7 +302,6 @@ Screens:
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         Fill: =If(IsBlank(locSelectedAprobador), RGBA(255, 255, 255, 1), RGBA(255, 249, 219, 1))
                         Font: =Font.'Open Sans'
-                        Height: =45
                         HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =If(IsBlank(locSelectedAprobador), RGBA(250, 250, 250, 1), RGBA(255, 243, 191, 1))
@@ -318,17 +317,17 @@ Screens:
                         Text: =If(IsBlank(locSelectedAprobador), "Seleccione un aprobador", locSelectedAprobador)
                         Width: =540
                         X: =93
-                        Y: =390
+                        Y: =380
                   - BC_CardBg_Facultad:
                       Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(214, 221, 224, 1)
                         BorderThickness: =2
                         Fill: =RGBA(240, 246, 255, 1)
-                        Height: =206
+                        Height: =175
                         Width: =590
                         X: =693
-                        Y: =260
+                        Y: =255
                   - BC_IconCard_Facultad:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -338,7 +337,7 @@ Screens:
                         Icon: =Icon.OfficeBuilding
                         Width: =35
                         X: =713
-                        Y: =275
+                        Y: =268
                   - BC_LblField_Facultad:
                       Control: Label@2.5.1
                       Properties:
@@ -351,20 +350,20 @@ Screens:
                         Text: ="Facultad o dependencia  *"
                         Width: =350
                         X: =758
-                        Y: =277
+                        Y: =270
                   - BC_LblDesc_Facultad:
                       Control: Label@2.5.1
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =RGBA(90, 90, 90, 1)
                         Font: =Font.'Open Sans'
-                        Height: =70
+                        Height: =30
                         Size: =11
                         Text: ="Indique la facultad o dependencia a la cual usted pertenece."
                         VerticalAlign: =VerticalAlign.Top
                         Width: =540
                         X: =713
-                        Y: =310
+                        Y: =325
                   - BC_BtnSelect_Facultad:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -374,7 +373,6 @@ Screens:
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         Fill: =If(IsBlank(locSelectedFacultad), RGBA(255, 255, 255, 1), RGBA(255, 249, 219, 1))
                         Font: =Font.'Open Sans'
-                        Height: =45
                         HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =If(IsBlank(locSelectedFacultad), RGBA(250, 250, 250, 1), RGBA(255, 243, 191, 1))
@@ -390,17 +388,17 @@ Screens:
                         Text: =If(IsBlank(locSelectedFacultad), "Seleccione una dependencia", locSelectedFacultad)
                         Width: =540
                         X: =713
-                        Y: =390
+                        Y: =380
                   - BC_CardBg_Justificacion:
                       Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(214, 221, 224, 1)
                         BorderThickness: =2
                         Fill: =RGBA(240, 246, 255, 1)
-                        Height: =170
-                        Width: =1210
+                        Height: =155
+                        Width: =590
                         X: =73
-                        Y: =483
+                        Y: =447
                   - BC_IconCard_Justificacion:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -410,7 +408,7 @@ Screens:
                         Icon: =Icon.DocumentWithContent
                         Width: =35
                         X: =93
-                        Y: =493
+                        Y: =457
                   - BC_LblField_Justificacion:
                       Control: Label@2.5.1
                       Properties:
@@ -423,7 +421,7 @@ Screens:
                         Text: ="Justificación  *"
                         Width: =300
                         X: =138
-                        Y: =497
+                        Y: =459
                   - TextInput2:
                       Control: ModernTextInput@1.0.0
                       Properties:
@@ -433,25 +431,25 @@ Screens:
                         BorderThickness: =1
                         Color: =RGBA(0, 0, 0, 1)
                         Fill: =RGBA(255, 255, 255, 1)
-                        Height: =100
+                        Height: =82
                         Placeholder: ="Escribir justificación..."
                         RadiusBottomLeft: =8
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =1150
+                        Width: =550
                         X: =93
-                        Y: =537
+                        Y: =505
                   - BC_CardBg_Celular:
                       Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(214, 221, 224, 1)
                         BorderThickness: =2
                         Fill: =RGBA(240, 246, 255, 1)
-                        Height: =123
-                        Width: =1210
-                        X: =73
-                        Y: =676
+                        Height: =155
+                        Width: =590
+                        X: =693
+                        Y: =447
                   - RectFooter_4:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -459,7 +457,7 @@ Screens:
                         Fill: =RGBA(26, 58, 110, 1)
                         Height: =68
                         Width: =1360
-                        Y: =1659
+                        Y: =1202
                   - BC_IconCard_Celular:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -468,8 +466,8 @@ Screens:
                         Height: =35
                         Icon: =Icon.Phone
                         Width: =35
-                        X: =98
-                        Y: =696
+                        X: =713
+                        Y: =457
                   - LblFooter_4:
                       Control: Label@2.5.1
                       Properties:
@@ -483,7 +481,7 @@ Screens:
                           Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
                         Width: =853
                         X: =10
-                        Y: =1672
+                        Y: =1216
                   - BC_LblField_Celular:
                       Control: Label@2.5.1
                       Properties:
@@ -495,8 +493,8 @@ Screens:
                         Size: =14
                         Text: ="Número celular o extensión  *"
                         Width: =350
-                        X: =138
-                        Y: =700
+                        X: =758
+                        Y: =459
                   - RectFooterBorder_4:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -505,7 +503,7 @@ Screens:
                         Fill: =RGBA(200, 184, 122, 1)
                         Height: =2
                         Width: =1355
-                        Y: =1659
+                        Y: =1202
                   - TextInput2_1:
                       Control: ModernTextInput@1.0.0
                       Properties:
@@ -515,15 +513,15 @@ Screens:
                         BorderThickness: =1
                         Color: =RGBA(0, 0, 0, 1)
                         Fill: =RGBA(255, 255, 255, 1)
-                        Height: =45
+                        Height: =38
                         Placeholder: ="Escribir aquí"
                         RadiusBottomLeft: =8
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =1150
-                        X: =93
-                        Y: =740
+                        Width: =540
+                        X: =713
+                        Y: =528
                   - Image4_3:
                       Control: Image@2.2.3
                       Properties:
@@ -533,7 +531,7 @@ Screens:
                         ImagePosition: =ImagePosition.Fill
                         Width: =289
                         X: =1065
-                        Y: =1666
+                        Y: =1207
                   - RectNavBorder_6:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -550,7 +548,7 @@ Screens:
                         Height: =2
                         Width: =1250
                         X: =58
-                        Y: =815
+                        Y: =618
                   - LblTopLeft_4:
                       Control: Label@2.5.1
                       Properties:
@@ -574,7 +572,7 @@ Screens:
                         Text: ="Datos específicos"
                         Width: =500
                         X: =73
-                        Y: =870
+                        Y: =633
                   - Icon3_2:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -594,7 +592,7 @@ Screens:
                         Height: =4
                         Width: =60
                         X: =73
-                        Y: =910
+                        Y: =673
                   - Icon4_2:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -617,7 +615,7 @@ Screens:
                         Text: ="Estos datos permiten conocer la información esencial del recurso que está solicitando."
                         Width: =800
                         X: =73
-                        Y: =925
+                        Y: =685
                   - BC_ModalOverlay_Aprobador:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -922,10 +920,10 @@ Screens:
                         BorderColor: =RGBA(214, 221, 224, 1)
                         BorderThickness: =2
                         Fill: =RGBA(240, 246, 255, 1)
-                        Height: =290
+                        Height: =201
                         Width: =590
                         X: =73
-                        Y: =975
+                        Y: =744
                   - BC_IconCard_NombreRecurso:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -934,8 +932,8 @@ Screens:
                         Height: =35
                         Icon: =Icon.CalendarBlank
                         Width: =35
-                        X: =93
-                        Y: =990
+                        X: =83
+                        Y: =758
                   - BC_LblField_NombreRecurso:
                       Control: Label@2.5.1
                       Properties:
@@ -947,8 +945,8 @@ Screens:
                         Size: =14
                         Text: ="Nombre de lista, calendario o buzón de correo  *"
                         Width: =460
-                        X: =138
-                        Y: =992
+                        X: =120
+                        Y: =760
                   - BC_LblDesc_NombreRecurso:
                       Control: Label@2.5.1
                       Properties:
@@ -960,8 +958,8 @@ Screens:
                         Text: ="Por favor ingrese el nombre específico para la lista, calendario o buzón que requiere crear; no debe superar los 20 caracteres, tampoco contener espacios."
                         VerticalAlign: =VerticalAlign.Top
                         Width: =540
-                        X: =93
-                        Y: =1041
+                        X: =75
+                        Y: =813
                   - TextInput2_3:
                       Control: ModernTextInput@1.0.0
                       Properties:
@@ -978,8 +976,8 @@ Screens:
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
                         Width: =360
-                        X: =93
-                        Y: =1140
+                        X: =84
+                        Y: =883
                   - BC_LblSuffix_Email:
                       Control: Label@2.5.1
                       Properties:
@@ -990,8 +988,8 @@ Screens:
                         Height: =45
                         Text: ="@javeriana.edu.co"
                         Width: =180
-                        X: =463
-                        Y: =1138
+                        X: =448
+                        Y: =881
                   - BC_LblHint_NombreRecurso:
                       Control: Label@2.5.1
                       Properties:
@@ -1002,18 +1000,18 @@ Screens:
                         Size: =10
                         Text: ="Máximo 20 caracteres, sin espacios."
                         Width: =300
-                        X: =93
-                        Y: =1185
+                        X: =72
+                        Y: =711
                   - BC_CardBg_NombreDespliegue:
                       Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(214, 221, 224, 1)
                         BorderThickness: =2
                         Fill: =RGBA(240, 246, 255, 1)
-                        Height: =290
+                        Height: =202
                         Width: =590
                         X: =693
-                        Y: =975
+                        Y: =743
                   - BC_IconCard_NombreDespliegue:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -1023,7 +1021,7 @@ Screens:
                         Icon: =Icon.Mail
                         Width: =35
                         X: =713
-                        Y: =990
+                        Y: =758
                   - BC_LblField_NombreDespliegue:
                       Control: Label@2.5.1
                       Properties:
@@ -1036,21 +1034,21 @@ Screens:
                         Text: ="Nombre de despliegue  *"
                         Width: =350
                         X: =758
-                        Y: =992
+                        Y: =760
                   - BC_LblDesc_NombreDespliegue:
                       Control: Label@2.5.1
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =RGBA(90, 90, 90, 1)
                         Font: =Font.'Open Sans'
-                        Height: =95
+                        Height: =80
                         Size: =11
                         Text: |-
                           ="Indique el nombre que quiere que aparezca como remitente cuando alguien correos de la cuenta que se va a generar. Ejemplo: Ximo. El correo puede exceder los 20 caracteres. Revisar en conjunto con Profesional Universitario | persona Líder o Coordinadores."
                         VerticalAlign: =VerticalAlign.Top
                         Width: =550
                         X: =713
-                        Y: =1030
+                        Y: =796
                   - TextInput2_4:
                       Control: ModernTextInput@1.0.0
                       Properties:
@@ -1060,7 +1058,7 @@ Screens:
                         BorderThickness: =1
                         Color: =RGBA(0, 0, 0, 1)
                         Fill: =RGBA(255, 255, 255, 1)
-                        Height: =45
+                        Height: =43
                         Placeholder: ="Escribir aquí"
                         RadiusBottomLeft: =8
                         RadiusBottomRight: =8
@@ -1068,17 +1066,17 @@ Screens:
                         RadiusTopRight: =8
                         Width: =550
                         X: =713
-                        Y: =1140
+                        Y: =883
                   - BC_CardBg_Expiracion:
                       Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(214, 221, 224, 1)
                         BorderThickness: =2
                         Fill: =RGBA(240, 246, 255, 1)
-                        Height: =120
+                        Height: =99
                         Width: =1210
-                        X: =73
-                        Y: =1285
+                        X: =72
+                        Y: =961
                   - BC_IconCard_Expiracion:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -1087,8 +1085,8 @@ Screens:
                         Height: =35
                         Icon: =Icon.Clock
                         Width: =35
-                        X: =93
-                        Y: =1323
+                        X: =98
+                        Y: =966
                   - BC_LblField_Expiracion:
                       Control: Label@2.5.1
                       Properties:
@@ -1096,24 +1094,25 @@ Screens:
                         Color: =RGBA(0, 58, 112, 1)
                         Font: =Font.'Open Sans'
                         FontWeight: =FontWeight.Bold
-                        Height: =30
+                        Height: =33
                         Size: =14
                         Text: ="Fecha de expiración  *"
                         Width: =300
-                        X: =138
-                        Y: =1311
+                        X: =143
+                        Y: =964
                   - BC_LblDesc_Expiracion:
                       Control: Label@2.5.1
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =RGBA(90, 90, 90, 1)
                         Font: =Font.'Open Sans'
+                        Height: =43
                         Size: =11
                         Text: ="La vigencia debe ser mínimo un mes y de máximo un año, esta se podrá renovar antes del tiempo de la vigencia."
                         VerticalAlign: =VerticalAlign.Top
                         Width: =500
-                        X: =138
-                        Y: =1338
+                        X: =145
+                        Y: =994
                   - BC_BtnInput_Expiracion:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1123,7 +1122,7 @@ Screens:
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         Fill: =RGBA(255, 255, 255, 1)
                         Font: =Font.'Open Sans'
-                        Height: =45
+                        Height: =38
                         HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(250, 250, 250, 1)
@@ -1136,8 +1135,8 @@ Screens:
                         RadiusTopRight: =8
                         Text: ="Seleccionar una fecha..."
                         Width: =300
-                        X: =870
-                        Y: =1326
+                        X: =822
+                        Y: =996
                   - BC_IconCalendar_Expiracion:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -1146,18 +1145,18 @@ Screens:
                         Height: =22
                         Icon: =Icon.CalendarBlank
                         Width: =22
-                        X: =1141
-                        Y: =1338
+                        X: =1093
+                        Y: =1004
                   - BC_RectBg_Recurso:
                       Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(214, 221, 224, 1)
                         BorderThickness: =2
                         Fill: =RGBA(245, 247, 250, 1)
-                        Height: =190
+                        Height: =79
                         Width: =1210
-                        X: =73
-                        Y: =1430
+                        X: =68
+                        Y: =1084
                   - BC_LblHeader_Recurso:
                       Control: Label@2.5.1
                       Properties:
@@ -1169,8 +1168,8 @@ Screens:
                         Size: =20
                         Text: ="Recurso solicitado"
                         Width: =400
-                        X: =483
-                        Y: =1445
+                        X: =107
+                        Y: =1105
                   - BC_BtnCheck_Recurso:
                       Control: Classic/Button@2.2.0
                       Properties:
@@ -1191,8 +1190,8 @@ Screens:
                         RadiusTopRight: =6
                         Text: =""
                         Width: =35
-                        X: =568
-                        Y: =1495
+                        X: =553
+                        Y: =1102
                   - BC_IconCheck_Recurso:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -1201,8 +1200,8 @@ Screens:
                         Height: =22
                         Icon: =Icon.Check
                         Width: =22
-                        X: =575
-                        Y: =1502
+                        X: =560
+                        Y: =1109
                   - BC_LblText_Recurso:
                       Control: Label@2.5.1
                       Properties:
@@ -1214,33 +1213,32 @@ Screens:
                         Size: =16
                         Text: ="Buzón de correo"
                         Width: =200
-                        X: =615
-                        Y: =1495
+                        X: =600
+                        Y: =1105
                   - BC_BtnSelect_Facultad_1:
                       Control: Classic/Button@2.2.0
                       Properties:
-                        BorderColor: =ColorFade(Self.Fill, -15%)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(0, 58, 112, 1)
+                        Color: =RGBA(0, 58, 112, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(255, 191, 0, 1)
+                        Fill: =Color.Transparent
                         Font: =Font.'Open Sans'
                         FontWeight: =FontWeight.Bold
-                        Height: =48
                         HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
-                        HoverColor: =RGBA(0, 0, 0, 1)
-                        HoverFill: =RGBA(230, 175, 0, 1)
-                        PressedBorderColor: =Self.Fill
-                        PressedColor: =RGBA(0, 0, 0, 1)
-                        PressedFill: =RGBA(209, 164, 29, 1)
-                        RadiusBottomLeft: =25
-                        RadiusBottomRight: =25
-                        RadiusTopLeft: =25
-                        RadiusTopRight: =25
-                        Size: =16
+                        HoverColor: =RGBA(0, 58, 112, 1)
+                        HoverFill: =Color.Transparent
+                        PressedBorderColor: =RGBA(0, 58, 112, 1)
+                        PressedColor: =RGBA(255, 213, 0, 1)
+                        PressedFill: =Color.Transparent
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Size: =14
                         Text: ="✈  Enviar"
-                        Width: =200
-                        X: =583
-                        Y: =1548
+                        Width: =180
+                        X: =928
+                        Y: =1102
       - ButtonCanvas1_8:
           Control: Button@0.0.45
           Properties:

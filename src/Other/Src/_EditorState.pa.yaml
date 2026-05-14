@@ -12,5 +12,7 @@ EditorState:
     - CuentasListas
     - BuzonCorreo
     - Screen2
+    - Instalacion_Software
+    - Conceptos tecnicos
   ComponentDefinitionsOrder:
     - AutoWidthLabelGenerator
