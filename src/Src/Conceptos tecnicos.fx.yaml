@@ -1,4 +1,4 @@
-'Conceptos tecnicos' As screen:
+"'Conceptos tecnicos' As screen":
     Fill: =RGBA(0, 0, 0, 0.02)
 
     CT_Rectangle2 As rectangle:
@@ -111,7 +111,7 @@
         Height: =45
         Size: =24
         Text: ="Conceptos tecnológicos de software y hardware"
-        Width: =600
+        Width: =801
         X: =85
         Y: =134
         ZIndex: =15
@@ -131,7 +131,7 @@
         Text: ="Solicitud para servicios de software y equipos de hardware."
         Width: =1200
         X: =87
-        Y: =183
+        Y: =188
         ZIndex: =17
 
     CT_Card1_Bg As button:
@@ -214,25 +214,6 @@
         Y: =381
         ZIndex: =25
 
-    CT_Card1_Overlay As button:
-        BorderColor: =RGBA(220, 220, 220, 1)
-        BorderThickness: =1
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =200
-        HoverFill: =
-        OnSelect: =Notify("Función de solicitud en desarrollo", NotificationType.Information)
-        PressedFill: =
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: =""
-        Width: =1210
-        X: =78
-        Y: =230
-        ZIndex: =56
-
     CT_Card2_Bg As button:
         BorderColor: =RGBA(220, 220, 220, 1)
         BorderThickness: =1
@@ -313,6 +294,25 @@
         Y: =600
         ZIndex: =32
 
+    CT_Card1_Overlay As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =200
+        HoverFill: =
+        OnSelect: =Notify("Función de solicitud en desarrollo", NotificationType.Information)
+        PressedFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =1210
+        X: =78
+        Y: =230
+        ZIndex: =56
+
     CT_Card2_Overlay As button:
         BorderColor: =RGBA(220, 220, 220, 1)
         BorderThickness: =1
@@ -331,32 +331,6 @@
         X: =78
         Y: =450
         ZIndex: =57
-
-    CT_ButtonCanvas2 As Botón:
-        Appearance: ='ButtonCanvas.Appearance'.Transparent
-        Height: =32
-        OnSelect: =Navigate(introduccion)
-        Width: =96
-        X: =885
-        Y: =29
-        ZIndex: =60
-
-    CT_ButtonCanvas2_1 As Botón:
-        Appearance: ='ButtonCanvas.Appearance'.Transparent
-        Height: =32
-        Width: =163
-        X: =1010
-        Y: =27
-        ZIndex: =61
-
-    CT_ButtonCanvas2_2 As Botón:
-        Appearance: ='ButtonCanvas.Appearance'.Transparent
-        Height: =32
-        OnSelect: =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
-        Width: =96
-        X: =1182
-        Y: =32
-        ZIndex: =62
 
     CT_RectFooter_2 As rectangle:
         Fill: =RGBA(26, 58, 110, 1)
@@ -414,3 +388,120 @@
         X: =54
         Y: =92
         ZIndex: =72
+
+    ButtonCanvas1_14 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =34
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Navigate(introduccion)
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =103
+        X: =877
+        Y: =30
+        ZIndex: =73
+
+    ButtonCanvas1_15 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =31
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =152
+        X: =1016
+        Y: =28
+        ZIndex: =74
+
+    ButtonCanvas1_16 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =33
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Exit()
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =82
+        X: =1206
+        Y: =26
+        ZIndex: =75
+
+    RectNavBorder_8 As rectangle:
+        Fill: =RGBA(248, 205, 0, 1)
+        Height: =2
+        Width: =1366
+        Y: =123
+        ZIndex: =76
+
+    Icon4_4 As icon:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =29
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =44
+        X: =10
+        Y: =91
+        ZIndex: =77
+

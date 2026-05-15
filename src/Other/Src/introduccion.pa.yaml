@@ -58,7 +58,7 @@ Screens:
             HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
-            OnTimerEnd: =Set(varIndiceIntro, If(varIndiceIntro = 3, 1, varIndiceIntro + 1))
+            OnTimerEnd: =Set(varIndiceIntro, If(varIndiceIntro = 2, 1, varIndiceIntro + 1))
             PressedBorderColor: =Self.Fill
             PressedColor: =Self.Fill
             PressedFill: =Self.Color
@@ -78,7 +78,7 @@ Screens:
                 Control: DataCard@1.0.2
                 Properties:
                   Fill: =RGBA(255, 255, 255, 1)
-                  Height: =774
+                  Height: =698
                   Width: =Parent.Width
                   X: =0
                   Y: =0
@@ -113,17 +113,6 @@ Screens:
                         Width: =398
                         X: =483
                         Y: =41
-                  - ImgSlide3B:
-                      Control: Image@2.2.3
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Height: =230
-                        ImagePosition: =ImagePosition.Fill
-                        Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
-                        Visible: =varIndiceIntro = 3
-                        Width: =1164
-                        X: =95
-                        Y: =48
                   - ImgSlide2A:
                       Control: Image@2.2.3
                       Properties:
@@ -179,7 +168,7 @@ Screens:
                         Font: =Font.'Open Sans'
                         Height: =48
                         HtmlText: |-
-                          ="<div style='text-align: center; opacity: " & Substitute(Text(If(TimerIntro.Value < 600, TimerIntro.Value/600, 1)), ",", ".") & "; color: white; font-weight: bold; font-size: 21.5px; line-height: 35px; font-family: ""Segoe UI"", sans-serif;'>" & If(varIndiceIntro = 1, "<span style='color: rgb(255, 213, 0);'>Servicios</span> más utilizados", varIndiceIntro = 2, "<span style='color: rgb(255, 213, 0);'>Nuevos</span> servicios", "<span style='color: rgb(255, 213, 0);'>Not</span>icias") & "</div>"
+                          ="<div style='text-align: center; opacity: " & Substitute(Text(If(TimerIntro.Value < 600, TimerIntro.Value/600, 1)), ",", ".") & "; color: white; font-weight: bold; font-size: 21.5px; line-height: 35px; font-family: ""Segoe UI"", sans-serif;'>" & If(varIndiceIntro = 1, "<span style='color: rgb(255, 213, 0);'>Servicios</span> más utilizados", "<span style='color: rgb(255, 213, 0);'>Nuevos</span> servicios") & "</div>"
                         Size: =16
                         Width: =1283
                         X: =42
@@ -934,6 +923,7 @@ Screens:
                         HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =
+                        OnSelect: =Navigate(Instalacion_Software)
                         PressedBorderColor: =Self.Fill
                         PressedColor: =Self.Fill
                         PressedFill: =
@@ -956,7 +946,7 @@ Screens:
                         HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =
-                        OnSelect: =
+                        OnSelect: =Navigate('Conceptos tecnicos')
                         PressedBorderColor: =Self.Fill
                         PressedColor: =Self.Fill
                         PressedFill: =
@@ -1079,7 +1069,7 @@ Screens:
                         Height: =68
                         Width: =1363
                         X: =3
-                        Y: =716
+                        Y: =649
                   - LblFooter_3:
                       Control: Label@2.5.1
                       Properties:
@@ -1093,7 +1083,7 @@ Screens:
                           Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
                         Width: =853
                         X: =13
-                        Y: =734
+                        Y: =667
                   - RectFooterBorder_3:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -1103,7 +1093,7 @@ Screens:
                         Height: =2
                         Width: =1360
                         X: =3
-                        Y: =714
+                        Y: =647
                   - Image4_2:
                       Control: Image@2.2.3
                       Properties:
@@ -1113,7 +1103,7 @@ Screens:
                         ImagePosition: =ImagePosition.Fill
                         Width: =289
                         X: =1071
-                        Y: =721
+                        Y: =654
                   - SmallCard1_InfoBtn:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -1554,7 +1544,7 @@ Screens:
             Visible: =varModalInfo = 1
             Width: =40
             X: =M1_Panel.X + 35
-            Y: =M1_Panel.Y + 162
+            Y: =297
       - M1_Description:
           Control: Label@2.5.1
           Properties:
@@ -1654,7 +1644,7 @@ Screens:
             Visible: =varModalInfo = 2
             Width: =40
             X: =M2_Panel.X + 35
-            Y: =M2_Panel.Y + 162
+            Y: =297
       - M2_Description:
           Control: Label@2.5.1
           Properties:
@@ -1754,7 +1744,7 @@ Screens:
             Visible: =varModalInfo = 3
             Width: =40
             X: =M3_Panel.X + 35
-            Y: =M3_Panel.Y + 162
+            Y: =297
       - M3_Description:
           Control: Label@2.5.1
           Properties:
@@ -1854,7 +1844,7 @@ Screens:
             Visible: =varModalInfo = 4
             Width: =40
             X: =M4_Panel.X + 35
-            Y: =M4_Panel.Y + 162
+            Y: =297
       - M4_Description:
           Control: Label@2.5.1
           Properties:
@@ -1954,7 +1944,7 @@ Screens:
             Visible: =varModalInfo = 5
             Width: =40
             X: =M5_Panel.X + 35
-            Y: =M5_Panel.Y + 162
+            Y: =297
       - M5_Description:
           Control: Label@2.5.1
           Properties:
@@ -2054,7 +2044,7 @@ Screens:
             Visible: =varModalInfo = 6
             Width: =40
             X: =M6_Panel.X + 35
-            Y: =M6_Panel.Y + 162
+            Y: =297
       - M6_Description:
           Control: Label@2.5.1
           Properties:
@@ -2154,7 +2144,7 @@ Screens:
             Visible: =varModalInfo = 7
             Width: =40
             X: =M7_Panel.X + 35
-            Y: =M7_Panel.Y + 162
+            Y: =297
       - M7_Description:
           Control: Label@2.5.1
           Properties:
@@ -2254,7 +2244,7 @@ Screens:
             Visible: =varModalInfo = 8
             Width: =40
             X: =M8_Panel.X + 35
-            Y: =M8_Panel.Y + 162
+            Y: =297
       - M8_Description:
           Control: Label@2.5.1
           Properties:
@@ -2354,7 +2344,7 @@ Screens:
             Visible: =varModalInfo = 9
             Width: =40
             X: =M9_Panel.X + 35
-            Y: =M9_Panel.Y + 162
+            Y: =297
       - M9_Description:
           Control: Label@2.5.1
           Properties:
@@ -2454,7 +2444,7 @@ Screens:
             Visible: =varModalInfo = 10
             Width: =40
             X: =M10_Panel.X + 35
-            Y: =M10_Panel.Y + 162
+            Y: =297
       - M10_Description:
           Control: Label@2.5.1
           Properties:
@@ -2637,7 +2627,7 @@ Screens:
             Visible: =varModalInfo = 1
             Width: =40
             X: =M1_Panel.X + 55
-            Y: =M1_Panel.Y + 344
+            Y: =430
       - M1_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -2650,7 +2640,7 @@ Screens:
             Visible: =varModalInfo = 1
             Width: =600
             X: =M1_Panel.X + 33
-            Y: =M1_Panel.Y + 275
+            Y: =360
       - M1_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -2662,7 +2652,7 @@ Screens:
             Visible: =varModalInfo = 1
             Width: =600
             X: =M1_Panel.X + 111
-            Y: =M1_Panel.Y + 344
+            Y: =428
       - M1_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -2730,7 +2720,7 @@ Screens:
             Visible: =varModalInfo = 2
             Width: =40
             X: =M2_Panel.X + 55
-            Y: =M2_Panel.Y + 344
+            Y: =430
       - M2_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -2743,7 +2733,7 @@ Screens:
             Visible: =varModalInfo = 2
             Width: =600
             X: =M2_Panel.X + 33
-            Y: =M2_Panel.Y + 275
+            Y: =360
       - M2_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -2755,7 +2745,7 @@ Screens:
             Visible: =varModalInfo = 2
             Width: =600
             X: =M2_Panel.X + 111
-            Y: =M2_Panel.Y + 344
+            Y: =428
       - M2_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -2823,7 +2813,7 @@ Screens:
             Visible: =varModalInfo = 3
             Width: =40
             X: =M3_Panel.X + 55
-            Y: =M3_Panel.Y + 344
+            Y: =430
       - M3_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -2836,7 +2826,7 @@ Screens:
             Visible: =varModalInfo = 3
             Width: =600
             X: =M3_Panel.X + 33
-            Y: =M3_Panel.Y + 275
+            Y: =360
       - M3_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -2848,7 +2838,7 @@ Screens:
             Visible: =varModalInfo = 3
             Width: =600
             X: =M3_Panel.X + 111
-            Y: =M3_Panel.Y + 344
+            Y: =428
       - M3_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -2916,7 +2906,7 @@ Screens:
             Visible: =varModalInfo = 4
             Width: =40
             X: =M4_Panel.X + 55
-            Y: =M4_Panel.Y + 344
+            Y: =430
       - M4_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -2929,7 +2919,7 @@ Screens:
             Visible: =varModalInfo = 4
             Width: =600
             X: =M4_Panel.X + 33
-            Y: =M4_Panel.Y + 275
+            Y: =360
       - M4_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -2941,7 +2931,7 @@ Screens:
             Visible: =varModalInfo = 4
             Width: =600
             X: =M4_Panel.X + 111
-            Y: =M4_Panel.Y + 344
+            Y: =428
       - M4_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -3009,7 +2999,7 @@ Screens:
             Visible: =varModalInfo = 5
             Width: =40
             X: =M5_Panel.X + 55
-            Y: =M5_Panel.Y + 344
+            Y: =430
       - M5_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -3022,7 +3012,7 @@ Screens:
             Visible: =varModalInfo = 5
             Width: =600
             X: =M5_Panel.X + 33
-            Y: =M5_Panel.Y + 275
+            Y: =360
       - M5_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -3034,7 +3024,7 @@ Screens:
             Visible: =varModalInfo = 5
             Width: =600
             X: =M5_Panel.X + 111
-            Y: =M5_Panel.Y + 344
+            Y: =428
       - M5_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -3102,7 +3092,7 @@ Screens:
             Visible: =varModalInfo = 6
             Width: =40
             X: =M6_Panel.X + 55
-            Y: =M6_Panel.Y + 344
+            Y: =430
       - M6_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -3115,7 +3105,7 @@ Screens:
             Visible: =varModalInfo = 6
             Width: =600
             X: =M6_Panel.X + 33
-            Y: =M6_Panel.Y + 275
+            Y: =360
       - M6_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -3127,7 +3117,7 @@ Screens:
             Visible: =varModalInfo = 6
             Width: =600
             X: =M6_Panel.X + 111
-            Y: =M6_Panel.Y + 344
+            Y: =428
       - M6_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -3195,7 +3185,7 @@ Screens:
             Visible: =varModalInfo = 7
             Width: =40
             X: =M7_Panel.X + 55
-            Y: =M7_Panel.Y + 344
+            Y: =430
       - M7_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -3208,7 +3198,7 @@ Screens:
             Visible: =varModalInfo = 7
             Width: =600
             X: =M7_Panel.X + 33
-            Y: =M7_Panel.Y + 275
+            Y: =360
       - M7_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -3220,7 +3210,7 @@ Screens:
             Visible: =varModalInfo = 7
             Width: =600
             X: =M7_Panel.X + 111
-            Y: =M7_Panel.Y + 344
+            Y: =428
       - M7_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -3288,7 +3278,7 @@ Screens:
             Visible: =varModalInfo = 8
             Width: =40
             X: =M8_Panel.X + 55
-            Y: =M8_Panel.Y + 344
+            Y: =430
       - M8_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -3301,7 +3291,7 @@ Screens:
             Visible: =varModalInfo = 8
             Width: =600
             X: =M8_Panel.X + 33
-            Y: =M8_Panel.Y + 275
+            Y: =360
       - M8_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -3313,7 +3303,7 @@ Screens:
             Visible: =varModalInfo = 8
             Width: =600
             X: =M8_Panel.X + 111
-            Y: =M8_Panel.Y + 344
+            Y: =428
       - M8_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -3381,7 +3371,7 @@ Screens:
             Visible: =varModalInfo = 9
             Width: =40
             X: =M9_Panel.X + 55
-            Y: =M9_Panel.Y + 344
+            Y: =430
       - M9_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -3394,7 +3384,7 @@ Screens:
             Visible: =varModalInfo = 9
             Width: =600
             X: =M9_Panel.X + 33
-            Y: =M9_Panel.Y + 275
+            Y: =360
       - M9_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -3406,7 +3396,7 @@ Screens:
             Visible: =varModalInfo = 9
             Width: =600
             X: =M9_Panel.X + 111
-            Y: =M9_Panel.Y + 344
+            Y: =428
       - M9_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -3474,7 +3464,7 @@ Screens:
             Visible: =varModalInfo = 10
             Width: =40
             X: =M10_Panel.X + 55
-            Y: =M10_Panel.Y + 344
+            Y: =430
       - M10_FeatureTitle:
           Control: Label@2.5.1
           Properties:
@@ -3487,7 +3477,7 @@ Screens:
             Visible: =varModalInfo = 10
             Width: =600
             X: =M10_Panel.X + 33
-            Y: =M10_Panel.Y + 275
+            Y: =360
       - M10_FeatureDesc:
           Control: Label@2.5.1
           Properties:
@@ -3499,7 +3489,7 @@ Screens:
             Visible: =varModalInfo = 10
             Width: =600
             X: =M10_Panel.X + 111
-            Y: =M10_Panel.Y + 344
+            Y: =428
       - M10_HelpIcon:
           Control: Classic/Icon@2.5.0
           Properties:
@@ -3586,7 +3576,7 @@ Screens:
             HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
             HoverColor: =RGBA(0, 58, 112, 1)
             HoverFill: =Color.Transparent
-            OnSelect: =Set(varModalInfo, 0)
+            OnSelect: =Navigate('Conceptos tecnicos')
             PressedBorderColor: =RGBA(0, 58, 112, 1)
             PressedColor: =RGBA(255, 213, 0, 1)
             PressedFill: =Color.Transparent
@@ -3612,7 +3602,7 @@ Screens:
             HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
             HoverColor: =RGBA(0, 58, 112, 1)
             HoverFill: =Color.Transparent
-            OnSelect: =Set(varModalInfo, 0)
+            OnSelect: =Navigate(Instalacion_Software)
             PressedBorderColor: =RGBA(0, 58, 112, 1)
             PressedColor: =RGBA(255, 213, 0, 1)
             PressedFill: =Color.Transparent

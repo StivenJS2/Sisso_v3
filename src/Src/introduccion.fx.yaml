@@ -48,7 +48,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =774
+            Height: =698
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -80,7 +80,6 @@
                 X: =483
                 Y: =41
                 ZIndex: =3
-
 
             ImgSlide2A As image:
                 Height: =215
@@ -669,6 +668,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 HoverFill: =
+                OnSelect: =Navigate(Instalacion_Software)
                 PressedFill: =
                 Text: =""
                 Width: =230
@@ -684,7 +684,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =120
                 HoverFill: =
-                OnSelect: =
+                OnSelect: =Navigate('Conceptos tecnicos')
                 PressedFill: =
                 Text: =""
                 Width: =230
@@ -769,7 +769,7 @@
                 Height: =68
                 Width: =1363
                 X: =3
-                Y: =716
+                Y: =649
                 ZIndex: =72
 
             LblFooter_3 As label:
@@ -781,7 +781,7 @@
                     Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
                 Width: =853
                 X: =13
-                Y: =734
+                Y: =667
                 ZIndex: =73
 
             RectFooterBorder_3 As rectangle:
@@ -791,7 +791,7 @@
                 Height: =2
                 Width: =1360
                 X: =3
-                Y: =714
+                Y: =647
                 ZIndex: =74
 
             Image4_2 As image:
@@ -800,7 +800,7 @@
                 ImagePosition: =ImagePosition.Fill
                 Width: =289
                 X: =1071
-                Y: =721
+                Y: =654
                 ZIndex: =75
 
             SmallCard1_InfoBtn As icon.Information:
@@ -1220,7 +1220,7 @@
         Visible: =varModalInfo = 1
         Width: =40
         X: =M1_Panel.X + 35
-        Y: =M1_Panel.Y + 162
+        Y: =297
         ZIndex: =316
 
     M1_Description As label:
@@ -1308,7 +1308,7 @@
         Visible: =varModalInfo = 2
         Width: =40
         X: =M2_Panel.X + 35
-        Y: =M2_Panel.Y + 162
+        Y: =297
         ZIndex: =325
 
     M2_Description As label:
@@ -1396,7 +1396,7 @@
         Visible: =varModalInfo = 3
         Width: =40
         X: =M3_Panel.X + 35
-        Y: =M3_Panel.Y + 162
+        Y: =297
         ZIndex: =334
 
     M3_Description As label:
@@ -1484,7 +1484,7 @@
         Visible: =varModalInfo = 4
         Width: =40
         X: =M4_Panel.X + 35
-        Y: =M4_Panel.Y + 162
+        Y: =297
         ZIndex: =343
 
     M4_Description As label:
@@ -1572,7 +1572,7 @@
         Visible: =varModalInfo = 5
         Width: =40
         X: =M5_Panel.X + 35
-        Y: =M5_Panel.Y + 162
+        Y: =297
         ZIndex: =352
 
     M5_Description As label:
@@ -1660,7 +1660,7 @@
         Visible: =varModalInfo = 6
         Width: =40
         X: =M6_Panel.X + 35
-        Y: =M6_Panel.Y + 162
+        Y: =297
         ZIndex: =361
 
     M6_Description As label:
@@ -1748,7 +1748,7 @@
         Visible: =varModalInfo = 7
         Width: =40
         X: =M7_Panel.X + 35
-        Y: =M7_Panel.Y + 162
+        Y: =297
         ZIndex: =370
 
     M7_Description As label:
@@ -1836,7 +1836,7 @@
         Visible: =varModalInfo = 8
         Width: =40
         X: =M8_Panel.X + 35
-        Y: =M8_Panel.Y + 162
+        Y: =297
         ZIndex: =379
 
     M8_Description As label:
@@ -1924,7 +1924,7 @@
         Visible: =varModalInfo = 9
         Width: =40
         X: =M9_Panel.X + 35
-        Y: =M9_Panel.Y + 162
+        Y: =297
         ZIndex: =388
 
     M9_Description As label:
@@ -2012,7 +2012,7 @@
         Visible: =varModalInfo = 10
         Width: =40
         X: =M10_Panel.X + 35
-        Y: =M10_Panel.Y + 162
+        Y: =297
         ZIndex: =397
 
     M10_Description As label:
@@ -2169,7 +2169,7 @@
         Visible: =varModalInfo = 1
         Width: =40
         X: =M1_Panel.X + 55
-        Y: =M1_Panel.Y + 344
+        Y: =430
         ZIndex: =412
 
     M1_FeatureTitle As label:
@@ -2180,7 +2180,7 @@
         Visible: =varModalInfo = 1
         Width: =600
         X: =M1_Panel.X + 33
-        Y: =M1_Panel.Y + 275
+        Y: =360
         ZIndex: =413
 
     M1_FeatureDesc As label:
@@ -2190,7 +2190,7 @@
         Visible: =varModalInfo = 1
         Width: =600
         X: =M1_Panel.X + 111
-        Y: =M1_Panel.Y + 344
+        Y: =428
         ZIndex: =414
 
     M1_HelpIcon As icon.QuestionMark:
@@ -2250,7 +2250,7 @@
         Visible: =varModalInfo = 2
         Width: =40
         X: =M2_Panel.X + 55
-        Y: =M2_Panel.Y + 344
+        Y: =430
         ZIndex: =419
 
     M2_FeatureTitle As label:
@@ -2261,7 +2261,7 @@
         Visible: =varModalInfo = 2
         Width: =600
         X: =M2_Panel.X + 33
-        Y: =M2_Panel.Y + 275
+        Y: =360
         ZIndex: =420
 
     M2_FeatureDesc As label:
@@ -2271,7 +2271,7 @@
         Visible: =varModalInfo = 2
         Width: =600
         X: =M2_Panel.X + 111
-        Y: =M2_Panel.Y + 344
+        Y: =428
         ZIndex: =421
 
     M2_HelpIcon As icon.QuestionMark:
@@ -2331,7 +2331,7 @@
         Visible: =varModalInfo = 3
         Width: =40
         X: =M3_Panel.X + 55
-        Y: =M3_Panel.Y + 344
+        Y: =430
         ZIndex: =426
 
     M3_FeatureTitle As label:
@@ -2342,7 +2342,7 @@
         Visible: =varModalInfo = 3
         Width: =600
         X: =M3_Panel.X + 33
-        Y: =M3_Panel.Y + 275
+        Y: =360
         ZIndex: =427
 
     M3_FeatureDesc As label:
@@ -2352,7 +2352,7 @@
         Visible: =varModalInfo = 3
         Width: =600
         X: =M3_Panel.X + 111
-        Y: =M3_Panel.Y + 344
+        Y: =428
         ZIndex: =428
 
     M3_HelpIcon As icon.QuestionMark:
@@ -2412,7 +2412,7 @@
         Visible: =varModalInfo = 4
         Width: =40
         X: =M4_Panel.X + 55
-        Y: =M4_Panel.Y + 344
+        Y: =430
         ZIndex: =433
 
     M4_FeatureTitle As label:
@@ -2423,7 +2423,7 @@
         Visible: =varModalInfo = 4
         Width: =600
         X: =M4_Panel.X + 33
-        Y: =M4_Panel.Y + 275
+        Y: =360
         ZIndex: =434
 
     M4_FeatureDesc As label:
@@ -2433,7 +2433,7 @@
         Visible: =varModalInfo = 4
         Width: =600
         X: =M4_Panel.X + 111
-        Y: =M4_Panel.Y + 344
+        Y: =428
         ZIndex: =435
 
     M4_HelpIcon As icon.QuestionMark:
@@ -2493,7 +2493,7 @@
         Visible: =varModalInfo = 5
         Width: =40
         X: =M5_Panel.X + 55
-        Y: =M5_Panel.Y + 344
+        Y: =430
         ZIndex: =440
 
     M5_FeatureTitle As label:
@@ -2504,7 +2504,7 @@
         Visible: =varModalInfo = 5
         Width: =600
         X: =M5_Panel.X + 33
-        Y: =M5_Panel.Y + 275
+        Y: =360
         ZIndex: =441
 
     M5_FeatureDesc As label:
@@ -2514,7 +2514,7 @@
         Visible: =varModalInfo = 5
         Width: =600
         X: =M5_Panel.X + 111
-        Y: =M5_Panel.Y + 344
+        Y: =428
         ZIndex: =442
 
     M5_HelpIcon As icon.QuestionMark:
@@ -2574,7 +2574,7 @@
         Visible: =varModalInfo = 6
         Width: =40
         X: =M6_Panel.X + 55
-        Y: =M6_Panel.Y + 344
+        Y: =430
         ZIndex: =447
 
     M6_FeatureTitle As label:
@@ -2585,7 +2585,7 @@
         Visible: =varModalInfo = 6
         Width: =600
         X: =M6_Panel.X + 33
-        Y: =M6_Panel.Y + 275
+        Y: =360
         ZIndex: =448
 
     M6_FeatureDesc As label:
@@ -2595,7 +2595,7 @@
         Visible: =varModalInfo = 6
         Width: =600
         X: =M6_Panel.X + 111
-        Y: =M6_Panel.Y + 344
+        Y: =428
         ZIndex: =449
 
     M6_HelpIcon As icon.QuestionMark:
@@ -2655,7 +2655,7 @@
         Visible: =varModalInfo = 7
         Width: =40
         X: =M7_Panel.X + 55
-        Y: =M7_Panel.Y + 344
+        Y: =430
         ZIndex: =454
 
     M7_FeatureTitle As label:
@@ -2666,7 +2666,7 @@
         Visible: =varModalInfo = 7
         Width: =600
         X: =M7_Panel.X + 33
-        Y: =M7_Panel.Y + 275
+        Y: =360
         ZIndex: =455
 
     M7_FeatureDesc As label:
@@ -2676,7 +2676,7 @@
         Visible: =varModalInfo = 7
         Width: =600
         X: =M7_Panel.X + 111
-        Y: =M7_Panel.Y + 344
+        Y: =428
         ZIndex: =456
 
     M7_HelpIcon As icon.QuestionMark:
@@ -2736,7 +2736,7 @@
         Visible: =varModalInfo = 8
         Width: =40
         X: =M8_Panel.X + 55
-        Y: =M8_Panel.Y + 344
+        Y: =430
         ZIndex: =461
 
     M8_FeatureTitle As label:
@@ -2747,7 +2747,7 @@
         Visible: =varModalInfo = 8
         Width: =600
         X: =M8_Panel.X + 33
-        Y: =M8_Panel.Y + 275
+        Y: =360
         ZIndex: =462
 
     M8_FeatureDesc As label:
@@ -2757,7 +2757,7 @@
         Visible: =varModalInfo = 8
         Width: =600
         X: =M8_Panel.X + 111
-        Y: =M8_Panel.Y + 344
+        Y: =428
         ZIndex: =463
 
     M8_HelpIcon As icon.QuestionMark:
@@ -2817,7 +2817,7 @@
         Visible: =varModalInfo = 9
         Width: =40
         X: =M9_Panel.X + 55
-        Y: =M9_Panel.Y + 344
+        Y: =430
         ZIndex: =468
 
     M9_FeatureTitle As label:
@@ -2828,7 +2828,7 @@
         Visible: =varModalInfo = 9
         Width: =600
         X: =M9_Panel.X + 33
-        Y: =M9_Panel.Y + 275
+        Y: =360
         ZIndex: =469
 
     M9_FeatureDesc As label:
@@ -2838,7 +2838,7 @@
         Visible: =varModalInfo = 9
         Width: =600
         X: =M9_Panel.X + 111
-        Y: =M9_Panel.Y + 344
+        Y: =428
         ZIndex: =470
 
     M9_HelpIcon As icon.QuestionMark:
@@ -2898,7 +2898,7 @@
         Visible: =varModalInfo = 10
         Width: =40
         X: =M10_Panel.X + 55
-        Y: =M10_Panel.Y + 344
+        Y: =430
         ZIndex: =475
 
     M10_FeatureTitle As label:
@@ -2909,7 +2909,7 @@
         Visible: =varModalInfo = 10
         Width: =600
         X: =M10_Panel.X + 33
-        Y: =M10_Panel.Y + 275
+        Y: =360
         ZIndex: =476
 
     M10_FeatureDesc As label:
@@ -2919,7 +2919,7 @@
         Visible: =varModalInfo = 10
         Width: =600
         X: =M10_Panel.X + 111
-        Y: =M10_Panel.Y + 344
+        Y: =428
         ZIndex: =477
 
     M10_HelpIcon As icon.QuestionMark:
@@ -2994,7 +2994,7 @@
         FontWeight: =FontWeight.Bold
         HoverColor: =RGBA(0, 58, 112, 1)
         HoverFill: =Color.Transparent
-        OnSelect: =Set(varModalInfo, 0)
+        OnSelect: =Navigate('Conceptos tecnicos')
         PressedBorderColor: =RGBA(0, 58, 112, 1)
         PressedColor: =RGBA(255, 213, 0, 1)
         PressedFill: =Color.Transparent
@@ -3017,7 +3017,7 @@
         FontWeight: =FontWeight.Bold
         HoverColor: =RGBA(0, 58, 112, 1)
         HoverFill: =Color.Transparent
-        OnSelect: =Set(varModalInfo, 0)
+        OnSelect: =Navigate(Instalacion_Software)
         PressedBorderColor: =RGBA(0, 58, 112, 1)
         PressedColor: =RGBA(255, 213, 0, 1)
         PressedFill: =Color.Transparent

@@ -244,37 +244,60 @@ Screens:
             Font: =Font.'Open Sans'
             Height: =120
             Size: =12
-            Text: ="Puede realizar solicitudes para la instalación de software en equipos de cómputo, salas y salones de clase. Recibirás una notificación dando el resumen o proceso para los software solicitado, donde internamente, si corresponde, se validará la disponibilidad de acuerdos de licenciamiento o restricciones de seguridad y si es viable la instalación se informará a la DTI para que proceda a agendar la instalación."
+            Text: ="Puede realizar solicitudes para la instalación de software en equipos de cómputo, salas y salones de clase. Recibirás una notificación dando el resumen o proceso para los software solicitado..."
             VerticalAlign: =VerticalAlign.Top
             Width: =900
             X: =280
             Y: =340
-      - IS_BtnSolicitar:
+      - IS_Card1_LinkText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            Size: =14
+            Text: ="Solicitar servicio"
+            Width: =161
+            X: =280
+            Y: =398
+      - IS_Card1_LinkIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =20
+            Icon: =Icon.ArrowRight
+            Width: =20
+            X: =441
+            Y: =409
+      - IS_Card1_Overlay:
           Control: Classic/Button@2.2.0
           Properties:
-            BorderColor: =ColorFade(Self.Fill, -15%)
-            BorderThickness: =0
-            Color: =RGBA(0, 58, 112, 1)
+            BorderColor: =RGBA(220, 220, 220, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 213, 0, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans'
-            FontWeight: =FontWeight.Bold
+            Height: =220
             HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =RGBA(255, 213, 0, 0.8)
+            HoverFill: =
             OnSelect: =Notify("Función de solicitud en desarrollo", NotificationType.Information)
             PressedBorderColor: =Self.Fill
             PressedColor: =Self.Fill
-            PressedFill: =Self.Color
+            PressedFill: =
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Size: =12
-            Text: ="Solicitar"
-            Width: =150
-            X: =1080
-            Y: =440
+            Text: =""
+            Width: =1210
+            X: =78
+            Y: =280
       - IS_RectFooter_2:
           Control: Rectangle@2.3.0
           Properties:
@@ -339,3 +362,52 @@ Screens:
             Width: =30
             X: =54
             Y: =92
+      - ButtonCanvas1_11:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =34
+            OnSelect: =Navigate(introduccion)
+            Text: =
+            Width: =103
+            X: =877
+            Y: =30
+      - ButtonCanvas1_12:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =34
+            OnSelect: =
+            Text: =
+            Width: =146
+            X: =1016
+            Y: =30
+      - ButtonCanvas1_13:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =34
+            OnSelect: =Exit()
+            Text: =
+            Width: =82
+            X: =1206
+            Y: =30
+      - RectNavBorder_7:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(248, 205, 0, 1)
+            Height: =2
+            Width: =1366
+            Y: =123
+      - Icon4_3:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =29
+            Icon: =Icon.BackArrow
+            OnSelect: =Back()
+            Width: =44
+            X: =10
+            Y: =91
