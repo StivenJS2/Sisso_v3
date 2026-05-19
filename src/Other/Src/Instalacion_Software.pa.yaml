@@ -9,15 +9,17 @@
 Screens:
   Instalacion_Software:
     Properties:
-      Fill: =RGBA(0, 0, 0, 0.02)
+      Fill: =RGBA(255, 255, 255, 1)
       LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
     Children:
-      - IS_Rectangle2:
-          Control: Rectangle@2.3.0
+      - Image1_6:
+          Control: Image@2.2.3
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Width: =1366
+            Height: =89
+            Image: =javerXsisso
+            ImagePosition: =ImagePosition.Stretch
+            Width: =232
       - IS_RectNavBorder_3:
           Control: Rectangle@2.3.0
           Properties:
@@ -55,14 +57,6 @@ Screens:
             Width: =56
             X: =1206
             Y: =31
-      - IS_Image1_1:
-          Control: Image@2.2.3
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Height: =78
-            Image: =Javeriana
-            Width: =230
-            Y: =6
       - IS_LblNavBienestar_6:
           Control: Label@2.5.1
           Properties:
@@ -351,17 +345,6 @@ Screens:
             Width: =408
             X: =955
             Y: =88
-      - IS_Icon3_1:
-          Control: Classic/Icon@2.5.0
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =27
-            Icon: =Icon.Home
-            OnSelect: =Navigate(introduccion)
-            Width: =30
-            X: =54
-            Y: =92
       - ButtonCanvas1_11:
           Control: Button@0.0.45
           Properties:
@@ -387,7 +370,7 @@ Screens:
           Properties:
             Appearance: ='ButtonCanvas.Appearance'.Transparent
             Height: =34
-            OnSelect: =Exit()
+            OnSelect: =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
             Text: =
             Width: =82
             X: =1206
@@ -400,14 +383,25 @@ Screens:
             Height: =2
             Width: =1366
             Y: =123
-      - Icon4_3:
+      - CT_Icon3_6:
           Control: Classic/Icon@2.5.0
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: =RGBA(255, 255, 255, 1)
-            Height: =29
+            Height: =25
+            Icon: =Icon.Home
+            OnSelect: =Navigate(introduccion)
+            Width: =28
+            X: =54
+            Y: =92
+      - Icon4_9:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =25
             Icon: =Icon.BackArrow
             OnSelect: =Back()
-            Width: =44
+            Width: =40
             X: =10
-            Y: =91
+            Y: =93

@@ -211,6 +211,20 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
+  "modernButton": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/modernButton",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "modernButton",
+    "OverridableProperties": {},
+    "Version": "1.0.0"
+  },
   "modernText": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -237,7 +251,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "modernTextInput",
     "OverridableProperties": {},
-    "Version": "1.0.0"
+    "Version": "1.1.0"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",

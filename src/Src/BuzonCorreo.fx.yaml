@@ -19,13 +19,20 @@
             Y: =0
             ZIndex: =1
 
+            Image1_2 As image:
+                Height: =89
+                Image: =javerXsisso
+                ImagePosition: =ImagePosition.Stretch
+                Width: =232
+                ZIndex: =1
+
             Rectangle4 As rectangle:
                 Fill: =RGBA(0, 0, 0, 0.02)
-                Height: =1110
+                Height: =1039
                 Width: =1300
                 X: =27
-                Y: =81
-                ZIndex: =1
+                Y: =152
+                ZIndex: =2
 
             ButtonCanvas2_3 As Botón:
                 AcceptsFocus: =true
@@ -58,7 +65,7 @@
                 Width: =96
                 X: =885
                 Y: =29
-                ZIndex: =2
+                ZIndex: =3
 
             ButtonCanvas2_4 As Botón:
                 AcceptsFocus: =true
@@ -91,7 +98,7 @@
                 Width: =163
                 X: =1010
                 Y: =27
-                ZIndex: =3
+                ZIndex: =4
 
             ButtonCanvas2_5 As Botón:
                 AcceptsFocus: =true
@@ -125,7 +132,7 @@
                 Width: =96
                 X: =1182
                 Y: =32
-                ZIndex: =4
+                ZIndex: =5
 
             ButtonCanvas1_5 As Botón:
                 AcceptsFocus: =true
@@ -159,7 +166,7 @@
                 Width: =103
                 X: =1196
                 Y: =30
-                ZIndex: =5
+                ZIndex: =6
 
             ButtonCanvas1_6 As Botón:
                 AcceptsFocus: =true
@@ -192,7 +199,7 @@
                 Width: =146
                 X: =1016
                 Y: =30
-                ZIndex: =6
+                ZIndex: =7
 
             ButtonCanvas1_7 As Botón:
                 AcceptsFocus: =true
@@ -225,11 +232,6 @@
                 Width: =103
                 X: =877
                 Y: =30
-                ZIndex: =7
-
-            Rectangle2_1 As rectangle:
-                Fill: =RGBA(255, 255, 255, 1)
-                Width: =1366
                 ZIndex: =8
 
             RectNavBorder_4 As rectangle:
@@ -237,21 +239,21 @@
                 Height: =2
                 Width: =1366
                 Y: =123
-                ZIndex: =9
+                ZIndex: =10
 
             RectQuickActionBar3_2 As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =34
                 Width: =Parent.Width
                 Y: =89
-                ZIndex: =10
+                ZIndex: =11
 
             Rectangle1_5 As rectangle:
                 Fill: =RGBA(26, 58, 110, 1)
                 Height: =36
                 Width: =1366
                 Y: =89
-                ZIndex: =11
+                ZIndex: =12
 
             LblNavBienestar_8 As label:
                 Color: =RGBA(100, 120, 150, 1)
@@ -262,13 +264,6 @@
                 Width: =56
                 X: =1206
                 Y: =31
-                ZIndex: =12
-
-            Image1_2 As image:
-                Height: =78
-                Image: =Javeriana
-                Width: =230
-                Y: =6
                 ZIndex: =13
 
             LblNavBienestar_9 As label:
@@ -656,33 +651,13 @@
                 Y: =633
                 ZIndex: =48
 
-            Icon3_2 As icon:
-                Color: =RGBA(255, 255, 255, 1)
-                Height: =27
-                Icon: =Icon.Home
-                OnSelect: =Navigate(introduccion)
-                Width: =30
-                X: =54
-                Y: =92
-                ZIndex: =49
-
             BC_RectHeaderLine_Espec As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
                 Height: =4
                 Width: =60
                 X: =73
                 Y: =673
-                ZIndex: =50
-
-            Icon4_2 As icon:
-                Color: =RGBA(255, 255, 255, 1)
-                Height: =29
-                Icon: =Icon.BackArrow
-                OnSelect: =Back()
-                Width: =44
-                X: =10
-                Y: =91
-                ZIndex: =51
+                ZIndex: =49
 
             BC_LblDesc_Espec As label:
                 Color: =RGBA(90, 90, 90, 1)
@@ -692,7 +667,7 @@
                 Width: =800
                 X: =73
                 Y: =685
-                ZIndex: =52
+                ZIndex: =50
 
             BC_ModalOverlay_Aprobador As button:
                 BorderThickness: =0
@@ -708,7 +683,7 @@
                 Text: =""
                 Visible: =locShowModalAprobador
                 Width: =Parent.Width
-                ZIndex: =53
+                ZIndex: =51
 
             BC_ModalBox_Aprobador As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)
@@ -717,7 +692,7 @@
                 Width: =520
                 X: =128
                 Y: =150
-                ZIndex: =54
+                ZIndex: =52
 
             BC_ModalAccent_Aprobador As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -726,7 +701,7 @@
                 Width: =520
                 X: =128
                 Y: =147
-                ZIndex: =55
+                ZIndex: =53
 
             BC_ModalTitle_Aprobador As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -737,7 +712,7 @@
                 Width: =440
                 X: =144
                 Y: =159
-                ZIndex: =56
+                ZIndex: =54
 
             BC_ModalSubtitle_Aprobador As label:
                 Color: =RGBA(130, 130, 130, 1)
@@ -748,7 +723,7 @@
                 Width: =440
                 X: =147
                 Y: =201
-                ZIndex: =57
+                ZIndex: =55
 
             BC_ModalOpt1_Aprobador As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -770,7 +745,7 @@
                 Width: =460
                 X: =144
                 Y: =240
-                ZIndex: =58
+                ZIndex: =56
 
             BC_ModalOpt2_Aprobador As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -792,7 +767,7 @@
                 Width: =460
                 X: =147
                 Y: =311
-                ZIndex: =59
+                ZIndex: =57
 
             BC_ModalClose_Aprobador As button:
                 BorderThickness: =0
@@ -814,7 +789,7 @@
                 Width: =35
                 X: =607
                 Y: =163
-                ZIndex: =60
+                ZIndex: =58
 
             BC_ModalOverlay_Facultad As button:
                 BorderThickness: =0
@@ -830,7 +805,7 @@
                 Text: =""
                 Visible: =locShowModalFacultad
                 Width: =Parent.Width
-                ZIndex: =61
+                ZIndex: =59
 
             BC_ModalBox_Facultad As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)
@@ -839,7 +814,7 @@
                 Width: =520
                 X: =682
                 Y: =152
-                ZIndex: =62
+                ZIndex: =60
 
             BC_ModalAccent_Facultad As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -848,7 +823,7 @@
                 Width: =520
                 X: =682
                 Y: =147
-                ZIndex: =63
+                ZIndex: =61
 
             BC_ModalTitle_Facultad As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -859,7 +834,7 @@
                 Width: =440
                 X: =695
                 Y: =159
-                ZIndex: =64
+                ZIndex: =62
 
             BC_ModalSubtitle_Facultad As label:
                 Color: =RGBA(130, 130, 130, 1)
@@ -870,7 +845,7 @@
                 Width: =440
                 X: =697
                 Y: =201
-                ZIndex: =65
+                ZIndex: =63
 
             BC_ModalOpt1_Facultad As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -892,7 +867,7 @@
                 Width: =460
                 X: =698
                 Y: =240
-                ZIndex: =66
+                ZIndex: =64
 
             BC_ModalOpt2_Facultad As button:
                 BorderColor: =RGBA(220, 220, 220, 1)
@@ -914,7 +889,7 @@
                 Width: =460
                 X: =698
                 Y: =311
-                ZIndex: =67
+                ZIndex: =65
 
             BC_ModalClose_Facultad As button:
                 BorderThickness: =0
@@ -936,7 +911,7 @@
                 Width: =35
                 X: =1162
                 Y: =161
-                ZIndex: =68
+                ZIndex: =66
 
             BC_CardBg_NombreRecurso As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -946,7 +921,7 @@
                 Width: =590
                 X: =73
                 Y: =744
-                ZIndex: =69
+                ZIndex: =67
 
             BC_IconCard_NombreRecurso As icon:
                 Color: =RGBA(0, 58, 112, 1)
@@ -955,7 +930,7 @@
                 Width: =35
                 X: =83
                 Y: =758
-                ZIndex: =70
+                ZIndex: =68
 
             BC_LblField_NombreRecurso As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -966,7 +941,7 @@
                 Width: =460
                 X: =120
                 Y: =760
-                ZIndex: =71
+                ZIndex: =69
 
             BC_LblDesc_NombreRecurso As label:
                 Color: =RGBA(90, 90, 90, 1)
@@ -977,7 +952,7 @@
                 Width: =540
                 X: =75
                 Y: =813
-                ZIndex: =72
+                ZIndex: =70
 
             TextInput2_3 As modernTextInput:
                 Appearance: =Appearance.FilledLighter
@@ -998,7 +973,7 @@
                 Width: =360
                 X: =84
                 Y: =883
-                ZIndex: =73
+                ZIndex: =71
 
             BC_LblSuffix_Email As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1008,7 +983,7 @@
                 Width: =180
                 X: =448
                 Y: =881
-                ZIndex: =74
+                ZIndex: =72
 
             BC_LblHint_NombreRecurso As label:
                 Color: =RGBA(140, 140, 140, 1)
@@ -1018,7 +993,7 @@
                 Width: =300
                 X: =72
                 Y: =711
-                ZIndex: =75
+                ZIndex: =73
 
             BC_CardBg_NombreDespliegue As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -1028,7 +1003,7 @@
                 Width: =590
                 X: =693
                 Y: =743
-                ZIndex: =76
+                ZIndex: =74
 
             BC_IconCard_NombreDespliegue As icon:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1037,7 +1012,7 @@
                 Width: =35
                 X: =713
                 Y: =758
-                ZIndex: =77
+                ZIndex: =75
 
             BC_LblField_NombreDespliegue As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1048,7 +1023,7 @@
                 Width: =350
                 X: =758
                 Y: =760
-                ZIndex: =78
+                ZIndex: =76
 
             BC_LblDesc_NombreDespliegue As label:
                 Color: =RGBA(90, 90, 90, 1)
@@ -1060,7 +1035,7 @@
                 Width: =550
                 X: =713
                 Y: =796
-                ZIndex: =79
+                ZIndex: =77
 
             TextInput2_4 As modernTextInput:
                 Appearance: =Appearance.FilledLighter
@@ -1081,7 +1056,7 @@
                 Width: =550
                 X: =713
                 Y: =883
-                ZIndex: =80
+                ZIndex: =78
 
             BC_CardBg_Expiracion As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -1091,7 +1066,7 @@
                 Width: =1210
                 X: =72
                 Y: =961
-                ZIndex: =81
+                ZIndex: =79
 
             BC_IconCard_Expiracion As icon:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1100,7 +1075,7 @@
                 Width: =35
                 X: =98
                 Y: =966
-                ZIndex: =82
+                ZIndex: =80
 
             BC_LblField_Expiracion As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1111,7 +1086,7 @@
                 Width: =300
                 X: =143
                 Y: =964
-                ZIndex: =83
+                ZIndex: =81
 
             BC_LblDesc_Expiracion As label:
                 Color: =RGBA(90, 90, 90, 1)
@@ -1122,7 +1097,7 @@
                 Width: =500
                 X: =145
                 Y: =994
-                ZIndex: =84
+                ZIndex: =82
 
             BC_BtnInput_Expiracion As button:
                 BorderColor: =RGBA(210, 210, 210, 1)
@@ -1141,7 +1116,7 @@
                 Width: =300
                 X: =822
                 Y: =996
-                ZIndex: =85
+                ZIndex: =83
 
             BC_IconCalendar_Expiracion As icon:
                 Color: =RGBA(150, 150, 150, 1)
@@ -1150,7 +1125,7 @@
                 Width: =22
                 X: =1093
                 Y: =1004
-                ZIndex: =86
+                ZIndex: =84
 
             BC_RectBg_Recurso As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -1160,7 +1135,7 @@
                 Width: =1210
                 X: =68
                 Y: =1084
-                ZIndex: =87
+                ZIndex: =85
 
             BC_LblHeader_Recurso As label:
                 Align: =Align.Center
@@ -1171,7 +1146,7 @@
                 Width: =400
                 X: =107
                 Y: =1105
-                ZIndex: =88
+                ZIndex: =86
 
             BC_BtnCheck_Recurso As button:
                 BorderColor: =RGBA(0, 58, 112, 1)
@@ -1184,7 +1159,7 @@
                 Width: =35
                 X: =553
                 Y: =1102
-                ZIndex: =89
+                ZIndex: =87
 
             BC_IconCheck_Recurso As icon:
                 Color: =RGBA(0, 58, 112, 1)
@@ -1193,7 +1168,7 @@
                 Width: =22
                 X: =560
                 Y: =1109
-                ZIndex: =90
+                ZIndex: =88
 
             BC_LblText_Recurso As label:
                 Color: =RGBA(60, 60, 60, 1)
@@ -1204,7 +1179,7 @@
                 Width: =200
                 X: =600
                 Y: =1105
-                ZIndex: =91
+                ZIndex: =89
 
             BC_BtnSelect_Facultad_1 As button:
                 BorderColor: =RGBA(0, 58, 112, 1)
@@ -1225,6 +1200,26 @@
                 Width: =180
                 X: =928
                 Y: =1102
+                ZIndex: =90
+
+            CT_Icon3_5 As icon:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =25
+                Icon: =Icon.Home
+                OnSelect: =Navigate(introduccion)
+                Width: =28
+                X: =54
+                Y: =94
+                ZIndex: =91
+
+            Icon4_8 As icon:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =25
+                Icon: =Icon.BackArrow
+                OnSelect: =Back()
+                Width: =40
+                X: =10
+                Y: =95
                 ZIndex: =92
 
     ButtonCanvas1_8 As Botón:
@@ -1331,7 +1326,7 @@
         IconStyle: ="Outline"
         Layout: ="Icon before"
         OnSelect: |-
-            =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+            =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
         TabIndex: =0
         Text: =
         Tooltip: =""

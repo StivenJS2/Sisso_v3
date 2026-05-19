@@ -1,0 +1,1027 @@
+"Concepto_Software As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: =
+
+    Rectangle4_1 As rectangle:
+        Fill: =RGBA(0, 0, 0, 0.02)
+        Height: =616
+        Width: =1300
+        X: =27
+        Y: =150
+        ZIndex: =1
+
+    CS_Canvas As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        ZIndex: =2
+
+        CS_MainContainer As dataCard:
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =1386
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Image1_3 As image:
+                Height: =89
+                Image: =javerXsisso
+                ImagePosition: =ImagePosition.Stretch
+                Width: =230
+                ZIndex: =2
+
+            Rectangle4_2 As rectangle:
+                Fill: =RGBA(0, 0, 0, 0.02)
+                Height: =1165
+                Width: =1300
+                X: =27
+                Y: =152
+                ZIndex: =3
+
+            CS_LblFormTitle As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =24
+                Text: ="Concepto Tecnológico de Software"
+                Width: =600
+                X: =68
+                Y: =161
+                ZIndex: =4
+
+            CS_RectTitleLine As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =4
+                Width: =60
+                X: =73
+                Y: =200
+                ZIndex: =5
+
+            CS_LblRequiredHint As label:
+                Color: =RGBA(120, 120, 120, 1)
+                Height: =30
+                Size: =12
+                Text: ="Los campos marcados con * son obligatorios."
+                Width: =500
+                X: =73
+                Y: =215
+                ZIndex: =6
+
+            CS_LblSection1 As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: ="Datos del solicitante"
+                Width: =500
+                X: =73
+                Y: =260
+                ZIndex: =7
+
+            CS_CardBg_Nombres As rectangle:
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderThickness: =2
+                Fill: =RGBA(240, 246, 255, 1)
+                Height: =120
+                Width: =590
+                X: =73
+                Y: =300
+                ZIndex: =8
+
+            CS_Icon_Nombres As icon.People:
+                Color: =RGBA(0, 58, 112, 1)
+                Height: =30
+                Icon: =Icon.People
+                Width: =30
+                X: =93
+                Y: =312
+                ZIndex: =9
+
+            CS_Lbl_Nombres As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Nombres y Apellidos *"
+                Width: =300
+                X: =130
+                Y: =305
+                ZIndex: =10
+
+            CS_Inp_Nombres As modernTextInput:
+                Appearance: =Appearance.FilledLighter
+                BorderColor: =RGBA(210, 210, 210, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =40
+                Placeholder: ="Escriba sus nombres y apellidos..."
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                TriggerOutput: =TriggerOutput.Keypress
+                ValidationState: =ValidationState.None
+                Width: =540
+                X: =93
+                Y: =360
+                ZIndex: =11
+
+            CS_CardBg_Correo As rectangle:
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderThickness: =2
+                Fill: =RGBA(240, 246, 255, 1)
+                Height: =120
+                Width: =590
+                X: =693
+                Y: =300
+                ZIndex: =12
+
+            CS_Icon_Correo As icon.Mail:
+                Color: =RGBA(0, 58, 112, 1)
+                Height: =30
+                Icon: =Icon.Mail
+                Width: =30
+                X: =713
+                Y: =312
+                ZIndex: =13
+
+            CS_Lbl_Correo As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Correo Institucional *"
+                Width: =300
+                X: =750
+                Y: =305
+                ZIndex: =14
+
+            CS_Inp_Correo As modernTextInput:
+                Appearance: =Appearance.FilledLighter
+                BorderColor: =RGBA(210, 210, 210, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =40
+                Placeholder: ="usuario@javeriana.edu.co"
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                TriggerOutput: =TriggerOutput.Keypress
+                ValidationState: =ValidationState.None
+                Width: =540
+                X: =713
+                Y: =360
+                ZIndex: =15
+
+            CS_CardBg_Unidad As rectangle:
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderThickness: =2
+                Fill: =RGBA(240, 246, 255, 1)
+                Height: =120
+                Width: =590
+                X: =73
+                Y: =440
+                ZIndex: =16
+
+            CS_Icon_Unidad As icon.Org:
+                Color: =RGBA(0, 58, 112, 1)
+                Height: =30
+                Icon: =Icon.Message
+                Width: =30
+                X: =93
+                Y: =456
+                ZIndex: =17
+
+            CS_Lbl_Unidad As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Unidad Solicitante *"
+                Width: =300
+                X: =130
+                Y: =448
+                ZIndex: =18
+
+            CS_Inp_Unidad As modernTextInput:
+                Appearance: =Appearance.FilledLighter
+                BorderColor: =RGBA(210, 210, 210, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =40
+                Placeholder: ="Nombre de la facultad o departamento"
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                TriggerOutput: =TriggerOutput.Keypress
+                ValidationState: =ValidationState.None
+                Width: =540
+                X: =93
+                Y: =500
+                ZIndex: =19
+
+            CS_CardBg_Tel As rectangle:
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderThickness: =2
+                Fill: =RGBA(240, 246, 255, 1)
+                Height: =120
+                Width: =590
+                X: =693
+                Y: =440
+                ZIndex: =20
+
+            CS_Icon_Tel As icon.Phone:
+                Color: =RGBA(0, 58, 112, 1)
+                Height: =30
+                Icon: =Icon.Phone
+                Width: =30
+                X: =713
+                Y: =456
+                ZIndex: =21
+
+            CS_Lbl_Tel As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Celular / Extensión *"
+                Width: =300
+                X: =750
+                Y: =449
+                ZIndex: =22
+
+            CS_Inp_Tel As modernTextInput:
+                Appearance: =Appearance.FilledLighter
+                BorderColor: =RGBA(210, 210, 210, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =40
+                Placeholder: ="Número de contacto"
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                TriggerOutput: =TriggerOutput.Keypress
+                ValidationState: =ValidationState.None
+                Width: =540
+                X: =713
+                Y: =500
+                ZIndex: =23
+
+            CS_LblSection2 As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: ="Datos del software"
+                Width: =500
+                X: =73
+                Y: =600
+                ZIndex: =24
+
+            CS_RectSectionLine2 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =2
+                Width: =1210
+                X: =73
+                Y: =590
+                ZIndex: =25
+
+            CS_CardBg_NomSoft As rectangle:
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderThickness: =2
+                Fill: =RGBA(240, 246, 255, 1)
+                Height: =120
+                Width: =1210
+                X: =73
+                Y: =640
+                ZIndex: =26
+
+            CS_Icon_NomSoft As icon.Document:
+                Color: =RGBA(0, 58, 112, 1)
+                Height: =30
+                Icon: =Icon.Document
+                Width: =30
+                X: =93
+                Y: =652
+                ZIndex: =27
+
+            CS_Lbl_NomSoft As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Nombre del Software y Versión *"
+                Width: =500
+                X: =130
+                Y: =647
+                ZIndex: =28
+
+            CS_Inp_NomSoft As modernTextInput:
+                Appearance: =Appearance.FilledLighter
+                BorderColor: =RGBA(210, 210, 210, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =40
+                Placeholder: |-
+                    ="Ej: Adobe Creative Cloud 2024"
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                TriggerOutput: =TriggerOutput.Keypress
+                ValidationState: =ValidationState.None
+                Width: =1160
+                X: =93
+                Y: =700
+                ZIndex: =29
+
+            CS_CardBg_Justif As rectangle:
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderThickness: =2
+                Fill: =RGBA(240, 246, 255, 1)
+                Height: =180
+                Width: =1210
+                X: =73
+                Y: =780
+                ZIndex: =30
+
+            CS_Icon_Justif As icon.Edit:
+                Color: =RGBA(0, 58, 112, 1)
+                Height: =30
+                Icon: =Icon.Edit
+                Width: =30
+                X: =93
+                Y: =792
+                ZIndex: =31
+
+            CS_Lbl_Justif As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Justificación de la necesidad *"
+                Width: =500
+                X: =130
+                Y: =785
+                ZIndex: =32
+
+            CS_Inp_Justif As modernTextInput:
+                Appearance: =Appearance.FilledLighter
+                BorderColor: =RGBA(210, 210, 210, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =110
+                Placeholder: ="Describa la necesidad y el impacto en su área..."
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                TriggerOutput: =TriggerOutput.Keypress
+                ValidationState: =ValidationState.None
+                Width: =1160
+                X: =93
+                Y: =840
+                ZIndex: =33
+
+            CS_LblSection3 As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: ="Aprobación"
+                Width: =500
+                X: =73
+                Y: =1000
+                ZIndex: =34
+
+            CS_RectSectionLine3 As rectangle:
+                Fill: =RGBA(255, 213, 0, 1)
+                Height: =2
+                Width: =1210
+                X: =73
+                Y: =988
+                ZIndex: =35
+
+            CS_CardBg_Aprobador As rectangle:
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderThickness: =2
+                Fill: =RGBA(240, 246, 255, 1)
+                Height: =160
+                Width: =1210
+                X: =73
+                Y: =1040
+                ZIndex: =36
+
+            CS_Icon_Aprobador As icon.People:
+                Color: =RGBA(0, 58, 112, 1)
+                Height: =30
+                Icon: =Icon.People
+                Width: =30
+                X: =93
+                Y: =1052
+                ZIndex: =37
+
+            CS_Lbl_Aprobador As label:
+                Color: =RGBA(0, 58, 112, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: ="Seleccione el Aprobador *"
+                Width: =500
+                X: =130
+                Y: =1045
+                ZIndex: =38
+
+            CS_Btn_Aprobador As button:
+                BorderColor: =If(IsBlank(locSelectedAprobadorCS), RGBA(210, 210, 210, 1), RGBA(184, 153, 0, 1))
+                BorderThickness: =1
+                Color: =If(IsBlank(locSelectedAprobadorCS), RGBA(100, 100, 100, 1), RGBA(100, 80, 0, 1))
+                Fill: =If(IsBlank(locSelectedAprobadorCS), RGBA(255, 255, 255, 1), RGBA(255, 249, 219, 1))
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =If(IsBlank(locSelectedAprobadorCS), RGBA(250, 250, 250, 1), RGBA(255, 243, 191, 1))
+                OnSelect: |-
+                    =UpdateContext({locShowModalAprobadorCS: true})
+                PressedColor: =RGBA(0, 0, 0, 1)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Text: =If(IsBlank(locSelectedAprobadorCS), "Seleccione un aprobador...", locSelectedAprobadorCS)
+                Width: =1160
+                X: =93
+                Y: =1120
+                ZIndex: =39
+
+            CS_BtnSubmit As button:
+                BorderColor: =RGBA(0, 58, 112, 1)
+                Color: =RGBA(0, 58, 112, 1)
+                Fill: =Color.Transparent
+                FontWeight: =FontWeight.Bold
+                Height: =52
+                HoverFill: =RGBA(0, 58, 112, 1)
+                OnSelect: =Notify("Solicitud enviada exitosamente.", NotificationType.Success)
+                PressedBorderColor: =RGBA(0, 58, 112, 1)
+                PressedColor: =RGBA(255, 213, 0, 1)
+                PressedFill: =Color.Transparent
+                Text: ="✉  ENVIAR SOLICITUD"
+                Width: =320
+                X: =523
+                Y: =1250
+                ZIndex: =40
+
+            ButtonCanvas2_6 As Botón:
+                AcceptsFocus: =true
+                AccessibleLabel: =""
+                Align: =Align.Center
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                ContentLanguage: =""
+                DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
+                Height: =32
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                OnSelect: =Navigate(introduccion)
+                TabIndex: =0
+                Text: =
+                Tooltip: =""
+                VerticalAlign: =""
+                Visible: =true
+                Width: =96
+                X: =885
+                Y: =23
+                ZIndex: =41
+
+            ButtonCanvas2_7 As Botón:
+                AcceptsFocus: =true
+                AccessibleLabel: =""
+                Align: =Align.Center
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                ContentLanguage: =""
+                DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
+                Height: =32
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                OnSelect: =
+                TabIndex: =0
+                Text: =
+                Tooltip: =""
+                VerticalAlign: =""
+                Visible: =true
+                Width: =163
+                X: =1010
+                Y: =21
+                ZIndex: =42
+
+            ButtonCanvas2_8 As Botón:
+                AcceptsFocus: =true
+                AccessibleLabel: =""
+                Align: =Align.Center
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                ContentLanguage: =""
+                DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
+                Height: =32
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                OnSelect: |-
+                    =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+                TabIndex: =0
+                Text: =
+                Tooltip: =""
+                VerticalAlign: =""
+                Visible: =true
+                Width: =96
+                X: =1182
+                Y: =26
+                ZIndex: =43
+
+            ButtonCanvas1_17 As Botón:
+                AcceptsFocus: =true
+                AccessibleLabel: =""
+                Align: =""
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                ContentLanguage: =""
+                DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
+                Height: =34
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                OnSelect: |-
+                    =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+                TabIndex: =0
+                Text: =
+                Tooltip: =""
+                VerticalAlign: =""
+                Visible: =true
+                Width: =103
+                X: =1196
+                Y: =24
+                ZIndex: =44
+
+            ButtonCanvas1_18 As Botón:
+                AcceptsFocus: =true
+                AccessibleLabel: =""
+                Align: =""
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                ContentLanguage: =""
+                DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
+                Height: =31
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                OnSelect: =
+                TabIndex: =0
+                Text: =
+                Tooltip: =""
+                VerticalAlign: =""
+                Visible: =true
+                Width: =146
+                X: =1016
+                Y: =24
+                ZIndex: =45
+
+            ButtonCanvas1_19 As Botón:
+                AcceptsFocus: =true
+                AccessibleLabel: =""
+                Align: =""
+                Appearance: ='ButtonCanvas.Appearance'.Transparent
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                ContentLanguage: =""
+                DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
+                Height: =34
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                OnSelect: =Navigate(introduccion)
+                TabIndex: =0
+                Text: =
+                Tooltip: =""
+                VerticalAlign: =""
+                Visible: =true
+                Width: =103
+                X: =877
+                Y: =24
+                ZIndex: =46
+
+            RectNavBorder_9 As rectangle:
+                Fill: =RGBA(248, 205, 0, 1)
+                Height: =2
+                Width: =1366
+                Y: =117
+                ZIndex: =47
+
+            RectQuickActionBar3_3 As rectangle:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Width: =Parent.Width
+                Y: =83
+                ZIndex: =48
+
+            LblNavBienestar_11 As label:
+                Color: =RGBA(100, 120, 150, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                Size: =14
+                Text: ="Salir"
+                Width: =56
+                X: =1206
+                Y: =25
+                ZIndex: =49
+
+            Rectangle1_8 As rectangle:
+                Fill: =RGBA(26, 58, 110, 1)
+                Height: =36
+                Width: =1366
+                Y: =83
+                ZIndex: =50
+
+            LblNavBienestar_12 As label:
+                Color: =RGBA(100, 120, 150, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                Size: =14
+                Text: ="Mis Solicitudes"
+                Width: =157
+                X: =1016
+                Y: =25
+                ZIndex: =51
+
+            LblNavBienestar_13 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                OnSelect: =Navigate(introduccion)
+                Size: =14
+                Text: ="Servicios"
+                Width: =97
+                X: =886
+                Y: =25
+                ZIndex: =52
+
+            Icon1_3 As icon:
+                Height: =36
+                Icon: =Icon.Leave
+                Width: =25
+                X: =1262
+                Y: =22
+                ZIndex: =53
+
+            Image2_6 As image:
+                Height: =60
+                Image: =User().Image
+                RadiusBottomLeft: =Self.Width / 2
+                RadiusBottomRight: =Self.Width / 2
+                RadiusTopLeft: =Self.Width / 2
+                RadiusTopRight: =Self.Width / 2
+                Width: =60
+                X: =246
+                Y: =9
+                ZIndex: =54
+
+            Text1_3 As modernText:
+                BorderStyle: =""
+                Font: =""
+                FontWeight: =FontWeight.Bold
+                Height: =62
+                Size: =16
+                Text: =User().FullName
+                Width: =164
+                X: =320
+                Y: =13
+                ZIndex: =55
+
+            RectNavBorder_10 As rectangle:
+                Fill: =RGBA(248, 205, 0, 1)
+                Height: =2
+                Width: =1366
+                Y: =119
+                ZIndex: =56
+
+            LblTopLeft_5 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =36
+                Size: =9
+                Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
+                Width: =408
+                X: =943
+                Y: =84
+                ZIndex: =57
+
+            RectFooter_5 As rectangle:
+                Fill: =RGBA(26, 58, 110, 1)
+                Height: =68
+                Width: =1360
+                X: =6
+                Y: =1332
+                ZIndex: =58
+
+            LblFooter_5 As label:
+                Color: =RGBA(200, 184, 122, 0.7)
+                Height: =41
+                Size: =9
+                Text: |-
+                    ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+                    Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                Width: =853
+                X: =16
+                Y: =1346
+                ZIndex: =59
+
+            RectFooterBorder_5 As rectangle:
+                BorderColor: =RGBA(200, 184, 122, 1)
+                BorderThickness: =1
+                Fill: =RGBA(200, 184, 122, 1)
+                Height: =2
+                Width: =1355
+                X: =6
+                Y: =1332
+                ZIndex: =60
+
+            Image4_4 As image:
+                Height: =66
+                Image: ='image-removebg-preview'
+                ImagePosition: =ImagePosition.Fill
+                Width: =289
+                X: =1071
+                Y: =1337
+                ZIndex: =61
+
+            CT_Icon3_2 As icon:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =25
+                Icon: =Icon.Home
+                OnSelect: =Navigate(introduccion)
+                Width: =28
+                X: =60
+                Y: =88
+                ZIndex: =62
+
+            Icon4_5 As icon:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =25
+                Icon: =Icon.BackArrow
+                OnSelect: =Back()
+                Width: =40
+                X: =16
+                Y: =89
+                ZIndex: =63
+
+            Rectangle1_9 As rectangle:
+                Fill: =RGBA(15, 84, 140, 0.52)
+                Height: =50
+                Width: =2
+                X: =230
+                Y: =19
+                ZIndex: =64
+
+            Button1_3 As modernButton:
+                Appearance: =ButtonAppearance.Transparent
+                BorderStyle: =""
+                Font: =""
+                OnSelect: =Navigate(introduccion)
+                Size: =0
+                Text: =
+                X: =884
+                Y: =31
+                ZIndex: =65
+
+            Button1_4 As modernButton:
+                Appearance: =ButtonAppearance.Transparent
+                BorderStyle: =""
+                Font: =""
+                Height: =21
+                OnSelect: =
+                Size: =0
+                Text: =
+                Width: =152
+                X: =1010
+                Y: =32
+                ZIndex: =66
+
+            Button1_5 As modernButton:
+                Appearance: =ButtonAppearance.Transparent
+                BorderStyle: =""
+                Font: =""
+                OnSelect: |-
+                    =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
+                Size: =0
+                Text: =
+                X: =1199
+                Y: =24
+                ZIndex: =67
+
+    CS_ModalOverlay_Aprobador As button:
+        BorderThickness: =0
+        Color: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0.35)
+        Height: =Parent.Height
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0.35)
+        OnSelect: |-
+            =UpdateContext({locShowModalAprobadorCS: false})
+        PressedColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0.35)
+        Text: =""
+        Visible: =locShowModalAprobadorCS
+        Width: =Parent.Width
+        ZIndex: =3
+
+    CS_ModalBox_Aprobador As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =430
+        Visible: =locShowModalAprobadorCS
+        Width: =600
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =(Parent.Height - Self.Height) / 2
+        ZIndex: =4
+
+    CS_ModalAccent_Aprobador As rectangle:
+        Fill: =RGBA(255, 213, 0, 1)
+        Height: =5
+        Visible: =locShowModalAprobadorCS
+        Width: =600
+        X: =CS_ModalBox_Aprobador.X
+        Y: =CS_ModalBox_Aprobador.Y
+        ZIndex: =5
+
+    CS_ModalTitle_Aprobador As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =18
+        Text: ="Seleccione un aprobador"
+        Visible: =locShowModalAprobadorCS
+        Width: =500
+        X: =CS_ModalBox_Aprobador.X + 17
+        Y: =CS_ModalBox_Aprobador.Y + 12
+        ZIndex: =6
+
+    CS_ModalSubtitle_Aprobador As label:
+        Color: =RGBA(130, 130, 130, 1)
+        Height: =25
+        Size: =11
+        Text: ="Escoja el autorizador para su solicitud"
+        Visible: =locShowModalAprobadorCS
+        Width: =500
+        X: =CS_ModalBox_Aprobador.X + 17
+        Y: =CS_ModalBox_Aprobador.Y + 48
+        ZIndex: =7
+
+    CS_ModalOpt1_Aprobador As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Color: =RGBA(50, 50, 50, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =55
+        HoverColor: =RGBA(0, 58, 112, 1)
+        HoverFill: =RGBA(240, 247, 255, 1)
+        OnSelect: |-
+            =UpdateContext({locSelectedAprobadorCS: "Carlos Rodríguez - Decano", locShowModalAprobadorCS: false})
+        PressedFill: =RGBA(225, 238, 250, 1)
+        RadiusBottomLeft: =8
+        RadiusBottomRight: =8
+        RadiusTopLeft: =8
+        RadiusTopRight: =8
+        Text: ="Carlos Rodríguez - Decano"
+        Visible: =locShowModalAprobadorCS
+        Width: =540
+        X: =CS_ModalBox_Aprobador.X + 30
+        Y: =CS_ModalBox_Aprobador.Y + 85
+        ZIndex: =8
+
+    CS_ModalOpt2_Aprobador As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Color: =RGBA(50, 50, 50, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =55
+        HoverColor: =RGBA(0, 58, 112, 1)
+        HoverFill: =RGBA(240, 247, 255, 1)
+        OnSelect: |-
+            =UpdateContext({locSelectedAprobadorCS: "María López - Vicerrectora", locShowModalAprobadorCS: false})
+        PressedFill: =RGBA(225, 238, 250, 1)
+        RadiusBottomLeft: =8
+        RadiusBottomRight: =8
+        RadiusTopLeft: =8
+        RadiusTopRight: =8
+        Text: ="María López - Vicerrectora"
+        Visible: =locShowModalAprobadorCS
+        Width: =540
+        X: =CS_ModalBox_Aprobador.X + 30
+        Y: =CS_ModalBox_Aprobador.Y + 153
+        ZIndex: =9
+
+    CS_ModalOpt3_Aprobador As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Color: =RGBA(50, 50, 50, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =55
+        HoverColor: =RGBA(0, 58, 112, 1)
+        HoverFill: =RGBA(240, 247, 255, 1)
+        OnSelect: |-
+            =UpdateContext({locSelectedAprobadorCS: "Jorge Pérez - Director DTI", locShowModalAprobadorCS: false})
+        PressedFill: =RGBA(225, 238, 250, 1)
+        RadiusBottomLeft: =8
+        RadiusBottomRight: =8
+        RadiusTopLeft: =8
+        RadiusTopRight: =8
+        Text: ="Jorge Pérez - Director DTI"
+        Visible: =locShowModalAprobadorCS
+        Width: =540
+        X: =CS_ModalBox_Aprobador.X + 30
+        Y: =CS_ModalBox_Aprobador.Y + 221
+        ZIndex: =10
+
+    CS_ModalClose_Aprobador As button:
+        BorderThickness: =0
+        Color: =RGBA(150, 150, 150, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =35
+        HoverColor: =RGBA(220, 50, 50, 1)
+        HoverFill: =RGBA(255, 240, 240, 1)
+        OnSelect: |-
+            =UpdateContext({locShowModalAprobadorCS: false})
+        PressedFill: =RGBA(255, 220, 220, 1)
+        RadiusBottomLeft: =6
+        RadiusBottomRight: =6
+        RadiusTopLeft: =6
+        RadiusTopRight: =6
+        Size: =14
+        Text: ="✕"
+        Visible: =locShowModalAprobadorCS
+        Width: =35
+        X: =CS_ModalBox_Aprobador.X + 557
+        Y: =CS_ModalBox_Aprobador.Y + 5
+        ZIndex: =11
+

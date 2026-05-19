@@ -9,10 +9,12 @@
 EditorState:
   ScreensOrder:
     - introduccion
+    - Conceptos tecnicos
+    - Concepto_Software
+    - Concepto_Hardware
     - CuentasListas
     - BuzonCorreo
-    - Screen2
     - Instalacion_Software
-    - Conceptos tecnicos
+    - Screen2
   ComponentDefinitionsOrder:
     - AutoWidthLabelGenerator

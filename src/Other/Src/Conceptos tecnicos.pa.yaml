@@ -9,39 +9,51 @@
 Screens:
   Conceptos tecnicos:
     Properties:
-      Fill: =RGBA(0, 0, 0, 0.02)
+      Fill: =RGBA(255, 255, 255, 1)
       LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
     Children:
-      - CT_Rectangle2:
+      - Image1_5:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =89
+            Image: =javerXsisso
+            ImagePosition: =ImagePosition.Stretch
+            Width: =232
+      - CT_Rectangle1_4:
           Control: Rectangle@2.3.0
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Width: =1366
-      - CT_RectNavBorder_3:
-          Control: Rectangle@2.3.0
+            Fill: =RGBA(15, 84, 140, 0.52)
+            Height: =50
+            Width: =2
+            X: =230
+            Y: =25
+      - CT_Image2_4:
+          Control: Image@2.2.3
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
-            Fill: =RGBA(248, 205, 0, 1)
-            Height: =2
-            Width: =1366
-            Y: =123
-      - CT_RectQuickActionBar3_1:
-          Control: Rectangle@2.3.0
+            Height: =60
+            Image: =User().Image
+            RadiusBottomLeft: =Self.Width / 2
+            RadiusBottomRight: =Self.Width / 2
+            RadiusTopLeft: =Self.Width / 2
+            RadiusTopRight: =Self.Width / 2
+            Width: =60
+            X: =246
+            Y: =15
+      - CT_Text1_1:
+          Control: ModernText@1.0.0
           Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =34
-            Width: =Parent.Width
-            Y: =89
-      - CT_Rectangle1_3:
-          Control: Rectangle@2.3.0
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Fill: =RGBA(26, 58, 110, 1)
-            Height: =36
-            Width: =1366
-            Y: =89
+            BorderStyle: =
+            Font: =
+            FontWeight: =FontWeight.Bold
+            Height: =62
+            Size: =16
+            Text: =User().FullName
+            Width: =164
+            X: =320
+            Y: =19
       - CT_LblNavBienestar_3:
           Control: Label@2.5.1
           Properties:
@@ -55,14 +67,6 @@ Screens:
             Width: =56
             X: =1206
             Y: =31
-      - CT_Image1_1:
-          Control: Image@2.2.3
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Height: =78
-            Image: =Javeriana
-            Width: =230
-            Y: =6
       - CT_LblNavBienestar_6:
           Control: Label@2.5.1
           Properties:
@@ -99,40 +103,50 @@ Screens:
             Width: =25
             X: =1262
             Y: =28
-      - CT_Rectangle1_4:
+      - ButtonCanvas1_15:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =31
+            OnSelect: =
+            Text: =
+            Width: =152
+            X: =1016
+            Y: =28
+      - ButtonCanvas1_16:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =33
+            OnSelect: =Exit()
+            Text: =
+            Width: =82
+            X: =1206
+            Y: =26
+      - CT_RectNavBorder_3:
           Control: Rectangle@2.3.0
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
-            Fill: =RGBA(15, 84, 140, 0.52)
-            Height: =50
-            Width: =2
-            X: =230
-            Y: =25
-      - CT_Image2_4:
-          Control: Image@2.2.3
+            Fill: =RGBA(248, 205, 0, 1)
+            Height: =2
+            Width: =1366
+            Y: =123
+      - CT_RectQuickActionBar3_1:
+          Control: Rectangle@2.3.0
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
-            Height: =60
-            Image: =User().Image
-            RadiusBottomLeft: =Self.Width / 2
-            RadiusBottomRight: =Self.Width / 2
-            RadiusTopLeft: =Self.Width / 2
-            RadiusTopRight: =Self.Width / 2
-            Width: =60
-            X: =246
-            Y: =15
-      - CT_Text1_1:
-          Control: ModernText@1.0.0
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =34
+            Width: =Parent.Width
+            Y: =89
+      - CT_Rectangle1_3:
+          Control: Rectangle@2.3.0
           Properties:
-            BorderStyle: =
-            Font: =
-            FontWeight: =FontWeight.Bold
-            Height: =62
-            Size: =16
-            Text: =User().FullName
-            Width: =164
-            X: =320
-            Y: =19
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(26, 58, 110, 1)
+            Height: =36
+            Width: =1366
+            Y: =89
       - CT_LblTitle:
           Control: Label@2.5.1
           Properties:
@@ -393,7 +407,7 @@ Screens:
             HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
-            OnSelect: =Notify("Función de solicitud en desarrollo", NotificationType.Information)
+            OnSelect: =Navigate(Concepto_Software)
             PressedBorderColor: =Self.Fill
             PressedColor: =Self.Fill
             PressedFill: =
@@ -419,7 +433,7 @@ Screens:
             HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
-            OnSelect: =Notify("Función de solicitud en desarrollo", NotificationType.Information)
+            OnSelect: =Navigate(Concepto_Hardware)
             PressedBorderColor: =Self.Fill
             PressedColor: =Self.Fill
             PressedFill: =
@@ -489,42 +503,12 @@ Screens:
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: =RGBA(255, 255, 255, 1)
-            Height: =27
+            Height: =25
             Icon: =Icon.Home
             OnSelect: =Navigate(introduccion)
-            Width: =30
+            Width: =28
             X: =54
             Y: =92
-      - ButtonCanvas1_14:
-          Control: Button@0.0.45
-          Properties:
-            Appearance: ='ButtonCanvas.Appearance'.Transparent
-            Height: =34
-            OnSelect: =Navigate(introduccion)
-            Text: =
-            Width: =103
-            X: =877
-            Y: =30
-      - ButtonCanvas1_15:
-          Control: Button@0.0.45
-          Properties:
-            Appearance: ='ButtonCanvas.Appearance'.Transparent
-            Height: =31
-            OnSelect: =
-            Text: =
-            Width: =152
-            X: =1016
-            Y: =28
-      - ButtonCanvas1_16:
-          Control: Button@0.0.45
-          Properties:
-            Appearance: ='ButtonCanvas.Appearance'.Transparent
-            Height: =33
-            OnSelect: =Exit()
-            Text: =
-            Width: =82
-            X: =1206
-            Y: =26
       - RectNavBorder_8:
           Control: Rectangle@2.3.0
           Properties:
@@ -538,9 +522,44 @@ Screens:
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: =RGBA(255, 255, 255, 1)
-            Height: =29
+            Height: =25
             Icon: =Icon.BackArrow
             OnSelect: =Back()
-            Width: =44
+            Width: =40
             X: =10
-            Y: =91
+            Y: =93
+      - ButtonCanvas1_14:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =34
+            OnSelect: =Navigate(introduccion)
+            Text: =
+            Width: =103
+            X: =877
+            Y: =30
+      - Button1:
+          Control: ModernButton@1.0.0
+          Properties:
+            Appearance: =ButtonAppearance.Transparent
+            OnSelect: =Navigate(introduccion)
+            Text: =
+            X: =884
+            Y: =31
+      - Button1_1:
+          Control: ModernButton@1.0.0
+          Properties:
+            Appearance: =ButtonAppearance.Transparent
+            OnSelect: =
+            Text: =
+            Width: =156
+            X: =1012
+            Y: =31
+      - Button1_2:
+          Control: ModernButton@1.0.0
+          Properties:
+            Appearance: =ButtonAppearance.Transparent
+            OnSelect: =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
+            Text: =
+            X: =1199
+            Y: =29

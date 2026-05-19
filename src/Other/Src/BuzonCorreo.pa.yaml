@@ -28,15 +28,23 @@ Screens:
                   X: =0
                   Y: =0
                 Children:
+                  - Image1_2:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Height: =89
+                        Image: =javerXsisso
+                        ImagePosition: =ImagePosition.Stretch
+                        Width: =232
                   - Rectangle4:
                       Control: Rectangle@2.3.0
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Fill: =RGBA(0, 0, 0, 0.02)
-                        Height: =1110
+                        Height: =1039
                         Width: =1300
                         X: =27
-                        Y: =81
+                        Y: =152
                   - ButtonCanvas2_3:
                       Control: Button@0.0.45
                       Properties:
@@ -95,12 +103,6 @@ Screens:
                         Width: =103
                         X: =877
                         Y: =30
-                  - Rectangle2_1:
-                      Control: Rectangle@2.3.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Width: =1366
                   - RectNavBorder_4:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -138,14 +140,6 @@ Screens:
                         Width: =56
                         X: =1206
                         Y: =31
-                  - Image1_2:
-                      Control: Image@2.2.3
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Height: =78
-                        Image: =Javeriana
-                        Width: =230
-                        Y: =6
                   - LblNavBienestar_9:
                       Control: Label@2.5.1
                       Properties:
@@ -423,7 +417,7 @@ Screens:
                         X: =138
                         Y: =459
                   - TextInput2:
-                      Control: ModernTextInput@1.0.0
+                      Control: ModernTextInput@1.1.0
                       Properties:
                         Appearance: =Appearance.FilledLighter
                         BorderColor: =RGBA(210, 210, 210, 1)
@@ -505,7 +499,7 @@ Screens:
                         Width: =1355
                         Y: =1202
                   - TextInput2_1:
-                      Control: ModernTextInput@1.0.0
+                      Control: ModernTextInput@1.1.0
                       Properties:
                         Appearance: =Appearance.FilledLighter
                         BorderColor: =RGBA(210, 210, 210, 1)
@@ -573,17 +567,6 @@ Screens:
                         Width: =500
                         X: =73
                         Y: =633
-                  - Icon3_2:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 255, 255, 1)
-                        Height: =27
-                        Icon: =Icon.Home
-                        OnSelect: =Navigate(introduccion)
-                        Width: =30
-                        X: =54
-                        Y: =92
                   - BC_RectHeaderLine_Espec:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -593,17 +576,6 @@ Screens:
                         Width: =60
                         X: =73
                         Y: =673
-                  - Icon4_2:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 255, 255, 1)
-                        Height: =29
-                        Icon: =Icon.BackArrow
-                        OnSelect: =Back()
-                        Width: =44
-                        X: =10
-                        Y: =91
                   - BC_LblDesc_Espec:
                       Control: Label@2.5.1
                       Properties:
@@ -961,7 +933,7 @@ Screens:
                         X: =75
                         Y: =813
                   - TextInput2_3:
-                      Control: ModernTextInput@1.0.0
+                      Control: ModernTextInput@1.1.0
                       Properties:
                         Appearance: =Appearance.FilledLighter
                         BorderColor: =RGBA(210, 210, 210, 1)
@@ -1050,7 +1022,7 @@ Screens:
                         X: =713
                         Y: =796
                   - TextInput2_4:
-                      Control: ModernTextInput@1.0.0
+                      Control: ModernTextInput@1.1.0
                       Properties:
                         Appearance: =Appearance.FilledLighter
                         BorderColor: =RGBA(210, 210, 210, 1)
@@ -1239,6 +1211,28 @@ Screens:
                         Width: =180
                         X: =928
                         Y: =1102
+                  - CT_Icon3_5:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =25
+                        Icon: =Icon.Home
+                        OnSelect: =Navigate(introduccion)
+                        Width: =28
+                        X: =54
+                        Y: =94
+                  - Icon4_8:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =25
+                        Icon: =Icon.BackArrow
+                        OnSelect: =Back()
+                        Width: =40
+                        X: =10
+                        Y: =95
       - ButtonCanvas1_8:
           Control: Button@0.0.45
           Properties:
@@ -1260,7 +1254,7 @@ Screens:
             X: =1017
             Y: =30
       - TextInput2_2:
-          Control: ModernTextInput@1.0.0
+          Control: ModernTextInput@1.1.0
           Properties:
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(255, 255, 255, 1)
@@ -1273,7 +1267,7 @@ Screens:
           Properties:
             Appearance: ='ButtonCanvas.Appearance'.Transparent
             Height: =34
-            OnSelect: =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+            OnSelect: =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
             Text: =
             Width: =103
             X: =1194

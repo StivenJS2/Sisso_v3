@@ -1,4 +1,4 @@
-<widget xmlns="http://openajax.org/metadata" xmlns:appMagic="http://schemas.microsoft.com/appMagic" spec="1.0" id="http://microsoft.com/appmagic/modernTextInput" name="modernTextInput" jsClass="AppMagic.Controls.ModernTextInputControl" enabledForFeatureGate="Controls.ModernTextInputControl" version="1.0.0" styleable="true" runtimeCost="1">
+<widget xmlns="http://openajax.org/metadata" xmlns:appMagic="http://schemas.microsoft.com/appMagic" spec="1.0" id="http://microsoft.com/appmagic/modernTextInput" name="modernTextInput" jsClass="AppMagic.Controls.ModernTextInputControl" enabledForFeatureGate="Controls.ModernTextInputControl" version="1.1.0" styleable="true" runtimeCost="1">
   <author name="Microsoft AppMagic" />
   <license type="text/html"><![CDATA[<p>TODO:  Need license text here.</p>]]></license>
   <description><![CDATA[Modern text input control using Fluent UI v9.]]></description>
@@ -95,7 +95,6 @@
     <appMagic:includeProperty name="ValidationState" />
     <!-- Behavior -->
     <appMagic:includeProperty name="OnChange" direction="in" isPrimaryBehaviorProperty="true" />
-    <appMagic:includeProperty name="OnSelect" direction="in" />
     <!-- Hidden properties -->
     <appMagic:includeProperty name="maximumHeight" defaultValue="768" />
     <appMagic:includeProperty name="maximumWidth" defaultValue="1366" />
@@ -172,4 +171,7 @@
       </appMagic:propertyGroup>
     </appMagic:section>
   </appMagic:displayMetadata>
+  <appMagic:conversion from="1.0.0" to="1.1.0">
+    <appMagic:conversionAction type="remove" name="OnSelect" />
+  </appMagic:conversion>
 </widget>

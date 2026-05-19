@@ -12,6 +12,14 @@ Screens:
       LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
       OnVisible: =Set(varIndiceIntro, 1); Set(varModalInfo, 0)
     Children:
+      - Image1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =89
+            Image: =javerXsisso
+            ImagePosition: =ImagePosition.Stretch
+            Width: =232
       - RectQuickActionBar3:
           Control: Rectangle@2.3.0
           Properties:
@@ -929,7 +937,7 @@ Screens:
                         PressedFill: =
                         Text: =""
                         Width: =230
-                        X: =569
+                        X: =568
                         Y: =370
                   - SmallCard4_Bg_3:
                       Control: Classic/Button@2.2.0
@@ -974,7 +982,7 @@ Screens:
                         PressedFill: =
                         Text: =""
                         Width: =230
-                        X: =63
+                        X: =64
                         Y: =370
                   - SmallCard6_Bg_1:
                       Control: Classic/Button@2.2.0
@@ -1234,14 +1242,6 @@ Screens:
             Width: =56
             X: =1206
             Y: =31
-      - Image1:
-          Control: Image@2.2.3
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Height: =78
-            Image: =Javeriana
-            Width: =230
-            Y: =6
       - LblNavBienestar_4:
           Control: Label@2.5.1
           Properties:
@@ -1309,14 +1309,6 @@ Screens:
             Width: =164
             X: =320
             Y: =19
-      - RectNavBorder_1:
-          Control: Rectangle@2.3.0
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Fill: =RGBA(248, 205, 0, 1)
-            Height: =2
-            Width: =1366
-            Y: =123
       - ButtonCanvas1:
           Control: Button@0.0.45
           Properties:
@@ -1326,38 +1318,6 @@ Screens:
             Width: =157
             X: =1016
             Y: =27
-      - ButtonCanvas1_1:
-          Control: Button@0.0.45
-          Properties:
-            Appearance: ='ButtonCanvas.Appearance'.Transparent
-            Height: =34
-            OnSelect: =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
-            Text: =
-            Width: =103
-            X: =1196
-            Y: =30
-      - Icon3:
-          Control: Classic/Icon@2.5.0
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =27
-            Icon: =Icon.Home
-            OnSelect: =Navigate(introduccion)
-            Width: =30
-            X: =54
-            Y: =92
-      - Icon4:
-          Control: Classic/Icon@2.5.0
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =29
-            Icon: =Icon.BackArrow
-            OnSelect: =
-            Width: =44
-            X: =10
-            Y: =91
       - ModalOverlay:
           Control: Classic/Button@2.2.0
           Properties:
@@ -1378,6 +1338,24 @@ Screens:
             Text: =""
             Visible: =varModalInfo > 0
             Width: =Parent.Width
+      - RectNavBorder_1:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(248, 205, 0, 1)
+            Height: =2
+            Width: =1366
+            Y: =123
+      - ButtonCanvas1_1:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =34
+            OnSelect: =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
+            Text: =
+            Width: =103
+            X: =1196
+            Y: =30
       - M1_Panel:
           Control: Rectangle@2.3.0
           Properties:
@@ -3798,3 +3776,35 @@ Screens:
             Width: =130
             X: =M10_Panel.X + 650
             Y: =M10_Panel.Y + 410
+      - CT_Icon3_7:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =25
+            Icon: =Icon.Home
+            OnSelect: =Navigate(introduccion)
+            Width: =28
+            X: =54
+            Y: =92
+      - Icon4_10:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =25
+            Icon: =Icon.BackArrow
+            OnSelect: =
+            Width: =40
+            X: =10
+            Y: =93
+      - ButtonCanvas1_23:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =31
+            OnSelect: =
+            Text: =
+            Width: =97
+            X: =886
+            Y: =33

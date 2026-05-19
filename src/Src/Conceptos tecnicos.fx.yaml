@@ -1,79 +1,12 @@
 "'Conceptos tecnicos' As screen":
-    Fill: =RGBA(0, 0, 0, 0.02)
+    Fill: =RGBA(255, 255, 255, 1)
 
-    CT_Rectangle2 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Width: =1366
-        ZIndex: =1
-
-    CT_RectNavBorder_3 As rectangle:
-        Fill: =RGBA(248, 205, 0, 1)
-        Height: =2
-        Width: =1366
-        Y: =123
-        ZIndex: =2
-
-    CT_RectQuickActionBar3_1 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =34
-        Width: =Parent.Width
-        Y: =89
-        ZIndex: =3
-
-    CT_Rectangle1_3 As rectangle:
-        Fill: =RGBA(26, 58, 110, 1)
-        Height: =36
-        Width: =1366
-        Y: =89
-        ZIndex: =4
-
-    CT_LblNavBienestar_3 As label:
-        Color: =RGBA(100, 120, 150, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =28
-        Size: =14
-        Text: ="Salir"
-        Width: =56
-        X: =1206
-        Y: =31
-        ZIndex: =7
-
-    CT_Image1_1 As image:
-        Height: =78
-        Image: =Javeriana
-        Width: =230
-        Y: =6
-        ZIndex: =8
-
-    CT_LblNavBienestar_6 As label:
-        Color: =RGBA(100, 120, 150, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =28
-        Size: =14
-        Text: ="Mis Solicitudes"
-        Width: =157
-        X: =1016
-        Y: =31
-        ZIndex: =9
-
-    CT_LblNavBienestar_7 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =28
-        OnSelect: =Navigate(introduccion)
-        Size: =14
-        Text: ="Servicios"
-        Width: =97
-        X: =886
-        Y: =31
-        ZIndex: =10
-
-    CT_Icon1_1 As icon.Leave:
-        Height: =36
-        Icon: =Icon.Leave
-        Width: =25
-        X: =1262
-        Y: =28
-        ZIndex: =11
+    Image1_5 As image:
+        Height: =89
+        Image: =javerXsisso
+        ImagePosition: =ImagePosition.Stretch
+        Width: =232
+        ZIndex: =6
 
     CT_Rectangle1_4 As rectangle:
         Fill: =RGBA(15, 84, 140, 0.52)
@@ -81,7 +14,7 @@
         Width: =2
         X: =230
         Y: =25
-        ZIndex: =12
+        ZIndex: =7
 
     CT_Image2_4 As image:
         Height: =60
@@ -93,7 +26,7 @@
         Width: =60
         X: =246
         Y: =15
-        ZIndex: =13
+        ZIndex: =8
 
     CT_Text1_1 As modernText:
         FontWeight: =FontWeight.Bold
@@ -103,324 +36,48 @@
         Width: =164
         X: =320
         Y: =19
-        ZIndex: =14
+        ZIndex: =9
 
-    CT_LblTitle As label:
-        Color: =RGBA(0, 58, 112, 1)
+    CT_LblNavBienestar_3 As label:
+        Color: =RGBA(100, 120, 150, 1)
         FontWeight: =FontWeight.Bold
-        Height: =45
-        Size: =24
-        Text: ="Conceptos tecnológicos de software y hardware"
-        Width: =801
-        X: =85
-        Y: =134
-        ZIndex: =15
-
-    CT_RectTitleLine As rectangle:
-        Fill: =RGBA(255, 213, 0, 1)
-        Height: =4
-        Width: =60
-        X: =94
-        Y: =179
-        ZIndex: =16
-
-    CT_LblIntro As label:
-        Color: =RGBA(70, 70, 70, 1)
-        Height: =27
-        Size: =12
-        Text: ="Solicitud para servicios de software y equipos de hardware."
-        Width: =1200
-        X: =87
-        Y: =188
-        ZIndex: =17
-
-    CT_Card1_Bg As button:
-        BorderColor: =RGBA(220, 220, 220, 1)
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =200
-        HoverFill: =
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: =""
-        Width: =1210
-        X: =78
-        Y: =230
-        ZIndex: =19
-
-    CT_Card1_IconBg As button:
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(245, 246, 248, 1)
-        Height: =120
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: =""
-        Width: =120
-        X: =118
-        Y: =270
-        ZIndex: =20
-
-    CT_Card1_Icon As image:
-        Height: =80
-        Image: =Software
-        Width: =80
-        X: =138
-        Y: =290
-        ZIndex: =21
-
-    CT_Card1_Title As label:
-        Color: =RGBA(0, 58, 112, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =30
-        Size: =16
-        Text: ="Concepto de compra o renovación de software"
-        Width: =800
-        X: =268
-        Y: =250
-        ZIndex: =22
-
-    CT_Card1_Desc As label:
-        Color: =RGBA(70, 70, 70, 1)
-        Height: =70
-        Size: =12
-        Text: ="Solicitud de concepto técnico para realizar el proceso de compra o renovación de aplicativos de software académico, científico o comercial utilizados en las actividades de docencia, investigación, servicio y administrativas."
-        VerticalAlign: =VerticalAlign.Top
-        Width: =900
-        X: =268
-        Y: =290
-        ZIndex: =23
-
-    CT_Card1_LinkText As label:
-        Color: =RGBA(0, 58, 112, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =41
+        Height: =28
         Size: =14
-        Text: ="Solicitar servicio"
-        Width: =161
-        X: =268
-        Y: =370
-        ZIndex: =24
+        Text: ="Salir"
+        Width: =56
+        X: =1206
+        Y: =31
+        ZIndex: =10
 
-    CT_Card1_LinkIcon As icon.ArrowRight:
-        Color: =RGBA(255, 213, 0, 1)
-        Height: =20
-        Icon: =Icon.ArrowRight
-        Width: =20
-        X: =429
-        Y: =381
-        ZIndex: =25
-
-    CT_Card2_Bg As button:
-        BorderColor: =RGBA(220, 220, 220, 1)
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =200
-        HoverFill: =
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: =""
-        Width: =1210
-        X: =78
-        Y: =450
-        ZIndex: =26
-
-    CT_Card2_IconBg As button:
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(245, 246, 248, 1)
-        Height: =120
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: =""
-        Width: =120
-        X: =118
-        Y: =490
-        ZIndex: =27
-
-    CT_Card2_Icon As image:
-        Height: =80
-        Image: =Hardware
-        Width: =80
-        X: =138
-        Y: =510
-        ZIndex: =28
-
-    CT_Card2_Title As label:
-        Color: =RGBA(0, 58, 112, 1)
+    CT_LblNavBienestar_6 As label:
+        Color: =RGBA(100, 120, 150, 1)
         FontWeight: =FontWeight.Bold
-        Height: =30
-        Size: =16
-        Text: ="Concepto de compra o renovación de hardware"
-        Width: =800
-        X: =268
-        Y: =470
-        ZIndex: =29
-
-    CT_Card2_Desc As label:
-        Color: =RGBA(70, 70, 70, 1)
-        Height: =70
-        Size: =12
-        Text: ="Solicitud de concepto técnico para la adquisición de hardware, orientado a necesidades específicas en los contextos académico, investigativo y administrativo."
-        VerticalAlign: =VerticalAlign.Top
-        Width: =900
-        X: =268
-        Y: =510
-        ZIndex: =30
-
-    CT_Card2_LinkText As label:
-        Color: =RGBA(0, 58, 112, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =35
+        Height: =28
         Size: =14
-        Text: ="Solicitar servicio"
-        Width: =161
-        X: =268
-        Y: =590
-        ZIndex: =31
+        Text: ="Mis Solicitudes"
+        Width: =157
+        X: =1016
+        Y: =31
+        ZIndex: =11
 
-    CT_Card2_LinkIcon As icon.ArrowRight:
-        Color: =RGBA(255, 213, 0, 1)
-        Height: =20
-        Icon: =Icon.ArrowRight
-        Width: =20
-        X: =429
-        Y: =600
-        ZIndex: =32
+    CT_LblNavBienestar_7 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        OnSelect: =Navigate(introduccion)
+        Size: =14
+        Text: ="Servicios"
+        Width: =97
+        X: =886
+        Y: =31
+        ZIndex: =12
 
-    CT_Card1_Overlay As button:
-        BorderColor: =RGBA(220, 220, 220, 1)
-        BorderThickness: =1
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =200
-        HoverFill: =
-        OnSelect: =Notify("Función de solicitud en desarrollo", NotificationType.Information)
-        PressedFill: =
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: =""
-        Width: =1210
-        X: =78
-        Y: =230
-        ZIndex: =56
-
-    CT_Card2_Overlay As button:
-        BorderColor: =RGBA(220, 220, 220, 1)
-        BorderThickness: =1
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =200
-        HoverFill: =
-        OnSelect: =Notify("Función de solicitud en desarrollo", NotificationType.Information)
-        PressedFill: =
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: =""
-        Width: =1210
-        X: =78
-        Y: =450
-        ZIndex: =57
-
-    CT_RectFooter_2 As rectangle:
-        Fill: =RGBA(26, 58, 110, 1)
-        Height: =68
-        Width: =1366
-        Y: =700
-        ZIndex: =66
-
-    CT_LblFooter_2 As label:
-        Color: =RGBA(200, 184, 122, 0.7)
-        Height: =41
-        Size: =9
-        Text: |-
-            ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
-            Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
-        Width: =853
-        X: =5
-        Y: =713
-        ZIndex: =67
-
-    CT_RectFooterBorder_2 As rectangle:
-        BorderColor: =RGBA(200, 184, 122, 1)
-        BorderThickness: =1
-        Fill: =RGBA(200, 184, 122, 1)
-        Height: =2
-        Width: =1365
-        Y: =700
-        ZIndex: =68
-
-    CT_Image4_1 As image:
-        Height: =66
-        Image: ='image-removebg-preview'
-        ImagePosition: =ImagePosition.Fill
-        Width: =289
-        X: =1070
-        Y: =705
-        ZIndex: =69
-
-    CT_LblTopLeft_3 As label:
-        Color: =RGBA(255, 255, 255, 1)
+    CT_Icon1_1 As icon.Leave:
         Height: =36
-        Size: =9
-        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
-        Width: =408
-        X: =955
-        Y: =88
-        ZIndex: =71
-
-    CT_Icon3_1 As icon.Home:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =27
-        Icon: =Icon.Home
-        OnSelect: =Navigate(introduccion)
-        Width: =30
-        X: =54
-        Y: =92
-        ZIndex: =72
-
-    ButtonCanvas1_14 As Botón:
-        AcceptsFocus: =true
-        AccessibleLabel: =""
-        Align: =""
-        Appearance: ='ButtonCanvas.Appearance'.Transparent
-        BasePaletteColor: =
-        BorderColor: =
-        BorderStyle: =""
-        ContentLanguage: =""
-        DisplayMode: =DisplayMode.Edit
-        Font: =""
-        FontColor: =
-        FontItalic: =false
-        FontSize: =0
-        FontStrikethrough: =false
-        FontUnderline: =false
-        FontWeight: =""
-        Height: =34
-        Icon: =""
-        IconRotation: =0
-        IconStyle: ="Outline"
-        Layout: ="Icon before"
-        OnSelect: =Navigate(introduccion)
-        TabIndex: =0
-        Text: =
-        Tooltip: =""
-        VerticalAlign: =""
-        Visible: =true
-        Width: =103
-        X: =877
-        Y: =30
-        ZIndex: =73
+        Icon: =Icon.Leave
+        Width: =25
+        X: =1262
+        Y: =28
+        ZIndex: =13
 
     ButtonCanvas1_15 As Botón:
         AcceptsFocus: =true
@@ -453,7 +110,7 @@
         Width: =152
         X: =1016
         Y: =28
-        ZIndex: =74
+        ZIndex: =14
 
     ButtonCanvas1_16 As Botón:
         AcceptsFocus: =true
@@ -486,22 +143,392 @@
         Width: =82
         X: =1206
         Y: =26
-        ZIndex: =75
+        ZIndex: =15
+
+    CT_RectNavBorder_3 As rectangle:
+        Fill: =RGBA(248, 205, 0, 1)
+        Height: =2
+        Width: =1366
+        Y: =123
+        ZIndex: =16
+
+    CT_RectQuickActionBar3_1 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =34
+        Width: =Parent.Width
+        Y: =89
+        ZIndex: =17
+
+    CT_Rectangle1_3 As rectangle:
+        Fill: =RGBA(26, 58, 110, 1)
+        Height: =36
+        Width: =1366
+        Y: =89
+        ZIndex: =18
+
+    CT_LblTitle As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =24
+        Text: ="Conceptos tecnológicos de software y hardware"
+        Width: =801
+        X: =85
+        Y: =134
+        ZIndex: =19
+
+    CT_RectTitleLine As rectangle:
+        Fill: =RGBA(255, 213, 0, 1)
+        Height: =4
+        Width: =60
+        X: =94
+        Y: =179
+        ZIndex: =20
+
+    CT_LblIntro As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =27
+        Size: =12
+        Text: ="Solicitud para servicios de software y equipos de hardware."
+        Width: =1200
+        X: =87
+        Y: =188
+        ZIndex: =21
+
+    CT_Card1_Bg As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =200
+        HoverFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =1210
+        X: =78
+        Y: =230
+        ZIndex: =22
+
+    CT_Card1_IconBg As button:
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(245, 246, 248, 1)
+        Height: =120
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =120
+        X: =118
+        Y: =270
+        ZIndex: =23
+
+    CT_Card1_Icon As image:
+        Height: =80
+        Image: =Software
+        Width: =80
+        X: =138
+        Y: =290
+        ZIndex: =24
+
+    CT_Card1_Title As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =16
+        Text: ="Concepto de compra o renovación de software"
+        Width: =800
+        X: =268
+        Y: =250
+        ZIndex: =25
+
+    CT_Card1_Desc As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =70
+        Size: =12
+        Text: ="Solicitud de concepto técnico para realizar el proceso de compra o renovación de aplicativos de software académico, científico o comercial utilizados en las actividades de docencia, investigación, servicio y administrativas."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =900
+        X: =268
+        Y: =290
+        ZIndex: =26
+
+    CT_Card1_LinkText As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =41
+        Size: =14
+        Text: ="Solicitar servicio"
+        Width: =161
+        X: =268
+        Y: =370
+        ZIndex: =27
+
+    CT_Card1_LinkIcon As icon.ArrowRight:
+        Color: =RGBA(255, 213, 0, 1)
+        Height: =20
+        Icon: =Icon.ArrowRight
+        Width: =20
+        X: =429
+        Y: =381
+        ZIndex: =28
+
+    CT_Card2_Bg As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =200
+        HoverFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =1210
+        X: =78
+        Y: =450
+        ZIndex: =29
+
+    CT_Card2_IconBg As button:
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(245, 246, 248, 1)
+        Height: =120
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =120
+        X: =118
+        Y: =490
+        ZIndex: =30
+
+    CT_Card2_Icon As image:
+        Height: =80
+        Image: =Hardware
+        Width: =80
+        X: =138
+        Y: =510
+        ZIndex: =31
+
+    CT_Card2_Title As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =16
+        Text: ="Concepto de compra o renovación de hardware"
+        Width: =800
+        X: =268
+        Y: =470
+        ZIndex: =32
+
+    CT_Card2_Desc As label:
+        Color: =RGBA(70, 70, 70, 1)
+        Height: =70
+        Size: =12
+        Text: ="Solicitud de concepto técnico para la adquisición de hardware, orientado a necesidades específicas en los contextos académico, investigativo y administrativo."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =900
+        X: =268
+        Y: =510
+        ZIndex: =33
+
+    CT_Card2_LinkText As label:
+        Color: =RGBA(0, 58, 112, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =14
+        Text: ="Solicitar servicio"
+        Width: =161
+        X: =268
+        Y: =590
+        ZIndex: =34
+
+    CT_Card2_LinkIcon As icon.ArrowRight:
+        Color: =RGBA(255, 213, 0, 1)
+        Height: =20
+        Icon: =Icon.ArrowRight
+        Width: =20
+        X: =429
+        Y: =600
+        ZIndex: =35
+
+    CT_Card1_Overlay As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =200
+        HoverFill: =
+        OnSelect: =Navigate(Concepto_Software)
+        PressedFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =1210
+        X: =78
+        Y: =230
+        ZIndex: =36
+
+    CT_Card2_Overlay As button:
+        BorderColor: =RGBA(220, 220, 220, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =200
+        HoverFill: =
+        OnSelect: =Navigate(Concepto_Hardware)
+        PressedFill: =
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =1210
+        X: =78
+        Y: =450
+        ZIndex: =37
+
+    CT_RectFooter_2 As rectangle:
+        Fill: =RGBA(26, 58, 110, 1)
+        Height: =68
+        Width: =1366
+        Y: =700
+        ZIndex: =38
+
+    CT_LblFooter_2 As label:
+        Color: =RGBA(200, 184, 122, 0.7)
+        Height: =41
+        Size: =9
+        Text: |-
+            ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+            Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+        Width: =853
+        X: =5
+        Y: =713
+        ZIndex: =39
+
+    CT_RectFooterBorder_2 As rectangle:
+        BorderColor: =RGBA(200, 184, 122, 1)
+        BorderThickness: =1
+        Fill: =RGBA(200, 184, 122, 1)
+        Height: =2
+        Width: =1365
+        Y: =700
+        ZIndex: =40
+
+    CT_Image4_1 As image:
+        Height: =66
+        Image: ='image-removebg-preview'
+        ImagePosition: =ImagePosition.Fill
+        Width: =289
+        X: =1070
+        Y: =705
+        ZIndex: =41
+
+    CT_LblTopLeft_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Size: =9
+        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
+        Width: =408
+        X: =955
+        Y: =88
+        ZIndex: =42
+
+    CT_Icon3_1 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =25
+        Icon: =Icon.Home
+        OnSelect: =Navigate(introduccion)
+        Width: =28
+        X: =54
+        Y: =92
+        ZIndex: =43
 
     RectNavBorder_8 As rectangle:
         Fill: =RGBA(248, 205, 0, 1)
         Height: =2
         Width: =1366
         Y: =123
-        ZIndex: =76
+        ZIndex: =44
 
     Icon4_4 As icon:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =29
+        Height: =25
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        Width: =44
+        Width: =40
         X: =10
-        Y: =91
-        ZIndex: =77
+        Y: =93
+        ZIndex: =45
+
+    ButtonCanvas1_14 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =34
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Navigate(introduccion)
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =103
+        X: =877
+        Y: =30
+        ZIndex: =46
+
+    Button1 As modernButton:
+        Appearance: =ButtonAppearance.Transparent
+        OnSelect: =Navigate(introduccion)
+        Text: =
+        X: =884
+        Y: =31
+        ZIndex: =47
+
+    Button1_1 As modernButton:
+        Appearance: =ButtonAppearance.Transparent
+        BorderStyle: =""
+        Font: =""
+        OnSelect: =
+        Size: =0
+        Text: =
+        Width: =156
+        X: =1012
+        Y: =31
+        ZIndex: =48
+
+    Button1_2 As modernButton:
+        Appearance: =ButtonAppearance.Transparent
+        BorderStyle: =""
+        Font: =""
+        OnSelect: |-
+            =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
+        Size: =0
+        Text: =
+        X: =1199
+        Y: =29
+        ZIndex: =49
 

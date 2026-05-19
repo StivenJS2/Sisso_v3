@@ -1,9 +1,11 @@
 Instalacion_Software As screen:
-    Fill: =RGBA(0, 0, 0, 0.02)
+    Fill: =RGBA(255, 255, 255, 1)
 
-    IS_Rectangle2 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Width: =1366
+    Image1_6 As image:
+        Height: =89
+        Image: =javerXsisso
+        ImagePosition: =ImagePosition.Stretch
+        Width: =232
         ZIndex: =1
 
     IS_RectNavBorder_3 As rectangle:
@@ -36,14 +38,7 @@ Instalacion_Software As screen:
         Width: =56
         X: =1206
         Y: =31
-        ZIndex: =7
-
-    IS_Image1_1 As image:
-        Height: =78
-        Image: =Javeriana
-        Width: =230
-        Y: =6
-        ZIndex: =8
+        ZIndex: =5
 
     IS_LblNavBienestar_6 As label:
         Color: =RGBA(100, 120, 150, 1)
@@ -54,7 +49,7 @@ Instalacion_Software As screen:
         Width: =157
         X: =1016
         Y: =31
-        ZIndex: =9
+        ZIndex: =6
 
     IS_LblNavBienestar_7 As label:
         FontWeight: =FontWeight.Bold
@@ -65,7 +60,7 @@ Instalacion_Software As screen:
         Width: =97
         X: =886
         Y: =31
-        ZIndex: =10
+        ZIndex: =7
 
     IS_Icon1_1 As icon.Leave:
         Height: =36
@@ -73,7 +68,7 @@ Instalacion_Software As screen:
         Width: =25
         X: =1262
         Y: =28
-        ZIndex: =11
+        ZIndex: =8
 
     IS_Rectangle1_4 As rectangle:
         Fill: =RGBA(15, 84, 140, 0.52)
@@ -81,7 +76,7 @@ Instalacion_Software As screen:
         Width: =2
         X: =230
         Y: =25
-        ZIndex: =12
+        ZIndex: =9
 
     IS_Image2_4 As image:
         Height: =60
@@ -93,7 +88,7 @@ Instalacion_Software As screen:
         Width: =60
         X: =246
         Y: =15
-        ZIndex: =13
+        ZIndex: =10
 
     IS_Text1_1 As modernText:
         FontWeight: =FontWeight.Bold
@@ -103,7 +98,7 @@ Instalacion_Software As screen:
         Width: =164
         X: =320
         Y: =19
-        ZIndex: =14
+        ZIndex: =11
 
     IS_LblTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -114,7 +109,7 @@ Instalacion_Software As screen:
         Width: =500
         X: =85
         Y: =134
-        ZIndex: =15
+        ZIndex: =12
 
     IS_RectTitleLine As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -122,7 +117,7 @@ Instalacion_Software As screen:
         Width: =60
         X: =94
         Y: =179
-        ZIndex: =16
+        ZIndex: =13
 
     IS_LblIntro As label:
         Color: =RGBA(70, 70, 70, 1)
@@ -133,7 +128,7 @@ Instalacion_Software As screen:
         Width: =1200
         X: =87
         Y: =190
-        ZIndex: =17
+        ZIndex: =14
 
     IS_Card1_Bg As button:
         BorderColor: =RGBA(220, 220, 220, 1)
@@ -149,7 +144,7 @@ Instalacion_Software As screen:
         Width: =1210
         X: =78
         Y: =280
-        ZIndex: =19
+        ZIndex: =15
 
     IS_Card1_IconBg As button:
         DisplayMode: =DisplayMode.View
@@ -163,13 +158,13 @@ Instalacion_Software As screen:
         Width: =140
         X: =118
         Y: =320
-        ZIndex: =20
+        ZIndex: =16
 
     IS_Card1_Icon As image:
         Image: =Software
         X: =138
         Y: =340
-        ZIndex: =21
+        ZIndex: =17
 
     IS_Card1_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -180,7 +175,7 @@ Instalacion_Software As screen:
         Width: =800
         X: =280
         Y: =300
-        ZIndex: =22
+        ZIndex: =18
 
     IS_Card1_Desc As label:
         Color: =RGBA(70, 70, 70, 1)
@@ -191,7 +186,7 @@ Instalacion_Software As screen:
         Width: =900
         X: =280
         Y: =340
-        ZIndex: =23
+        ZIndex: =19
 
     IS_Card1_LinkText As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -202,7 +197,7 @@ Instalacion_Software As screen:
         Width: =161
         X: =280
         Y: =398
-        ZIndex: =24
+        ZIndex: =20
 
     IS_Card1_LinkIcon As icon.ArrowRight:
         Color: =RGBA(255, 213, 0, 1)
@@ -211,7 +206,7 @@ Instalacion_Software As screen:
         Width: =20
         X: =441
         Y: =409
-        ZIndex: =25
+        ZIndex: =21
 
     IS_Card1_Overlay As button:
         BorderColor: =RGBA(220, 220, 220, 1)
@@ -230,14 +225,14 @@ Instalacion_Software As screen:
         Width: =1210
         X: =78
         Y: =280
-        ZIndex: =56
+        ZIndex: =22
 
     IS_RectFooter_2 As rectangle:
         Fill: =RGBA(26, 58, 110, 1)
         Height: =68
         Width: =1366
         Y: =700
-        ZIndex: =66
+        ZIndex: =23
 
     IS_LblFooter_2 As label:
         Color: =RGBA(200, 184, 122, 0.7)
@@ -249,7 +244,7 @@ Instalacion_Software As screen:
         Width: =853
         X: =5
         Y: =713
-        ZIndex: =67
+        ZIndex: =24
 
     IS_RectFooterBorder_2 As rectangle:
         BorderColor: =RGBA(200, 184, 122, 1)
@@ -258,7 +253,7 @@ Instalacion_Software As screen:
         Height: =2
         Width: =1365
         Y: =700
-        ZIndex: =68
+        ZIndex: =25
 
     IS_Image4_1 As image:
         Height: =66
@@ -267,7 +262,7 @@ Instalacion_Software As screen:
         Width: =289
         X: =1070
         Y: =705
-        ZIndex: =69
+        ZIndex: =26
 
     IS_LblTopLeft_3 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -277,17 +272,7 @@ Instalacion_Software As screen:
         Width: =408
         X: =955
         Y: =88
-        ZIndex: =71
-
-    IS_Icon3_1 As icon.Home:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =27
-        Icon: =Icon.Home
-        OnSelect: =Navigate(introduccion)
-        Width: =30
-        X: =54
-        Y: =92
-        ZIndex: =72
+        ZIndex: =27
 
     ButtonCanvas1_11 As Botón:
         AcceptsFocus: =true
@@ -320,7 +305,7 @@ Instalacion_Software As screen:
         Width: =103
         X: =877
         Y: =30
-        ZIndex: =73
+        ZIndex: =28
 
     ButtonCanvas1_12 As Botón:
         AcceptsFocus: =true
@@ -353,7 +338,7 @@ Instalacion_Software As screen:
         Width: =146
         X: =1016
         Y: =30
-        ZIndex: =74
+        ZIndex: =29
 
     ButtonCanvas1_13 As Botón:
         AcceptsFocus: =true
@@ -377,7 +362,8 @@ Instalacion_Software As screen:
         IconRotation: =0
         IconStyle: ="Outline"
         Layout: ="Icon before"
-        OnSelect: =Exit()
+        OnSelect: |-
+            =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
         TabIndex: =0
         Text: =
         Tooltip: =""
@@ -386,22 +372,32 @@ Instalacion_Software As screen:
         Width: =82
         X: =1206
         Y: =30
-        ZIndex: =75
+        ZIndex: =30
 
     RectNavBorder_7 As rectangle:
         Fill: =RGBA(248, 205, 0, 1)
         Height: =2
         Width: =1366
         Y: =123
-        ZIndex: =76
+        ZIndex: =31
 
-    Icon4_3 As icon:
+    CT_Icon3_6 As icon:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =29
+        Height: =25
+        Icon: =Icon.Home
+        OnSelect: =Navigate(introduccion)
+        Width: =28
+        X: =54
+        Y: =92
+        ZIndex: =32
+
+    Icon4_9 As icon:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =25
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        Width: =44
+        Width: =40
         X: =10
-        Y: =91
-        ZIndex: =77
+        Y: =93
+        ZIndex: =33
 

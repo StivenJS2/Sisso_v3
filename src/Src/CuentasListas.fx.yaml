@@ -1,10 +1,5 @@
 CuentasListas As screen:
-    Fill: =RGBA(0, 0, 0, 0.02)
-
-    Rectangle2 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Width: =1366
-        ZIndex: =1
+    Fill: =RGBA(255, 255, 255, 1)
 
     RectNavBorder_3 As rectangle:
         Fill: =RGBA(248, 205, 0, 1)
@@ -37,13 +32,6 @@ CuentasListas As screen:
         X: =1206
         Y: =31
         ZIndex: =7
-
-    Image1_1 As image:
-        Height: =78
-        Image: =Javeriana
-        Width: =230
-        Y: =6
-        ZIndex: =8
 
     LblNavBienestar_6 As label:
         Color: =RGBA(100, 120, 150, 1)
@@ -657,7 +645,7 @@ CuentasListas As screen:
         IconStyle: ="Outline"
         Layout: ="Icon before"
         OnSelect: |-
-            =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+            =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
         TabIndex: =0
         Text: =
         Tooltip: =""
@@ -788,23 +776,30 @@ CuentasListas As screen:
         Y: =88
         ZIndex: =71
 
-    Icon3_1 As icon:
+    CT_Icon3_4 As icon:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =27
+        Height: =25
         Icon: =Icon.Home
         OnSelect: =Navigate(introduccion)
-        Width: =30
+        Width: =28
         X: =54
         Y: =92
         ZIndex: =72
 
-    Icon4_1 As icon:
+    Icon4_7 As icon:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =29
+        Height: =25
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        Width: =44
+        Width: =40
         X: =10
-        Y: =91
+        Y: =93
         ZIndex: =73
+
+    Image1_1 As image:
+        Height: =89
+        Image: =javerXsisso
+        ImagePosition: =ImagePosition.Stretch
+        Width: =232
+        ZIndex: =74
 

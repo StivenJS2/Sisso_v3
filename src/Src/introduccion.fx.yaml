@@ -1,19 +1,26 @@
 "introduccion As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     OnVisible: =Set(varIndiceIntro, 1); Set(varModalInfo, 0)
 
+    Image1 As image:
+        Height: =89
+        Image: =javerXsisso
+        ImagePosition: =ImagePosition.Stretch
+        Width: =232
+        ZIndex: =1
+
     RectQuickActionBar3 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =34
         Width: =Parent.Width
         Y: =89
-        ZIndex: =1
+        ZIndex: =2
 
     Rectangle1_1 As rectangle:
         Fill: =RGBA(26, 58, 110, 1)
         Height: =36
         Width: =1366
         Y: =89
-        ZIndex: =2
+        ZIndex: =3
 
     LblTopLeft_1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -23,7 +30,7 @@
         Width: =408
         X: =950
         Y: =89
-        ZIndex: =3
+        ZIndex: =4
 
     TimerIntro As timer:
         AutoStart: =true
@@ -33,14 +40,14 @@
         Repeat: =true
         Visible: =false
         Width: =10
-        ZIndex: =4
+        ZIndex: =5
 
     Canvas3 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =645
         Width: =Parent.Width
         Y: =RectQuickActionBar3.Y + RectQuickActionBar3.Height
-        ZIndex: =5
+        ZIndex: =6
 
         DataCard6 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -672,7 +679,7 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =569
+                X: =568
                 Y: =370
                 ZIndex: =64
 
@@ -703,7 +710,7 @@
                 PressedFill: =
                 Text: =""
                 Width: =230
-                X: =63
+                X: =64
                 Y: =370
                 ZIndex: =66
 
@@ -908,7 +915,7 @@
         Width: =90
         X: =890
         Y: =67
-        ZIndex: =6
+        ZIndex: =7
 
     LblNavBienestar_1 As label:
         Color: =RGBA(100, 120, 150, 1)
@@ -919,13 +926,6 @@
         Width: =56
         X: =1206
         Y: =31
-        ZIndex: =7
-
-    Image1 As image:
-        Height: =78
-        Image: =Javeriana
-        Width: =230
-        Y: =6
         ZIndex: =8
 
     LblNavBienestar_4 As label:
@@ -987,13 +987,6 @@
         Y: =19
         ZIndex: =14
 
-    RectNavBorder_1 As rectangle:
-        Fill: =RGBA(248, 205, 0, 1)
-        Height: =2
-        Width: =1366
-        Y: =123
-        ZIndex: =15
-
     ButtonCanvas1 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Transparent
         BasePaletteColor: =
@@ -1006,7 +999,26 @@
         Width: =157
         X: =1016
         Y: =27
+        ZIndex: =15
+
+    ModalOverlay As button:
+        BorderThickness: =0
+        Fill: =RGBA(10, 20, 50, 0.6)
+        Height: =Parent.Height
+        HoverFill: =RGBA(10, 20, 50, 0.6)
+        OnSelect: =Set(varModalInfo, 0)
+        PressedFill: =RGBA(10, 20, 50, 0.6)
+        Text: =""
+        Visible: =varModalInfo > 0
+        Width: =Parent.Width
         ZIndex: =16
+
+    RectNavBorder_1 As rectangle:
+        Fill: =RGBA(248, 205, 0, 1)
+        Height: =2
+        Width: =1366
+        Y: =123
+        ZIndex: =17
 
     ButtonCanvas1_1 As Botón:
         AcceptsFocus: =true
@@ -1031,7 +1043,7 @@
         IconStyle: ="Outline"
         Layout: ="Icon before"
         OnSelect: |-
-            =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+            =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
         TabIndex: =0
         Text: =
         Tooltip: =""
@@ -1040,39 +1052,7 @@
         Width: =103
         X: =1196
         Y: =30
-        ZIndex: =17
-
-    Icon3 As icon.Home:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =27
-        Icon: =Icon.Home
-        OnSelect: =Navigate(introduccion)
-        Width: =30
-        X: =54
-        Y: =92
-        ZIndex: =19
-
-    Icon4 As icon.BackArrow:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =29
-        Icon: =Icon.BackArrow
-        OnSelect: =
-        Width: =44
-        X: =10
-        Y: =91
-        ZIndex: =20
-
-    ModalOverlay As button:
-        BorderThickness: =0
-        Fill: =RGBA(10, 20, 50, 0.6)
-        Height: =Parent.Height
-        HoverFill: =RGBA(10, 20, 50, 0.6)
-        OnSelect: =Set(varModalInfo, 0)
-        PressedFill: =RGBA(10, 20, 50, 0.6)
-        Text: =""
-        Visible: =varModalInfo > 0
-        Width: =Parent.Width
-        ZIndex: =300
+        ZIndex: =18
 
     M1_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1081,7 +1061,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =301
+        ZIndex: =19
 
     M2_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1090,7 +1070,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =302
+        ZIndex: =20
 
     M3_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1099,7 +1079,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =303
+        ZIndex: =21
 
     M4_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1108,7 +1088,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =304
+        ZIndex: =22
 
     M5_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1117,7 +1097,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =305
+        ZIndex: =23
 
     M6_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1126,7 +1106,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =306
+        ZIndex: =24
 
     M7_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1135,7 +1115,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =307
+        ZIndex: =25
 
     M8_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1144,7 +1124,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =308
+        ZIndex: =26
 
     M9_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1153,7 +1133,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =309
+        ZIndex: =27
 
     M10_Panel As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1162,7 +1142,7 @@
         Width: =800
         X: =(Parent.Width - 800) / 2
         Y: =(Parent.Height - 480) / 2
-        ZIndex: =310
+        ZIndex: =28
 
     M1_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1171,7 +1151,7 @@
         Width: =4
         X: =M1_Panel.X + 30
         Y: =M1_Panel.Y + 30
-        ZIndex: =311
+        ZIndex: =29
 
     M1_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1181,7 +1161,7 @@
         Width: =600
         X: =M1_Panel.X + 50
         Y: =M1_Panel.Y + 56
-        ZIndex: =312
+        ZIndex: =30
 
     M1_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1192,7 +1172,7 @@
         Width: =30
         X: =M1_Panel.X + 740
         Y: =M1_Panel.Y + 30
-        ZIndex: =313
+        ZIndex: =31
 
     M1_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1201,7 +1181,7 @@
         Width: =740
         X: =M1_Panel.X + 30
         Y: =M1_Panel.Y + 95
-        ZIndex: =314
+        ZIndex: =32
 
     M1_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1212,7 +1192,7 @@
         Width: =250
         X: =M1_Panel.X + 30
         Y: =M1_Panel.Y + 120
-        ZIndex: =315
+        ZIndex: =33
 
     M1_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1221,7 +1201,7 @@
         Width: =40
         X: =M1_Panel.X + 35
         Y: =297
-        ZIndex: =316
+        ZIndex: =34
 
     M1_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1233,7 +1213,7 @@
         Width: =740
         X: =M1_Panel.X + 30
         Y: =M1_Panel.Y + 165
-        ZIndex: =317
+        ZIndex: =35
 
     M1_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1241,7 +1221,7 @@
         Width: =740
         X: =M1_Panel.X + 30
         Y: =M1_Panel.Y + 260
-        ZIndex: =318
+        ZIndex: =36
 
     M1_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1250,7 +1230,7 @@
         Width: =740
         X: =M1_Panel.X + 30
         Y: =M1_Panel.Y + 390
-        ZIndex: =319
+        ZIndex: =37
 
     M2_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1259,7 +1239,7 @@
         Width: =4
         X: =M2_Panel.X + 30
         Y: =M2_Panel.Y + 30
-        ZIndex: =320
+        ZIndex: =38
 
     M2_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1269,7 +1249,7 @@
         Width: =600
         X: =M2_Panel.X + 50
         Y: =M2_Panel.Y + 56
-        ZIndex: =321
+        ZIndex: =39
 
     M2_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1280,7 +1260,7 @@
         Width: =30
         X: =M2_Panel.X + 740
         Y: =M2_Panel.Y + 30
-        ZIndex: =322
+        ZIndex: =40
 
     M2_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1289,7 +1269,7 @@
         Width: =740
         X: =M2_Panel.X + 30
         Y: =M2_Panel.Y + 95
-        ZIndex: =323
+        ZIndex: =41
 
     M2_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1300,7 +1280,7 @@
         Width: =250
         X: =M2_Panel.X + 30
         Y: =M2_Panel.Y + 120
-        ZIndex: =324
+        ZIndex: =42
 
     M2_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1309,7 +1289,7 @@
         Width: =40
         X: =M2_Panel.X + 35
         Y: =297
-        ZIndex: =325
+        ZIndex: =43
 
     M2_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1321,7 +1301,7 @@
         Width: =740
         X: =M2_Panel.X + 30
         Y: =M2_Panel.Y + 165
-        ZIndex: =326
+        ZIndex: =44
 
     M2_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1329,7 +1309,7 @@
         Width: =740
         X: =M2_Panel.X + 30
         Y: =M2_Panel.Y + 260
-        ZIndex: =327
+        ZIndex: =45
 
     M2_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1338,7 +1318,7 @@
         Width: =740
         X: =M2_Panel.X + 30
         Y: =M2_Panel.Y + 390
-        ZIndex: =328
+        ZIndex: =46
 
     M3_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1347,7 +1327,7 @@
         Width: =4
         X: =M3_Panel.X + 30
         Y: =M3_Panel.Y + 30
-        ZIndex: =329
+        ZIndex: =47
 
     M3_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1357,7 +1337,7 @@
         Width: =600
         X: =M3_Panel.X + 50
         Y: =M3_Panel.Y + 56
-        ZIndex: =330
+        ZIndex: =48
 
     M3_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1368,7 +1348,7 @@
         Width: =30
         X: =M3_Panel.X + 740
         Y: =M3_Panel.Y + 30
-        ZIndex: =331
+        ZIndex: =49
 
     M3_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1377,7 +1357,7 @@
         Width: =740
         X: =M3_Panel.X + 30
         Y: =M3_Panel.Y + 95
-        ZIndex: =332
+        ZIndex: =50
 
     M3_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1388,7 +1368,7 @@
         Width: =250
         X: =M3_Panel.X + 30
         Y: =M3_Panel.Y + 120
-        ZIndex: =333
+        ZIndex: =51
 
     M3_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1397,7 +1377,7 @@
         Width: =40
         X: =M3_Panel.X + 35
         Y: =297
-        ZIndex: =334
+        ZIndex: =52
 
     M3_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1409,7 +1389,7 @@
         Width: =740
         X: =M3_Panel.X + 30
         Y: =M3_Panel.Y + 165
-        ZIndex: =335
+        ZIndex: =53
 
     M3_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1417,7 +1397,7 @@
         Width: =740
         X: =M3_Panel.X + 30
         Y: =M3_Panel.Y + 260
-        ZIndex: =336
+        ZIndex: =54
 
     M3_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1426,7 +1406,7 @@
         Width: =740
         X: =M3_Panel.X + 30
         Y: =M3_Panel.Y + 390
-        ZIndex: =337
+        ZIndex: =55
 
     M4_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1435,7 +1415,7 @@
         Width: =4
         X: =M4_Panel.X + 30
         Y: =M4_Panel.Y + 30
-        ZIndex: =338
+        ZIndex: =56
 
     M4_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1445,7 +1425,7 @@
         Width: =600
         X: =M4_Panel.X + 50
         Y: =M4_Panel.Y + 56
-        ZIndex: =339
+        ZIndex: =57
 
     M4_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1456,7 +1436,7 @@
         Width: =30
         X: =M4_Panel.X + 740
         Y: =M4_Panel.Y + 30
-        ZIndex: =340
+        ZIndex: =58
 
     M4_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1465,7 +1445,7 @@
         Width: =740
         X: =M4_Panel.X + 30
         Y: =M4_Panel.Y + 95
-        ZIndex: =341
+        ZIndex: =59
 
     M4_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1476,7 +1456,7 @@
         Width: =250
         X: =M4_Panel.X + 30
         Y: =M4_Panel.Y + 120
-        ZIndex: =342
+        ZIndex: =60
 
     M4_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1485,7 +1465,7 @@
         Width: =40
         X: =M4_Panel.X + 35
         Y: =297
-        ZIndex: =343
+        ZIndex: =61
 
     M4_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1497,7 +1477,7 @@
         Width: =740
         X: =M4_Panel.X + 30
         Y: =M4_Panel.Y + 165
-        ZIndex: =344
+        ZIndex: =62
 
     M4_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1505,7 +1485,7 @@
         Width: =740
         X: =M4_Panel.X + 30
         Y: =M4_Panel.Y + 260
-        ZIndex: =345
+        ZIndex: =63
 
     M4_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1514,7 +1494,7 @@
         Width: =740
         X: =M4_Panel.X + 30
         Y: =M4_Panel.Y + 390
-        ZIndex: =346
+        ZIndex: =64
 
     M5_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1523,7 +1503,7 @@
         Width: =4
         X: =M5_Panel.X + 30
         Y: =M5_Panel.Y + 30
-        ZIndex: =347
+        ZIndex: =65
 
     M5_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1533,7 +1513,7 @@
         Width: =600
         X: =M5_Panel.X + 50
         Y: =M5_Panel.Y + 56
-        ZIndex: =348
+        ZIndex: =66
 
     M5_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1544,7 +1524,7 @@
         Width: =30
         X: =M5_Panel.X + 740
         Y: =M5_Panel.Y + 30
-        ZIndex: =349
+        ZIndex: =67
 
     M5_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1553,7 +1533,7 @@
         Width: =740
         X: =M5_Panel.X + 30
         Y: =M5_Panel.Y + 95
-        ZIndex: =350
+        ZIndex: =68
 
     M5_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1564,7 +1544,7 @@
         Width: =250
         X: =M5_Panel.X + 30
         Y: =M5_Panel.Y + 120
-        ZIndex: =351
+        ZIndex: =69
 
     M5_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1573,7 +1553,7 @@
         Width: =40
         X: =M5_Panel.X + 35
         Y: =297
-        ZIndex: =352
+        ZIndex: =70
 
     M5_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1585,7 +1565,7 @@
         Width: =740
         X: =M5_Panel.X + 30
         Y: =M5_Panel.Y + 165
-        ZIndex: =353
+        ZIndex: =71
 
     M5_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1593,7 +1573,7 @@
         Width: =740
         X: =M5_Panel.X + 30
         Y: =M5_Panel.Y + 260
-        ZIndex: =354
+        ZIndex: =72
 
     M5_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1602,7 +1582,7 @@
         Width: =740
         X: =M5_Panel.X + 30
         Y: =M5_Panel.Y + 390
-        ZIndex: =355
+        ZIndex: =73
 
     M6_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1611,7 +1591,7 @@
         Width: =4
         X: =M6_Panel.X + 30
         Y: =M6_Panel.Y + 30
-        ZIndex: =356
+        ZIndex: =74
 
     M6_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1621,7 +1601,7 @@
         Width: =600
         X: =M6_Panel.X + 50
         Y: =M6_Panel.Y + 56
-        ZIndex: =357
+        ZIndex: =75
 
     M6_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1632,7 +1612,7 @@
         Width: =30
         X: =M6_Panel.X + 740
         Y: =M6_Panel.Y + 30
-        ZIndex: =358
+        ZIndex: =76
 
     M6_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1641,7 +1621,7 @@
         Width: =740
         X: =M6_Panel.X + 30
         Y: =M6_Panel.Y + 95
-        ZIndex: =359
+        ZIndex: =77
 
     M6_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1652,7 +1632,7 @@
         Width: =250
         X: =M6_Panel.X + 30
         Y: =M6_Panel.Y + 120
-        ZIndex: =360
+        ZIndex: =78
 
     M6_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1661,7 +1641,7 @@
         Width: =40
         X: =M6_Panel.X + 35
         Y: =297
-        ZIndex: =361
+        ZIndex: =79
 
     M6_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1673,7 +1653,7 @@
         Width: =740
         X: =M6_Panel.X + 30
         Y: =M6_Panel.Y + 165
-        ZIndex: =362
+        ZIndex: =80
 
     M6_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1681,7 +1661,7 @@
         Width: =740
         X: =M6_Panel.X + 30
         Y: =M6_Panel.Y + 260
-        ZIndex: =363
+        ZIndex: =81
 
     M6_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1690,7 +1670,7 @@
         Width: =740
         X: =M6_Panel.X + 30
         Y: =M6_Panel.Y + 390
-        ZIndex: =364
+        ZIndex: =82
 
     M7_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1699,7 +1679,7 @@
         Width: =4
         X: =M7_Panel.X + 30
         Y: =M7_Panel.Y + 30
-        ZIndex: =365
+        ZIndex: =83
 
     M7_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1709,7 +1689,7 @@
         Width: =600
         X: =M7_Panel.X + 50
         Y: =M7_Panel.Y + 56
-        ZIndex: =366
+        ZIndex: =84
 
     M7_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1720,7 +1700,7 @@
         Width: =30
         X: =M7_Panel.X + 740
         Y: =M7_Panel.Y + 30
-        ZIndex: =367
+        ZIndex: =85
 
     M7_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1729,7 +1709,7 @@
         Width: =740
         X: =M7_Panel.X + 30
         Y: =M7_Panel.Y + 95
-        ZIndex: =368
+        ZIndex: =86
 
     M7_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1740,7 +1720,7 @@
         Width: =250
         X: =M7_Panel.X + 30
         Y: =M7_Panel.Y + 120
-        ZIndex: =369
+        ZIndex: =87
 
     M7_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1749,7 +1729,7 @@
         Width: =40
         X: =M7_Panel.X + 35
         Y: =297
-        ZIndex: =370
+        ZIndex: =88
 
     M7_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1761,7 +1741,7 @@
         Width: =740
         X: =M7_Panel.X + 30
         Y: =M7_Panel.Y + 165
-        ZIndex: =371
+        ZIndex: =89
 
     M7_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1769,7 +1749,7 @@
         Width: =740
         X: =M7_Panel.X + 30
         Y: =M7_Panel.Y + 260
-        ZIndex: =372
+        ZIndex: =90
 
     M7_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1778,7 +1758,7 @@
         Width: =740
         X: =M7_Panel.X + 30
         Y: =M7_Panel.Y + 390
-        ZIndex: =373
+        ZIndex: =91
 
     M8_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1787,7 +1767,7 @@
         Width: =4
         X: =M8_Panel.X + 30
         Y: =M8_Panel.Y + 30
-        ZIndex: =374
+        ZIndex: =92
 
     M8_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1797,7 +1777,7 @@
         Width: =600
         X: =M8_Panel.X + 50
         Y: =M8_Panel.Y + 56
-        ZIndex: =375
+        ZIndex: =93
 
     M8_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1808,7 +1788,7 @@
         Width: =30
         X: =M8_Panel.X + 740
         Y: =M8_Panel.Y + 30
-        ZIndex: =376
+        ZIndex: =94
 
     M8_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1817,7 +1797,7 @@
         Width: =740
         X: =M8_Panel.X + 30
         Y: =M8_Panel.Y + 95
-        ZIndex: =377
+        ZIndex: =95
 
     M8_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1828,7 +1808,7 @@
         Width: =250
         X: =M8_Panel.X + 30
         Y: =M8_Panel.Y + 120
-        ZIndex: =378
+        ZIndex: =96
 
     M8_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1837,7 +1817,7 @@
         Width: =40
         X: =M8_Panel.X + 35
         Y: =297
-        ZIndex: =379
+        ZIndex: =97
 
     M8_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1849,7 +1829,7 @@
         Width: =740
         X: =M8_Panel.X + 30
         Y: =M8_Panel.Y + 165
-        ZIndex: =380
+        ZIndex: =98
 
     M8_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1857,7 +1837,7 @@
         Width: =740
         X: =M8_Panel.X + 30
         Y: =M8_Panel.Y + 260
-        ZIndex: =381
+        ZIndex: =99
 
     M8_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1866,7 +1846,7 @@
         Width: =740
         X: =M8_Panel.X + 30
         Y: =M8_Panel.Y + 390
-        ZIndex: =382
+        ZIndex: =100
 
     M9_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1875,7 +1855,7 @@
         Width: =4
         X: =M9_Panel.X + 30
         Y: =M9_Panel.Y + 30
-        ZIndex: =383
+        ZIndex: =101
 
     M9_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1885,7 +1865,7 @@
         Width: =600
         X: =M9_Panel.X + 50
         Y: =M9_Panel.Y + 56
-        ZIndex: =384
+        ZIndex: =102
 
     M9_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1896,7 +1876,7 @@
         Width: =30
         X: =M9_Panel.X + 740
         Y: =M9_Panel.Y + 30
-        ZIndex: =385
+        ZIndex: =103
 
     M9_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1905,7 +1885,7 @@
         Width: =740
         X: =M9_Panel.X + 30
         Y: =M9_Panel.Y + 95
-        ZIndex: =386
+        ZIndex: =104
 
     M9_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -1916,7 +1896,7 @@
         Width: =250
         X: =M9_Panel.X + 30
         Y: =M9_Panel.Y + 120
-        ZIndex: =387
+        ZIndex: =105
 
     M9_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1925,7 +1905,7 @@
         Width: =40
         X: =M9_Panel.X + 35
         Y: =297
-        ZIndex: =388
+        ZIndex: =106
 
     M9_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -1937,7 +1917,7 @@
         Width: =740
         X: =M9_Panel.X + 30
         Y: =M9_Panel.Y + 165
-        ZIndex: =389
+        ZIndex: =107
 
     M9_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -1945,7 +1925,7 @@
         Width: =740
         X: =M9_Panel.X + 30
         Y: =M9_Panel.Y + 260
-        ZIndex: =390
+        ZIndex: =108
 
     M9_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1954,7 +1934,7 @@
         Width: =740
         X: =M9_Panel.X + 30
         Y: =M9_Panel.Y + 390
-        ZIndex: =391
+        ZIndex: =109
 
     M10_HeaderAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -1963,7 +1943,7 @@
         Width: =4
         X: =M10_Panel.X + 30
         Y: =M10_Panel.Y + 30
-        ZIndex: =392
+        ZIndex: =110
 
     M10_Subtitle As label:
         Color: =RGBA(120, 140, 170, 1)
@@ -1973,7 +1953,7 @@
         Width: =600
         X: =M10_Panel.X + 50
         Y: =M10_Panel.Y + 56
-        ZIndex: =393
+        ZIndex: =111
 
     M10_CloseX As icon.Cancel:
         Color: =RGBA(0, 58, 112, 1)
@@ -1984,7 +1964,7 @@
         Width: =30
         X: =M10_Panel.X + 740
         Y: =M10_Panel.Y + 30
-        ZIndex: =394
+        ZIndex: =112
 
     M10_Divider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -1993,7 +1973,7 @@
         Width: =740
         X: =M10_Panel.X + 30
         Y: =M10_Panel.Y + 95
-        ZIndex: =395
+        ZIndex: =113
 
     M10_SectionLabel As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2004,7 +1984,7 @@
         Width: =250
         X: =M10_Panel.X + 30
         Y: =M10_Panel.Y + 120
-        ZIndex: =396
+        ZIndex: =114
 
     M10_SectionAccent As rectangle:
         Fill: =RGBA(255, 213, 0, 1)
@@ -2013,7 +1993,7 @@
         Width: =40
         X: =M10_Panel.X + 35
         Y: =297
-        ZIndex: =397
+        ZIndex: =115
 
     M10_Description As label:
         Color: =RGBA(50, 50, 50, 1)
@@ -2025,7 +2005,7 @@
         Width: =740
         X: =M10_Panel.X + 30
         Y: =M10_Panel.Y + 165
-        ZIndex: =398
+        ZIndex: =116
 
     M10_FeatureBg As rectangle:
         Fill: =RGBA(240, 245, 255, 1)
@@ -2033,7 +2013,7 @@
         Width: =740
         X: =M10_Panel.X + 30
         Y: =M10_Panel.Y + 260
-        ZIndex: =399
+        ZIndex: =117
 
     M10_FooterDivider As rectangle:
         Fill: =RGBA(230, 235, 245, 1)
@@ -2042,7 +2022,7 @@
         Width: =740
         X: =M10_Panel.X + 30
         Y: =M10_Panel.Y + 390
-        ZIndex: =400
+        ZIndex: =118
 
     M1_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2053,7 +2033,7 @@
         Width: =600
         X: =M1_Panel.X + 50
         Y: =M1_Panel.Y + 26
-        ZIndex: =401
+        ZIndex: =119
 
     M2_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2064,7 +2044,7 @@
         Width: =600
         X: =M2_Panel.X + 50
         Y: =M2_Panel.Y + 26
-        ZIndex: =402
+        ZIndex: =120
 
     M3_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2075,7 +2055,7 @@
         Width: =600
         X: =M3_Panel.X + 50
         Y: =M3_Panel.Y + 26
-        ZIndex: =403
+        ZIndex: =121
 
     M4_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2086,7 +2066,7 @@
         Width: =600
         X: =M4_Panel.X + 50
         Y: =M4_Panel.Y + 26
-        ZIndex: =404
+        ZIndex: =122
 
     M5_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2097,7 +2077,7 @@
         Width: =600
         X: =M5_Panel.X + 50
         Y: =M5_Panel.Y + 26
-        ZIndex: =405
+        ZIndex: =123
 
     M6_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2108,7 +2088,7 @@
         Width: =600
         X: =M6_Panel.X + 50
         Y: =M6_Panel.Y + 26
-        ZIndex: =406
+        ZIndex: =124
 
     M7_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2119,7 +2099,7 @@
         Width: =600
         X: =M7_Panel.X + 50
         Y: =M7_Panel.Y + 26
-        ZIndex: =407
+        ZIndex: =125
 
     M8_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2130,7 +2110,7 @@
         Width: =600
         X: =M8_Panel.X + 50
         Y: =M8_Panel.Y + 26
-        ZIndex: =408
+        ZIndex: =126
 
     M9_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2141,7 +2121,7 @@
         Width: =600
         X: =M9_Panel.X + 50
         Y: =M9_Panel.Y + 26
-        ZIndex: =409
+        ZIndex: =127
 
     M10_Title As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2152,7 +2132,7 @@
         Width: =600
         X: =M10_Panel.X + 50
         Y: =M10_Panel.Y + 26
-        ZIndex: =410
+        ZIndex: =128
 
     M1_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2160,7 +2140,7 @@
         Width: =4
         X: =M1_Panel.X + 30
         Y: =M1_Panel.Y + 260
-        ZIndex: =411
+        ZIndex: =129
 
     M1_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2170,7 +2150,7 @@
         Width: =40
         X: =M1_Panel.X + 55
         Y: =430
-        ZIndex: =412
+        ZIndex: =130
 
     M1_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2181,7 +2161,7 @@
         Width: =600
         X: =M1_Panel.X + 33
         Y: =360
-        ZIndex: =413
+        ZIndex: =131
 
     M1_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2191,7 +2171,7 @@
         Width: =600
         X: =M1_Panel.X + 111
         Y: =428
-        ZIndex: =414
+        ZIndex: =132
 
     M1_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2201,7 +2181,7 @@
         Width: =28
         X: =M1_Panel.X + 30
         Y: =M1_Panel.Y + 415
-        ZIndex: =415
+        ZIndex: =133
 
     M1_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2211,7 +2191,7 @@
         Width: =400
         X: =M1_Panel.X + 65
         Y: =M1_Panel.Y + 418
-        ZIndex: =416
+        ZIndex: =134
 
     M1_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2233,7 +2213,7 @@
         Width: =120
         X: =M1_Panel.X + 510
         Y: =M1_Panel.Y + 410
-        ZIndex: =417
+        ZIndex: =135
 
     M2_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2241,7 +2221,7 @@
         Width: =4
         X: =M2_Panel.X + 30
         Y: =M2_Panel.Y + 260
-        ZIndex: =418
+        ZIndex: =136
 
     M2_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2251,7 +2231,7 @@
         Width: =40
         X: =M2_Panel.X + 55
         Y: =430
-        ZIndex: =419
+        ZIndex: =137
 
     M2_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2262,7 +2242,7 @@
         Width: =600
         X: =M2_Panel.X + 33
         Y: =360
-        ZIndex: =420
+        ZIndex: =138
 
     M2_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2272,7 +2252,7 @@
         Width: =600
         X: =M2_Panel.X + 111
         Y: =428
-        ZIndex: =421
+        ZIndex: =139
 
     M2_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2282,7 +2262,7 @@
         Width: =28
         X: =M2_Panel.X + 30
         Y: =M2_Panel.Y + 415
-        ZIndex: =422
+        ZIndex: =140
 
     M2_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2292,7 +2272,7 @@
         Width: =400
         X: =M2_Panel.X + 65
         Y: =M2_Panel.Y + 418
-        ZIndex: =423
+        ZIndex: =141
 
     M2_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2314,7 +2294,7 @@
         Width: =120
         X: =M2_Panel.X + 510
         Y: =M2_Panel.Y + 410
-        ZIndex: =424
+        ZIndex: =142
 
     M3_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2322,7 +2302,7 @@
         Width: =4
         X: =M3_Panel.X + 30
         Y: =M3_Panel.Y + 260
-        ZIndex: =425
+        ZIndex: =143
 
     M3_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2332,7 +2312,7 @@
         Width: =40
         X: =M3_Panel.X + 55
         Y: =430
-        ZIndex: =426
+        ZIndex: =144
 
     M3_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2343,7 +2323,7 @@
         Width: =600
         X: =M3_Panel.X + 33
         Y: =360
-        ZIndex: =427
+        ZIndex: =145
 
     M3_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2353,7 +2333,7 @@
         Width: =600
         X: =M3_Panel.X + 111
         Y: =428
-        ZIndex: =428
+        ZIndex: =146
 
     M3_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2363,7 +2343,7 @@
         Width: =28
         X: =M3_Panel.X + 30
         Y: =M3_Panel.Y + 415
-        ZIndex: =429
+        ZIndex: =147
 
     M3_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2373,7 +2353,7 @@
         Width: =400
         X: =M3_Panel.X + 65
         Y: =M3_Panel.Y + 418
-        ZIndex: =430
+        ZIndex: =148
 
     M3_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2395,7 +2375,7 @@
         Width: =120
         X: =M3_Panel.X + 510
         Y: =M3_Panel.Y + 410
-        ZIndex: =431
+        ZIndex: =149
 
     M4_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2403,7 +2383,7 @@
         Width: =4
         X: =M4_Panel.X + 30
         Y: =M4_Panel.Y + 260
-        ZIndex: =432
+        ZIndex: =150
 
     M4_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2413,7 +2393,7 @@
         Width: =40
         X: =M4_Panel.X + 55
         Y: =430
-        ZIndex: =433
+        ZIndex: =151
 
     M4_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2424,7 +2404,7 @@
         Width: =600
         X: =M4_Panel.X + 33
         Y: =360
-        ZIndex: =434
+        ZIndex: =152
 
     M4_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2434,7 +2414,7 @@
         Width: =600
         X: =M4_Panel.X + 111
         Y: =428
-        ZIndex: =435
+        ZIndex: =153
 
     M4_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2444,7 +2424,7 @@
         Width: =28
         X: =M4_Panel.X + 30
         Y: =M4_Panel.Y + 415
-        ZIndex: =436
+        ZIndex: =154
 
     M4_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2454,7 +2434,7 @@
         Width: =400
         X: =M4_Panel.X + 65
         Y: =M4_Panel.Y + 418
-        ZIndex: =437
+        ZIndex: =155
 
     M4_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2476,7 +2456,7 @@
         Width: =120
         X: =M4_Panel.X + 510
         Y: =M4_Panel.Y + 410
-        ZIndex: =438
+        ZIndex: =156
 
     M5_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2484,7 +2464,7 @@
         Width: =4
         X: =M5_Panel.X + 30
         Y: =M5_Panel.Y + 260
-        ZIndex: =439
+        ZIndex: =157
 
     M5_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2494,7 +2474,7 @@
         Width: =40
         X: =M5_Panel.X + 55
         Y: =430
-        ZIndex: =440
+        ZIndex: =158
 
     M5_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2505,7 +2485,7 @@
         Width: =600
         X: =M5_Panel.X + 33
         Y: =360
-        ZIndex: =441
+        ZIndex: =159
 
     M5_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2515,7 +2495,7 @@
         Width: =600
         X: =M5_Panel.X + 111
         Y: =428
-        ZIndex: =442
+        ZIndex: =160
 
     M5_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2525,7 +2505,7 @@
         Width: =28
         X: =M5_Panel.X + 30
         Y: =M5_Panel.Y + 415
-        ZIndex: =443
+        ZIndex: =161
 
     M5_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2535,7 +2515,7 @@
         Width: =400
         X: =M5_Panel.X + 65
         Y: =M5_Panel.Y + 418
-        ZIndex: =444
+        ZIndex: =162
 
     M5_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2557,7 +2537,7 @@
         Width: =120
         X: =M5_Panel.X + 510
         Y: =M5_Panel.Y + 410
-        ZIndex: =445
+        ZIndex: =163
 
     M6_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2565,7 +2545,7 @@
         Width: =4
         X: =M6_Panel.X + 30
         Y: =M6_Panel.Y + 260
-        ZIndex: =446
+        ZIndex: =164
 
     M6_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2575,7 +2555,7 @@
         Width: =40
         X: =M6_Panel.X + 55
         Y: =430
-        ZIndex: =447
+        ZIndex: =165
 
     M6_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2586,7 +2566,7 @@
         Width: =600
         X: =M6_Panel.X + 33
         Y: =360
-        ZIndex: =448
+        ZIndex: =166
 
     M6_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2596,7 +2576,7 @@
         Width: =600
         X: =M6_Panel.X + 111
         Y: =428
-        ZIndex: =449
+        ZIndex: =167
 
     M6_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2606,7 +2586,7 @@
         Width: =28
         X: =M6_Panel.X + 30
         Y: =M6_Panel.Y + 415
-        ZIndex: =450
+        ZIndex: =168
 
     M6_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2616,7 +2596,7 @@
         Width: =400
         X: =M6_Panel.X + 65
         Y: =M6_Panel.Y + 418
-        ZIndex: =451
+        ZIndex: =169
 
     M6_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2638,7 +2618,7 @@
         Width: =120
         X: =M6_Panel.X + 510
         Y: =M6_Panel.Y + 410
-        ZIndex: =452
+        ZIndex: =170
 
     M7_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2646,7 +2626,7 @@
         Width: =4
         X: =M7_Panel.X + 30
         Y: =M7_Panel.Y + 260
-        ZIndex: =453
+        ZIndex: =171
 
     M7_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2656,7 +2636,7 @@
         Width: =40
         X: =M7_Panel.X + 55
         Y: =430
-        ZIndex: =454
+        ZIndex: =172
 
     M7_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2667,7 +2647,7 @@
         Width: =600
         X: =M7_Panel.X + 33
         Y: =360
-        ZIndex: =455
+        ZIndex: =173
 
     M7_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2677,7 +2657,7 @@
         Width: =600
         X: =M7_Panel.X + 111
         Y: =428
-        ZIndex: =456
+        ZIndex: =174
 
     M7_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2687,7 +2667,7 @@
         Width: =28
         X: =M7_Panel.X + 30
         Y: =M7_Panel.Y + 415
-        ZIndex: =457
+        ZIndex: =175
 
     M7_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2697,7 +2677,7 @@
         Width: =400
         X: =M7_Panel.X + 65
         Y: =M7_Panel.Y + 418
-        ZIndex: =458
+        ZIndex: =176
 
     M7_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2719,7 +2699,7 @@
         Width: =120
         X: =M7_Panel.X + 510
         Y: =M7_Panel.Y + 410
-        ZIndex: =459
+        ZIndex: =177
 
     M8_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2727,7 +2707,7 @@
         Width: =4
         X: =M8_Panel.X + 30
         Y: =M8_Panel.Y + 260
-        ZIndex: =460
+        ZIndex: =178
 
     M8_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2737,7 +2717,7 @@
         Width: =40
         X: =M8_Panel.X + 55
         Y: =430
-        ZIndex: =461
+        ZIndex: =179
 
     M8_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2748,7 +2728,7 @@
         Width: =600
         X: =M8_Panel.X + 33
         Y: =360
-        ZIndex: =462
+        ZIndex: =180
 
     M8_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2758,7 +2738,7 @@
         Width: =600
         X: =M8_Panel.X + 111
         Y: =428
-        ZIndex: =463
+        ZIndex: =181
 
     M8_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2768,7 +2748,7 @@
         Width: =28
         X: =M8_Panel.X + 30
         Y: =M8_Panel.Y + 415
-        ZIndex: =464
+        ZIndex: =182
 
     M8_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2778,7 +2758,7 @@
         Width: =400
         X: =M8_Panel.X + 65
         Y: =M8_Panel.Y + 418
-        ZIndex: =465
+        ZIndex: =183
 
     M8_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2800,7 +2780,7 @@
         Width: =120
         X: =M8_Panel.X + 510
         Y: =M8_Panel.Y + 410
-        ZIndex: =466
+        ZIndex: =184
 
     M9_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2808,7 +2788,7 @@
         Width: =4
         X: =M9_Panel.X + 30
         Y: =M9_Panel.Y + 260
-        ZIndex: =467
+        ZIndex: =185
 
     M9_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2818,7 +2798,7 @@
         Width: =40
         X: =M9_Panel.X + 55
         Y: =430
-        ZIndex: =468
+        ZIndex: =186
 
     M9_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2829,7 +2809,7 @@
         Width: =600
         X: =M9_Panel.X + 33
         Y: =360
-        ZIndex: =469
+        ZIndex: =187
 
     M9_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2839,7 +2819,7 @@
         Width: =600
         X: =M9_Panel.X + 111
         Y: =428
-        ZIndex: =470
+        ZIndex: =188
 
     M9_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2849,7 +2829,7 @@
         Width: =28
         X: =M9_Panel.X + 30
         Y: =M9_Panel.Y + 415
-        ZIndex: =471
+        ZIndex: =189
 
     M9_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2859,7 +2839,7 @@
         Width: =400
         X: =M9_Panel.X + 65
         Y: =M9_Panel.Y + 418
-        ZIndex: =472
+        ZIndex: =190
 
     M9_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2881,7 +2861,7 @@
         Width: =120
         X: =M9_Panel.X + 510
         Y: =M9_Panel.Y + 410
-        ZIndex: =473
+        ZIndex: =191
 
     M10_FeatureBorder As rectangle:
         Fill: =RGBA(0, 58, 112, 1)
@@ -2889,7 +2869,7 @@
         Width: =4
         X: =M10_Panel.X + 30
         Y: =M10_Panel.Y + 260
-        ZIndex: =474
+        ZIndex: =192
 
     M10_FeatureIcon As icon.Check:
         Color: =RGBA(0, 58, 112, 1)
@@ -2899,7 +2879,7 @@
         Width: =40
         X: =M10_Panel.X + 55
         Y: =430
-        ZIndex: =475
+        ZIndex: =193
 
     M10_FeatureTitle As label:
         Color: =RGBA(0, 58, 112, 1)
@@ -2910,7 +2890,7 @@
         Width: =600
         X: =M10_Panel.X + 33
         Y: =360
-        ZIndex: =476
+        ZIndex: =194
 
     M10_FeatureDesc As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2920,7 +2900,7 @@
         Width: =600
         X: =M10_Panel.X + 111
         Y: =428
-        ZIndex: =477
+        ZIndex: =195
 
     M10_HelpIcon As icon.QuestionMark:
         Color: =RGBA(0, 58, 112, 1)
@@ -2930,7 +2910,7 @@
         Width: =28
         X: =M10_Panel.X + 30
         Y: =M10_Panel.Y + 415
-        ZIndex: =478
+        ZIndex: =196
 
     M10_HelpText As label:
         Color: =RGBA(80, 80, 80, 1)
@@ -2940,7 +2920,7 @@
         Width: =400
         X: =M10_Panel.X + 65
         Y: =M10_Panel.Y + 418
-        ZIndex: =479
+        ZIndex: =197
 
     M10_CancelBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2962,7 +2942,7 @@
         Width: =120
         X: =M10_Panel.X + 510
         Y: =M10_Panel.Y + 410
-        ZIndex: =480
+        ZIndex: =198
 
     M1_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -2985,7 +2965,7 @@
         Width: =130
         X: =M1_Panel.X + 650
         Y: =M1_Panel.Y + 410
-        ZIndex: =481
+        ZIndex: =199
 
     M2_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3008,7 +2988,7 @@
         Width: =130
         X: =M2_Panel.X + 650
         Y: =M2_Panel.Y + 410
-        ZIndex: =482
+        ZIndex: =200
 
     M3_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3031,7 +3011,7 @@
         Width: =130
         X: =M3_Panel.X + 650
         Y: =M3_Panel.Y + 410
-        ZIndex: =483
+        ZIndex: =201
 
     M4_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3054,7 +3034,7 @@
         Width: =130
         X: =M4_Panel.X + 650
         Y: =M4_Panel.Y + 410
-        ZIndex: =484
+        ZIndex: =202
 
     M5_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3077,7 +3057,7 @@
         Width: =130
         X: =M5_Panel.X + 650
         Y: =M5_Panel.Y + 410
-        ZIndex: =485
+        ZIndex: =203
 
     M6_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3100,7 +3080,7 @@
         Width: =130
         X: =M6_Panel.X + 650
         Y: =M6_Panel.Y + 410
-        ZIndex: =486
+        ZIndex: =204
 
     M7_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3123,7 +3103,7 @@
         Width: =130
         X: =M7_Panel.X + 650
         Y: =M7_Panel.Y + 410
-        ZIndex: =487
+        ZIndex: =205
 
     M8_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3146,7 +3126,7 @@
         Width: =130
         X: =M8_Panel.X + 650
         Y: =M8_Panel.Y + 410
-        ZIndex: =488
+        ZIndex: =206
 
     M9_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3169,7 +3149,7 @@
         Width: =130
         X: =M9_Panel.X + 650
         Y: =M9_Panel.Y + 410
-        ZIndex: =489
+        ZIndex: =207
 
     M10_CloseBtn As button:
         BorderColor: =RGBA(0, 58, 112, 1)
@@ -3192,5 +3172,58 @@
         Width: =130
         X: =M10_Panel.X + 650
         Y: =M10_Panel.Y + 410
-        ZIndex: =490
+        ZIndex: =208
+
+    CT_Icon3_7 As icon:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =25
+        Icon: =Icon.Home
+        OnSelect: =Navigate(introduccion)
+        Width: =28
+        X: =54
+        Y: =92
+        ZIndex: =209
+
+    Icon4_10 As icon:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =25
+        Icon: =Icon.BackArrow
+        OnSelect: =
+        Width: =40
+        X: =10
+        Y: =93
+        ZIndex: =210
+
+    ButtonCanvas1_23 As Botón:
+        AcceptsFocus: =true
+        AccessibleLabel: =""
+        Align: =""
+        Appearance: ='ButtonCanvas.Appearance'.Transparent
+        BasePaletteColor: =
+        BorderColor: =
+        BorderStyle: =""
+        ContentLanguage: =""
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =31
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =
+        TabIndex: =0
+        Text: =
+        Tooltip: =""
+        VerticalAlign: =""
+        Visible: =true
+        Width: =97
+        X: =886
+        Y: =33
+        ZIndex: =211
 
