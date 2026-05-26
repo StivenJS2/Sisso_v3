@@ -19,10 +19,21 @@
 
             Image1_4 As image:
                 Height: =89
-                Image: =javerXsisso
+                Image: =JavexSisso
                 ImagePosition: =ImagePosition.Stretch
                 Width: =232
                 ZIndex: =1
+
+            LblNavBienestar_16 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                OnSelect: =
+                Size: =14
+                Text: ="Servicios"
+                Width: =97
+                X: =886
+                Y: =25
+                ZIndex: =2
 
             Rectangle4_3 As rectangle:
                 Fill: =RGBA(0, 0, 0, 0.02)
@@ -30,7 +41,7 @@
                 Width: =1300
                 X: =27
                 Y: =152
-                ZIndex: =2
+                ZIndex: =3
 
             CH_LblFormTitle As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -40,7 +51,7 @@
                 Width: =600
                 X: =66
                 Y: =161
-                ZIndex: =3
+                ZIndex: =4
 
             CH_RectTitleLine As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -48,7 +59,7 @@
                 Width: =60
                 X: =73
                 Y: =200
-                ZIndex: =4
+                ZIndex: =5
 
             CH_LblRequiredHint As label:
                 Color: =RGBA(120, 120, 120, 1)
@@ -58,7 +69,7 @@
                 Width: =500
                 X: =73
                 Y: =215
-                ZIndex: =5
+                ZIndex: =6
 
             CH_LblSection1 As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -68,7 +79,7 @@
                 Width: =500
                 X: =73
                 Y: =260
-                ZIndex: =6
+                ZIndex: =7
 
             CH_CardBg_Nombres As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -78,7 +89,7 @@
                 Width: =590
                 X: =73
                 Y: =310
-                ZIndex: =7
+                ZIndex: =8
 
             CH_Icon_Nombres As icon.People:
                 Color: =RGBA(0, 58, 112, 1)
@@ -87,7 +98,7 @@
                 Width: =30
                 X: =93
                 Y: =322
-                ZIndex: =8
+                ZIndex: =9
 
             CH_Lbl_Nombres As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -97,7 +108,7 @@
                 Width: =300
                 X: =130
                 Y: =315
-                ZIndex: =9
+                ZIndex: =10
 
             CH_Inp_Nombres As modernTextInput:
                 Appearance: =Appearance.FilledLighter
@@ -117,7 +128,7 @@
                 Width: =540
                 X: =93
                 Y: =370
-                ZIndex: =10
+                ZIndex: =11
 
             CH_CardBg_Correo As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -127,7 +138,7 @@
                 Width: =590
                 X: =693
                 Y: =310
-                ZIndex: =11
+                ZIndex: =12
 
             CH_Icon_Correo As icon.Mail:
                 Color: =RGBA(0, 58, 112, 1)
@@ -136,7 +147,7 @@
                 Width: =30
                 X: =713
                 Y: =322
-                ZIndex: =12
+                ZIndex: =13
 
             CH_Lbl_Correo As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -146,7 +157,7 @@
                 Width: =300
                 X: =750
                 Y: =315
-                ZIndex: =13
+                ZIndex: =14
 
             CH_Inp_Correo As modernTextInput:
                 Appearance: =Appearance.FilledLighter
@@ -166,7 +177,7 @@
                 Width: =540
                 X: =713
                 Y: =370
-                ZIndex: =14
+                ZIndex: =15
 
             CH_LblSection2 As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -176,7 +187,7 @@
                 Width: =500
                 X: =73
                 Y: =470
-                ZIndex: =15
+                ZIndex: =16
 
             CH_RectSectionLine2 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -184,7 +195,7 @@
                 Width: =1210
                 X: =73
                 Y: =455
-                ZIndex: =16
+                ZIndex: =17
 
             CH_CardBg_TipoEq As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -194,7 +205,7 @@
                 Width: =1210
                 X: =73
                 Y: =520
-                ZIndex: =17
+                ZIndex: =18
 
             CH_Icon_TipoEq As icon.Computer:
                 Color: =RGBA(0, 58, 112, 1)
@@ -203,7 +214,7 @@
                 Width: =30
                 X: =93
                 Y: =532
-                ZIndex: =18
+                ZIndex: =19
 
             CH_Lbl_TipoEq As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -213,7 +224,7 @@
                 Width: =300
                 X: =130
                 Y: =528
-                ZIndex: =19
+                ZIndex: =20
 
             CH_Cmb_TipoEq As combobox:
                 BorderColor: =RGBA(210, 210, 210, 1)
@@ -230,7 +241,7 @@
                 Width: =1160
                 X: =93
                 Y: =585
-                ZIndex: =20
+                ZIndex: =21
 
             CH_CardBg_Marca As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -240,7 +251,7 @@
                 Width: =590
                 X: =73
                 Y: =680
-                ZIndex: =21
+                ZIndex: =22
 
             CH_Icon_Marca As icon.Tag:
                 Color: =RGBA(0, 58, 112, 1)
@@ -249,7 +260,7 @@
                 Width: =30
                 X: =93
                 Y: =692
-                ZIndex: =22
+                ZIndex: =23
 
             CH_Lbl_Marca As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -259,7 +270,7 @@
                 Width: =300
                 X: =130
                 Y: =688
-                ZIndex: =23
+                ZIndex: =24
 
             CH_Inp_Marca As modernTextInput:
                 Appearance: =Appearance.FilledLighter
@@ -280,7 +291,7 @@
                 Width: =540
                 X: =93
                 Y: =740
-                ZIndex: =24
+                ZIndex: =25
 
             CH_CardBg_Cant As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -290,7 +301,7 @@
                 Width: =590
                 X: =693
                 Y: =680
-                ZIndex: =25
+                ZIndex: =26
 
             CH_Icon_Cant As icon.Calculator:
                 Color: =RGBA(0, 58, 112, 1)
@@ -299,7 +310,7 @@
                 Width: =30
                 X: =713
                 Y: =692
-                ZIndex: =26
+                ZIndex: =27
 
             CH_Lbl_Cant As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -309,7 +320,7 @@
                 Width: =300
                 X: =750
                 Y: =688
-                ZIndex: =27
+                ZIndex: =28
 
             CH_Inp_Cant As modernTextInput:
                 Appearance: =Appearance.FilledLighter
@@ -329,7 +340,7 @@
                 Width: =540
                 X: =713
                 Y: =740
-                ZIndex: =28
+                ZIndex: =29
 
             CH_CardBg_Justif As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -339,7 +350,7 @@
                 Width: =1210
                 X: =73
                 Y: =820
-                ZIndex: =29
+                ZIndex: =30
 
             CH_Icon_Justif As icon.Edit:
                 Color: =RGBA(0, 58, 112, 1)
@@ -348,7 +359,7 @@
                 Width: =30
                 X: =93
                 Y: =832
-                ZIndex: =30
+                ZIndex: =31
 
             CH_Lbl_Justif As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -358,7 +369,7 @@
                 Width: =500
                 X: =130
                 Y: =825
-                ZIndex: =31
+                ZIndex: =32
 
             CH_Inp_Justif As modernTextInput:
                 Appearance: =Appearance.FilledLighter
@@ -378,7 +389,7 @@
                 Width: =1160
                 X: =93
                 Y: =880
-                ZIndex: =32
+                ZIndex: =33
 
             CH_LblSection3 As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -388,7 +399,7 @@
                 Width: =500
                 X: =73
                 Y: =1040
-                ZIndex: =33
+                ZIndex: =34
 
             CH_RectSectionLine3 As rectangle:
                 Fill: =RGBA(255, 213, 0, 1)
@@ -396,7 +407,7 @@
                 Width: =1210
                 X: =73
                 Y: =1030
-                ZIndex: =34
+                ZIndex: =35
 
             CH_CardBg_Aprobador As rectangle:
                 BorderColor: =RGBA(214, 221, 224, 1)
@@ -406,7 +417,7 @@
                 Width: =1210
                 X: =73
                 Y: =1090
-                ZIndex: =35
+                ZIndex: =36
 
             CH_Icon_Aprobador As icon.People:
                 Color: =RGBA(0, 58, 112, 1)
@@ -415,7 +426,7 @@
                 Width: =30
                 X: =93
                 Y: =1102
-                ZIndex: =36
+                ZIndex: =37
 
             CH_Lbl_Aprobador As label:
                 Color: =RGBA(0, 58, 112, 1)
@@ -425,7 +436,7 @@
                 Width: =500
                 X: =130
                 Y: =1105
-                ZIndex: =37
+                ZIndex: =38
 
             CH_Btn_Aprobador As button:
                 BorderColor: =If(IsBlank(locSelectedAprobadorCH), RGBA(210, 210, 210, 1), RGBA(184, 153, 0, 1))
@@ -445,7 +456,7 @@
                 Width: =1160
                 X: =93
                 Y: =1170
-                ZIndex: =38
+                ZIndex: =39
 
             CH_BtnSubmit As button:
                 BorderColor: =RGBA(0, 58, 112, 1)
@@ -462,7 +473,7 @@
                 Width: =320
                 X: =523
                 Y: =1272
-                ZIndex: =39
+                ZIndex: =40
 
             ButtonCanvas2_9 As Botón:
                 AcceptsFocus: =true
@@ -486,7 +497,7 @@
                 IconRotation: =0
                 IconStyle: ="Outline"
                 Layout: ="Icon before"
-                OnSelect: =Navigate(introduccion)
+                OnSelect: =
                 TabIndex: =0
                 Text: =
                 Tooltip: =""
@@ -495,7 +506,7 @@
                 Width: =96
                 X: =885
                 Y: =23
-                ZIndex: =40
+                ZIndex: =41
 
             ButtonCanvas2_10 As Botón:
                 AcceptsFocus: =true
@@ -528,7 +539,7 @@
                 Width: =163
                 X: =1010
                 Y: =21
-                ZIndex: =41
+                ZIndex: =42
 
             ButtonCanvas2_11 As Botón:
                 AcceptsFocus: =true
@@ -562,7 +573,7 @@
                 Width: =96
                 X: =1182
                 Y: =26
-                ZIndex: =42
+                ZIndex: =43
 
             ButtonCanvas1_20 As Botón:
                 AcceptsFocus: =true
@@ -596,7 +607,7 @@
                 Width: =103
                 X: =1196
                 Y: =24
-                ZIndex: =43
+                ZIndex: =44
 
             ButtonCanvas1_21 As Botón:
                 AcceptsFocus: =true
@@ -629,7 +640,7 @@
                 Width: =146
                 X: =1016
                 Y: =24
-                ZIndex: =44
+                ZIndex: =45
 
             ButtonCanvas1_22 As Botón:
                 AcceptsFocus: =true
@@ -653,37 +664,37 @@
                 IconRotation: =0
                 IconStyle: ="Outline"
                 Layout: ="Icon before"
-                OnSelect: =Navigate(introduccion)
+                OnSelect: =Navigate(Servicios)
                 TabIndex: =0
                 Text: =
                 Tooltip: =""
                 VerticalAlign: =""
                 Visible: =true
                 Width: =103
-                X: =877
-                Y: =24
-                ZIndex: =45
+                X: =883
+                Y: =26
+                ZIndex: =46
 
             RectNavBorder_11 As rectangle:
                 Fill: =RGBA(248, 205, 0, 1)
                 Height: =2
                 Width: =1366
                 Y: =117
-                ZIndex: =46
+                ZIndex: =47
 
             RectQuickActionBar3_4 As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =34
                 Width: =Parent.Width
                 Y: =83
-                ZIndex: =47
+                ZIndex: =48
 
             Rectangle1_10 As rectangle:
                 Fill: =RGBA(26, 58, 110, 1)
                 Height: =36
                 Width: =1366
                 Y: =83
-                ZIndex: =48
+                ZIndex: =49
 
             LblNavBienestar_14 As label:
                 Color: =RGBA(100, 120, 150, 1)
@@ -694,7 +705,7 @@
                 Width: =56
                 X: =1206
                 Y: =25
-                ZIndex: =49
+                ZIndex: =50
 
             LblNavBienestar_15 As label:
                 Color: =RGBA(100, 120, 150, 1)
@@ -704,17 +715,6 @@
                 Text: ="Mis Solicitudes"
                 Width: =157
                 X: =1016
-                Y: =25
-                ZIndex: =50
-
-            LblNavBienestar_16 As label:
-                FontWeight: =FontWeight.Bold
-                Height: =28
-                OnSelect: =Navigate(introduccion)
-                Size: =14
-                Text: ="Servicios"
-                Width: =97
-                X: =886
                 Y: =25
                 ZIndex: =51
 
@@ -765,16 +765,6 @@
                 Y: =119
                 ZIndex: =56
 
-            LblTopLeft_6 As label:
-                Color: =RGBA(255, 255, 255, 1)
-                Height: =36
-                Size: =9
-                Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
-                Width: =408
-                X: =943
-                Y: =84
-                ZIndex: =57
-
             RectFooter_6 As rectangle:
                 Fill: =RGBA(26, 58, 110, 1)
                 Height: =68
@@ -789,7 +779,7 @@
                 Size: =9
                 Text: |-
                     ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
-                    Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                    Tel: (+57) 601 320 8320 Ext. 5555"
                 Width: =853
                 X: =16
                 Y: =1396
@@ -818,7 +808,7 @@
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =25
                 Icon: =Icon.Home
-                OnSelect: =Navigate(introduccion)
+                OnSelect: =Navigate(Servicios)
                 Width: =28
                 X: =50
                 Y: =89
@@ -834,17 +824,6 @@
                 Y: =90
                 ZIndex: =63
 
-            Button1_6 As modernButton:
-                Appearance: =ButtonAppearance.Transparent
-                BorderStyle: =""
-                Font: =""
-                OnSelect: =Navigate(introduccion)
-                Size: =0
-                Text: =
-                X: =884
-                Y: =31
-                ZIndex: =64
-
             Button1_7 As modernButton:
                 Appearance: =ButtonAppearance.Transparent
                 BorderStyle: =""
@@ -856,7 +835,7 @@
                 Width: =152
                 X: =1010
                 Y: =22
-                ZIndex: =65
+                ZIndex: =64
 
             Button1_8 As modernButton:
                 Appearance: =ButtonAppearance.Transparent
@@ -868,6 +847,16 @@
                 Text: =
                 X: =1206
                 Y: =26
+                ZIndex: =65
+
+            LblTopLeft_6 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =36
+                Size: =9
+                Text: ="SISTEMA DE SOLICITUDES // SISSO"
+                Width: =204
+                X: =1145
+                Y: =83
                 ZIndex: =66
 
     CH_ModalOverlay_Aprobador As button:

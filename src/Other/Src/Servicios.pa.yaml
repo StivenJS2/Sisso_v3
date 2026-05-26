@@ -1,0 +1,3825 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Servicios:
+    Properties:
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+      OnVisible: =Set(varIndiceIntro, 1); Set(varModalInfo, 0)
+    Children:
+      - SmallCard3_Bg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: |
+              =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(Instalacion_Software)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =570
+            Y: =428
+      - SmallCard3_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =50
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =50
+            X: =660
+            Y: =438
+      - SmallCard3_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =30
+            Image: =Hardware
+            Width: =30
+            X: =670
+            Y: =452
+      - SmallCard3_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="Instalación de Software"
+            Width: =210
+            X: =583
+            Y: =497
+      - SmallCard3_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =680
+            Y: =528
+      - SmallCard2_Bg_8:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(Instalacion_Software)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =570
+            Y: =428
+      - SmallCard3_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 3)
+            Width: =22
+            X: =768
+            Y: =434
+      - SmallCard1_Bg_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate('Conceptos tecnicos')
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =315
+            Y: =429
+      - SmallCard2_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =50
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =50
+            X: =408
+            Y: =438
+      - SmallCard2_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =30
+            Image: =Software
+            Width: =30
+            X: =417
+            Y: =450
+      - SmallCard2_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="Conceptos Tecnicos"
+            Width: =210
+            X: =331
+            Y: =497
+      - SmallCard2_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =428
+            Y: =528
+      - SmallCard2_Bg_9:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate('Conceptos tecnicos')
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =315
+            Y: =429
+      - SmallCard2_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 2)
+            Width: =22
+            X: =516
+            Y: =434
+      - SmallCard7_Bg_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =120
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =461
+            Y: =566
+      - SmallCard7_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =50
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =50
+            X: =548
+            Y: =579
+      - SmallCard7_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =30
+            Image: =Permisos
+            Width: =30
+            X: =558
+            Y: =586
+      - SmallCard7_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="Permisos PeopleSoft"
+            Width: =210
+            X: =471
+            Y: =634
+      - SmallCard7_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =568
+            Y: =660
+      - SmallCard2_Bg_13:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =120
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =461
+            Y: =566
+      - SmallCard7_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 7)
+            Width: =22
+            X: =659
+            Y: =573
+      - SmallCard6_Bg_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: |
+              =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =120
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =209
+            Y: =566
+      - SmallCard6_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =50
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =50
+            X: =296
+            Y: =588
+      - SmallCard6_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =50
+            Image: =Nube
+            Width: =50
+            X: =293
+            Y: =579
+      - SmallCard6_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="Nube Javeriana"
+            Width: =210
+            X: =219
+            Y: =634
+      - SmallCard6_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =316
+            Y: =660
+      - SmallCard2_Bg_10:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =120
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =209
+            Y: =566
+      - SmallCard6_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 6)
+            Width: =22
+            X: =407
+            Y: =573
+      - SmallCard8_Bg_3:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =120
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =713
+            Y: =566
+      - SmallCard8_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =50
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =50
+            X: =800
+            Y: =577
+      - SmallCard8_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =30
+            Image: =VPN
+            Width: =30
+            X: =810
+            Y: =586
+      - SmallCard8_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="Acceso VPN"
+            Width: =210
+            X: =723
+            Y: =634
+      - SmallCard8_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =820
+            Y: =660
+      - SmallCard2_Bg_12:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =120
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =713
+            Y: =566
+      - SmallCard8_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 8)
+            Width: =22
+            X: =911
+            Y: =573
+      - SmallCard9_Bg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =120
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =965
+            Y: =566
+      - SmallCard9_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =35
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =35
+            X: =1061
+            Y: =580
+      - SmallCard9_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =38
+            Image: =
+            Width: =38
+            X: =1062
+            Y: =582
+      - SmallCard9_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="NAS"
+            Width: =210
+            X: =975
+            Y: =634
+      - SmallCard9_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =1072
+            Y: =660
+      - SmallCard2_Bg_11:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =120
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =965
+            Y: =566
+      - SmallCard9_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 9)
+            Width: =22
+            X: =1163
+            Y: =573
+      - SmallCard4_Bg_5:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: |
+              =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(CuentasListas)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =822
+            Y: =428
+      - SmallCard4_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =50
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =50
+            X: =912
+            Y: =438
+      - SmallCard4_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =30
+            Image: =Correo
+            Width: =30
+            X: =922
+            Y: =450
+      - SmallCard4_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="Cuentas & Listas"
+            Width: =210
+            X: =835
+            Y: =497
+      - SmallCard4_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =932
+            Y: =528
+      - SmallCard5_Bg_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =1074
+            Y: =428
+      - SmallCard5_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =50
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =50
+            X: =1164
+            Y: =438
+      - SmallCard5_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =30
+            Image: =Usuarios
+            Width: =30
+            X: =1176
+            Y: =450
+      - SmallCard5_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="Usuarios externos"
+            Width: =210
+            X: =1087
+            Y: =497
+      - SmallCard5_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =1184
+            Y: =528
+      - SmallCard2_Bg_6:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =1074
+            Y: =428
+      - SmallCard2_Bg_7:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(CuentasListas)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =822
+            Y: =428
+      - SmallCard4_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 4)
+            Width: =22
+            X: =1020
+            Y: =434
+      - SmallCard5_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 5)
+            Width: =22
+            X: =1272
+            Y: =434
+      - SmallCard1_Bg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =66
+            Y: =428
+      - SmallCard1_IconBg_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 246, 248, 1)
+            Font: =Font.'Open Sans'
+            Height: =50
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =50
+            X: =156
+            Y: =438
+      - SmallCard1_Icon_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =30
+            Image: =Agenda
+            Width: =30
+            X: =166
+            Y: =452
+      - SmallCard1_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =11
+            Text: ="AutoServicio Zoom"
+            Width: =210
+            X: =79
+            Y: =497
+      - SmallCard1_Arrow_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 213, 0, 1)
+            Height: =15
+            Icon: =Icon.ArrowRight
+            Width: =15
+            X: =176
+            Y: =528
+      - SmallCard2_Bg_5:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.LightGray
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =127
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =
+            Text: =""
+            Width: =230
+            X: =66
+            Y: =428
+      - SmallCard1_InfoBtn_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 0.45)
+            Height: =22
+            HoverColor: =RGBA(0, 58, 112, 1)
+            Icon: =Icon.Information
+            OnSelect: =Set(varModalInfo, 1)
+            Width: =22
+            X: =264
+            Y: =434
+      - Image3_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =251
+            Image: =plantilla
+            ImagePosition: =ImagePosition.Fill
+            Width: =1366
+            Y: =125
+      - ButtonCanvas1_36:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            OnSelect: =
+            Text: =
+            Width: =157
+            X: =1016
+            Y: =27
+      - ButtonCanvas1_37:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =34
+            OnSelect: =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
+            Text: =
+            Width: =103
+            X: =1196
+            Y: =30
+      - ButtonCanvas1_38:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =31
+            OnSelect: =
+            Text: =
+            Width: =97
+            X: =886
+            Y: =33
+      - Image1_9:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =89
+            Image: =JavexSisso
+            ImagePosition: =ImagePosition.Stretch
+            Width: =232
+      - TimerIntro:
+          Control: Timer@2.1.0
+          Properties:
+            Align: =%Align.RESERVED%.Center
+            AutoStart: =true
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =ColorFade(Self.BorderColor, 70%)
+            DisabledColor: =ColorFade(Self.Fill, 90%)
+            DisabledFill: =ColorFade(Self.Fill, 70%)
+            DisplayMode: =%DisplayMode.RESERVED%.Edit
+            Duration: =6000
+            Fill: =RGBA(56, 96, 178, 1)
+            Font: =Font.'Open Sans'
+            Height: =10
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            OnTimerEnd: =Set(varIndiceIntro, If(varIndiceIntro = 2, 1, varIndiceIntro + 1))
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Repeat: =true
+            VerticalAlign: =%VerticalAlign.RESERVED%.Middle
+            Visible: =false
+            Width: =10
+      - RectQuickActionBar3_7:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =34
+            Width: =Parent.Width
+            Y: =89
+      - Rectangle1_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(26, 58, 110, 1)
+            Height: =36
+            Width: =1366
+            Y: =89
+      - LblTopLeft_2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =36
+            Size: =9
+            Text: ="SISTEMA DE SOLICITUDES // SISSO"
+            Width: =204
+            X: =1160
+            Y: =89
+      - RectNavActive_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(248, 205, 0, 1)
+            Height: =2
+            Width: =90
+            X: =890
+            Y: =67
+      - LblNavBienestar_2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(100, 120, 150, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =14
+            Text: ="Salir"
+            Width: =56
+            X: =1206
+            Y: =31
+      - LblNavBienestar_23:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(100, 120, 150, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =14
+            Text: ="Mis Solicitudes"
+            Width: =157
+            X: =1016
+            Y: =31
+      - LblNavBienestar_24:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =14
+            Text: ="Servicios"
+            Width: =97
+            X: =886
+            Y: =31
+      - Icon1_7:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 18, 107, 1)
+            Height: =36
+            Icon: =Icon.Leave
+            Width: =25
+            X: =1262
+            Y: =28
+      - Rectangle1_18:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(15, 84, 140, 0.52)
+            Height: =50
+            Width: =2
+            X: =230
+            Y: =25
+      - Image2_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =60
+            Image: =User().Image
+            RadiusBottomLeft: =Self.Width / 2
+            RadiusBottomRight: =Self.Width / 2
+            RadiusTopLeft: =Self.Width / 2
+            RadiusTopRight: =Self.Width / 2
+            Width: =60
+            X: =246
+            Y: =15
+      - Text1_7:
+          Control: ModernText@1.0.0
+          Properties:
+            FontWeight: =FontWeight.Bold
+            Height: =62
+            Size: =16
+            Text: =User().FullName
+            Width: =164
+            X: =320
+            Y: =19
+      - RectNavBorder_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(248, 205, 0, 1)
+            Height: =2
+            Width: =1366
+            Y: =123
+      - CT_Icon3_10:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =25
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Servicios)
+            Width: =28
+            X: =54
+            Y: =92
+      - Icon4_13:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =25
+            Icon: =Icon.BackArrow
+            OnSelect: =
+            Width: =40
+            X: =10
+            Y: =93
+      - ImgSlide1B_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =195
+            Image: =VpnJave
+            ImagePosition: =ImagePosition.Stretch
+            Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
+            Visible: =varIndiceIntro = 1
+            Width: =398
+            X: =483
+            Y: =166
+      - ImgSlide2B_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =195
+            Image: =NasJave
+            ImagePosition: =ImagePosition.Stretch
+            Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
+            Visible: =varIndiceIntro = 2
+            Width: =398
+            X: =483
+            Y: =166
+      - ImgSlide1A_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =177
+            Image: =PeopleJave
+            ImagePosition: =ImagePosition.Stretch
+            Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
+            Visible: =varIndiceIntro = 1
+            Width: =375
+            X: =75
+            Y: =188
+      - ImgSlide2A_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =177
+            Image: =NubeJave
+            ImagePosition: =ImagePosition.Stretch
+            Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
+            Visible: =varIndiceIntro = 2
+            Width: =375
+            X: =75
+            Y: =188
+      - ImgSlide2C_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =177
+            Image: =ZoomJave
+            ImagePosition: =ImagePosition.Stretch
+            Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
+            Visible: =varIndiceIntro = 2
+            Width: =375
+            X: =903
+            Y: =188
+      - ImgSlide1C_1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =177
+            Image: =CuentasJave
+            ImagePosition: =ImagePosition.Stretch
+            OnSelect: =Navigate(CuentasListas)
+            Transparency: =If(TimerIntro.Value < 600, 1 - (TimerIntro.Value/600), 0)
+            Visible: =varIndiceIntro = 1
+            Width: =375
+            X: =905
+            Y: =188
+      - TituloCarrusel_1:
+          Control: HtmlViewer@2.1.0
+          Properties:
+            Font: =Font.'Open Sans'
+            Height: =48
+            HtmlText: |-
+              ="<div style='text-align: center; opacity: " & Substitute(Text(If(TimerIntro.Value < 600, TimerIntro.Value/600, 1)), ",", ".") & "; color: white; font-weight: bold; font-size: 21.5px; line-height: 35px; font-family: ""Segoe UI"", sans-serif;'>" & If(varIndiceIntro = 1, "<span style='color: rgb(255, 213, 0);'>Servicios</span> más utilizados", "<span style='color: rgb(255, 213, 0);'>Nuevos</span> servicios") & "</div>"
+            Size: =16
+            Width: =1283
+            X: =42
+            Y: =125
+      - RectFooter_9:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(26, 58, 110, 1)
+            Height: =68
+            Width: =1363
+            X: =3
+            Y: =695
+      - LblFooter_9:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(200, 184, 122, 0.7)
+            Font: =Font.'Open Sans'
+            Height: =41
+            Size: =9
+            Text: |-
+              ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+              Tel: (+57) 601 320 8320 Ext. 5555"
+            Width: =853
+            X: =13
+            Y: =713
+      - RectFooterBorder_9:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(200, 184, 122, 1)
+            BorderThickness: =1
+            Fill: =RGBA(200, 184, 122, 1)
+            Height: =2
+            Width: =1360
+            X: =3
+            Y: =693
+      - Image4_8:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =68
+            Image: ='image-removebg-preview'
+            ImagePosition: =ImagePosition.Fill
+            Width: =289
+            X: =1071
+            Y: =700
+      - SmallCards_Title_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =14
+            Text: ="INDÍCE DE SERVICIOS"
+            Width: =1323
+            X: =23
+            Y: =382
+      - SmallCards_TitleLine_9:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Width: =60
+            X: =655
+            Y: =410
+      - ButtonCanvas1_39:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =31
+            OnSelect: =
+            Text: =
+            Width: =97
+            X: =882
+            Y: =31
+      - ButtonCanvas1_40:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =30
+            OnSelect: =
+            Text: =
+            Width: =156
+            X: =1009
+            Y: =31
+      - ButtonCanvas1_41:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =31
+            OnSelect: =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
+            Text: =
+            Width: =97
+            X: =1200
+            Y: =31
+      - ModalOverlay:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(10, 20, 50, 0.6)
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(10, 20, 50, 0.6)
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =RGBA(10, 20, 50, 0.6)
+            Text: =""
+            Visible: =varModalInfo > 0
+            Width: =Parent.Width
+      - M1_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 1
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M2_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 2
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M3_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 3
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M4_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 4
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M5_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 5
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M6_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 6
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M7_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 7
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M8_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 8
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M9_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 9
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M10_Panel:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =480
+            Visible: =varModalInfo = 10
+            Width: =800
+            X: =(Parent.Width - 800) / 2
+            Y: =(Parent.Height - 480) / 2
+      - M1_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 1
+            Width: =4
+            X: =M1_Panel.X + 30
+            Y: =M1_Panel.Y + 30
+      - M1_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="para gestión de espacios compartidos"
+            Visible: =varModalInfo = 1
+            Width: =600
+            X: =M1_Panel.X + 50
+            Y: =M1_Panel.Y + 56
+      - M1_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 1
+            Width: =30
+            X: =M1_Panel.X + 740
+            Y: =M1_Panel.Y + 30
+      - M1_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 1
+            Width: =740
+            X: =M1_Panel.X + 30
+            Y: =M1_Panel.Y + 95
+      - M1_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 1
+            Width: =250
+            X: =M1_Panel.X + 30
+            Y: =M1_Panel.Y + 120
+      - M1_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 1
+            Width: =40
+            X: =M1_Panel.X + 35
+            Y: =297
+      - M1_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Crea, edita, elimina y gestiona tus reuniones de forma rápida y sencilla. Este autoservicio es un espacio compartido. Otros usuarios también gestionan sus propias reuniones."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 1
+            Width: =740
+            X: =M1_Panel.X + 30
+            Y: =M1_Panel.Y + 165
+      - M1_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 1
+            Width: =740
+            X: =M1_Panel.X + 30
+            Y: =M1_Panel.Y + 260
+      - M1_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 1
+            Width: =740
+            X: =M1_Panel.X + 30
+            Y: =524
+      - M2_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 2
+            Width: =4
+            X: =M2_Panel.X + 30
+            Y: =M2_Panel.Y + 30
+      - M2_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="para adquisición de equipos institucionales"
+            Visible: =varModalInfo = 2
+            Width: =600
+            X: =M2_Panel.X + 50
+            Y: =M2_Panel.Y + 56
+      - M2_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 2
+            Width: =30
+            X: =M2_Panel.X + 740
+            Y: =M2_Panel.Y + 30
+      - M2_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 2
+            Width: =740
+            X: =M2_Panel.X + 30
+            Y: =M2_Panel.Y + 95
+      - M2_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 2
+            Width: =250
+            X: =M2_Panel.X + 30
+            Y: =M2_Panel.Y + 120
+      - M2_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 2
+            Width: =40
+            X: =M2_Panel.X + 35
+            Y: =297
+      - M2_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Solicitud para compra o renovación de servicios de software y equipos de hardware. Gestiona los recursos tecnológicos necesarios para tu labor institucional."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 2
+            Width: =740
+            X: =M2_Panel.X + 30
+            Y: =M2_Panel.Y + 165
+      - M2_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 2
+            Width: =740
+            X: =M2_Panel.X + 30
+            Y: =M2_Panel.Y + 260
+      - M2_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 2
+            Width: =740
+            X: =M2_Panel.X + 30
+            Y: =524
+      - M3_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 3
+            Width: =4
+            X: =M3_Panel.X + 30
+            Y: =M3_Panel.Y + 30
+      - M3_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="para equipos de cómputo institucionales"
+            Visible: =varModalInfo = 3
+            Width: =600
+            X: =M3_Panel.X + 50
+            Y: =M3_Panel.Y + 56
+      - M3_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 3
+            Width: =30
+            X: =M3_Panel.X + 740
+            Y: =M3_Panel.Y + 30
+      - M3_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 3
+            Width: =740
+            X: =M3_Panel.X + 30
+            Y: =M3_Panel.Y + 95
+      - M3_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 3
+            Width: =250
+            X: =M3_Panel.X + 30
+            Y: =M3_Panel.Y + 120
+      - M3_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 3
+            Width: =40
+            X: =M3_Panel.X + 35
+            Y: =297
+      - M3_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Puedes realizar solicitudes para la instalación de software en equipos de cómputo, salas y salones de clase. Se validará la disponibilidad de acuerdos de licenciamiento."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 3
+            Width: =740
+            X: =M3_Panel.X + 30
+            Y: =M3_Panel.Y + 165
+      - M3_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 3
+            Width: =740
+            X: =M3_Panel.X + 30
+            Y: =M3_Panel.Y + 260
+      - M3_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 3
+            Width: =740
+            X: =M3_Panel.X + 30
+            Y: =524
+      - M4_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 4
+            Width: =4
+            X: =M4_Panel.X + 30
+            Y: =M4_Panel.Y + 30
+      - M4_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="para gestión de cuentas institucionales"
+            Visible: =varModalInfo = 4
+            Width: =600
+            X: =M4_Panel.X + 50
+            Y: =M4_Panel.Y + 56
+      - M4_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 4
+            Width: =30
+            X: =M4_Panel.X + 740
+            Y: =M4_Panel.Y + 30
+      - M4_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 4
+            Width: =740
+            X: =M4_Panel.X + 30
+            Y: =M4_Panel.Y + 95
+      - M4_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 4
+            Width: =250
+            X: =M4_Panel.X + 30
+            Y: =M4_Panel.Y + 120
+      - M4_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 4
+            Width: =40
+            X: =M4_Panel.X + 35
+            Y: =297
+      - M4_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Permite solicitar la creación de buzones de correo de uso compartido o genérico, calendarios y listas de correo institucionales."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 4
+            Width: =740
+            X: =M4_Panel.X + 30
+            Y: =M4_Panel.Y + 165
+      - M4_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 4
+            Width: =740
+            X: =M4_Panel.X + 30
+            Y: =M4_Panel.Y + 260
+      - M4_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 4
+            Width: =740
+            X: =M4_Panel.X + 30
+            Y: =524
+      - M5_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 5
+            Width: =4
+            X: =M5_Panel.X + 30
+            Y: =M5_Panel.Y + 30
+      - M5_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="para personal externo a la institution"
+            Visible: =varModalInfo = 5
+            Width: =600
+            X: =M5_Panel.X + 50
+            Y: =M5_Panel.Y + 56
+      - M5_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 5
+            Width: =30
+            X: =M5_Panel.X + 740
+            Y: =M5_Panel.Y + 30
+      - M5_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 5
+            Width: =740
+            X: =M5_Panel.X + 30
+            Y: =M5_Panel.Y + 95
+      - M5_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 5
+            Width: =250
+            X: =M5_Panel.X + 30
+            Y: =M5_Panel.Y + 120
+      - M5_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 5
+            Width: =40
+            X: =M5_Panel.X + 35
+            Y: =297
+      - M5_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Permite la creación o renovación de cuentas institucionales para personal externo que requiera acceso temporal a servicios."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 5
+            Width: =740
+            X: =M5_Panel.X + 30
+            Y: =M5_Panel.Y + 165
+      - M5_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 5
+            Width: =740
+            X: =M5_Panel.X + 30
+            Y: =M5_Panel.Y + 260
+      - M5_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 5
+            Width: =740
+            X: =M5_Panel.X + 30
+            Y: =524
+      - M6_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 6
+            Width: =4
+            X: =M6_Panel.X + 30
+            Y: =M6_Panel.Y + 30
+      - M6_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="Infraestructura robusta para investigación"
+            Visible: =varModalInfo = 6
+            Width: =600
+            X: =M6_Panel.X + 50
+            Y: =M6_Panel.Y + 56
+      - M6_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 6
+            Width: =30
+            X: =M6_Panel.X + 740
+            Y: =M6_Panel.Y + 30
+      - M6_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 6
+            Width: =740
+            X: =M6_Panel.X + 30
+            Y: =M6_Panel.Y + 95
+      - M6_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 6
+            Width: =250
+            X: =M6_Panel.X + 30
+            Y: =M6_Panel.Y + 120
+      - M6_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 6
+            Width: =40
+            X: =M6_Panel.X + 35
+            Y: =297
+      - M6_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Accede a recursos de infraestructura de computación robusta tipo IaaS para el desarrollo de actividades académicas y de investigación."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 6
+            Width: =740
+            X: =M6_Panel.X + 30
+            Y: =M6_Panel.Y + 165
+      - M6_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 6
+            Width: =740
+            X: =M6_Panel.X + 30
+            Y: =M6_Panel.Y + 260
+      - M6_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 6
+            Width: =740
+            X: =M6_Panel.X + 30
+            Y: =524
+      - M7_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 7
+            Width: =4
+            X: =M7_Panel.X + 30
+            Y: =M7_Panel.Y + 30
+      - M7_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="Sistemas de Información Universitaria"
+            Visible: =varModalInfo = 7
+            Width: =600
+            X: =M7_Panel.X + 50
+            Y: =M7_Panel.Y + 56
+      - M7_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 7
+            Width: =30
+            X: =M7_Panel.X + 740
+            Y: =M7_Panel.Y + 30
+      - M7_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 7
+            Width: =740
+            X: =M7_Panel.X + 30
+            Y: =M7_Panel.Y + 95
+      - M7_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 7
+            Width: =250
+            X: =M7_Panel.X + 30
+            Y: =M7_Panel.Y + 120
+      - M7_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 7
+            Width: =40
+            X: =M7_Panel.X + 35
+            Y: =297
+      - M7_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Se puede solicitar permisos del módulo de compras de bienes y servicios, Recursos Humanos, Admisiones, Finanzas, etc."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 7
+            Width: =740
+            X: =M7_Panel.X + 30
+            Y: =M7_Panel.Y + 165
+      - M7_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 7
+            Width: =740
+            X: =M7_Panel.X + 30
+            Y: =M7_Panel.Y + 260
+      - M7_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 7
+            Width: =740
+            X: =M7_Panel.X + 30
+            Y: =524
+      - M8_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 8
+            Width: =4
+            X: =M8_Panel.X + 30
+            Y: =M8_Panel.Y + 30
+      - M8_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="para empleados"
+            Visible: =varModalInfo = 8
+            Width: =600
+            X: =M8_Panel.X + 50
+            Y: =M8_Panel.Y + 56
+      - M8_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 8
+            Width: =30
+            X: =M8_Panel.X + 740
+            Y: =M8_Panel.Y + 30
+      - M8_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 8
+            Width: =740
+            X: =M8_Panel.X + 30
+            Y: =M8_Panel.Y + 95
+      - M8_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 8
+            Width: =250
+            X: =M8_Panel.X + 30
+            Y: =M8_Panel.Y + 120
+      - M8_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 8
+            Width: =40
+            X: =M8_Panel.X + 35
+            Y: =297
+      - M8_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="La VPN universitaria permite acceder de forma remota y segura a los recursos y servicios exclusivos de la red interna de la institución a través de internet."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 8
+            Width: =740
+            X: =M8_Panel.X + 30
+            Y: =M8_Panel.Y + 165
+      - M8_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 8
+            Width: =740
+            X: =M8_Panel.X + 30
+            Y: =M8_Panel.Y + 260
+      - M8_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 8
+            Width: =740
+            X: =M8_Panel.X + 30
+            Y: =524
+      - M9_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 9
+            Width: =4
+            X: =M9_Panel.X + 30
+            Y: =M9_Panel.Y + 30
+      - M9_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="Almacenamiento institucional para grupos"
+            Visible: =varModalInfo = 9
+            Width: =600
+            X: =M9_Panel.X + 50
+            Y: =M9_Panel.Y + 56
+      - M9_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 9
+            Width: =30
+            X: =M9_Panel.X + 740
+            Y: =M9_Panel.Y + 30
+      - M9_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 9
+            Width: =740
+            X: =M9_Panel.X + 30
+            Y: =M9_Panel.Y + 95
+      - M9_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 9
+            Width: =250
+            X: =M9_Panel.X + 30
+            Y: =M9_Panel.Y + 120
+      - M9_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 9
+            Width: =40
+            X: =M9_Panel.X + 35
+            Y: =297
+      - M9_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Accede al almacenamiento NAS institucional. Sube, organiza y comparte archivos de forma segura dentro de la red de la universidad."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 9
+            Width: =740
+            X: =M9_Panel.X + 30
+            Y: =M9_Panel.Y + 165
+      - M9_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 9
+            Width: =740
+            X: =M9_Panel.X + 30
+            Y: =M9_Panel.Y + 260
+      - M9_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 9
+            Width: =740
+            X: =M9_Panel.X + 30
+            Y: =524
+      - M10_HeaderAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =36
+            Visible: =varModalInfo = 10
+            Width: =4
+            X: =M10_Panel.X + 30
+            Y: =M10_Panel.Y + 30
+      - M10_Subtitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(120, 140, 170, 1)
+            Font: =Font.'Open Sans'
+            Size: =11
+            Text: ="Asistencia técnica personalizada"
+            Visible: =varModalInfo = 10
+            Width: =600
+            X: =M10_Panel.X + 50
+            Y: =M10_Panel.Y + 56
+      - M10_CloseX:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: =Set(varModalInfo, 0)
+            Visible: =varModalInfo = 10
+            Width: =30
+            X: =M10_Panel.X + 740
+            Y: =M10_Panel.Y + 30
+      - M10_Divider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 10
+            Width: =740
+            X: =M10_Panel.X + 30
+            Y: =M10_Panel.Y + 95
+      - M10_SectionLabel:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="INFORMACIÓN DEL SERVICIO"
+            Visible: =varModalInfo = 10
+            Width: =250
+            X: =M10_Panel.X + 30
+            Y: =M10_Panel.Y + 120
+      - M10_SectionAccent:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 213, 0, 1)
+            Height: =3
+            Visible: =varModalInfo = 10
+            Width: =40
+            X: =M10_Panel.X + 35
+            Y: =297
+      - M10_Description:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(50, 50, 50, 1)
+            Font: =Font.'Open Sans'
+            Height: =80
+            Size: =11
+            Text: ="Recibe asistencia técnica personalizada para problemas con equipos, conectividad, periféricos u otros inconvenientes tecnológicos."
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =varModalInfo = 10
+            Width: =740
+            X: =M10_Panel.X + 30
+            Y: =M10_Panel.Y + 165
+      - M10_FeatureBg:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(240, 245, 255, 1)
+            Visible: =varModalInfo = 10
+            Width: =740
+            X: =M10_Panel.X + 30
+            Y: =M10_Panel.Y + 260
+      - M10_FooterDivider:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 235, 245, 1)
+            Height: =1
+            Visible: =varModalInfo = 10
+            Width: =740
+            X: =M10_Panel.X + 30
+            Y: =524
+      - M1_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Agenda y gestión de reuniones"
+            Visible: =varModalInfo = 1
+            Width: =600
+            X: =M1_Panel.X + 50
+            Y: =M1_Panel.Y + 26
+      - M2_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Solicitud Software y Hardware"
+            Visible: =varModalInfo = 2
+            Width: =600
+            X: =M2_Panel.X + 50
+            Y: =M2_Panel.Y + 26
+      - M3_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Instalación de Software"
+            Visible: =varModalInfo = 3
+            Width: =600
+            X: =M3_Panel.X + 50
+            Y: =M3_Panel.Y + 26
+      - M4_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Correo y usuarios"
+            Visible: =varModalInfo = 4
+            Width: =600
+            X: =M4_Panel.X + 50
+            Y: =M4_Panel.Y + 26
+      - M5_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Usuarios Externos"
+            Visible: =varModalInfo = 5
+            Width: =600
+            X: =M5_Panel.X + 50
+            Y: =M5_Panel.Y + 26
+      - M6_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Nube Javeriana"
+            Visible: =varModalInfo = 6
+            Width: =600
+            X: =M6_Panel.X + 50
+            Y: =M6_Panel.Y + 26
+      - M7_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Permisos PeopleSoft"
+            Visible: =varModalInfo = 7
+            Width: =600
+            X: =M7_Panel.X + 50
+            Y: =M7_Panel.Y + 26
+      - M8_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Solicitud acceso VPN"
+            Visible: =varModalInfo = 8
+            Width: =600
+            X: =M8_Panel.X + 50
+            Y: =M8_Panel.Y + 26
+      - M9_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Almacenamiento NAS"
+            Visible: =varModalInfo = 9
+            Width: =600
+            X: =M9_Panel.X + 50
+            Y: =M9_Panel.Y + 26
+      - M10_Title:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Soporte técnico"
+            Visible: =varModalInfo = 10
+            Width: =600
+            X: =M10_Panel.X + 50
+            Y: =M10_Panel.Y + 26
+      - M1_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 1
+            Width: =4
+            X: =M1_Panel.X + 30
+            Y: =M1_Panel.Y + 260
+      - M1_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 1
+            Width: =40
+            X: =M1_Panel.X + 55
+            Y: =430
+      - M1_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Gestión eficiente y coordinada"
+            Visible: =varModalInfo = 1
+            Width: =600
+            X: =M1_Panel.X + 33
+            Y: =360
+      - M1_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Optimiza tu tiempo agendando con antelación y manteniendo la visibilidad de tus espacios de trabajo compartidos."
+            Visible: =varModalInfo = 1
+            Width: =600
+            X: =M1_Panel.X + 111
+            Y: =428
+      - M1_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 1
+            Width: =28
+            X: =M1_Panel.X + 30
+            Y: =M1_Panel.Y + 415
+      - M1_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 1
+            Width: =400
+            X: =M1_Panel.X + 65
+            Y: =M1_Panel.Y + 418
+      - M1_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 1
+            Width: =120
+            X: =M1_Panel.X + 510
+            Y: =M1_Panel.Y + 410
+      - M2_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 2
+            Width: =4
+            X: =M2_Panel.X + 30
+            Y: =M2_Panel.Y + 260
+      - M2_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 2
+            Width: =40
+            X: =M2_Panel.X + 55
+            Y: =430
+      - M2_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Trámite ágil y centralizado"
+            Visible: =varModalInfo = 2
+            Width: =600
+            X: =M2_Panel.X + 33
+            Y: =360
+      - M2_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Proceso simplificado para la adquisición de equipos, asegurando el cumplimiento de los estándares de la universidad."
+            Visible: =varModalInfo = 2
+            Width: =600
+            X: =M2_Panel.X + 111
+            Y: =428
+      - M2_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 2
+            Width: =28
+            X: =M2_Panel.X + 30
+            Y: =M2_Panel.Y + 415
+      - M2_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 2
+            Width: =400
+            X: =M2_Panel.X + 65
+            Y: =M2_Panel.Y + 418
+      - M2_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 2
+            Width: =120
+            X: =M2_Panel.X + 510
+            Y: =M2_Panel.Y + 410
+      - M3_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 3
+            Width: =4
+            X: =M3_Panel.X + 30
+            Y: =M3_Panel.Y + 260
+      - M3_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 3
+            Width: =40
+            X: =M3_Panel.X + 55
+            Y: =430
+      - M3_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Seguridad y licenciamiento"
+            Visible: =varModalInfo = 3
+            Width: =600
+            X: =M3_Panel.X + 33
+            Y: =360
+      - M3_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Software validado y libre de riesgos, asegurando el cumplimiento de las normativas de seguridad institucional."
+            Visible: =varModalInfo = 3
+            Width: =600
+            X: =M3_Panel.X + 111
+            Y: =428
+      - M3_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 3
+            Width: =28
+            X: =M3_Panel.X + 30
+            Y: =M3_Panel.Y + 415
+      - M3_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 3
+            Width: =400
+            X: =M3_Panel.X + 65
+            Y: =M3_Panel.Y + 418
+      - M3_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 3
+            Width: =120
+            X: =M3_Panel.X + 510
+            Y: =M3_Panel.Y + 410
+      - M4_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 4
+            Width: =4
+            X: =M4_Panel.X + 30
+            Y: =M4_Panel.Y + 260
+      - M4_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 4
+            Width: =40
+            X: =M4_Panel.X + 55
+            Y: =430
+      - M4_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Identidad Institucional"
+            Visible: =varModalInfo = 4
+            Width: =600
+            X: =M4_Panel.X + 33
+            Y: =360
+      - M4_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Usa el dominio oficial @javeriana.edu.co para mantener una comunicación profesional y segura."
+            Visible: =varModalInfo = 4
+            Width: =600
+            X: =M4_Panel.X + 111
+            Y: =428
+      - M4_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 4
+            Width: =28
+            X: =M4_Panel.X + 30
+            Y: =M4_Panel.Y + 415
+      - M4_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 4
+            Width: =400
+            X: =M4_Panel.X + 65
+            Y: =M4_Panel.Y + 418
+      - M4_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 4
+            Width: =120
+            X: =M4_Panel.X + 510
+            Y: =M4_Panel.Y + 410
+      - M5_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 5
+            Width: =4
+            X: =M5_Panel.X + 30
+            Y: =M5_Panel.Y + 260
+      - M5_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 5
+            Width: =40
+            X: =M5_Panel.X + 55
+            Y: =430
+      - M5_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Acceso seguro y controlado"
+            Visible: =varModalInfo = 5
+            Width: =600
+            X: =M5_Panel.X + 33
+            Y: =360
+      - M5_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Gestión de identidad para colaboradores externos, manteniendo la seguridad de la red universitaria."
+            Visible: =varModalInfo = 5
+            Width: =600
+            X: =M5_Panel.X + 111
+            Y: =428
+      - M5_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 5
+            Width: =28
+            X: =M5_Panel.X + 30
+            Y: =M5_Panel.Y + 415
+      - M5_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 5
+            Width: =400
+            X: =M5_Panel.X + 65
+            Y: =M5_Panel.Y + 418
+      - M5_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 5
+            Width: =120
+            X: =M5_Panel.X + 510
+            Y: =M5_Panel.Y + 410
+      - M6_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 6
+            Width: =4
+            X: =M6_Panel.X + 30
+            Y: =M6_Panel.Y + 260
+      - M6_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 6
+            Width: =40
+            X: =M6_Panel.X + 55
+            Y: =430
+      - M6_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Alta disponibilidad y escalabilidad"
+            Visible: =varModalInfo = 6
+            Width: =600
+            X: =M6_Panel.X + 33
+            Y: =360
+      - M6_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Tus recursos tecnológicos siempre accesibles y ajustables a las necesidades de tus proyectos académicos."
+            Visible: =varModalInfo = 6
+            Width: =600
+            X: =M6_Panel.X + 111
+            Y: =428
+      - M6_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 6
+            Width: =28
+            X: =M6_Panel.X + 30
+            Y: =M6_Panel.Y + 415
+      - M6_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 6
+            Width: =400
+            X: =M6_Panel.X + 65
+            Y: =M6_Panel.Y + 418
+      - M6_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 6
+            Width: =120
+            X: =M6_Panel.X + 510
+            Y: =M6_Panel.Y + 410
+      - M7_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 7
+            Width: =40
+            X: =M7_Panel.X + 55
+            Y: =430
+      - M7_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 7
+            Width: =4
+            X: =M7_Panel.X + 30
+            Y: =M7_Panel.Y + 260
+      - M7_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Seguridad y Control de Acceso"
+            Visible: =varModalInfo = 7
+            Width: =600
+            X: =M7_Panel.X + 33
+            Y: =360
+      - M7_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Privacidad de datos garantizada mediante accesos limitados según tu perfil y cargo institucional."
+            Visible: =varModalInfo = 7
+            Width: =600
+            X: =M7_Panel.X + 111
+            Y: =428
+      - M7_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 7
+            Width: =28
+            X: =M7_Panel.X + 30
+            Y: =M7_Panel.Y + 415
+      - M7_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 7
+            Width: =400
+            X: =M7_Panel.X + 65
+            Y: =M7_Panel.Y + 418
+      - M7_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 7
+            Width: =120
+            X: =M7_Panel.X + 510
+            Y: =M7_Panel.Y + 410
+      - M8_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 8
+            Width: =4
+            X: =M8_Panel.X + 30
+            Y: =M8_Panel.Y + 260
+      - M8_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 8
+            Width: =40
+            X: =M8_Panel.X + 55
+            Y: =430
+      - M8_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Conexión segura y confiable"
+            Visible: =varModalInfo = 8
+            Width: =600
+            X: =M8_Panel.X + 33
+            Y: =360
+      - M8_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Accede a los recursos institucionales desde cualquier lugar manteniendo la seguridad de tu información."
+            Visible: =varModalInfo = 8
+            Width: =600
+            X: =M8_Panel.X + 111
+            Y: =428
+      - M8_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 8
+            Width: =28
+            X: =M8_Panel.X + 30
+            Y: =M8_Panel.Y + 415
+      - M8_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 8
+            Width: =400
+            X: =M8_Panel.X + 65
+            Y: =M8_Panel.Y + 418
+      - M8_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 8
+            Width: =120
+            X: =M8_Panel.X + 510
+            Y: =M8_Panel.Y + 410
+      - M9_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 9
+            Width: =4
+            X: =M9_Panel.X + 30
+            Y: =M9_Panel.Y + 260
+      - M9_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 9
+            Width: =40
+            X: =M9_Panel.X + 55
+            Y: =430
+      - M9_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Almacenamiento en red interna"
+            Visible: =varModalInfo = 9
+            Width: =600
+            X: =M9_Panel.X + 33
+            Y: =360
+      - M9_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Optimizado para el trabajo colaborativo en grupos de investigación y áreas administrativas."
+            Visible: =varModalInfo = 9
+            Width: =600
+            X: =M9_Panel.X + 111
+            Y: =428
+      - M9_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 9
+            Width: =28
+            X: =M9_Panel.X + 30
+            Y: =M9_Panel.Y + 415
+      - M9_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 9
+            Width: =400
+            X: =M9_Panel.X + 65
+            Y: =M9_Panel.Y + 418
+      - M9_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 9
+            Width: =120
+            X: =M9_Panel.X + 510
+            Y: =M9_Panel.Y + 410
+      - M10_FeatureBorder:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 58, 112, 1)
+            Visible: =varModalInfo = 10
+            Width: =4
+            X: =M10_Panel.X + 30
+            Y: =M10_Panel.Y + 260
+      - M10_FeatureIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =40
+            Icon: =Icon.Check
+            Visible: =varModalInfo = 10
+            Width: =40
+            X: =M10_Panel.X + 55
+            Y: =430
+      - M10_FeatureTitle:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Size: =11
+            Text: ="Atención prioritaria y experta"
+            Visible: =varModalInfo = 10
+            Width: =600
+            X: =M10_Panel.X + 33
+            Y: =360
+      - M10_FeatureDesc:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =10
+            Text: ="Resolvemos tus dudas técnicas en el menor tiempo posible para asegurar la continuidad de tus actividades."
+            Visible: =varModalInfo = 10
+            Width: =600
+            X: =M10_Panel.X + 111
+            Y: =428
+      - M10_HelpIcon:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            Height: =28
+            Icon: =Icon.QuestionMark
+            Visible: =varModalInfo = 10
+            Width: =28
+            X: =M10_Panel.X + 30
+            Y: =M10_Panel.Y + 415
+      - M10_HelpText:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(80, 80, 80, 1)
+            Font: =Font.'Open Sans'
+            Size: =9.5
+            Text: ="¿Tienes dudas? Consulta nuestras preguntas frecuentes"
+            Visible: =varModalInfo = 10
+            Width: =400
+            X: =M10_Panel.X + 65
+            Y: =M10_Panel.Y + 418
+      - M10_CancelBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Text: ="Cerrar"
+            Visible: =varModalInfo = 10
+            Width: =120
+            X: =M10_Panel.X + 510
+            Y: =M10_Panel.Y + 410
+      - M1_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 1
+            Width: =130
+            X: =M1_Panel.X + 650
+            Y: =M1_Panel.Y + 410
+      - M2_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Navigate('Conceptos tecnicos')
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 2
+            Width: =130
+            X: =M2_Panel.X + 650
+            Y: =M2_Panel.Y + 410
+      - M3_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Navigate(Instalacion_Software)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 3
+            Width: =130
+            X: =M3_Panel.X + 650
+            Y: =M3_Panel.Y + 410
+      - M4_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Navigate(CuentasListas); Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 4
+            Width: =130
+            X: =M4_Panel.X + 650
+            Y: =M4_Panel.Y + 410
+      - M5_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 5
+            Width: =130
+            X: =M5_Panel.X + 650
+            Y: =M5_Panel.Y + 410
+      - M6_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 6
+            Width: =130
+            X: =M6_Panel.X + 650
+            Y: =M6_Panel.Y + 410
+      - M7_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 7
+            Width: =130
+            X: =M7_Panel.X + 650
+            Y: =M7_Panel.Y + 410
+      - M8_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 8
+            Width: =130
+            X: =M8_Panel.X + 650
+            Y: =M8_Panel.Y + 410
+      - M9_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 9
+            Width: =130
+            X: =M9_Panel.X + 650
+            Y: =M9_Panel.Y + 410
+      - M10_CloseBtn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 58, 112, 1)
+            Color: =RGBA(0, 58, 112, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =Color.Transparent
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 58, 112, 1)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varModalInfo, 0)
+            PressedBorderColor: =RGBA(0, 58, 112, 1)
+            PressedColor: =RGBA(255, 213, 0, 1)
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =14
+            Text: ="Ir al servicio"
+            Visible: =varModalInfo = 10
+            Width: =130
+            X: =M10_Panel.X + 650
+            Y: =M10_Panel.Y + 410

@@ -33,7 +33,7 @@ Screens:
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Height: =89
-                        Image: =javerXsisso
+                        Image: =JavexSisso
                         ImagePosition: =ImagePosition.Stretch
                         Width: =232
                   - Rectangle4:
@@ -50,7 +50,7 @@ Screens:
                       Properties:
                         Align: =Align.Center
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
-                        OnSelect: =Navigate(introduccion)
+                        OnSelect: =
                         Text: =
                         X: =885
                         Y: =29
@@ -98,11 +98,70 @@ Screens:
                       Properties:
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         Height: =34
-                        OnSelect: =Navigate(introduccion)
+                        OnSelect: =Navigate(Servicios)
                         Text: =
                         Width: =103
                         X: =877
                         Y: =30
+                  - LblNavBienestar_9:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(100, 120, 150, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =28
+                        Size: =14
+                        Text: ="Mis Solicitudes"
+                        Width: =157
+                        X: =1016
+                        Y: =31
+                  - Icon1_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Height: =36
+                        Icon: =Icon.Leave
+                        Width: =25
+                        X: =1262
+                        Y: =28
+                  - Image2_5:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Height: =60
+                        Image: =User().Image
+                        RadiusBottomLeft: =Self.Width / 2
+                        RadiusBottomRight: =Self.Width / 2
+                        RadiusTopLeft: =Self.Width / 2
+                        RadiusTopRight: =Self.Width / 2
+                        Width: =60
+                        X: =246
+                        Y: =15
+                  - Text1_2:
+                      Control: ModernText@1.0.0
+                      Properties:
+                        FontWeight: =FontWeight.Bold
+                        Height: =62
+                        Size: =16
+                        Text: =User().FullName
+                        Width: =164
+                        X: =320
+                        Y: =19
+                  - LblNavBienestar_10:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =28
+                        OnSelect: =Navigate(Servicios)
+                        Size: =14
+                        Text: ="Servicios"
+                        Width: =97
+                        X: =886
+                        Y: =31
                   - RectNavBorder_4:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -140,42 +199,6 @@ Screens:
                         Width: =56
                         X: =1206
                         Y: =31
-                  - LblNavBienestar_9:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(100, 120, 150, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Bold
-                        Height: =28
-                        Size: =14
-                        Text: ="Mis Solicitudes"
-                        Width: =157
-                        X: =1016
-                        Y: =31
-                  - LblNavBienestar_10:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Bold
-                        Height: =28
-                        OnSelect: =Navigate(introduccion)
-                        Size: =14
-                        Text: ="Servicios"
-                        Width: =97
-                        X: =886
-                        Y: =31
-                  - Icon1_2:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Height: =36
-                        Icon: =Icon.Leave
-                        Width: =25
-                        X: =1262
-                        Y: =28
                   - Rectangle1_6:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -185,29 +208,6 @@ Screens:
                         Width: =2
                         X: =230
                         Y: =25
-                  - Image2_5:
-                      Control: Image@2.2.3
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Height: =60
-                        Image: =User().Image
-                        RadiusBottomLeft: =Self.Width / 2
-                        RadiusBottomRight: =Self.Width / 2
-                        RadiusTopLeft: =Self.Width / 2
-                        RadiusTopRight: =Self.Width / 2
-                        Width: =60
-                        X: =246
-                        Y: =15
-                  - Text1_2:
-                      Control: ModernText@1.0.0
-                      Properties:
-                        FontWeight: =FontWeight.Bold
-                        Height: =62
-                        Size: =16
-                        Text: =User().FullName
-                        Width: =164
-                        X: =320
-                        Y: =19
                   - BC_LblHeader_Gen:
                       Control: Label@2.5.1
                       Properties:
@@ -472,7 +472,7 @@ Screens:
                         Size: =9
                         Text: |-
                           ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
-                          Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                          Tel: (+57) 601 320 8320 Ext. 5555"
                         Width: =853
                         X: =10
                         Y: =1216
@@ -526,14 +526,6 @@ Screens:
                         Width: =289
                         X: =1065
                         Y: =1207
-                  - RectNavBorder_6:
-                      Control: Rectangle@2.3.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Fill: =RGBA(248, 205, 0, 1)
-                        Height: =2
-                        Width: =1366
-                        Y: =125
                   - Rectangle1_7:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -543,18 +535,6 @@ Screens:
                         Width: =1250
                         X: =58
                         Y: =618
-                  - LblTopLeft_4:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 255, 255, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =36
-                        Size: =9
-                        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
-                        Width: =408
-                        X: =943
-                        Y: =90
                   - BC_LblHeader_Espec:
                       Control: Label@2.5.1
                       Properties:
@@ -1207,7 +1187,7 @@ Screens:
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
                         Size: =14
-                        Text: ="✈  Enviar"
+                        Text: ="Enviar"
                         Width: =180
                         X: =928
                         Y: =1102
@@ -1218,7 +1198,7 @@ Screens:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =25
                         Icon: =Icon.Home
-                        OnSelect: =Navigate(introduccion)
+                        OnSelect: =Navigate(Servicios)
                         Width: =28
                         X: =54
                         Y: =94
@@ -1233,16 +1213,26 @@ Screens:
                         Width: =40
                         X: =10
                         Y: =95
-      - ButtonCanvas1_8:
-          Control: Button@0.0.45
-          Properties:
-            Appearance: ='ButtonCanvas.Appearance'.Transparent
-            Height: =34
-            OnSelect: =Navigate(introduccion)
-            Text: =
-            Width: =103
-            X: =877
-            Y: =30
+                  - LblTopLeft_4:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =36
+                        Size: =9
+                        Text: ="SISTEMA DE SOLICITUDES // SISSO"
+                        Width: =204
+                        X: =1152
+                        Y: =89
+                  - RectNavBorder_6:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(248, 205, 0, 1)
+                        Height: =2
+                        Width: =1366
+                        Y: =125
       - ButtonCanvas1_9:
           Control: Button@0.0.45
           Properties:

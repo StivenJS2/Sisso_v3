@@ -1,0 +1,1264 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  BuzonCorreo_2:
+    Properties:
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+    Children:
+      - Canvas2_2:
+          Control: FluidGrid@2.3.0
+          Properties:
+            BorderThickness: =0
+            Height: =Parent.Height - Self.Y
+            Width: =Parent.Width
+            Y: =
+          Children:
+            - DataCard1_2:
+                Control: DataCard@1.0.2
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =1270
+                  Width: =Parent.Width
+                  X: =0
+                  Y: =0
+                Children:
+                  - Image1_8:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Height: =89
+                        Image: =JavexSisso
+                        ImagePosition: =ImagePosition.Stretch
+                        Width: =232
+                  - BC_ModalOverlay_Aprobador_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        BorderThickness: =0
+                        Color: =RGBA(0, 0, 0, 0)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0.35)
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0.35)
+                        OnSelect: |-
+                          =UpdateContext({locShowModalAprobador: false})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0.35)
+                        Text: =""
+                        Visible: =locShowModalAprobador
+                        Width: =Parent.Width
+                  - BC_ModalOverlay_Facultad_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        BorderThickness: =0
+                        Color: =RGBA(0, 0, 0, 0)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0.35)
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0.35)
+                        OnSelect: |-
+                          =UpdateContext({locShowModalFacultad: false})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0.35)
+                        Text: =""
+                        Visible: =locShowModalFacultad
+                        Width: =Parent.Width
+                  - Image2_9:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Height: =60
+                        Image: =User().Image
+                        RadiusBottomLeft: =Self.Width / 2
+                        RadiusBottomRight: =Self.Width / 2
+                        RadiusTopLeft: =Self.Width / 2
+                        RadiusTopRight: =Self.Width / 2
+                        Width: =60
+                        X: =246
+                        Y: =15
+                  - Text1_6:
+                      Control: ModernText@1.0.0
+                      Properties:
+                        FontWeight: =FontWeight.Bold
+                        Height: =62
+                        Size: =16
+                        Text: =User().FullName
+                        Width: =164
+                        X: =320
+                        Y: =19
+                  - Rectangle1_15:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(15, 84, 140, 0.52)
+                        Height: =50
+                        Width: =2
+                        X: =230
+                        Y: =25
+                  - ButtonCanvas2_15:
+                      Control: Button@0.0.45
+                      Properties:
+                        Align: =Align.Center
+                        Appearance: ='ButtonCanvas.Appearance'.Transparent
+                        OnSelect: =
+                        Text: =
+                        Width: =163
+                        X: =1010
+                        Y: =27
+                  - Icon1_6:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Height: =36
+                        Icon: =Icon.Leave
+                        Width: =25
+                        X: =1262
+                        Y: =28
+                  - ButtonCanvas2_16:
+                      Control: Button@0.0.45
+                      Properties:
+                        Align: =Align.Center
+                        Appearance: ='ButtonCanvas.Appearance'.Transparent
+                        OnSelect: =Navigate(Servicios)
+                        Text: =
+                        X: =885
+                        Y: =29
+                  - ButtonCanvas1_30:
+                      Control: Button@0.0.45
+                      Properties:
+                        Appearance: ='ButtonCanvas.Appearance'.Transparent
+                        Height: =34
+                        OnSelect: =
+                        Text: =
+                        Width: =103
+                        X: =877
+                        Y: =30
+                  - ButtonCanvas1_31:
+                      Control: Button@0.0.45
+                      Properties:
+                        Appearance: ='ButtonCanvas.Appearance'.Transparent
+                        Height: =31
+                        OnSelect: =
+                        Text: =
+                        Width: =146
+                        X: =1016
+                        Y: =30
+                  - ButtonCanvas1_32:
+                      Control: Button@0.0.45
+                      Properties:
+                        Appearance: ='ButtonCanvas.Appearance'.Transparent
+                        Height: =34
+                        OnSelect: =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+                        Text: =
+                        Width: =103
+                        X: =1196
+                        Y: =30
+                  - LblNavBienestar_20:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =28
+                        OnSelect: =Navigate(Servicios)
+                        Size: =14
+                        Text: ="Servicios"
+                        Width: =97
+                        X: =886
+                        Y: =31
+                  - LblNavBienestar_21:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(100, 120, 150, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =28
+                        Size: =14
+                        Text: ="Mis Solicitudes"
+                        Width: =157
+                        X: =1016
+                        Y: =31
+                  - LblNavBienestar_22:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(100, 120, 150, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =28
+                        Size: =14
+                        Text: ="Salir"
+                        Width: =56
+                        X: =1206
+                        Y: =31
+                  - ButtonCanvas2_17:
+                      Control: Button@0.0.45
+                      Properties:
+                        Align: =Align.Center
+                        Appearance: ='ButtonCanvas.Appearance'.Transparent
+                        OnSelect: =Exit(); Launch("https://intranet.javeriana.edu.co/web/servir-t")
+                        Text: =
+                        X: =1182
+                        Y: =32
+                  - RectQuickActionBar3_6:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =34
+                        Width: =Parent.Width
+                        Y: =89
+                  - Rectangle1_16:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(26, 58, 110, 1)
+                        Height: =36
+                        Width: =1366
+                        Y: =89
+                  - LblTopLeft_8:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =36
+                        Size: =9
+                        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
+                        Width: =408
+                        X: =943
+                        Y: =90
+                  - CT_Icon3_9:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =25
+                        Icon: =Icon.Home
+                        OnSelect: =Navigate(Servicios)
+                        Width: =28
+                        X: =54
+                        Y: =94
+                  - Icon4_12:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =25
+                        Icon: =Icon.BackArrow
+                        OnSelect: =Back()
+                        Width: =40
+                        X: =10
+                        Y: =95
+                  - RectNavBorder_15:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(248, 205, 0, 1)
+                        Height: =2
+                        Width: =1366
+                        Y: =123
+                  - RectNavBorder_16:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(248, 205, 0, 1)
+                        Height: =2
+                        Width: =1366
+                        Y: =125
+                  - BC_ModalAccent_Aprobador_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =5
+                        Visible: =locShowModalAprobador
+                        Width: =520
+                        X: =128
+                        Y: =147
+                  - BC_ModalAccent_Facultad_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =5
+                        Visible: =locShowModalFacultad
+                        Width: =520
+                        X: =682
+                        Y: =147
+                  - BC_ModalBox_Aprobador_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =581
+                        Visible: =locShowModalAprobador
+                        Width: =520
+                        X: =128
+                        Y: =150
+                  - Rectangle4_5:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(0, 0, 0, 0.02)
+                        Height: =1039
+                        Width: =1300
+                        X: =27
+                        Y: =152
+                  - BC_ModalBox_Facultad_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =579
+                        Visible: =locShowModalFacultad
+                        Width: =520
+                        X: =682
+                        Y: =152
+                  - BC_ModalTitle_Aprobador_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Size: =18
+                        Text: ="Seleccione un aprobador"
+                        Visible: =locShowModalAprobador
+                        Width: =440
+                        X: =144
+                        Y: =159
+                  - BC_ModalTitle_Facultad_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Size: =18
+                        Text: ="Seleccione una dependencia"
+                        Visible: =locShowModalFacultad
+                        Width: =440
+                        X: =695
+                        Y: =159
+                  - BC_LblHeader_Gen_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Size: =24
+                        Text: ="Datos generales"
+                        Width: =500
+                        X: =73
+                        Y: =161
+                  - BC_ModalClose_Facultad_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        BorderThickness: =0
+                        Color: =RGBA(150, 150, 150, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =35
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(220, 50, 50, 1)
+                        HoverFill: =RGBA(255, 240, 240, 1)
+                        OnSelect: |-
+                          =UpdateContext({locShowModalFacultad: false})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =RGBA(255, 220, 220, 1)
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Size: =14
+                        Text: ="✕"
+                        Visible: =locShowModalFacultad
+                        Width: =35
+                        X: =1162
+                        Y: =161
+                  - BC_ModalClose_Aprobador_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        BorderThickness: =0
+                        Color: =RGBA(150, 150, 150, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Open Sans'
+                        Height: =35
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(220, 50, 50, 1)
+                        HoverFill: =RGBA(255, 240, 240, 1)
+                        OnSelect: |-
+                          =UpdateContext({locShowModalAprobador: false})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =RGBA(255, 220, 220, 1)
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Size: =14
+                        Text: ="✕"
+                        Visible: =locShowModalAprobador
+                        Width: =35
+                        X: =607
+                        Y: =163
+                  - BC_RectHeaderLine_Gen_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =4
+                        Width: =60
+                        X: =73
+                        Y: =200
+                  - BC_ModalSubtitle_Aprobador_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(130, 130, 130, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =25
+                        Size: =11
+                        Text: ="Escoja el autorizador para su solicitud"
+                        Visible: =locShowModalAprobador
+                        Width: =440
+                        X: =147
+                        Y: =201
+                  - BC_ModalSubtitle_Facultad_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(130, 130, 130, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =25
+                        Size: =11
+                        Text: ="Escoja la facultad o dependencia a la que pertenece"
+                        Visible: =locShowModalFacultad
+                        Width: =440
+                        X: =697
+                        Y: =201
+                  - BC_LblRequiredHint_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(120, 120, 120, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =30
+                        Size: =12
+                        Text: ="Los campos marcados con * son obligatorios."
+                        Width: =500
+                        X: =73
+                        Y: =215
+                  - BC_ModalOpt1_Aprobador_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(50, 50, 50, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =55
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 58, 112, 1)
+                        HoverFill: =RGBA(240, 247, 255, 1)
+                        OnSelect: |-
+                          =UpdateContext({locSelectedAprobador: "Carlos Rodríguez - Decano", locShowModalAprobador: false})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =RGBA(225, 238, 250, 1)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Text: ="Carlos Rodríguez - Decano"
+                        Visible: =locShowModalAprobador
+                        Width: =460
+                        X: =144
+                        Y: =240
+                  - BC_ModalOpt1_Facultad_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(50, 50, 50, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =55
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 58, 112, 1)
+                        HoverFill: =RGBA(240, 247, 255, 1)
+                        OnSelect: |-
+                          =UpdateContext({locSelectedFacultad: "Facultad de Ingeniería", locShowModalFacultad: false})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =RGBA(225, 238, 250, 1)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Text: ="Facultad de Ingeniería"
+                        Visible: =locShowModalFacultad
+                        Width: =460
+                        X: =698
+                        Y: =240
+                  - BC_CardBg_Aprobador_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(240, 246, 255, 1)
+                        Height: =175
+                        Width: =590
+                        X: =73
+                        Y: =255
+                  - BC_CardBg_Facultad_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(240, 246, 255, 1)
+                        Height: =175
+                        Width: =590
+                        X: =693
+                        Y: =255
+                  - BC_IconCard_Aprobador_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Height: =35
+                        Icon: =Icon.People
+                        Width: =35
+                        X: =93
+                        Y: =268
+                  - BC_IconCard_Facultad_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Height: =35
+                        Icon: =Icon.OfficeBuilding
+                        Width: =35
+                        X: =713
+                        Y: =268
+                  - BC_LblField_Aprobador_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =14
+                        Text: ="Aprobador  *"
+                        Width: =300
+                        X: =138
+                        Y: =270
+                  - BC_LblField_Facultad_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =14
+                        Text: ="Facultad o dependencia  *"
+                        Width: =350
+                        X: =758
+                        Y: =270
+                  - BC_ModalOpt2_Aprobador_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(50, 50, 50, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =55
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 58, 112, 1)
+                        HoverFill: =RGBA(240, 247, 255, 1)
+                        OnSelect: |-
+                          =UpdateContext({locSelectedAprobador: "María López - Vicerrectora", locShowModalAprobador: false})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =RGBA(225, 238, 250, 1)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Text: ="María López - Vicerrectora"
+                        Visible: =locShowModalAprobador
+                        Width: =460
+                        X: =147
+                        Y: =311
+                  - BC_ModalOpt2_Facultad_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(220, 220, 220, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(50, 50, 50, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =55
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 58, 112, 1)
+                        HoverFill: =RGBA(240, 247, 255, 1)
+                        OnSelect: |-
+                          =UpdateContext({locSelectedFacultad: "Facultad de Ciencias Económicas", locShowModalFacultad: false})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =RGBA(225, 238, 250, 1)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Text: ="Facultad de Ciencias Económicas"
+                        Visible: =locShowModalFacultad
+                        Width: =460
+                        X: =698
+                        Y: =311
+                  - BC_LblDesc_Aprobador_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(90, 90, 90, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =60
+                        Size: =11
+                        Text: ="Seleccione como autorizador a Jefe de Oficina, Director de su Unidad, Decano o Vicerrector, al cual le llegará una notificación para que realice la aprobación de su solicitud."
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =540
+                        X: =93
+                        Y: =312
+                  - BC_LblDesc_Facultad_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(90, 90, 90, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =30
+                        Size: =11
+                        Text: ="Indique la facultad o dependencia a la cual usted pertenece."
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =540
+                        X: =713
+                        Y: =325
+                  - BC_BtnSelect_Aprobador_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =If(IsBlank(locSelectedAprobador), RGBA(210, 210, 210, 1), RGBA(184, 153, 0, 1))
+                        BorderThickness: =1
+                        Color: =If(IsBlank(locSelectedAprobador), RGBA(100, 100, 100, 1), RGBA(100, 80, 0, 1))
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =If(IsBlank(locSelectedAprobador), RGBA(255, 255, 255, 1), RGBA(255, 249, 219, 1))
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =If(IsBlank(locSelectedAprobador), RGBA(250, 250, 250, 1), RGBA(255, 243, 191, 1))
+                        OnSelect: |-
+                          =UpdateContext({locShowModalAprobador: true})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =RGBA(0, 0, 0, 1)
+                        PressedFill: =Self.Color
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Text: =If(IsBlank(locSelectedAprobador), "Seleccione un aprobador", locSelectedAprobador)
+                        Width: =540
+                        X: =93
+                        Y: =380
+                  - BC_BtnSelect_Facultad_4:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =If(IsBlank(locSelectedFacultad), RGBA(210, 210, 210, 1), RGBA(184, 153, 0, 1))
+                        BorderThickness: =1
+                        Color: =If(IsBlank(locSelectedFacultad), RGBA(100, 100, 100, 1), RGBA(100, 80, 0, 1))
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =If(IsBlank(locSelectedFacultad), RGBA(255, 255, 255, 1), RGBA(255, 249, 219, 1))
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =If(IsBlank(locSelectedFacultad), RGBA(250, 250, 250, 1), RGBA(255, 243, 191, 1))
+                        OnSelect: |-
+                          =UpdateContext({locShowModalFacultad: true})
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =RGBA(0, 0, 0, 1)
+                        PressedFill: =Self.Color
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Text: =If(IsBlank(locSelectedFacultad), "Seleccione una dependencia", locSelectedFacultad)
+                        Width: =540
+                        X: =713
+                        Y: =380
+                  - BC_CardBg_Justificacion_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(240, 246, 255, 1)
+                        Height: =155
+                        Width: =590
+                        X: =73
+                        Y: =447
+                  - BC_CardBg_Celular_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(240, 246, 255, 1)
+                        Height: =155
+                        Width: =590
+                        X: =693
+                        Y: =447
+                  - BC_IconCard_Justificacion_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Height: =35
+                        Icon: =Icon.DocumentWithContent
+                        Width: =35
+                        X: =93
+                        Y: =457
+                  - BC_IconCard_Celular_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Height: =35
+                        Icon: =Icon.Phone
+                        Width: =35
+                        X: =713
+                        Y: =457
+                  - BC_LblField_Justificacion_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =14
+                        Text: ="Justificación  *"
+                        Width: =300
+                        X: =138
+                        Y: =459
+                  - BC_LblField_Celular_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =14
+                        Text: ="Número celular o extensión  *"
+                        Width: =350
+                        X: =758
+                        Y: =459
+                  - TextInput2_10:
+                      Control: ModernTextInput@1.1.0
+                      Properties:
+                        Appearance: =Appearance.FilledLighter
+                        BorderColor: =RGBA(210, 210, 210, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        BorderThickness: =1
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =82
+                        Placeholder: ="Escribir justificación..."
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =550
+                        X: =93
+                        Y: =505
+                  - TextInput2_11:
+                      Control: ModernTextInput@1.1.0
+                      Properties:
+                        Appearance: =Appearance.FilledLighter
+                        BorderColor: =RGBA(210, 210, 210, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        BorderThickness: =1
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =38
+                        Placeholder: ="Escribir aquí"
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =540
+                        X: =713
+                        Y: =528
+                  - Rectangle1_17:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =2
+                        Width: =1250
+                        X: =58
+                        Y: =618
+                  - BC_LblHeader_Espec_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Size: =24
+                        Text: ="Datos específicos"
+                        Width: =500
+                        X: =73
+                        Y: =633
+                  - BC_RectHeaderLine_Espec_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(255, 213, 0, 1)
+                        Height: =4
+                        Width: =60
+                        X: =73
+                        Y: =673
+                  - BC_LblDesc_Espec_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(90, 90, 90, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =30
+                        Size: =12
+                        Text: ="Estos datos permiten conocer la información esencial del recurso que está solicitando."
+                        Width: =800
+                        X: =73
+                        Y: =685
+                  - BC_LblHint_NombreRecurso_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(140, 140, 140, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =25
+                        Size: =10
+                        Text: ="Máximo 20 caracteres, sin espacios."
+                        Width: =300
+                        X: =72
+                        Y: =711
+                  - BC_CardBg_NombreDespliegue_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(240, 246, 255, 1)
+                        Height: =202
+                        Width: =590
+                        X: =693
+                        Y: =743
+                  - BC_CardBg_NombreRecurso_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(240, 246, 255, 1)
+                        Height: =201
+                        Width: =590
+                        X: =73
+                        Y: =744
+                  - BC_IconCard_NombreRecurso_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Height: =35
+                        Icon: =Icon.CalendarBlank
+                        Width: =35
+                        X: =83
+                        Y: =758
+                  - BC_IconCard_NombreDespliegue_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Height: =35
+                        Icon: =Icon.Mail
+                        Width: =35
+                        X: =713
+                        Y: =758
+                  - BC_LblField_NombreRecurso_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =14
+                        Text: ="Nombre de lista, calendario o buzón de correo  *"
+                        Width: =460
+                        X: =120
+                        Y: =760
+                  - BC_LblField_NombreDespliegue_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =14
+                        Text: ="Nombre de despliegue  *"
+                        Width: =350
+                        X: =758
+                        Y: =760
+                  - BC_LblDesc_NombreDespliegue_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(90, 90, 90, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =80
+                        Size: =11
+                        Text: |-
+                          ="Indique el nombre que quiere que aparezca como remitente cuando alguien correos de la cuenta que se va a generar. Ejemplo: Ximo. El correo puede exceder los 20 caracteres. Revisar en conjunto con Profesional Universitario | persona Líder o Coordinadores."
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =550
+                        X: =713
+                        Y: =796
+                  - BC_LblDesc_NombreRecurso_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(90, 90, 90, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =65
+                        Size: =11
+                        Text: ="Por favor ingrese el nombre específico para la lista, calendario o buzón que requiere crear; no debe superar los 20 caracteres, tampoco contener espacios."
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =540
+                        X: =75
+                        Y: =813
+                  - BC_LblSuffix_Email_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =45
+                        Text: ="@javeriana.edu.co"
+                        Width: =180
+                        X: =448
+                        Y: =881
+                  - TextInput2_12:
+                      Control: ModernTextInput@1.1.0
+                      Properties:
+                        Appearance: =Appearance.FilledLighter
+                        BorderColor: =RGBA(210, 210, 210, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        BorderThickness: =1
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =45
+                        Placeholder: ="Escribir aquí"
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =360
+                        X: =84
+                        Y: =883
+                  - TextInput2_13:
+                      Control: ModernTextInput@1.1.0
+                      Properties:
+                        Appearance: =Appearance.FilledLighter
+                        BorderColor: =RGBA(210, 210, 210, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        BorderThickness: =1
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =43
+                        Placeholder: ="Escribir aquí"
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =550
+                        X: =713
+                        Y: =883
+                  - BC_CardBg_Expiracion_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(240, 246, 255, 1)
+                        Height: =99
+                        Width: =1210
+                        X: =72
+                        Y: =961
+                  - BC_LblField_Expiracion_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =33
+                        Size: =14
+                        Text: ="Fecha de expiración  *"
+                        Width: =300
+                        X: =143
+                        Y: =964
+                  - BC_IconCard_Expiracion_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Height: =35
+                        Icon: =Icon.Clock
+                        Width: =35
+                        X: =98
+                        Y: =966
+                  - BC_LblDesc_Expiracion_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(90, 90, 90, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =43
+                        Size: =11
+                        Text: ="La vigencia debe ser mínimo un mes y de máximo un año, esta se podrá renovar antes del tiempo de la vigencia."
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =500
+                        X: =145
+                        Y: =994
+                  - BC_BtnInput_Expiracion_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(210, 210, 210, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(150, 150, 150, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =38
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(250, 250, 250, 1)
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =RGBA(0, 0, 0, 1)
+                        PressedFill: =Self.Color
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Text: ="Seleccionar una fecha..."
+                        Width: =300
+                        X: =822
+                        Y: =996
+                  - BC_IconCalendar_Expiracion_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(150, 150, 150, 1)
+                        Height: =22
+                        Icon: =Icon.CalendarBlank
+                        Width: =22
+                        X: =1093
+                        Y: =1004
+                  - BC_RectBg_Recurso_2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderThickness: =2
+                        Fill: =RGBA(245, 247, 250, 1)
+                        Height: =79
+                        Width: =1210
+                        X: =68
+                        Y: =1084
+                  - BC_BtnCheck_Recurso_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(0, 58, 112, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =Self.Color
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Text: =""
+                        Width: =35
+                        X: =553
+                        Y: =1102
+                  - BC_BtnSelect_Facultad_5:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(0, 58, 112, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        Fill: =Color.Transparent
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =RGBA(0, 58, 112, 1)
+                        HoverFill: =Color.Transparent
+                        PressedBorderColor: =RGBA(0, 58, 112, 1)
+                        PressedColor: =RGBA(255, 213, 0, 1)
+                        PressedFill: =Color.Transparent
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Size: =14
+                        Text: ="✈  Enviar"
+                        Width: =180
+                        X: =928
+                        Y: =1102
+                  - BC_LblHeader_Recurso_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Size: =20
+                        Text: ="Recurso solicitado"
+                        Width: =400
+                        X: =107
+                        Y: =1105
+                  - BC_LblText_Recurso_2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(60, 60, 60, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =35
+                        Size: =16
+                        Text: ="Buzón de correo"
+                        Width: =200
+                        X: =600
+                        Y: =1105
+                  - BC_IconCheck_Recurso_2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(0, 58, 112, 1)
+                        Height: =22
+                        Icon: =Icon.Check
+                        Width: =22
+                        X: =560
+                        Y: =1109
+                  - RectFooter_8:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Fill: =RGBA(26, 58, 110, 1)
+                        Height: =68
+                        Width: =1360
+                        Y: =1202
+                  - RectFooterBorder_8:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(200, 184, 122, 1)
+                        BorderThickness: =1
+                        Fill: =RGBA(200, 184, 122, 1)
+                        Height: =2
+                        Width: =1355
+                        Y: =1202
+                  - Image4_7:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Height: =66
+                        Image: ='image-removebg-preview'
+                        ImagePosition: =ImagePosition.Fill
+                        Width: =289
+                        X: =1065
+                        Y: =1207
+                  - LblFooter_8:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(200, 184, 122, 0.7)
+                        Font: =Font.'Open Sans'
+                        Height: =41
+                        Size: =9
+                        Text: |-
+                          ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
+                          Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                        Width: =853
+                        X: =10
+                        Y: =1216
+      - ButtonCanvas1_34:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =31
+            OnSelect: =
+            Text: =
+            Width: =146
+            X: =1017
+            Y: =30
+      - ButtonCanvas1_35:
+          Control: Button@0.0.45
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            Height: =34
+            OnSelect: =Launch("https://intranet.javeriana.edu.co/web/servir-t", {}, LaunchTarget.Replace)
+            Text: =
+            Width: =103
+            X: =1194
+            Y: =30
+      - TextInput2_14:
+          Control: ModernTextInput@1.1.0
+          Properties:
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =400
+            X: =101
+            Y: =1130

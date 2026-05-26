@@ -43,9 +43,30 @@ Screens:
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Height: =89
-                        Image: =javerXsisso
+                        Image: =JavexSisso
                         ImagePosition: =ImagePosition.Stretch
                         Width: =230
+                  - LblNavBienestar_13:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Bold
+                        Height: =28
+                        OnSelect: =
+                        Size: =14
+                        Text: ="Servicios"
+                        Width: =97
+                        X: =886
+                        Y: =25
+                  - Button1_3:
+                      Control: ModernButton@1.0.0
+                      Properties:
+                        Appearance: =ButtonAppearance.Transparent
+                        OnSelect: =Navigate(Servicios)
+                        Text: =
+                        X: =884
+                        Y: =31
                   - Rectangle4_2:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -532,7 +553,7 @@ Screens:
                       Properties:
                         Align: =Align.Center
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
-                        OnSelect: =Navigate(introduccion)
+                        OnSelect: =
                         Text: =
                         X: =885
                         Y: =23
@@ -580,11 +601,11 @@ Screens:
                       Properties:
                         Appearance: ='ButtonCanvas.Appearance'.Transparent
                         Height: =34
-                        OnSelect: =Navigate(introduccion)
+                        OnSelect: =Navigate(Servicios)
                         Text: =
                         Width: =103
-                        X: =877
-                        Y: =24
+                        X: =884
+                        Y: =25
                   - RectNavBorder_9:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -635,19 +656,6 @@ Screens:
                         Width: =157
                         X: =1016
                         Y: =25
-                  - LblNavBienestar_13:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Bold
-                        Height: =28
-                        OnSelect: =Navigate(introduccion)
-                        Size: =14
-                        Text: ="Servicios"
-                        Width: =97
-                        X: =886
-                        Y: =25
                   - Icon1_3:
                       Control: Classic/Icon@2.5.0
                       Properties:
@@ -689,18 +697,6 @@ Screens:
                         Height: =2
                         Width: =1366
                         Y: =119
-                  - LblTopLeft_5:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =RGBA(255, 255, 255, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =36
-                        Size: =9
-                        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
-                        Width: =408
-                        X: =943
-                        Y: =84
                   - RectFooter_5:
                       Control: Rectangle@2.3.0
                       Properties:
@@ -720,7 +716,7 @@ Screens:
                         Size: =9
                         Text: |-
                           ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
-                          Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+                          Tel: (+57) 601 320 8320 Ext. 5555"
                         Width: =853
                         X: =16
                         Y: =1346
@@ -751,7 +747,7 @@ Screens:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =25
                         Icon: =Icon.Home
-                        OnSelect: =Navigate(introduccion)
+                        OnSelect: =Navigate(Servicios)
                         Width: =28
                         X: =60
                         Y: =88
@@ -775,14 +771,6 @@ Screens:
                         Width: =2
                         X: =230
                         Y: =19
-                  - Button1_3:
-                      Control: ModernButton@1.0.0
-                      Properties:
-                        Appearance: =ButtonAppearance.Transparent
-                        OnSelect: =Navigate(introduccion)
-                        Text: =
-                        X: =884
-                        Y: =31
                   - Button1_4:
                       Control: ModernButton@1.0.0
                       Properties:
@@ -801,6 +789,18 @@ Screens:
                         Text: =
                         X: =1199
                         Y: =24
+                  - LblTopLeft_5:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =36
+                        Size: =9
+                        Text: ="SISTEMA DE SOLICITUDES // SISSO"
+                        Width: =204
+                        X: =1145
+                        Y: =85
       - CS_ModalOverlay_Aprobador:
           Control: Classic/Button@2.2.0
           Properties:

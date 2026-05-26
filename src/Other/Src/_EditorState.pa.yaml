@@ -8,12 +8,14 @@
 # ************************************************************************************************
 EditorState:
   ScreensOrder:
-    - introduccion
+    - Servicios
     - Conceptos tecnicos
     - Concepto_Software
     - Concepto_Hardware
     - CuentasListas
     - BuzonCorreo
+    - BuzonCorreo_2
+    - BuzonCorreo_1
     - Instalacion_Software
     - Screen2
   ComponentDefinitionsOrder:

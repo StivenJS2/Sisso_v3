@@ -3,7 +3,7 @@
 
     Image1_5 As image:
         Height: =89
-        Image: =javerXsisso
+        Image: =JavexSisso
         ImagePosition: =ImagePosition.Stretch
         Width: =232
         ZIndex: =6
@@ -63,7 +63,7 @@
     CT_LblNavBienestar_7 As label:
         FontWeight: =FontWeight.Bold
         Height: =28
-        OnSelect: =Navigate(introduccion)
+        OnSelect: =Navigate(Servicios)
         Size: =14
         Text: ="Servicios"
         Width: =97
@@ -406,7 +406,7 @@
         Size: =9
         Text: |-
             ="© 2026 · Pontificia Universidad Javeriana · Bogotá D.C. • Carrera 7 No. 40 - 62 • 
-            Tel: (+57) 601 320 8320 Ext. 5555 • dti-mesaservicios@javeriana.edu.co"
+            Tel: (+57) 601 320 8320 Ext. 5555"
         Width: =853
         X: =5
         Y: =713
@@ -430,21 +430,11 @@
         Y: =705
         ZIndex: =41
 
-    CT_LblTopLeft_3 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =36
-        Size: =9
-        Text: ="PONTIFICIA UNIVERSIDAD JAVERIANA  ·  SISTEMA DE SERVICIOS // SISSO"
-        Width: =408
-        X: =955
-        Y: =88
-        ZIndex: =42
-
     CT_Icon3_1 As icon.Home:
         Color: =RGBA(255, 255, 255, 1)
         Height: =25
         Icon: =Icon.Home
-        OnSelect: =Navigate(introduccion)
+        OnSelect: =Navigate(Servicios)
         Width: =28
         X: =54
         Y: =92
@@ -467,44 +457,11 @@
         Y: =93
         ZIndex: =45
 
-    ButtonCanvas1_14 As Botón:
-        AcceptsFocus: =true
-        AccessibleLabel: =""
-        Align: =""
-        Appearance: ='ButtonCanvas.Appearance'.Transparent
-        BasePaletteColor: =
-        BorderColor: =
-        BorderStyle: =""
-        ContentLanguage: =""
-        DisplayMode: =DisplayMode.Edit
-        Font: =""
-        FontColor: =
-        FontItalic: =false
-        FontSize: =0
-        FontStrikethrough: =false
-        FontUnderline: =false
-        FontWeight: =""
-        Height: =34
-        Icon: =""
-        IconRotation: =0
-        IconStyle: ="Outline"
-        Layout: ="Icon before"
-        OnSelect: =Navigate(introduccion)
-        TabIndex: =0
-        Text: =
-        Tooltip: =""
-        VerticalAlign: =""
-        Visible: =true
-        Width: =103
-        X: =877
-        Y: =30
-        ZIndex: =46
-
     Button1 As modernButton:
         Appearance: =ButtonAppearance.Transparent
-        OnSelect: =Navigate(introduccion)
+        OnSelect: =Navigate(Servicios)
         Text: =
-        X: =884
+        X: =886
         Y: =31
         ZIndex: =47
 
@@ -531,4 +488,14 @@
         X: =1199
         Y: =29
         ZIndex: =49
+
+    LblTopLeft_10 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Size: =9
+        Text: ="SISTEMA DE SOLICITUDES // SISSO"
+        Width: =204
+        X: =1162
+        Y: =89
+        ZIndex: =50
 

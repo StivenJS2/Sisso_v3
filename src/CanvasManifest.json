@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "actualización plantilla de Jave x Sisso",
+    "AppDescription": "actualización // cosas  basicas",
     "AppPreviewFlagsMap": {
       "adaptivepaging": false,
       "aibuilderserviceenrollment": false,
@@ -114,7 +114,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "d736596b-2dbc-454d-a309-00d604f7b87b",
-    "Id": "797d4e4b-e6cd-4298-addf-4e8302093278",
+    "Id": "c8af91d7-fd65-4b9c-93cc-34e01715ce6f",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
     "Name": "U2lzc29fdjM.msapp",
@@ -134,12 +134,14 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
-    "introduccion",
+    "Servicios",
     "Conceptos tecnicos",
     "Concepto_Software",
     "Concepto_Hardware",
     "CuentasListas",
     "BuzonCorreo",
+    "BuzonCorreo_2",
+    "BuzonCorreo_1",
     "Instalacion_Software",
     "Screen2"
   ]
